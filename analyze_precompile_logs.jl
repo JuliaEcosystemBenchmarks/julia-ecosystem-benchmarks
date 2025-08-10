@@ -10,8 +10,6 @@ struct DataRow
     precompile_time::Union{Float64, Nothing}
     loading_time::Union{Float64, Nothing}
     task_time::Union{Float64, Nothing}
-    precompile_filepath::String
-    task_filepath::String
 end
 
 function parse_filename(filename)
@@ -177,9 +175,7 @@ function analyze_precompile_logs()
                 parsed.hash,
                 precompile_time,
                 loading_time,
-                task_time,
-                precompile_filepath,
-                task_filepath
+                task_time
             ))
         else
             @warn "Skipping entry due to missing timing data from either precompile or task file" precompile_filepath=precompile_filepath task_filepath=task_filepath precompile_time=precompile_time loading_time=loading_time task_time=task_time
@@ -192,13 +188,13 @@ function analyze_precompile_logs()
     
     # Display sample data
     println("\nSample data (first 10 rows):")
-    println("Package | Date | Julia Ver | Precompile | Loading | Task | Precompile File")
-    println("-" ^ 100)
+    println("Package | Date | Julia Ver | Hash | Precompile | Loading | Task")
+    println("-" ^ 80)
     for (i, row) in enumerate(data[1:min(10, length(data))])
         precompile_str = row.precompile_time !== nothing ? @sprintf("%.3f", row.precompile_time) : "N/A"
         loading_str = row.loading_time !== nothing ? @sprintf("%.3f", row.loading_time) : "N/A"
         task_str = row.task_time !== nothing ? @sprintf("%.3f", row.task_time) : "N/A"
-        println("$(row.package_name) | $(row.date) | $(row.julia_version) | $(precompile_str) | $(loading_str) | $(task_str) | $(basename(row.precompile_filepath))")
+        println("$(row.package_name) | $(row.date) | $(row.julia_version) | $(row.hash) | $(precompile_str) | $(loading_str) | $(task_str)")
     end
     
     # Summary by package
