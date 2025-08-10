@@ -290,16 +290,23 @@ function normalize_by_first_entry(data, metrics)
         
         # Normalize all entries for this combination
         for combo_row in eachrow(combo_data)
-            normalized_row = copy(combo_row)
+            # Create a new DataFrame row with the same structure
+            normalized_row = DataFrame()
             
+            # Copy all columns from the original row
+            for col in names(combo_data)
+                normalized_row[!, col] = [combo_row[col]]
+            end
+            
+            # Update the metric columns with normalized values
             for (metric_col, _, _) in metrics
                 if haskey(first_values, metric_col) && 
                    !ismissing(combo_row[metric_col]) && 
                    !isnothing(combo_row[metric_col]) && 
                    combo_row[metric_col] > 0
-                    normalized_row[metric_col] = combo_row[metric_col] / first_values[metric_col]
+                    normalized_row[!, metric_col] = [combo_row[metric_col] / first_values[metric_col]]
                 else
-                    normalized_row[metric_col] = missing
+                    normalized_row[!, metric_col] = [missing]
                 end
             end
             
