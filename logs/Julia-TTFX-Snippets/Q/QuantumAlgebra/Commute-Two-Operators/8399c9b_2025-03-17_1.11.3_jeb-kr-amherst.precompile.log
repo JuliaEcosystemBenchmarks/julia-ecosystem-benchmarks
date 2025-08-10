@@ -1,0 +1,40 @@
+Precompiling project...
+    799.1 ms  ✓ PackageExtensionCompat
+    815.7 ms  ✓ LaTeXStrings
+    924.1 ms  ✓ Unicode
+   1084.5 ms  ✓ Requires
+   1132.9 ms  ✓ OrderedCollections
+   1485.7 ms  ✓ Combinatorics
+   1690.4 ms  ✓ Format
+    763.5 ms  ✓ Preferences
+   1840.6 ms  ✓ InteractiveUtils
+    320.0 ms  ✓ PrecompileTools
+   2440.8 ms  ✓ MacroTools
+   1755.4 ms  ✓ Latexify
+   7282.4 ms  ✓ StyledStrings
+  30768.1 ms  ✓ REPL
+  10881.5 ms  ✓ QuantumAlgebra
+  15 dependencies successfully precompiled in 49 seconds. 6 already precompiled.
+	Command being timed: "julia +1.11.3 --project=Q/QuantumAlgebra/Commute-Two-Operators -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 180.41
+	System time (seconds): 7.70
+	Percent of CPU this job got: 186%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:40.82
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2020320
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 226
+	Minor (reclaiming a frame) page faults: 2619121
+	Voluntary context switches: 50292
+	Involuntary context switches: 3972
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 519760
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

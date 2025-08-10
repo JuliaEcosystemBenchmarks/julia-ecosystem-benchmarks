@@ -1,0 +1,31 @@
+Precompiling project...
+    273.6 ms  ✓ Unicode
+    304.0 ms  ✓ Mmap
+    457.0 ms  ✓ Preferences
+    310.3 ms  ✓ PrecompileTools
+   4934.6 ms  ✓ SIMD
+   7383.7 ms  ✓ KangarooTwelve
+  6 dependencies successfully precompiled in 13 seconds. 3 already precompiled.
+	Command being timed: "julia +1.11.3 --project=K/KangarooTwelve/Hash-Nothing -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 110.76
+	System time (seconds): 4.99
+	Percent of CPU this job got: 174%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:06.25
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2018548
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 190
+	Minor (reclaiming a frame) page faults: 1761179
+	Voluntary context switches: 37385
+	Involuntary context switches: 2271
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 346864
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

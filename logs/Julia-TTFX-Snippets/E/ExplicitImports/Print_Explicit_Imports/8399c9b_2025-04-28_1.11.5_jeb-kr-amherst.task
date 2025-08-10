@@ -1,0 +1,106 @@
+  Module ExplicitImports is relying on implicit imports for 7 names. These
+  could be explicitly imported as follows:
+
+  using AbstractTrees: AbstractTrees, Leaves, TreeCursor, children, nodevalue
+  using JuliaSyntax: JuliaSyntax, @K_str
+
+  Additionally, module ExplicitImports has stale explicit imports for this 1
+  unused name:
+
+    •  parse is unused but it was imported from JuliaSyntax at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/ExplicitImports.jl:7:20
+
+  Additionally, module ExplicitImports explicitly imports 1 non-public name:
+
+    •  parent is not public in AbstractTrees but it was imported from
+       AbstractTrees at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/ExplicitImports.jl:8:22
+
+  Additionally, module ExplicitImports has 1 self-qualified access:
+
+    •  parent was accessed as ExplicitImports.parent inside
+       ExplicitImports at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/deprecated.jl:79:21
+
+  Additionally, module ExplicitImports accesses 1 name from non-owner modules:
+
+    •  parent has owner AbstractTrees but it was accessed from
+       ExplicitImports at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/deprecated.jl:79:21
+
+  Additionally, module ExplicitImports accesses 20 non-public names:
+
+    •  Code is not public in Markdown but it was accessed via Markdown at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/precompile.jl:8:51
+
+    •  GreenNode is not public in JuliaSyntax but it was accessed via
+       JuliaSyntax at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/parse_utilities.jl:102:59
+
+    •  Kind is not public in JuliaSyntax but it was accessed via
+       JuliaSyntax at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/parse_utilities.jl:127:28
+
+    •  List is not public in Markdown but it was accessed via Markdown at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/precompile.jl:10:51
+
+    •  PREFIX_OP_FLAG is not public in JuliaSyntax but it was accessed
+       via JuliaSyntax at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/get_names_used.jl:331:53
+
+    •  Paragraph is not public in Markdown but it was accessed via
+       Markdown at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/precompile.jl:9:51
+
+    •  PkgId is not public in Base but it was accessed via Base at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/improper_explicit_imports.jl:49:33
+
+    •  SyntaxHead is not public in JuliaSyntax but it was accessed via
+       JuliaSyntax at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/parse_utilities.jl:102:81
+
+    •  Types is not public in Pkg but it was accessed via Pkg at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/main.jl:54:25
+
+    •  children is not public in JuliaSyntax but it was accessed via
+       JuliaSyntax at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/parse_utilities.jl:54:32
+
+    •  get_extension is not public in Base but it was accessed via Base
+       at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/ExplicitImports.jl:339:28
+
+    •  has_flags is not public in JuliaSyntax but it was accessed via
+       JuliaSyntax at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/parse_utilities.jl:114:24
+
+    •  ioproperties is not public in Base but it was accessed via Base at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/main.jl:45:25
+
+    •  loaded_modules is not public in Base but it was accessed via Base
+       at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/improper_explicit_imports.jl:49:51
+
+    •  loaded_modules_array is not public in Base but it was accessed via
+       Base at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/ExplicitImports.jl:389:21
+
+    •  maybe_root_module is not public in Base but it was accessed via
+       Base at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/improper_explicit_imports.jl:54:47
+
+    •  parse is not public in Markdown but it was accessed via Markdown
+       at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/interactive_usage.jl:231:19
+
+    •  set_active_project is not public in Base but it was accessed via
+       Base at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/main.jl:66:22
+
+    •  source_location is not public in JuliaSyntax but it was accessed
+       via JuliaSyntax at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/parse_utilities.jl:36:29
+
+    •  term is not public in Markdown but it was accessed via Markdown at
+       /workdir/depot/packages/ExplicitImports/gBeSh/src/precompile.jl:10:25
+0.5107121467590332, 0.45414185523986816, 0.9648540019989014 seconds

@@ -1,0 +1,59 @@
+nice: cannot set niceness: Permission denied
+    Updating registry at `/workdir/depot/registries/General`
+┌ Error: Some registries failed to update:
+│     — `/workdir/depot/registries/General` — registry detached
+└ @ Pkg.Registry /cache/build/default-amdci4-2/julialang/julia-release-1-dot-8/usr/share/julia/stdlib/v1.8/Pkg/src/Registry/Registry.jl:449
+[ Warning: julia version requirement for project not satisfied
+ERROR: Unsatisfiable requirements detected for package Mendeleev [c116f080]:
+ Mendeleev [c116f080] log:
+ ├─possible versions are: 0.1.0-0.3.0 or uninstalled
+ └─restricted to versions 1.0.1-* by an explicit requirement — no versions left
+Stacktrace:
+  [1] check_constraints(graph::Pkg.Resolve.Graph)
+    @ Pkg.Resolve ~/.julia/juliaup/julia-1.8.5+0.x64.linux.gnu/share/julia/stdlib/v1.8/Pkg/src/Resolve/graphtype.jl:998
+  [2] Pkg.Resolve.Graph(compat::Dict{Base.UUID, Dict{VersionNumber, Dict{Base.UUID, Pkg.Versions.VersionSpec}}}, uuid_to_name::Dict{Base.UUID, String}, reqs::Dict{Base.UUID, Pkg.Versions.VersionSpec}, fixed::Dict{Base.UUID, Pkg.Resolve.Fixed}, verbose::Bool, julia_version::VersionNumber)
+    @ Pkg.Resolve ~/.julia/juliaup/julia-1.8.5+0.x64.linux.gnu/share/julia/stdlib/v1.8/Pkg/src/Resolve/graphtype.jl:344
+  [3] deps_graph(env::Pkg.Types.EnvCache, registries::Vector{Pkg.Registry.RegistryInstance}, uuid_to_name::Dict{Base.UUID, String}, reqs::Dict{Base.UUID, Pkg.Versions.VersionSpec}, fixed::Dict{Base.UUID, Pkg.Resolve.Fixed}, julia_version::VersionNumber)
+    @ Pkg.Operations ~/.julia/juliaup/julia-1.8.5+0.x64.linux.gnu/share/julia/stdlib/v1.8/Pkg/src/Operations.jl:496
+  [4] resolve_versions!(env::Pkg.Types.EnvCache, registries::Vector{Pkg.Registry.RegistryInstance}, pkgs::Vector{Pkg.Types.PackageSpec}, julia_version::VersionNumber)
+    @ Pkg.Operations ~/.julia/juliaup/julia-1.8.5+0.x64.linux.gnu/share/julia/stdlib/v1.8/Pkg/src/Operations.jl:351
+  [5] up(ctx::Pkg.Types.Context, pkgs::Vector{Pkg.Types.PackageSpec}, level::Pkg.Types.UpgradeLevel; skip_writing_project::Bool)
+    @ Pkg.Operations ~/.julia/juliaup/julia-1.8.5+0.x64.linux.gnu/share/julia/stdlib/v1.8/Pkg/src/Operations.jl:1364
+  [6] up(ctx::Pkg.Types.Context, pkgs::Vector{Pkg.Types.PackageSpec}; level::Pkg.Types.UpgradeLevel, mode::Pkg.Types.PackageMode, update_registry::Bool, skip_writing_project::Bool, kwargs::Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+    @ Pkg.API ~/.julia/juliaup/julia-1.8.5+0.x64.linux.gnu/share/julia/stdlib/v1.8/Pkg/src/API.jl:341
+  [7] #up#55
+    @ ~/.julia/juliaup/julia-1.8.5+0.x64.linux.gnu/share/julia/stdlib/v1.8/Pkg/src/API.jl:161 [inlined]
+  [8] instantiate(ctx::Pkg.Types.Context; manifest::Nothing, update_registry::Bool, verbose::Bool, platform::Base.BinaryPlatforms.Platform, allow_build::Bool, allow_autoprecomp::Bool, kwargs::Base.Pairs{Symbol, Union{}, Tuple{}, NamedTuple{(), Tuple{}}})
+    @ Pkg.API ~/.julia/juliaup/julia-1.8.5+0.x64.linux.gnu/share/julia/stdlib/v1.8/Pkg/src/API.jl:1526
+  [9] instantiate
+    @ ~/.julia/juliaup/julia-1.8.5+0.x64.linux.gnu/share/julia/stdlib/v1.8/Pkg/src/API.jl:1502 [inlined]
+ [10] #instantiate#284
+    @ ~/.julia/juliaup/julia-1.8.5+0.x64.linux.gnu/share/julia/stdlib/v1.8/Pkg/src/API.jl:1501 [inlined]
+ [11] instantiate()
+    @ Pkg.API ~/.julia/juliaup/julia-1.8.5+0.x64.linux.gnu/share/julia/stdlib/v1.8/Pkg/src/API.jl:1501
+ [12] top-level scope
+    @ none:1
+Command exited with non-zero status 1
+	Command being timed: "nice -n -10 julia +1.8.5 --project=M/Mendeleev/Get-Properties-Of-A-Chemical-Element -e using Pkg; Pkg.instantiate()"
+	User time (seconds): 3.88
+	System time (seconds): 2.13
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:06.05
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 358260
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 63973
+	Voluntary context switches: 78
+	Involuntary context switches: 68033
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 32
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

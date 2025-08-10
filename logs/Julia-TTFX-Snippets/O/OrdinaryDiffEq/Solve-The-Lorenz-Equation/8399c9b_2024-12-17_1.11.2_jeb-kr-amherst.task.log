@@ -1,0 +1,128 @@
+WARNING: Method definition __solve(Union{SciMLBase.NonlinearLeastSquaresProblem{var"#s17", iip, var"#s16", F, K} where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip, SciMLBase.NonlinearProblem{var"#s17", iip, var"#s16", F, K, PT} where PT where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip}, Nothing, Any...) in module NonlinearSolveBaseForwardDiffExt at /workdir/depot/packages/NonlinearSolveBase/Kek5u/ext/NonlinearSolveBaseForwardDiffExt.jl:124 overwritten in module NonlinearSolve at /workdir/depot/packages/NonlinearSolve/GHHXX/src/forward_diff.jl:14.
+ERROR: Method overwriting is not permitted during Module precompilation. Use `__precompile__(false)` to opt-out of precompilation.
+WARNING: Method definition __solve(Union{SciMLBase.NonlinearLeastSquaresProblem{var"#s17", iip, var"#s16", F, K} where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip, SciMLBase.NonlinearProblem{var"#s17", iip, var"#s16", F, K, PT} where PT where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip}, Nothing, Any...) in module NonlinearSolveBaseForwardDiffExt at /workdir/depot/packages/NonlinearSolveBase/Kek5u/ext/NonlinearSolveBaseForwardDiffExt.jl:124 overwritten in module NonlinearSolve at /workdir/depot/packages/NonlinearSolve/GHHXX/src/forward_diff.jl:14.
+ERROR: Method overwriting is not permitted during Module precompilation. Use `__precompile__(false)` to opt-out of precompilation.
+WARNING: Method definition __solve(Union{SciMLBase.NonlinearLeastSquaresProblem{var"#s17", iip, var"#s16", F, K} where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip, SciMLBase.NonlinearProblem{var"#s17", iip, var"#s16", F, K, PT} where PT where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip}, Nothing, Any...) in module NonlinearSolveBaseForwardDiffExt at /workdir/depot/packages/NonlinearSolveBase/Kek5u/ext/NonlinearSolveBaseForwardDiffExt.jl:124 overwritten in module NonlinearSolve at /workdir/depot/packages/NonlinearSolve/GHHXX/src/forward_diff.jl:14.
+ERROR: Method overwriting is not permitted during Module precompilation. Use `__precompile__(false)` to opt-out of precompilation.
+WARNING: using NonlinearSolveBase.pickchunksize in module NonlinearSolve conflicts with an existing identifier.
+┌ Warning: Module OrdinaryDiffEqNonlinearSolve with build ID ffffffff-ffff-ffff-0002-e240c13e75e2 is missing from the cache.
+│ This may mean OrdinaryDiffEqNonlinearSolve [127b3ac7-2247-4354-8eb6-78cf4e7c58e8] does not support precompilation but is imported by a module that does.
+└ @ Base loading.jl:2541
+┌ Warning: Module OrdinaryDiffEqNonlinearSolve with build ID ffffffff-ffff-ffff-0002-e240c13e75e2 is missing from the cache.
+│ This may mean OrdinaryDiffEqNonlinearSolve [127b3ac7-2247-4354-8eb6-78cf4e7c58e8] does not support precompilation but is imported by a module that does.
+└ @ Base loading.jl:2541
+┌ Warning: Module OrdinaryDiffEqSDIRK with build ID ffffffff-ffff-ffff-0002-e24b579de091 is missing from the cache.
+│ This may mean OrdinaryDiffEqSDIRK [2d112036-d095-4a1e-ab9a-08536f3ecdbf] does not support precompilation but is imported by a module that does.
+└ @ Base loading.jl:2541
+┌ Warning: Module OrdinaryDiffEqBDF with build ID ffffffff-ffff-ffff-0002-e250d808755a is missing from the cache.
+│ This may mean OrdinaryDiffEqBDF [6ad6398a-0878-4a85-9266-38940aa047c8] does not support precompilation but is imported by a module that does.
+└ @ Base loading.jl:2541
+┌ Warning: Module OrdinaryDiffEqNonlinearSolve with build ID ffffffff-ffff-ffff-0002-e240c13e75e2 is missing from the cache.
+│ This may mean OrdinaryDiffEqNonlinearSolve [127b3ac7-2247-4354-8eb6-78cf4e7c58e8] does not support precompilation but is imported by a module that does.
+└ @ Base loading.jl:2541
+┌ Warning: Module OrdinaryDiffEqNonlinearSolve with build ID ffffffff-ffff-ffff-0002-e240c13e75e2 is missing from the cache.
+│ This may mean OrdinaryDiffEqNonlinearSolve [127b3ac7-2247-4354-8eb6-78cf4e7c58e8] does not support precompilation but is imported by a module that does.
+└ @ Base loading.jl:2541
+┌ Warning: Module OrdinaryDiffEqNonlinearSolve with build ID ffffffff-ffff-ffff-0002-e240c13e75e2 is missing from the cache.
+│ This may mean OrdinaryDiffEqNonlinearSolve [127b3ac7-2247-4354-8eb6-78cf4e7c58e8] does not support precompilation but is imported by a module that does.
+└ @ Base loading.jl:2541
+Precompiling OrdinaryDiffEq...
+   3740.1 ms  ? NonlinearSolve
+   4347.9 ms  ? OrdinaryDiffEqNonlinearSolve
+   6836.9 ms  ? OrdinaryDiffEqStabilizedIRK
+  11228.1 ms  ? OrdinaryDiffEqPDIRK
+  15586.0 ms  ? OrdinaryDiffEqFIRK
+  19962.5 ms  ? OrdinaryDiffEqIMEXMultistep
+  24345.2 ms  ? OrdinaryDiffEqSDIRK
+   7076.7 ms  ? OrdinaryDiffEqBDF
+   9391.2 ms  ? OrdinaryDiffEqDefault
+Info Given OrdinaryDiffEq was explicitly requested, output will be shown live [0K
+[0KWARNING: Method definition __solve(Union{SciMLBase.NonlinearLeastSquaresProblem{var"#s17", iip, var"#s16", F, K} where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip, SciMLBase.NonlinearProblem{var"#s17", iip, var"#s16", F, K, PT} where PT where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip}, Nothing, Any...) in module NonlinearSolveBaseForwardDiffExt at /workdir/depot/packages/NonlinearSolveBase/Kek5u/ext/NonlinearSolveBaseForwardDiffExt.jl:124 overwritten in module NonlinearSolve at /workdir/depot/packages/NonlinearSolve/GHHXX/src/forward_diff.jl:14.
+[0KERROR: Method overwriting is not permitted during Module precompilation. Use `__precompile__(false)` to opt-out of precompilation.
+   6510.9 ms  ? OrdinaryDiffEq
+Precompiling OrdinaryDiffEqNonlinearSolve...
+   3670.4 ms  ? NonlinearSolve
+Info Given OrdinaryDiffEqNonlinearSolve was explicitly requested, output will be shown live [0K
+[0KWARNING: Method definition __solve(Union{SciMLBase.NonlinearLeastSquaresProblem{var"#s17", iip, var"#s16", F, K} where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip, SciMLBase.NonlinearProblem{var"#s17", iip, var"#s16", F, K, PT} where PT where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip}, Nothing, Any...) in module NonlinearSolveBaseForwardDiffExt at /workdir/depot/packages/NonlinearSolveBase/Kek5u/ext/NonlinearSolveBaseForwardDiffExt.jl:124 overwritten in module NonlinearSolve at /workdir/depot/packages/NonlinearSolve/GHHXX/src/forward_diff.jl:14.
+[0KERROR: Method overwriting is not permitted during Module precompilation. Use `__precompile__(false)` to opt-out of precompilation.
+   4376.9 ms  ? OrdinaryDiffEqNonlinearSolve
+Precompiling NonlinearSolve...
+Info Given NonlinearSolve was explicitly requested, output will be shown live [0K
+[0KWARNING: Method definition __solve(Union{SciMLBase.NonlinearLeastSquaresProblem{var"#s17", iip, var"#s16", F, K} where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip, SciMLBase.NonlinearProblem{var"#s17", iip, var"#s16", F, K, PT} where PT where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip}, Nothing, Any...) in module NonlinearSolveBaseForwardDiffExt at /workdir/depot/packages/NonlinearSolveBase/Kek5u/ext/NonlinearSolveBaseForwardDiffExt.jl:124 overwritten in module NonlinearSolve at /workdir/depot/packages/NonlinearSolve/GHHXX/src/forward_diff.jl:14.
+[0KERROR: Method overwriting is not permitted during Module precompilation. Use `__precompile__(false)` to opt-out of precompilation.
+   3648.1 ms  ? NonlinearSolve
+Precompiling OrdinaryDiffEqStabilizedIRK...
+   3643.9 ms  ? NonlinearSolve
+   4337.8 ms  ? OrdinaryDiffEqNonlinearSolve
+Info Given OrdinaryDiffEqStabilizedIRK was explicitly requested, output will be shown live [0K
+[0KWARNING: Method definition __solve(Union{SciMLBase.NonlinearLeastSquaresProblem{var"#s17", iip, var"#s16", F, K} where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip, SciMLBase.NonlinearProblem{var"#s17", iip, var"#s16", F, K, PT} where PT where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip}, Nothing, Any...) in module NonlinearSolveBaseForwardDiffExt at /workdir/depot/packages/NonlinearSolveBase/Kek5u/ext/NonlinearSolveBaseForwardDiffExt.jl:124 overwritten in module NonlinearSolve at /workdir/depot/packages/NonlinearSolve/GHHXX/src/forward_diff.jl:14.
+[0KERROR: Method overwriting is not permitted during Module precompilation. Use `__precompile__(false)` to opt-out of precompilation.
+   6414.9 ms  ? OrdinaryDiffEqStabilizedIRK
+Precompiling OrdinaryDiffEqSDIRK...
+   3647.4 ms  ? NonlinearSolve
+   4352.7 ms  ? OrdinaryDiffEqNonlinearSolve
+Info Given OrdinaryDiffEqSDIRK was explicitly requested, output will be shown live [0K
+[0KWARNING: Method definition __solve(Union{SciMLBase.NonlinearLeastSquaresProblem{var"#s17", iip, var"#s16", F, K} where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip, SciMLBase.NonlinearProblem{var"#s17", iip, var"#s16", F, K, PT} where PT where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip}, Nothing, Any...) in module NonlinearSolveBaseForwardDiffExt at /workdir/depot/packages/NonlinearSolveBase/Kek5u/ext/NonlinearSolveBaseForwardDiffExt.jl:124 overwritten in module NonlinearSolve at /workdir/depot/packages/NonlinearSolve/GHHXX/src/forward_diff.jl:14.
+[0KERROR: Method overwriting is not permitted during Module precompilation. Use `__precompile__(false)` to opt-out of precompilation.
+   6436.3 ms  ? OrdinaryDiffEqSDIRK
+Precompiling OrdinaryDiffEqBDF...
+   3731.4 ms  ? NonlinearSolve
+   4336.1 ms  ? OrdinaryDiffEqNonlinearSolve
+   6417.4 ms  ? OrdinaryDiffEqSDIRK
+Info Given OrdinaryDiffEqBDF was explicitly requested, output will be shown live [0K
+[0KWARNING: Method definition __solve(Union{SciMLBase.NonlinearLeastSquaresProblem{var"#s17", iip, var"#s16", F, K} where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip, SciMLBase.NonlinearProblem{var"#s17", iip, var"#s16", F, K, PT} where PT where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip}, Nothing, Any...) in module NonlinearSolveBaseForwardDiffExt at /workdir/depot/packages/NonlinearSolveBase/Kek5u/ext/NonlinearSolveBaseForwardDiffExt.jl:124 overwritten in module NonlinearSolve at /workdir/depot/packages/NonlinearSolve/GHHXX/src/forward_diff.jl:14.
+[0KERROR: Method overwriting is not permitted during Module precompilation. Use `__precompile__(false)` to opt-out of precompilation.
+   7064.4 ms  ? OrdinaryDiffEqBDF
+Precompiling OrdinaryDiffEqDefault...
+   3634.2 ms  ? NonlinearSolve
+   4403.2 ms  ? OrdinaryDiffEqNonlinearSolve
+   6406.5 ms  ? OrdinaryDiffEqSDIRK
+   7071.6 ms  ? OrdinaryDiffEqBDF
+Info Given OrdinaryDiffEqDefault was explicitly requested, output will be shown live [0K
+[0KWARNING: Method definition __solve(Union{SciMLBase.NonlinearLeastSquaresProblem{var"#s17", iip, var"#s16", F, K} where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip, SciMLBase.NonlinearProblem{var"#s17", iip, var"#s16", F, K, PT} where PT where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip}, Nothing, Any...) in module NonlinearSolveBaseForwardDiffExt at /workdir/depot/packages/NonlinearSolveBase/Kek5u/ext/NonlinearSolveBaseForwardDiffExt.jl:124 overwritten in module NonlinearSolve at /workdir/depot/packages/NonlinearSolve/GHHXX/src/forward_diff.jl:14.
+[0KERROR: Method overwriting is not permitted during Module precompilation. Use `__precompile__(false)` to opt-out of precompilation.
+   9326.3 ms  ? OrdinaryDiffEqDefault
+Precompiling OrdinaryDiffEqFIRK...
+   3664.3 ms  ? NonlinearSolve
+   4340.7 ms  ? OrdinaryDiffEqNonlinearSolve
+Info Given OrdinaryDiffEqFIRK was explicitly requested, output will be shown live [0K
+[0KWARNING: Method definition __solve(Union{SciMLBase.NonlinearLeastSquaresProblem{var"#s17", iip, var"#s16", F, K} where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip, SciMLBase.NonlinearProblem{var"#s17", iip, var"#s16", F, K, PT} where PT where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip}, Nothing, Any...) in module NonlinearSolveBaseForwardDiffExt at /workdir/depot/packages/NonlinearSolveBase/Kek5u/ext/NonlinearSolveBaseForwardDiffExt.jl:124 overwritten in module NonlinearSolve at /workdir/depot/packages/NonlinearSolve/GHHXX/src/forward_diff.jl:14.
+[0KERROR: Method overwriting is not permitted during Module precompilation. Use `__precompile__(false)` to opt-out of precompilation.
+   6390.6 ms  ? OrdinaryDiffEqFIRK
+Precompiling OrdinaryDiffEqPDIRK...
+   3659.6 ms  ? NonlinearSolve
+   4335.0 ms  ? OrdinaryDiffEqNonlinearSolve
+Info Given OrdinaryDiffEqPDIRK was explicitly requested, output will be shown live [0K
+[0KWARNING: Method definition __solve(Union{SciMLBase.NonlinearLeastSquaresProblem{var"#s17", iip, var"#s16", F, K} where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip, SciMLBase.NonlinearProblem{var"#s17", iip, var"#s16", F, K, PT} where PT where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip}, Nothing, Any...) in module NonlinearSolveBaseForwardDiffExt at /workdir/depot/packages/NonlinearSolveBase/Kek5u/ext/NonlinearSolveBaseForwardDiffExt.jl:124 overwritten in module NonlinearSolve at /workdir/depot/packages/NonlinearSolve/GHHXX/src/forward_diff.jl:14.
+[0KERROR: Method overwriting is not permitted during Module precompilation. Use `__precompile__(false)` to opt-out of precompilation.
+   6413.9 ms  ? OrdinaryDiffEqPDIRK
+Precompiling OrdinaryDiffEqIMEXMultistep...
+   3642.5 ms  ? NonlinearSolve
+   4341.0 ms  ? OrdinaryDiffEqNonlinearSolve
+Info Given OrdinaryDiffEqIMEXMultistep was explicitly requested, output will be shown live [0K
+[0KWARNING: Method definition __solve(Union{SciMLBase.NonlinearLeastSquaresProblem{var"#s17", iip, var"#s16", F, K} where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip, SciMLBase.NonlinearProblem{var"#s17", iip, var"#s16", F, K, PT} where PT where K where F where var"#s16"<:(Union{var"#s14", var"#s13"} where var"#s13"<:(AbstractArray{var"#s12", N} where N where var"#s12"<:ForwardDiff.Dual{T, V, P}) where var"#s14"<:ForwardDiff.Dual{T, V, P}) where var"#s17"<:(Union{Number, var"#s15"} where var"#s15"<:(AbstractArray{T, N} where N where T)) where P where V where T where iip}, Nothing, Any...) in module NonlinearSolveBaseForwardDiffExt at /workdir/depot/packages/NonlinearSolveBase/Kek5u/ext/NonlinearSolveBaseForwardDiffExt.jl:124 overwritten in module NonlinearSolve at /workdir/depot/packages/NonlinearSolve/GHHXX/src/forward_diff.jl:14.
+[0KERROR: Method overwriting is not permitted during Module precompilation. Use `__precompile__(false)` to opt-out of precompilation.
+   6390.0 ms  ? OrdinaryDiffEqIMEXMultistep
+	Command being timed: "julia +1.11.2 --project=O/OrdinaryDiffEq/Solve-The-Lorenz-Equation O/OrdinaryDiffEq/Solve-The-Lorenz-Equation/task.jl"
+	User time (seconds): 217.26
+	System time (seconds): 26.74
+	Percent of CPU this job got: 104%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:53.63
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 776048
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 33
+	Minor (reclaiming a frame) page faults: 8223689
+	Voluntary context switches: 1570
+	Involuntary context switches: 2659
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 992
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
