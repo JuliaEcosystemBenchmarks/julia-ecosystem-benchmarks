@@ -1,0 +1,30 @@
+Precompiling project...
+    260.4 ms  ✓ Unicode
+    346.1 ms  ✓ CompilerSupportLibraries_jll
+  12179.9 ms  ✓ Unitful
+   1256.4 ms  ✓ UnitfulAtomic
+   4598.6 ms  ✓ Mendeleev
+  5 dependencies successfully precompiled in 18 seconds. 2 already precompiled.
+	Command being timed: "julia +1.11.3 --project=M/Mendeleev/Get-Properties-Of-A-Chemical-Element -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 113.35
+	System time (seconds): 4.84
+	Percent of CPU this job got: 168%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:10.33
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2005036
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 128
+	Minor (reclaiming a frame) page faults: 1711483
+	Voluntary context switches: 36101
+	Involuntary context switches: 2096
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 380688
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

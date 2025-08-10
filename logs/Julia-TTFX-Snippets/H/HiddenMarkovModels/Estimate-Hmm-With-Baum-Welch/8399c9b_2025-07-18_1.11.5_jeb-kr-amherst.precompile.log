@@ -1,0 +1,83 @@
+Precompiling project...
+   1803.1 ms  ✓ Reexport
+   1895.8 ms  ✓ Unicode
+   2087.6 ms  ✓ OpenLibm_jll
+   2187.8 ms  ✓ DataAPI
+   2167.7 ms  ✓ StatsAPI
+   2201.9 ms  ✓ InverseFunctions
+   2672.5 ms  ✓ ArgCheck
+   2779.8 ms  ✓ Statistics
+   2785.6 ms  ✓ Serialization
+   2790.2 ms  ✓ OrderedCollections
+   2783.9 ms  ✓ DocStringExtensions
+   2755.9 ms  ✓ SuiteSparse_jll
+   2759.3 ms  ✓ CompilerSupportLibraries_jll
+   1096.2 ms  ✓ PtrArrays
+   3383.2 ms  ✓ FillArrays
+   1205.2 ms  ✓ Missings
+   1524.5 ms  ✓ Compat
+   1383.7 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+   3700.9 ms  ✓ IrrationalConstants
+   1638.2 ms  ✓ Preferences
+    985.5 ms  ✓ AliasTables
+    641.7 ms  ✓ FillArrays → FillArraysStatisticsExt
+    614.2 ms  ✓ Compat → CompatLinearAlgebraExt
+   4103.5 ms  ✓ InteractiveUtils
+    578.4 ms  ✓ JLLWrappers
+    720.9 ms  ✓ LogExpFunctions
+    503.4 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+    687.9 ms  ✓ OpenSpecFun_jll
+    689.2 ms  ✓ Rmath_jll
+   1408.9 ms  ✓ ChainRulesCore
+    887.9 ms  ✓ Rmath
+   1902.4 ms  ✓ DataStructures
+    581.5 ms  ✓ SortingAlgorithms
+   1354.3 ms  ✓ LogExpFunctions → LogExpFunctionsChainRulesCoreExt
+   1157.2 ms  ✓ QuadGK
+   4623.9 ms  ✓ SparseArrays
+   3852.3 ms  ✓ Test
+   3099.3 ms  ✓ SpecialFunctions
+    864.8 ms  ✓ SuiteSparse
+    892.0 ms  ✓ Statistics → SparseArraysExt
+    915.0 ms  ✓ ChainRulesCore → ChainRulesCoreSparseArraysExt
+    984.7 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    611.3 ms  ✓ InverseFunctions → InverseFunctionsTestExt
+    713.4 ms  ✓ PDMats
+   1001.1 ms  ✓ HypergeometricFunctions
+    507.3 ms  ✓ DensityInterface
+    422.3 ms  ✓ FillArrays → FillArraysPDMatsExt
+   1476.6 ms  ✓ SpecialFunctions → SpecialFunctionsChainRulesCoreExt
+   1659.5 ms  ✓ StatsBase
+   1152.0 ms  ✓ StatsFuns
+    380.9 ms  ✓ StatsFuns → StatsFunsInverseFunctionsExt
+    983.4 ms  ✓ StatsFuns → StatsFunsChainRulesCoreExt
+   1035.2 ms  ✓ HiddenMarkovModels
+   3410.3 ms  ✓ Distributions
+    683.2 ms  ✓ Distributions → DistributionsDensityInterfaceExt
+    718.2 ms  ✓ HiddenMarkovModels → HiddenMarkovModelsDistributionsExt
+    748.3 ms  ✓ Distributions → DistributionsChainRulesCoreExt
+    809.2 ms  ✓ Distributions → DistributionsTestExt
+  58 dependencies successfully precompiled in 14 seconds. 7 already precompiled.
+	Command being timed: "julia +1.11.5 --project=H/HiddenMarkovModels/Estimate-Hmm-With-Baum-Welch -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 134.88
+	System time (seconds): 12.11
+	Percent of CPU this job got: 220%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:06.63
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2048656
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 300
+	Minor (reclaiming a frame) page faults: 3458626
+	Voluntary context switches: 104048
+	Involuntary context switches: 9453
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 509096
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

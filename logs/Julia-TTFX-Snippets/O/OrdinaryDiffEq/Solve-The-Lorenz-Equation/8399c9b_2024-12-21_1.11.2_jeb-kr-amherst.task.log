@@ -1,0 +1,206 @@
+Precompiling OrdinaryDiffEq...
+           ✗ OrdinaryDiffEqBDF
+           ✗ OrdinaryDiffEqRosenbrock
+           ✗ OrdinaryDiffEqDefault
+Info Given OrdinaryDiffEq was explicitly requested, output will be shown live [0K
+[0KERROR: LoadError: type FBDF has no field autodiff
+[0KStacktrace:
+[0K  [1] getproperty
+[0K    @ ./Base.jl:49 [inlined]
+[0K  [2] _alg_autodiff(alg::OrdinaryDiffEqBDF.FBDF{5, 0, true, Nothing, OrdinaryDiffEqNonlinearSolve.NLNewton{Rational{Int64}, Rational{Int64}, Rational{Int64}, Rational{Int64}}, typeof(OrdinaryDiffEqCore.DEFAULT_PRECS), Val{:forward}, true, nothing, Nothing, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!)})
+[0K    @ OrdinaryDiffEqDifferentiation /workdir/depot/packages/OrdinaryDiffEqDifferentiation/cZMir/src/alg_utils.jl:5
+[0K  [3] alg_autodiff(alg::OrdinaryDiffEqBDF.FBDF{5, 0, true, Nothing, OrdinaryDiffEqNonlinearSolve.NLNewton{Rational{Int64}, Rational{Int64}, Rational{Int64}, Rational{Int64}}, typeof(OrdinaryDiffEqCore.DEFAULT_PRECS), Val{:forward}, true, nothing, Nothing, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!)})
+[0K    @ OrdinaryDiffEqDifferentiation /workdir/depot/packages/OrdinaryDiffEqDifferentiation/cZMir/src/alg_utils.jl:18
+[0K  [4] prepare_alg(alg::OrdinaryDiffEqBDF.FBDF{5, 0, true, Nothing, OrdinaryDiffEqNonlinearSolve.NLNewton{Rational{Int64}, Rational{Int64}, Rational{Int64}, Rational{Int64}}, typeof(OrdinaryDiffEqCore.DEFAULT_PRECS), Val{:forward}, true, nothing, Nothing, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!)}, u0::Vector{Float64}, p::SciMLBase.NullParameters, prob::SciMLBase.ODEProblem{Vector{Float64}, Tuple{Float64, Float64}, true, SciMLBase.NullParameters, SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, FunctionWrappersWrappers.FunctionWrappersWrapper{Tuple{FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{Float64}, Vector{Float64}, SciMLBase.NullParameters, Float64}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, SciMLBase.NullParameters, Float64}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{Float64}, SciMLBase.NullParameters, ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, SciMLBase.NullParameters, ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}}}, false}, LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing, Nothing, Nothing, Nothing}, @Kwargs{}, SciMLBase.StandardODEProblem})
+[0K    @ OrdinaryDiffEqDifferentiation /workdir/depot/packages/OrdinaryDiffEqDifferentiation/cZMir/src/alg_utils.jl:54
+[0K  [5] solve_up(prob::SciMLBase.ODEProblem{Vector{Float64}, Tuple{Float64, Float64}, true, SciMLBase.NullParameters, SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, typeof(OrdinaryDiffEqCore.lorenz), LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing, Nothing, Nothing, Nothing}, @Kwargs{}, SciMLBase.StandardODEProblem}, sensealg::Nothing, u0::Vector{Float64}, p::SciMLBase.NullParameters, args::OrdinaryDiffEqBDF.FBDF{5, 0, true, Nothing, OrdinaryDiffEqNonlinearSolve.NLNewton{Rational{Int64}, Rational{Int64}, Rational{Int64}, Rational{Int64}}, typeof(OrdinaryDiffEqCore.DEFAULT_PRECS), Val{:forward}, true, nothing, Nothing, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!)}; kwargs::@Kwargs{})
+[0K    @ DiffEqBase /workdir/depot/packages/DiffEqBase/R2Vjs/src/solve.jl:1117
+[0K  [6] solve_up(prob::SciMLBase.ODEProblem{Vector{Float64}, Tuple{Float64, Float64}, true, SciMLBase.NullParameters, SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, typeof(OrdinaryDiffEqCore.lorenz), LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing, Nothing, Nothing, Nothing}, @Kwargs{}, SciMLBase.StandardODEProblem}, sensealg::Nothing, u0::Vector{Float64}, p::SciMLBase.NullParameters, args::OrdinaryDiffEqBDF.FBDF{5, 0, true, Nothing, OrdinaryDiffEqNonlinearSolve.NLNewton{Rational{Int64}, Rational{Int64}, Rational{Int64}, Rational{Int64}}, typeof(OrdinaryDiffEqCore.DEFAULT_PRECS), Val{:forward}, true, nothing, Nothing, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!)})
+[0K    @ DiffEqBase /workdir/depot/packages/DiffEqBase/R2Vjs/src/solve.jl:1101
+[0K  [7] solve(prob::SciMLBase.ODEProblem{Vector{Float64}, Tuple{Float64, Float64}, true, SciMLBase.NullParameters, SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, typeof(OrdinaryDiffEqCore.lorenz), LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing, Nothing, Nothing, Nothing}, @Kwargs{}, SciMLBase.StandardODEProblem}, args::OrdinaryDiffEqBDF.FBDF{5, 0, true, Nothing, OrdinaryDiffEqNonlinearSolve.NLNewton{Rational{Int64}, Rational{Int64}, Rational{Int64}, Rational{Int64}}, typeof(OrdinaryDiffEqCore.DEFAULT_PRECS), Val{:forward}, true, nothing, Nothing, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!)}; sensealg::Nothing, u0::Nothing, p::Nothing, wrap::Val{true}, kwargs::@Kwargs{})
+[0K    @ DiffEqBase /workdir/depot/packages/DiffEqBase/R2Vjs/src/solve.jl:1038
+[0K  [8] solve(prob::SciMLBase.ODEProblem{Vector{Float64}, Tuple{Float64, Float64}, true, SciMLBase.NullParameters, SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, typeof(OrdinaryDiffEqCore.lorenz), LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing, Nothing, Nothing, Nothing}, @Kwargs{}, SciMLBase.StandardODEProblem}, args::OrdinaryDiffEqBDF.FBDF{5, 0, true, Nothing, OrdinaryDiffEqNonlinearSolve.NLNewton{Rational{Int64}, Rational{Int64}, Rational{Int64}, Rational{Int64}}, typeof(OrdinaryDiffEqCore.DEFAULT_PRECS), Val{:forward}, true, nothing, Nothing, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!)})
+[0K    @ DiffEqBase /workdir/depot/packages/DiffEqBase/R2Vjs/src/solve.jl:1028
+[0K  [9] macro expansion
+[0K    @ /workdir/depot/packages/OrdinaryDiffEqBDF/J0IGS/src/OrdinaryDiffEqBDF.jl:88 [inlined]
+[0K [10] macro expansion
+[0K    @ /workdir/depot/packages/PrecompileTools/L8A3n/src/workloads.jl:78 [inlined]
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/OrdinaryDiffEqBDF/J0IGS/src/OrdinaryDiffEqBDF.jl:50
+[0K [12] include
+[0K    @ ./Base.jl:557 [inlined]
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+[0K    @ Base ./loading.jl:2881
+[0K [14] top-level scope
+[0K    @ stdin:6
+[0Kin expression starting at /workdir/depot/packages/OrdinaryDiffEqBDF/J0IGS/src/OrdinaryDiffEqBDF.jl:1
+[0Kin expression starting at stdin:6
+[0KERROR: LoadError: Failed to precompile OrdinaryDiffEqBDF [6ad6398a-0878-4a85-9266-38940aa047c8] to "/workdir/depot/compiled/v1.11/OrdinaryDiffEqBDF/jl_oBKKNW".
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:35
+[0K  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
+[0K    @ Base ./loading.jl:3174
+[0K  [3] (::Base.var"#1110#1111"{Base.PkgId})()
+[0K    @ Base ./loading.jl:2579
+[0K  [4] mkpidlock(f::Base.var"#1110#1111"{Base.PkgId}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+[0K    @ FileWatching.Pidfile ~/.julia/juliaup/julia-1.11.2+0.x64.linux.gnu/share/julia/stdlib/v1.11/FileWatching/src/pidfile.jl:95
+[0K  [5] #mkpidlock#6
+[0K    @ ~/.julia/juliaup/julia-1.11.2+0.x64.linux.gnu/share/julia/stdlib/v1.11/FileWatching/src/pidfile.jl:90 [inlined]
+[0K  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+[0K    @ FileWatching.Pidfile ~/.julia/juliaup/julia-1.11.2+0.x64.linux.gnu/share/julia/stdlib/v1.11/FileWatching/src/pidfile.jl:116
+[0K  [7] #invokelatest#2
+[0K    @ ./essentials.jl:1057 [inlined]
+[0K  [8] invokelatest
+[0K    @ ./essentials.jl:1052 [inlined]
+[0K  [9] maybe_cachefile_lock(f::Base.var"#1110#1111"{Base.PkgId}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+[0K    @ Base ./loading.jl:3698
+[0K [10] maybe_cachefile_lock
+[0K    @ ./loading.jl:3695 [inlined]
+[0K [11] _require(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2565
+[0K [12] __require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2388
+[0K [13] #invoke_in_world#3
+[0K    @ ./essentials.jl:1089 [inlined]
+[0K [14] invoke_in_world
+[0K    @ ./essentials.jl:1086 [inlined]
+[0K [15] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2375
+[0K [16] macro expansion
+[0K    @ ./loading.jl:2314 [inlined]
+[0K [17] macro expansion
+[0K    @ ./lock.jl:273 [inlined]
+[0K [18] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2271
+[0K [19] #invoke_in_world#3
+[0K    @ ./essentials.jl:1089 [inlined]
+[0K [20] invoke_in_world
+[0K    @ ./essentials.jl:1086 [inlined]
+[0K [21] require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2260
+[0K [22] include
+[0K    @ ./Base.jl:557 [inlined]
+[0K [23] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:2881
+[0K [24] top-level scope
+[0K    @ stdin:6
+[0Kin expression starting at /workdir/depot/packages/OrdinaryDiffEq/XiXtd/src/OrdinaryDiffEq.jl:1
+[0Kin expression starting at stdin:6
+           ✗ OrdinaryDiffEq
+  0 dependencies successfully precompiled in 23 seconds. 254 already precompiled.
+
+ERROR: LoadError: The following 1 direct dependency failed to precompile:
+
+OrdinaryDiffEq 
+
+Failed to precompile OrdinaryDiffEq [1dea7af3-3e70-54e6-95c3-0bf5283fa5ed] to "/workdir/depot/compiled/v1.11/OrdinaryDiffEq/jl_4f4fNp".
+ERROR: LoadError: type FBDF has no field autodiff
+Stacktrace:
+  [1] getproperty
+    @ ./Base.jl:49 [inlined]
+  [2] _alg_autodiff(alg::OrdinaryDiffEqBDF.FBDF{5, 0, true, Nothing, OrdinaryDiffEqNonlinearSolve.NLNewton{Rational{Int64}, Rational{Int64}, Rational{Int64}, Rational{Int64}}, typeof(OrdinaryDiffEqCore.DEFAULT_PRECS), Val{:forward}, true, nothing, Nothing, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!)})
+    @ OrdinaryDiffEqDifferentiation /workdir/depot/packages/OrdinaryDiffEqDifferentiation/cZMir/src/alg_utils.jl:5
+  [3] alg_autodiff(alg::OrdinaryDiffEqBDF.FBDF{5, 0, true, Nothing, OrdinaryDiffEqNonlinearSolve.NLNewton{Rational{Int64}, Rational{Int64}, Rational{Int64}, Rational{Int64}}, typeof(OrdinaryDiffEqCore.DEFAULT_PRECS), Val{:forward}, true, nothing, Nothing, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!)})
+    @ OrdinaryDiffEqDifferentiation /workdir/depot/packages/OrdinaryDiffEqDifferentiation/cZMir/src/alg_utils.jl:18
+  [4] prepare_alg(alg::OrdinaryDiffEqBDF.FBDF{5, 0, true, Nothing, OrdinaryDiffEqNonlinearSolve.NLNewton{Rational{Int64}, Rational{Int64}, Rational{Int64}, Rational{Int64}}, typeof(OrdinaryDiffEqCore.DEFAULT_PRECS), Val{:forward}, true, nothing, Nothing, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!)}, u0::Vector{Float64}, p::SciMLBase.NullParameters, prob::SciMLBase.ODEProblem{Vector{Float64}, Tuple{Float64, Float64}, true, SciMLBase.NullParameters, SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, FunctionWrappersWrappers.FunctionWrappersWrapper{Tuple{FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{Float64}, Vector{Float64}, SciMLBase.NullParameters, Float64}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, SciMLBase.NullParameters, Float64}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{Float64}, SciMLBase.NullParameters, ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, SciMLBase.NullParameters, ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}}}, false}, LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing, Nothing, Nothing, Nothing}, @Kwargs{}, SciMLBase.StandardODEProblem})
+    @ OrdinaryDiffEqDifferentiation /workdir/depot/packages/OrdinaryDiffEqDifferentiation/cZMir/src/alg_utils.jl:54
+  [5] solve_up(prob::SciMLBase.ODEProblem{Vector{Float64}, Tuple{Float64, Float64}, true, SciMLBase.NullParameters, SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, typeof(OrdinaryDiffEqCore.lorenz), LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing, Nothing, Nothing, Nothing}, @Kwargs{}, SciMLBase.StandardODEProblem}, sensealg::Nothing, u0::Vector{Float64}, p::SciMLBase.NullParameters, args::OrdinaryDiffEqBDF.FBDF{5, 0, true, Nothing, OrdinaryDiffEqNonlinearSolve.NLNewton{Rational{Int64}, Rational{Int64}, Rational{Int64}, Rational{Int64}}, typeof(OrdinaryDiffEqCore.DEFAULT_PRECS), Val{:forward}, true, nothing, Nothing, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!)}; kwargs::@Kwargs{})
+    @ DiffEqBase /workdir/depot/packages/DiffEqBase/R2Vjs/src/solve.jl:1117
+  [6] solve_up(prob::SciMLBase.ODEProblem{Vector{Float64}, Tuple{Float64, Float64}, true, SciMLBase.NullParameters, SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, typeof(OrdinaryDiffEqCore.lorenz), LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing, Nothing, Nothing, Nothing}, @Kwargs{}, SciMLBase.StandardODEProblem}, sensealg::Nothing, u0::Vector{Float64}, p::SciMLBase.NullParameters, args::OrdinaryDiffEqBDF.FBDF{5, 0, true, Nothing, OrdinaryDiffEqNonlinearSolve.NLNewton{Rational{Int64}, Rational{Int64}, Rational{Int64}, Rational{Int64}}, typeof(OrdinaryDiffEqCore.DEFAULT_PRECS), Val{:forward}, true, nothing, Nothing, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!)})
+    @ DiffEqBase /workdir/depot/packages/DiffEqBase/R2Vjs/src/solve.jl:1101
+  [7] solve(prob::SciMLBase.ODEProblem{Vector{Float64}, Tuple{Float64, Float64}, true, SciMLBase.NullParameters, SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, typeof(OrdinaryDiffEqCore.lorenz), LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing, Nothing, Nothing, Nothing}, @Kwargs{}, SciMLBase.StandardODEProblem}, args::OrdinaryDiffEqBDF.FBDF{5, 0, true, Nothing, OrdinaryDiffEqNonlinearSolve.NLNewton{Rational{Int64}, Rational{Int64}, Rational{Int64}, Rational{Int64}}, typeof(OrdinaryDiffEqCore.DEFAULT_PRECS), Val{:forward}, true, nothing, Nothing, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!)}; sensealg::Nothing, u0::Nothing, p::Nothing, wrap::Val{true}, kwargs::@Kwargs{})
+    @ DiffEqBase /workdir/depot/packages/DiffEqBase/R2Vjs/src/solve.jl:1038
+  [8] solve(prob::SciMLBase.ODEProblem{Vector{Float64}, Tuple{Float64, Float64}, true, SciMLBase.NullParameters, SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, typeof(OrdinaryDiffEqCore.lorenz), LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing, Nothing, Nothing, Nothing}, @Kwargs{}, SciMLBase.StandardODEProblem}, args::OrdinaryDiffEqBDF.FBDF{5, 0, true, Nothing, OrdinaryDiffEqNonlinearSolve.NLNewton{Rational{Int64}, Rational{Int64}, Rational{Int64}, Rational{Int64}}, typeof(OrdinaryDiffEqCore.DEFAULT_PRECS), Val{:forward}, true, nothing, Nothing, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!)})
+    @ DiffEqBase /workdir/depot/packages/DiffEqBase/R2Vjs/src/solve.jl:1028
+  [9] macro expansion
+    @ /workdir/depot/packages/OrdinaryDiffEqBDF/J0IGS/src/OrdinaryDiffEqBDF.jl:88 [inlined]
+ [10] macro expansion
+    @ /workdir/depot/packages/PrecompileTools/L8A3n/src/workloads.jl:78 [inlined]
+ [11] top-level scope
+    @ /workdir/depot/packages/OrdinaryDiffEqBDF/J0IGS/src/OrdinaryDiffEqBDF.jl:50
+ [12] include
+    @ ./Base.jl:557 [inlined]
+ [13] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+    @ Base ./loading.jl:2881
+ [14] top-level scope
+    @ stdin:6
+in expression starting at /workdir/depot/packages/OrdinaryDiffEqBDF/J0IGS/src/OrdinaryDiffEqBDF.jl:1
+in expression starting at stdin:6
+ERROR: LoadError: Failed to precompile OrdinaryDiffEqBDF [6ad6398a-0878-4a85-9266-38940aa047c8] to "/workdir/depot/compiled/v1.11/OrdinaryDiffEqBDF/jl_oBKKNW".
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:35
+  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
+    @ Base ./loading.jl:3174
+  [3] (::Base.var"#1110#1111"{Base.PkgId})()
+    @ Base ./loading.jl:2579
+  [4] mkpidlock(f::Base.var"#1110#1111"{Base.PkgId}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+    @ FileWatching.Pidfile ~/.julia/juliaup/julia-1.11.2+0.x64.linux.gnu/share/julia/stdlib/v1.11/FileWatching/src/pidfile.jl:95
+  [5] #mkpidlock#6
+    @ ~/.julia/juliaup/julia-1.11.2+0.x64.linux.gnu/share/julia/stdlib/v1.11/FileWatching/src/pidfile.jl:90 [inlined]
+  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+    @ FileWatching.Pidfile ~/.julia/juliaup/julia-1.11.2+0.x64.linux.gnu/share/julia/stdlib/v1.11/FileWatching/src/pidfile.jl:116
+  [7] #invokelatest#2
+    @ ./essentials.jl:1057 [inlined]
+  [8] invokelatest
+    @ ./essentials.jl:1052 [inlined]
+  [9] maybe_cachefile_lock(f::Base.var"#1110#1111"{Base.PkgId}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+    @ Base ./loading.jl:3698
+ [10] maybe_cachefile_lock
+    @ ./loading.jl:3695 [inlined]
+ [11] _require(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2565
+ [12] __require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2388
+ [13] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+ [14] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+ [15] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2375
+ [16] macro expansion
+    @ ./loading.jl:2314 [inlined]
+ [17] macro expansion
+    @ ./lock.jl:273 [inlined]
+ [18] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2271
+ [19] #invoke_in_world#3
+    @ ./essentials.jl:1089 [inlined]
+ [20] invoke_in_world
+    @ ./essentials.jl:1086 [inlined]
+ [21] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2260
+ [22] include
+    @ ./Base.jl:557 [inlined]
+ [23] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+    @ Base ./loading.jl:2881
+ [24] top-level scope
+    @ stdin:6
+in expression starting at /workdir/depot/packages/OrdinaryDiffEq/XiXtd/src/OrdinaryDiffEq.jl:1
+in expression starting at stdin:
+in expression starting at /tmp/tmp.pbNfrvh0EC/Julia-TTFX-Snippets/tasks/O/OrdinaryDiffEq/Solve-The-Lorenz-Equation/task.jl:10
+Command exited with non-zero status 1
+	Command being timed: "julia +1.11.2 --project=O/OrdinaryDiffEq/Solve-The-Lorenz-Equation O/OrdinaryDiffEq/Solve-The-Lorenz-Equation/task.jl"
+	User time (seconds): 26.63
+	System time (seconds): 2.44
+	Percent of CPU this job got: 121%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:23.86
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 785136
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 759237
+	Voluntary context switches: 293
+	Involuntary context switches: 298
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 96
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

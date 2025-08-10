@@ -1,0 +1,57 @@
+Precompiling Pkg...
+    952.0 ms  ✓ Logging
+   1065.5 ms  ✓ Unicode
+   1064.7 ms  ✓ UUIDs
+   1141.5 ms  ✓ p7zip_jll
+   1143.9 ms  ✓ MozillaCACerts_jll
+   1190.0 ms  ✓ nghttp2_jll
+   1168.4 ms  ✓ MbedTLS_jll
+   1165.8 ms  ✓ NetworkOptions
+   1227.4 ms  ✓ Zlib_jll
+   1281.2 ms  ✓ Base64
+    347.4 ms  ✓ LibSSH2_jll
+    500.3 ms  ✓ Printf
+    351.9 ms  ✓ LibCURL_jll
+    361.2 ms  ✓ LibGit2_jll
+   2152.4 ms  ✓ ArgTools
+    625.0 ms  ✓ LibCURL
+    539.8 ms  ✓ Tar
+   2382.9 ms  ✓ Dates
+   2836.6 ms  ✓ Markdown
+   2399.4 ms  ✓ LibGit2
+    425.0 ms  ✓ TOML
+   2885.0 ms  ✓ Downloads
+  38240.5 ms  ✓ Pkg
+  23 dependencies successfully precompiled in 44 seconds
+Precompiling project...
+    488.6 ms  ✓ Preferences
+    321.8 ms  ✓ PrecompileTools
+    966.3 ms  ✓ InteractiveUtils
+   6235.8 ms  ✓ StyledStrings
+  30757.2 ms  ✓ REPL
+   5166.0 ms  ✓ Pkg → REPLExt
+   3136.9 ms  ✓ ShareAdd
+  7 dependencies successfully precompiled in 45 seconds. 23 already precompiled.
+	Command being timed: "julia +1.11.5 --project=S/ShareAdd/Get-Info-On-Stdlib-In-Internal-Shareadd-Format -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 175.01
+	System time (seconds): 7.65
+	Percent of CPU this job got: 202%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:30.05
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2038144
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 221
+	Minor (reclaiming a frame) page faults: 2466742
+	Voluntary context switches: 42392
+	Involuntary context switches: 4174
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 645072
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

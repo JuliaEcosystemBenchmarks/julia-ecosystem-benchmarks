@@ -1,0 +1,29 @@
+Precompiling project...
+    284.0 ms  ✓ Unicode
+    345.5 ms  ✓ CompilerSupportLibraries_jll
+    471.7 ms  ✓ Calculus
+    445.5 ms  ✓ Measurements
+  4 dependencies successfully precompiled in 1 seconds. 1 already precompiled.
+	Command being timed: "julia +1.11.6 --project=M/Measurements/Addition-With-Uncertainties -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 94.72
+	System time (seconds): 4.32
+	Percent of CPU this job got: 182%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:54.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2054000
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 106
+	Minor (reclaiming a frame) page faults: 1519867
+	Voluntary context switches: 34643
+	Involuntary context switches: 2921
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 349880
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

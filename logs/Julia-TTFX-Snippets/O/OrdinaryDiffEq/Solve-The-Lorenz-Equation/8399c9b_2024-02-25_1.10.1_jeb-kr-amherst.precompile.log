@@ -1,0 +1,163 @@
+Precompiling project...
+  ✓ UnPack
+  ✓ SimpleUnPack
+  ✓ DataValueInterfaces
+  ✓ SIMDTypes
+  ✓ EnumX
+  ✓ ConcreteStructs
+  ✓ OpenLibm_jll
+  ✓ Reexport
+  ✓ MuladdMacro
+  ✓ Requires
+  ✓ Compat
+  ✓ OrderedCollections
+  ✓ CpuId
+  ✓ FunctionWrappers
+  ✓ CommonSolve
+  ✓ IfElse
+  ✓ Zlib_jll
+  ✓ ExprTools
+  ✓ IteratorInterfaceExtensions
+  ✓ Inflate
+  ✓ FillArrays
+  ✓ EnzymeCore
+  ✓ ConstructionBase
+  ✓ GenericSchur
+  ✓ DocStringExtensions
+  ✓ Tricks
+  ✓ DataAPI
+  ✓ SymbolicIndexingInterface
+  ✓ PackageExtensionCompat
+  ✓ FastClosures
+  ✓ LazyArtifacts
+  ✓ CompilerSupportLibraries_jll
+  ✓ SuiteSparse_jll
+  ✓ ADTypes
+  ✓ StaticArraysCore
+  ✓ ManualMemory
+  ✓ IrrationalConstants
+  ✓ Adapt
+  ✓ NaNMath
+  ✓ Compat → CompatLinearAlgebraExt
+  ✓ FunctionWrappersWrappers
+  ✓ Parameters
+  ✓ Preferences
+  ✓ TableTraits
+  ✓ RuntimeGeneratedFunctions
+  ✓ EnzymeCore → AdaptExt
+  ✓ FastLapackInterface
+  ✓ OffsetArrays
+  ✓ DiffResults
+  ✓ Static
+  ✓ LogExpFunctions
+  ✓ PrecompileTools
+  ✓ JLLWrappers
+  ✓ BitTwiddlingConvenienceFunctions
+  ✓ OffsetArrays → OffsetArraysAdaptExt
+  ✓ Distributed
+  ✓ ThreadingUtilities
+  ✓ Tables
+  ✓ IntelOpenMP_jll
+  ✓ OpenSpecFun_jll
+  ✓ MacroTools
+  ✓ CPUSummary
+  ✓ TimerOutputs
+  ✓ SharedArrays
+  ✓ HostCPUFeatures
+  ✓ DataStructures
+  ✓ TruncatedStacktraces
+  ✓ RecipesBase
+  ✓ MKL_jll
+  ✓ Test
+  ✓ PolyesterWeave
+  ✓ SimpleTraits
+  ✓ CommonSubexpressions
+  ✓ SparseArrays
+  ✓ Lazy
+  ✓ SpecialFunctions
+  ✓ SuiteSparse
+  ✓ FillArrays → FillArraysSparseArraysExt
+  ✓ Statistics
+  ✓ KLU
+  ✓ Sparspak
+  ✓ DiffRules
+  ✓ FillArrays → FillArraysStatisticsExt
+  ✓ StaticArrays
+  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+  ✓ Adapt → AdaptStaticArraysExt
+  ✓ ForwardDiff
+  ✓ StaticArrays → StaticArraysStatisticsExt
+  ✓ GPUArraysCore
+  ✓ ArrayInterface
+  ✓ ForwardDiff → ForwardDiffStaticArraysExt
+  ✓ Setfield
+  ✓ ArnoldiMethod
+  ✓ ArrayInterface → ArrayInterfaceGPUArraysCoreExt
+  ✓ Krylov
+  ✓ ArrayInterface → ArrayInterfaceStaticArraysCoreExt
+  ✓ PreallocationTools
+  ✓ FiniteDiff
+  ✓ MaybeInplace
+  ✓ RecursiveArrayTools
+  ✓ StaticArrayInterface
+  ✓ SciMLOperators
+  ✓ FiniteDiff → FiniteDiffStaticArraysExt
+  ✓ RecursiveArrayTools → RecursiveArrayToolsForwardDiffExt
+  ✓ StaticArrayInterface → StaticArrayInterfaceStaticArraysExt
+  ✓ NLSolversBase
+  ✓ Graphs
+  ✓ StaticArrayInterface → StaticArrayInterfaceOffsetArraysExt
+  ✓ CloseOpenIntervals
+  ✓ LayoutPointers
+  ✓ VertexSafeGraphs
+  ✓ LineSearches
+  ✓ StrideArraysCore
+  ✓ ArrayLayouts
+  ✓ Polyester
+  ✓ SparseDiffTools
+  ✓ ArrayLayouts → ArrayLayoutsSparseArraysExt
+  ✓ FastBroadcast
+  ✓ SparseDiffTools → SparseDiffToolsPolyesterExt
+  ✓ MatrixFactorizations
+  ✓ RecursiveArrayTools → RecursiveArrayToolsFastBroadcastExt
+  ✓ LazyArrays
+  ✓ VectorizationBase
+  ✓ LazyArrays → LazyArraysStaticArraysExt
+  ✓ SLEEFPirates
+  ✓ SciMLBase
+  ✓ DiffEqBase
+  ✓ ExponentialUtilities
+  ✓ LoopVectorization
+  ✓ LoopVectorization → SpecialFunctionsExt
+  ✓ TriangularSolve
+  ✓ RecursiveFactorization
+  ✓ SimpleNonlinearSolve
+  ✓ SimpleNonlinearSolve → SimpleNonlinearSolveStaticArraysExt
+  ✓ LinearSolve
+  ✓ LinearSolve → LinearSolveRecursiveArrayToolsExt
+  ✓ NonlinearSolve
+  ✓ OrdinaryDiffEq
+  138 dependencies successfully precompiled in 168 seconds
+	Command being timed: "julia +1.10.1 --project=O/OrdinaryDiffEq/Solve-The-Lorenz-Equation -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 421.32
+	System time (seconds): 29.68
+	Percent of CPU this job got: 267%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:48.88
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2258108
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 583
+	Minor (reclaiming a frame) page faults: 8106006
+	Voluntary context switches: 174874
+	Involuntary context switches: 48806
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1570040
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
