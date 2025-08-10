@@ -56,7 +56,7 @@ function create_subplot_figure(data, package_name, task_name)
     sort!(data, :date)
     
     # Create figure with subplots arranged vertically
-    fig = Figure(resolution = (1200, 1600))
+    fig = Figure(size = (1200, 7*800))
     
     # Define the metrics to plot
     time_metrics = [
@@ -130,7 +130,7 @@ function create_subplot_figure(data, package_name, task_name)
     end
     
     # Add overall title
-    fig[0, 1] = Label(fig, "$package_name / $task_name", fontsize = 20, font = :bold)
+    Label(fig[0, 1], "$package_name / $task_name", fontsize = 20, font = :bold, tellwidth = false)
     
     # Save the plot
     safe_package = replace(package_name, r"[^a-zA-Z0-9]" => "_")
