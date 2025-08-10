@@ -12,6 +12,9 @@ function load_ttfx_data()
     # Convert date strings to Date objects for proper sorting
     data.date = Date.(data.date)
     
+    # Convert julia_version strings to VersionNumber for proper semantic sorting
+    data.julia_version_parsed = VersionNumber.(data.julia_version)
+    
     println("Loaded $(nrow(data)) rows of data")
     return data
 end
@@ -95,7 +98,10 @@ function create_subplot_figure(data, package_name, task_name)
         end
         
         # Group by Julia version and create separate lines
-        julia_versions = sort(unique(plot_data.julia_version))
+        # Sort by parsed version numbers for proper semantic ordering
+        unique_versions = unique(plot_data, [:julia_version, :julia_version_parsed])
+        sort!(unique_versions, :julia_version_parsed)
+        julia_versions = unique_versions.julia_version
         colors = Makie.wong_colors()[1:min(length(julia_versions), 7)]
         
         for (j, version) in enumerate(julia_versions)
