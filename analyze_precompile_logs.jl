@@ -3,6 +3,7 @@ using Printf
 
 struct DataRow
     package_name::String
+    task_name::String
     date::String
     julia_version::String
     hostname::String
@@ -29,14 +30,16 @@ function parse_filename(filename)
     end
 end
 
-function extract_package_name_from_path(filepath)
+function extract_package_and_task_from_path(filepath)
     path_parts = split(filepath, "/")
     julia_ttfx_idx = findfirst(x -> x == "Julia-TTFX-Snippets", path_parts)
-    if julia_ttfx_idx !== nothing && julia_ttfx_idx + 2 <= length(path_parts)
-        return path_parts[julia_ttfx_idx + 2]
+    if julia_ttfx_idx !== nothing && julia_ttfx_idx + 3 <= length(path_parts)
+        package_name = path_parts[julia_ttfx_idx + 2]
+        task_name = path_parts[julia_ttfx_idx + 3]
+        return (package_name, task_name)
     end
-    @warn "Unable to extract package name from path: Julia-TTFX-Snippets not found or insufficient path depth" filepath=filepath path_parts=path_parts
-    return "Unknown"
+    @warn "Unable to extract package and task names from path: Julia-TTFX-Snippets not found or insufficient path depth" filepath=filepath path_parts=path_parts
+    return ("Unknown", "Unknown")
 end
 
 function parse_precompile_content(filepath, content)
@@ -137,7 +140,7 @@ function analyze_precompile_logs()
             continue
         end
         
-        package_name = extract_package_name_from_path(precompile_filepath)
+        package_name, task_name = extract_package_and_task_from_path(precompile_filepath)
         task_filepath = get_corresponding_task_file(precompile_filepath)
         
         # Read both precompile and task files
@@ -169,6 +172,7 @@ function analyze_precompile_logs()
         if precompile_time !== nothing && loading_time !== nothing && task_time !== nothing
             push!(data, DataRow(
                 package_name,
+                task_name,
                 parsed.date,
                 parsed.julia_version,
                 parsed.hostname,
@@ -188,13 +192,13 @@ function analyze_precompile_logs()
     
     # Display sample data
     println("\nSample data (first 10 rows):")
-    println("Package | Date | Julia Ver | Hash | Precompile | Loading | Task")
-    println("-" ^ 80)
+    println("Package | Task | Date | Julia Ver | Hash | Precompile | Loading | Task Time")
+    println("-" ^ 90)
     for (i, row) in enumerate(data[1:min(10, length(data))])
         precompile_str = row.precompile_time !== nothing ? @sprintf("%.3f", row.precompile_time) : "N/A"
         loading_str = row.loading_time !== nothing ? @sprintf("%.3f", row.loading_time) : "N/A"
-        task_str = row.task_time !== nothing ? @sprintf("%.3f", row.task_time) : "N/A"
-        println("$(row.package_name) | $(row.date) | $(row.julia_version) | $(row.hash) | $(precompile_str) | $(loading_str) | $(task_str)")
+        task_time_str = row.task_time !== nothing ? @sprintf("%.3f", row.task_time) : "N/A"
+        println("$(row.package_name) | $(row.task_name) | $(row.date) | $(row.julia_version) | $(row.hash) | $(precompile_str) | $(loading_str) | $(task_time_str)")
     end
     
     # Summary by package
