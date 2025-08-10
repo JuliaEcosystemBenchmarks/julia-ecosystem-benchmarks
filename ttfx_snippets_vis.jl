@@ -124,7 +124,7 @@ function create_subplot_figure(data, package_name, task_name)
         
         # Add legend only to the first subplot
         if i == 1 && length(julia_versions) > 1
-            axislegend(ax, position = :rt)
+            axislegend(ax, position = :lt)
         end
         
         # Format x-axis for dates
