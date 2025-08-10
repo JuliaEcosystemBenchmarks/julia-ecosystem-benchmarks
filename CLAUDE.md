@@ -66,20 +66,57 @@ The repository includes Julia analysis scripts for processing benchmark logs:
 
 ### Project Structure
 - `Project.toml`: Local Julia project configuration with dependencies
-- `analyze_precompile_logs.jl`: Script to analyze *.precompile and *.task files from jeb_logs branch
+- `ttfx_snippets_gather_data.jl`: Script to analyze *.precompile and *.task files from jeb_logs branch and export to CSV
+- `ttfx_snippets_vis.jl`: Script to create visualizations from the exported CSV data
 
 ### Dependencies
 - DataFrames.jl: For data manipulation and tabular display
+- CSV.jl: For reading and writing CSV files
 - Printf.jl: For formatted output
 - Logging.jl: Built-in logging capabilities (standard library)
+- AlgebraOfGraphics.jl: For creating layered visualizations
+- CairoMakie.jl: For high-quality plot rendering
+
+### Script Descriptions
+
+#### ttfx_snippets_gather_data.jl
+Data gathering and processing script that:
+- Fetches the `jeb_logs` branch from the remote repository
+- Processes 3,834+ *.precompile files and their corresponding *.task, *.precompile.log, and *.task.log files
+- Extracts timing data (precompile time, loading time, task time)
+- Extracts system metrics from log files (CPU percentage, maximum resident set size)
+- Parses package names and task names from file paths
+- Creates a comprehensive DataFrame with 13 columns of benchmark data
+- Exports the data to `ttfx_snippets_data.csv` for analysis
+- Provides detailed logging and error reporting for data quality assessment
+
+#### ttfx_snippets_vis.jl  
+Visualization script that:
+- Loads data from `ttfx_snippets_data.csv`
+- Creates one plot per package/task combination
+- Generates multi-subplot figures with vertically arranged panels for:
+  - Time metrics: precompile time, loading time, task time
+  - CPU metrics: precompile CPU usage, task CPU usage  
+  - Memory metrics: precompile resident memory, task resident memory
+- Uses date as the x-axis for time series analysis
+- Shows different Julia versions as colored lines on each subplot
+- Saves plots as PNG files in `plots/Julia-TTFX-Snippets/` directory
+- Handles missing data gracefully with appropriate warnings
 
 ### Running Julia Scripts
 Use the local project environment to ensure proper dependencies:
+
+**Data Gathering:**
 ```bash
-julia --project analyze_precompile_logs.jl
+julia --project ttfx_snippets_gather_data.jl
 ```
 
-Or enter Julia REPL with project:
+**Visualization (run after data gathering):**
+```bash  
+julia --project ttfx_snippets_vis.jl
+```
+
+**Interactive REPL:**
 ```bash
 julia --project
 ```
@@ -88,6 +125,10 @@ julia --project
 ```bash
 julia --project -e "using Pkg; Pkg.add(\"PackageName\")"
 ```
+
+### Output Files
+- `ttfx_snippets_data.csv`: Comprehensive dataset with timing and system metrics
+- `plots/Julia-TTFX-Snippets/*.png`: Individual plots for each package/task combination
 
 ## Build/Lint Commands
 No build or lint commands identified. This is primarily a bash-based benchmarking suite.

@@ -1,6 +1,7 @@
 using Logging
 using Printf
 using DataFrames
+using CSV
 
 # We'll use DataFrames directly instead of a custom struct
 
@@ -322,5 +323,11 @@ function analyze_precompile_logs()
     return data
 end
 
-# Run the analysis
+# Run the analysis and save to CSV
 data = analyze_precompile_logs()
+
+# Save the data to CSV file
+output_file = "ttfx_snippets_data.csv"
+println("\nSaving data to $output_file...")
+CSV.write(output_file, data)
+println("Data saved successfully to $output_file")
