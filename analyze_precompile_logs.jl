@@ -103,6 +103,72 @@ function get_corresponding_task_file(precompile_filepath)
     return replace(precompile_filepath, r"\.precompile$" => ".task")
 end
 
+function get_corresponding_log_files(precompile_filepath)
+    precompile_log = replace(precompile_filepath, r"\.precompile$" => ".precompile.log")
+    task_log = replace(precompile_filepath, r"\.precompile$" => ".task.log")
+    return (precompile_log, task_log)
+end
+
+function parse_time_command_output(filepath, content)
+    content = strip(content)
+    
+    # Handle empty files
+    if isempty(content)
+        @warn "Log file is empty" filepath=filepath
+        return (nothing, nothing)
+    end
+    
+    # Use grep-like functionality to find lines with the metrics we want
+    cpu_percent = nothing
+    max_rss = nothing
+    
+    lines = split(content, "\n")
+    
+    for line in lines
+        line = strip(line)
+        
+        # Look for "Percent of CPU this job got"
+        if occursin("Percent of CPU this job got", line)
+            # Expected format: "Percent of CPU this job got: 99%"
+            m = match(r"Percent of CPU this job got:\s*([0-9.]+)%", line)
+            if m !== nothing
+                try
+                    cpu_percent = parse(Float64, m.captures[1])
+                catch e
+                    @warn "Error parsing CPU percentage" filepath=filepath line=line exception=e
+                end
+            else
+                @warn "Found CPU percentage line but could not parse value" filepath=filepath line=line
+            end
+        end
+        
+        # Look for "Maximum resident set size"
+        if occursin("Maximum resident set size", line)
+            # Expected format: "Maximum resident set size (kbytes): 1234567"
+            m = match(r"Maximum resident set size \(kbytes\):\s*([0-9]+)", line)
+            if m !== nothing
+                try
+                    max_rss = parse(Int64, m.captures[1])
+                catch e
+                    @warn "Error parsing maximum resident set size" filepath=filepath line=line exception=e
+                end
+            else
+                @warn "Found maximum resident set size line but could not parse value" filepath=filepath line=line
+            end
+        end
+    end
+    
+    # Generate warnings if metrics were not found
+    if cpu_percent === nothing
+        @warn "No CPU percentage information found in log file" filepath=filepath
+    end
+    if max_rss === nothing
+        @warn "No maximum resident set size information found in log file" filepath=filepath
+    end
+    
+    return (cpu_percent, max_rss)
+end
+
 function analyze_precompile_logs()
     println("Fetching jeb_logs branch...")
     run(`git fetch origin jeb_logs:jeb_logs`)
@@ -124,6 +190,10 @@ function analyze_precompile_logs()
     precompile_times = Union{Float64, Missing}[]
     loading_times = Union{Float64, Missing}[]
     task_times = Union{Float64, Missing}[]
+    precompile_cpus = Union{Float64, Missing}[]
+    task_cpus = Union{Float64, Missing}[]
+    precompile_residents = Union{Int64, Missing}[]
+    task_residents = Union{Int64, Missing}[]
     skipped_count = 0
     
     for (i, precompile_filepath) in enumerate(precompile_files)
@@ -142,11 +212,16 @@ function analyze_precompile_logs()
         
         package_name, task_name = extract_package_and_task_from_path(precompile_filepath)
         task_filepath = get_corresponding_task_file(precompile_filepath)
+        precompile_log_filepath, task_log_filepath = get_corresponding_log_files(precompile_filepath)
         
-        # Read both precompile and task files
+        # Read precompile, task, and log files
         precompile_time = nothing
         loading_time = nothing
         task_time = nothing
+        precompile_cpu = nothing
+        precompile_resident = nothing
+        task_cpu = nothing
+        task_resident = nothing
         
         # Process precompile file
         try
@@ -168,7 +243,26 @@ function analyze_precompile_logs()
             continue
         end
         
-        # Only add entry if we have valid data from both files
+        # Process precompile log file
+        try
+            precompile_log_content = read(`git show jeb_logs:$precompile_log_filepath`, String)
+            precompile_cpu, precompile_resident = parse_time_command_output(precompile_log_filepath, precompile_log_content)
+        catch e
+            @warn "Error reading or processing precompile log file content" filepath=precompile_log_filepath exception=e
+            # Don't skip the entry for log file issues, just set values to nothing
+        end
+        
+        # Process task log file
+        try
+            task_log_content = read(`git show jeb_logs:$task_log_filepath`, String)
+            task_cpu, task_resident = parse_time_command_output(task_log_filepath, task_log_content)
+        catch e
+            @warn "Error reading or processing task log file content" filepath=task_log_filepath exception=e
+            # Don't skip the entry for log file issues, just set values to nothing
+        end
+        
+        # Only add entry if we have valid data from both main files
+        # Log files are optional - missing log data won't skip the entry
         if precompile_time !== nothing && loading_time !== nothing && task_time !== nothing
             push!(package_names, package_name)
             push!(task_names, task_name)
@@ -179,6 +273,10 @@ function analyze_precompile_logs()
             push!(precompile_times, precompile_time)
             push!(loading_times, loading_time)
             push!(task_times, task_time)
+            push!(precompile_cpus, precompile_cpu)
+            push!(task_cpus, task_cpu)
+            push!(precompile_residents, precompile_resident)
+            push!(task_residents, task_resident)
         else
             @warn "Skipping entry due to missing timing data from either precompile or task file" precompile_filepath=precompile_filepath task_filepath=task_filepath precompile_time=precompile_time loading_time=loading_time task_time=task_time
             skipped_count += 1
@@ -195,7 +293,11 @@ function analyze_precompile_logs()
         hash = hashes,
         precompile_time = precompile_times,
         loading_time = loading_times,
-        task_time = task_times
+        task_time = task_times,
+        precompile_cpu = precompile_cpus,
+        task_cpu = task_cpus,
+        precompile_resident = precompile_residents,
+        task_resident = task_residents
     )
     
     println("\nData collected with $(nrow(data)) rows")
