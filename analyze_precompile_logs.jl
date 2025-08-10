@@ -1,4 +1,5 @@
 using Logging
+using Printf
 
 struct DataRow
     package_name::String
@@ -7,12 +8,15 @@ struct DataRow
     hostname::String
     hash::String
     precompile_time::Union{Float64, Nothing}
-    filepath::String
+    loading_time::Union{Float64, Nothing}
+    task_time::Union{Float64, Nothing}
+    precompile_filepath::String
+    task_filepath::String
 end
 
 function parse_filename(filename)
-    # Remove .precompile extension first
-    base_name = replace(filename, r"\.precompile$" => "")
+    # Remove file extension first
+    base_name = replace(filename, r"\.(precompile|task)$" => "")
     parts = split(base_name, "_")
     
     if length(parts) >= 4
@@ -37,6 +41,76 @@ function extract_package_name_from_path(filepath)
     return "Unknown"
 end
 
+function parse_precompile_content(filepath, content)
+    lines = split(content, "\n")
+    
+    for line in lines
+        if occursin("seconds", line) && occursin("compilation time", line)
+            m = match(r"([0-9.]+)\s+seconds", line)
+            if m !== nothing
+                return parse(Float64, m.captures[1])
+            else
+                @warn "Found compilation time line but could not parse timing value" filepath=filepath line=line
+                return nothing
+            end
+        end
+    end
+    
+    @warn "No precompile timing information found in file" filepath=filepath
+    return nothing
+end
+
+function parse_task_content(filepath, content)
+    content = strip(content)
+    
+    # Handle empty files
+    if isempty(content)
+        @warn "Task file is empty" filepath=filepath
+        return (nothing, nothing)
+    end
+    
+    # Look for the timing data at the end of the file
+    # Expected format: "loading_time, task_time, total_time seconds"
+    lines = split(content, "\n")
+    
+    # Look for the last line that contains "seconds"
+    timing_line = nothing
+    for line in reverse(lines)
+        line = strip(line)
+        if occursin(" seconds", line)
+            timing_line = line
+            break
+        end
+    end
+    
+    if timing_line === nothing
+        @warn "Task file does not contain expected 'seconds' suffix in any line" filepath=filepath content_preview=content[1:min(200, length(content))]
+        return (nothing, nothing)
+    end
+    
+    # Parse the timing line
+    time_part = replace(timing_line, " seconds" => "")
+    times = split(time_part, ",")
+    
+    if length(times) >= 2
+        try
+            loading_time = parse(Float64, strip(times[1]))
+            task_time = parse(Float64, strip(times[2]))
+            return (loading_time, task_time)
+        catch e
+            @warn "Error parsing task timing values from timing line" filepath=filepath timing_line=timing_line exception=e
+            return (nothing, nothing)
+        end
+    else
+        @warn "Timing line does not contain expected format: expected at least 2 comma-separated values" filepath=filepath timing_line=timing_line times_found=length(times)
+        return (nothing, nothing)
+    end
+end
+
+function get_corresponding_task_file(precompile_filepath)
+    return replace(precompile_filepath, r"\.precompile$" => ".task")
+end
+
 function analyze_precompile_logs()
     println("Fetching jeb_logs branch...")
     run(`git fetch origin jeb_logs:jeb_logs`)
@@ -49,44 +123,52 @@ function analyze_precompile_logs()
     println("Found $(length(precompile_files)) .precompile files")
     
     data = DataRow[]
+    skipped_count = 0
     
-    for (i, filepath) in enumerate(precompile_files)
+    for (i, precompile_filepath) in enumerate(precompile_files)
         if i % 100 == 0
             println("Processing file $i/$(length(precompile_files))")
         end
         
-        filename = basename(filepath)
+        filename = basename(precompile_filepath)
         parsed = parse_filename(filename)
         
         if parsed === nothing
-            @warn "Skipping file due to filename parsing failure" filepath=filepath filename=filename
+            @warn "Skipping file due to filename parsing failure" filepath=precompile_filepath filename=filename
+            skipped_count += 1
             continue
         end
         
-        package_name = extract_package_name_from_path(filepath)
+        package_name = extract_package_name_from_path(precompile_filepath)
+        task_filepath = get_corresponding_task_file(precompile_filepath)
         
-        # Read the file content from git
+        # Read both precompile and task files
+        precompile_time = nothing
+        loading_time = nothing
+        task_time = nothing
+        
+        # Process precompile file
         try
-            content = read(`git show jeb_logs:$filepath`, String)
-            lines = split(content, "\n")
-            precompile_time = nothing
-            
-            for line in lines
-                if occursin("seconds", line) && occursin("compilation time", line)
-                    m = match(r"([0-9.]+)\s+seconds", line)
-                    if m !== nothing
-                        precompile_time = parse(Float64, m.captures[1])
-                        break
-                    else
-                        @warn "Found compilation time line but could not parse timing value" filepath=filepath line=line
-                    end
-                end
-            end
-            
-            if precompile_time === nothing
-                @warn "No precompile timing information found in file" filepath=filepath
-            end
-            
+            precompile_content = read(`git show jeb_logs:$precompile_filepath`, String)
+            precompile_time = parse_precompile_content(precompile_filepath, precompile_content)
+        catch e
+            @warn "Error reading or processing precompile file content" filepath=precompile_filepath exception=e
+            skipped_count += 1
+            continue
+        end
+        
+        # Process corresponding task file
+        try
+            task_content = read(`git show jeb_logs:$task_filepath`, String)
+            loading_time, task_time = parse_task_content(task_filepath, task_content)
+        catch e
+            @warn "Error reading or processing task file content" filepath=task_filepath exception=e
+            skipped_count += 1
+            continue
+        end
+        
+        # Only add entry if we have valid data from both files
+        if precompile_time !== nothing && loading_time !== nothing && task_time !== nothing
             push!(data, DataRow(
                 package_name,
                 parsed.date,
@@ -94,23 +176,29 @@ function analyze_precompile_logs()
                 parsed.hostname,
                 parsed.hash,
                 precompile_time,
-                filepath
+                loading_time,
+                task_time,
+                precompile_filepath,
+                task_filepath
             ))
-        catch e
-            @warn "Error reading or processing file content" filepath=filepath exception=e
-            continue
+        else
+            @warn "Skipping entry due to missing timing data from either precompile or task file" precompile_filepath=precompile_filepath task_filepath=task_filepath precompile_time=precompile_time loading_time=loading_time task_time=task_time
+            skipped_count += 1
         end
     end
     
     println("\nData collected with $(length(data)) rows")
+    println("Skipped $(skipped_count) entries due to issues")
     
     # Display sample data
     println("\nSample data (first 10 rows):")
-    println("Package Name | Date | Julia Version | Hostname | Precompile Time | File Path")
-    println("-" ^ 90)
+    println("Package | Date | Julia Ver | Precompile | Loading | Task | Precompile File")
+    println("-" ^ 100)
     for (i, row) in enumerate(data[1:min(10, length(data))])
-        time_str = row.precompile_time === nothing ? "N/A" : string(row.precompile_time)
-        println("$(row.package_name) | $(row.date) | $(row.julia_version) | $(row.hostname) | $(time_str) | $(basename(row.filepath))")
+        precompile_str = row.precompile_time !== nothing ? @sprintf("%.3f", row.precompile_time) : "N/A"
+        loading_str = row.loading_time !== nothing ? @sprintf("%.3f", row.loading_time) : "N/A"
+        task_str = row.task_time !== nothing ? @sprintf("%.3f", row.task_time) : "N/A"
+        println("$(row.package_name) | $(row.date) | $(row.julia_version) | $(precompile_str) | $(loading_str) | $(task_str) | $(basename(row.precompile_filepath))")
     end
     
     # Summary by package
@@ -120,14 +208,14 @@ function analyze_precompile_logs()
     
     for row in data
         package_counts[row.package_name] = get(package_counts, row.package_name, 0) + 1
-        if row.precompile_time !== nothing
+        if row.precompile_time !== nothing && row.loading_time !== nothing && row.task_time !== nothing
             package_valid_times[row.package_name] = get(package_valid_times, row.package_name, 0) + 1
         end
     end
     
     sorted_packages = sort(collect(package_counts), by=x->x[2], rev=true)
-    println("Package | Total Files | Valid Times")
-    println("-" ^ 40)
+    println("Package | Total Files | Valid Complete Entries")
+    println("-" ^ 50)
     for (pkg, count) in sorted_packages[1:min(10, length(sorted_packages))]
         valid = get(package_valid_times, pkg, 0)
         println("$pkg | $count | $valid")
@@ -140,14 +228,14 @@ function analyze_precompile_logs()
     
     for row in data
         version_counts[row.julia_version] = get(version_counts, row.julia_version, 0) + 1
-        if row.precompile_time !== nothing
+        if row.precompile_time !== nothing && row.loading_time !== nothing && row.task_time !== nothing
             version_valid_times[row.julia_version] = get(version_valid_times, row.julia_version, 0) + 1
         end
     end
     
     sorted_versions = sort(collect(version_counts), by=x->x[1])
-    println("Julia Version | Total Files | Valid Times")
-    println("-" ^ 45)
+    println("Julia Version | Total Files | Valid Complete Entries")
+    println("-" ^ 55)
     for (ver, count) in sorted_versions
         valid = get(version_valid_times, ver, 0)
         println("$ver | $count | $valid")
