@@ -3,9 +3,12 @@ using DataFrames
 using AlgebraOfGraphics
 using CairoMakie
 using Dates
+using Statistics
 
+"""
+Load TTFX snippets data from CSV file.
+"""
 function load_ttfx_data()
-    """Load TTFX snippets data from CSV file."""
     println("Loading TTFX data from CSV...")
     data = CSV.read("ttfx_snippets_data.csv", DataFrame)
     
@@ -19,8 +22,10 @@ function load_ttfx_data()
     return data
 end
 
+"""
+Create plots for each package/task combination.
+"""
 function create_package_task_plots(data)
-    """Create plots for each package/task combination."""
     println("Creating plots for each package/task combination...")
     
     # Get unique package/task combinations
@@ -52,8 +57,10 @@ function create_package_task_plots(data)
     end
 end
 
+"""
+Create a multi-subplot figure for a package/task combination.
+"""
 function create_subplot_figure(data, package_name, task_name)
-    """Create a multi-subplot figure for a package/task combination."""
     
     # Sort data by date for proper line connections
     sort!(data, :date)
@@ -147,8 +154,10 @@ function create_subplot_figure(data, package_name, task_name)
     println("  Saved plot: $filename")
 end
 
+"""
+Main function to create all visualizations.
+"""
 function main()
-    """Main function to create all visualizations."""
     println("TTFX Snippets Visualization Script")
     println("==================================")
     
