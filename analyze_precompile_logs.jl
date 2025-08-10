@@ -1,17 +1,8 @@
 using Logging
 using Printf
+using DataFrames
 
-struct DataRow
-    package_name::String
-    task_name::String
-    date::String
-    julia_version::String
-    hostname::String
-    hash::String
-    precompile_time::Union{Float64, Nothing}
-    loading_time::Union{Float64, Nothing}
-    task_time::Union{Float64, Nothing}
-end
+# We'll use DataFrames directly instead of a custom struct
 
 function parse_filename(filename)
     # Remove file extension first
@@ -123,7 +114,16 @@ function analyze_precompile_logs()
     
     println("Found $(length(precompile_files)) .precompile files")
     
-    data = DataRow[]
+    # Collect data in vectors for DataFrame construction
+    package_names = String[]
+    task_names = String[]
+    dates = String[]
+    julia_versions = String[]
+    hostnames = String[]
+    hashes = String[]
+    precompile_times = Union{Float64, Missing}[]
+    loading_times = Union{Float64, Missing}[]
+    task_times = Union{Float64, Missing}[]
     skipped_count = 0
     
     for (i, precompile_filepath) in enumerate(precompile_files)
@@ -170,76 +170,52 @@ function analyze_precompile_logs()
         
         # Only add entry if we have valid data from both files
         if precompile_time !== nothing && loading_time !== nothing && task_time !== nothing
-            push!(data, DataRow(
-                package_name,
-                task_name,
-                parsed.date,
-                parsed.julia_version,
-                parsed.hostname,
-                parsed.hash,
-                precompile_time,
-                loading_time,
-                task_time
-            ))
+            push!(package_names, package_name)
+            push!(task_names, task_name)
+            push!(dates, parsed.date)
+            push!(julia_versions, parsed.julia_version)
+            push!(hostnames, parsed.hostname)
+            push!(hashes, parsed.hash)
+            push!(precompile_times, precompile_time)
+            push!(loading_times, loading_time)
+            push!(task_times, task_time)
         else
             @warn "Skipping entry due to missing timing data from either precompile or task file" precompile_filepath=precompile_filepath task_filepath=task_filepath precompile_time=precompile_time loading_time=loading_time task_time=task_time
             skipped_count += 1
         end
     end
     
-    println("\nData collected with $(length(data)) rows")
+    # Create DataFrame from collected data
+    data = DataFrame(
+        package_name = package_names,
+        task_name = task_names,
+        date = dates,
+        julia_version = julia_versions,
+        hostname = hostnames,
+        hash = hashes,
+        precompile_time = precompile_times,
+        loading_time = loading_times,
+        task_time = task_times
+    )
+    
+    println("\nData collected with $(nrow(data)) rows")
     println("Skipped $(skipped_count) entries due to issues")
     
-    # Display sample data
+    # Display sample data using DataFrame's built-in display
     println("\nSample data (first 10 rows):")
-    println("Package | Task | Date | Julia Ver | Hash | Precompile | Loading | Task Time")
-    println("-" ^ 90)
-    for (i, row) in enumerate(data[1:min(10, length(data))])
-        precompile_str = row.precompile_time !== nothing ? @sprintf("%.3f", row.precompile_time) : "N/A"
-        loading_str = row.loading_time !== nothing ? @sprintf("%.3f", row.loading_time) : "N/A"
-        task_time_str = row.task_time !== nothing ? @sprintf("%.3f", row.task_time) : "N/A"
-        println("$(row.package_name) | $(row.task_name) | $(row.date) | $(row.julia_version) | $(row.hash) | $(precompile_str) | $(loading_str) | $(task_time_str)")
-    end
+    println(first(data, 10))
     
-    # Summary by package
+    # Summary by package using DataFrames groupby
     println("\nSummary by package:")
-    package_counts = Dict{String, Int}()
-    package_valid_times = Dict{String, Int}()
+    package_summary = combine(groupby(data, :package_name), nrow => :total_files)
+    package_summary = sort(package_summary, :total_files, rev=true)
+    println(first(package_summary, 10))
     
-    for row in data
-        package_counts[row.package_name] = get(package_counts, row.package_name, 0) + 1
-        if row.precompile_time !== nothing && row.loading_time !== nothing && row.task_time !== nothing
-            package_valid_times[row.package_name] = get(package_valid_times, row.package_name, 0) + 1
-        end
-    end
-    
-    sorted_packages = sort(collect(package_counts), by=x->x[2], rev=true)
-    println("Package | Total Files | Valid Complete Entries")
-    println("-" ^ 50)
-    for (pkg, count) in sorted_packages[1:min(10, length(sorted_packages))]
-        valid = get(package_valid_times, pkg, 0)
-        println("$pkg | $count | $valid")
-    end
-    
-    # Summary by Julia version
+    # Summary by Julia version using DataFrames groupby  
     println("\nSummary by Julia version:")
-    version_counts = Dict{String, Int}()
-    version_valid_times = Dict{String, Int}()
-    
-    for row in data
-        version_counts[row.julia_version] = get(version_counts, row.julia_version, 0) + 1
-        if row.precompile_time !== nothing && row.loading_time !== nothing && row.task_time !== nothing
-            version_valid_times[row.julia_version] = get(version_valid_times, row.julia_version, 0) + 1
-        end
-    end
-    
-    sorted_versions = sort(collect(version_counts), by=x->x[1])
-    println("Julia Version | Total Files | Valid Complete Entries")
-    println("-" ^ 55)
-    for (ver, count) in sorted_versions
-        valid = get(version_valid_times, ver, 0)
-        println("$ver | $count | $valid")
-    end
+    version_summary = combine(groupby(data, :julia_version), nrow => :total_files)
+    version_summary = sort(version_summary, :julia_version)
+    println(version_summary)
     
     return data
 end
