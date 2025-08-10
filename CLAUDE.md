@@ -74,6 +74,7 @@ The repository includes Julia analysis scripts for processing benchmark logs:
 - CSV.jl: For reading and writing CSV files
 - Printf.jl: For formatted output
 - Logging.jl: Built-in logging capabilities (standard library)
+- Statistics.jl: For geometric mean calculations (standard library)
 - AlgebraOfGraphics.jl: For creating layered visualizations
 - CairoMakie.jl: For high-quality plot rendering
 
@@ -93,13 +94,17 @@ Data gathering and processing script that:
 #### ttfx_snippets_vis.jl  
 Visualization script that:
 - Loads data from `ttfx_snippets_data.csv`
-- Creates one plot per package/task combination
+- **Creates SUMMARY plot**: Shows geometric means of all normalized project/task combinations
+  - Normalizes each project/task by dividing by its first valid entry (baseline = 1.0)
+  - Computes geometric means grouped by Julia version and date
+  - Includes horizontal reference line at y=1.0 for baseline performance comparison
+- Creates individual plots (one per package/task combination)
 - Generates multi-subplot figures with vertically arranged panels for:
   - Time metrics: precompile time, loading time, task time
   - CPU metrics: precompile CPU usage, task CPU usage  
   - Memory metrics: precompile resident memory, task resident memory
 - Uses date as the x-axis for time series analysis
-- Shows different Julia versions as colored lines on each subplot
+- Shows different Julia versions as colored lines with proper semantic version sorting
 - Saves plots as PNG files in `plots/Julia-TTFX-Snippets/` directory
 - Handles missing data gracefully with appropriate warnings
 
@@ -128,6 +133,7 @@ julia --project -e "using Pkg; Pkg.add(\"PackageName\")"
 
 ### Output Files
 - `ttfx_snippets_data.csv`: Comprehensive dataset with timing and system metrics
+- `plots/Julia-TTFX-Snippets/SUMMARY.png`: Normalized geometric means across all project/task combinations
 - `plots/Julia-TTFX-Snippets/*.png`: Individual plots for each package/task combination
 
 ## Build/Lint Commands
