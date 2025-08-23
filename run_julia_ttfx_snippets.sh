@@ -7,6 +7,8 @@ export JULIA_NUM_THREADS=4
 
 LOGS_DIR=$PWD/logs/Julia-TTFX-Snippets
 
+mkdir -p $LOGS_DIR
+
 ./timetravel_setup.sh 2>$LOGS_DIR/${JEB_REGISTRY_DATE}_${JEB_JULIA_VERSION}_${JEB_HOSTNAME}.timetravel_setup.log
 
 SNIPPETS_DIR=`mktemp -d`
