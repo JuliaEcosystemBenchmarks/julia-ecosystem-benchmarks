@@ -15,8 +15,29 @@ function load_ttfx_data()
     # Convert date strings to Date objects for proper sorting
     data.date = Date.(data.date)
     
-    # Convert julia_version strings to VersionNumber for proper semantic sorting
-    data.julia_version_parsed = VersionNumber.(data.julia_version)
+    # Convert julia_version strings to sortable format
+    # Text versions (lts, release, alpha, nightly) get special sorting order
+    # Numeric versions get parsed as VersionNumber for semantic sorting
+    function parse_julia_version_for_sorting(version_str)
+        if version_str == "lts"
+            return (0, v"0.0.0")  # Sort first
+        elseif version_str == "release"
+            return (1, v"0.0.0")  # Sort second
+        elseif version_str == "alpha" 
+            return (2, v"0.0.0")  # Sort third
+        elseif version_str == "nightly"
+            return (3, v"0.0.0")  # Sort forth
+        else
+            try
+                return (3, VersionNumber(version_str))  # Sort after text versions
+            catch
+                @warn "Could not parse version: $version_str, treating as text"
+                return (4, v"999.999.999")  # Sort last if unparseable
+            end
+        end
+    end
+    
+    data.julia_version_sort_key = [parse_julia_version_for_sorting(v) for v in data.julia_version]
     
     println("Loaded $(nrow(data)) rows of data")
     return data
@@ -105,9 +126,9 @@ function create_subplot_figure(data, package_name, task_name)
         end
         
         # Group by Julia version and create separate lines
-        # Sort by parsed version numbers for proper semantic ordering
-        unique_versions = unique(plot_data, [:julia_version, :julia_version_parsed])
-        sort!(unique_versions, :julia_version_parsed)
+        # Sort by custom sort key for proper ordering (text versions first, then numeric)
+        unique_versions = unique(plot_data, [:julia_version, :julia_version_sort_key])
+        sort!(unique_versions, :julia_version_sort_key)
         julia_versions = unique_versions.julia_version
         colors = Makie.wong_colors()[1:min(length(julia_versions), 7)]
         
