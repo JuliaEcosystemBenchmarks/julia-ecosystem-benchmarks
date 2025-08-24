@@ -36,8 +36,8 @@ do
     julia +release --project=. -tauto,auto -e "using Pkg; Pkg.instantiate(); Pkg.update()"
     julia +release --project=. -tauto,auto ttfx_snippets_gather_data.jl
     julia +release --project=. -tauto,auto ttfx_snippets_vis.jl
-    git add plots
-    git stash push --staged
+
+    git stash push --include-untracked -- plots/Julia-TTFX-Snippets/*
     git fetch
     git pull
     git checkout jeb_logs
