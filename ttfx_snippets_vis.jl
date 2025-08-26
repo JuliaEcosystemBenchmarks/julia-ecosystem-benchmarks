@@ -29,10 +29,10 @@ function load_ttfx_data()
             return (3, v"0.0.0")  # Sort forth
         else
             try
-                return (3, VersionNumber(version_str))  # Sort after text versions
+                return (4, VersionNumber(version_str))  # Sort after text versions
             catch
                 @warn "Could not parse version: $version_str, treating as text"
-                return (4, v"999.999.999")  # Sort last if unparseable
+                return (5, v"999.999.999")  # Sort last if unparseable
             end
         end
     end
@@ -125,7 +125,7 @@ function create_subplot_figure(data, package_name, task_name)
             continue
         end
         
-        # Group by Julia version and create separate lines
+        # Group by Julia version and create separate groups of points
         # Sort by custom sort key for proper ordering (text versions first, then numeric)
         unique_versions = unique(plot_data, [:julia_version, :julia_version_sort_key])
         sort!(unique_versions, :julia_version_sort_key)
@@ -139,14 +139,15 @@ function create_subplot_figure(data, package_name, task_name)
                 # Sort by date for proper line connection
                 sort!(version_data, :date)
                 
-                lines!(ax, version_data.date, version_data[!, metric], 
-                       color = colors[((j-1) % length(colors)) + 1],
-                       linewidth = 2,
-                       label = "Julia $version")
+                #lines!(ax, version_data.date, version_data[!, metric], 
+                #       color = colors[((j-1) % length(colors)) + 1],
+                #       linewidth = 2,
+                #       label = "Julia $version")
                 
                 scatter!(ax, version_data.date, version_data[!, metric],
                         color = colors[((j-1) % length(colors)) + 1],
-                        markersize = 6)
+                        markersize = 6,
+			label = "$version")
             end
         end
         
