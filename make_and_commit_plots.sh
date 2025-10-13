@@ -20,7 +20,7 @@ rm -r data/Julia-TTFX-Snippets/*
 mkdir -p plots/Julia-TTFX-Snippets
 mkdir -p data/Julia-TTFX-Snippets
 git stash pop
-mv ttfx_snippets_data.csv data/Julia-TTFX-Snippets/*
+mv ttfx_snippets_data.csv data/Julia-TTFX-Snippets/
 git add plots
 git add data
 git commit -m "daily plots and data $CURRENT_V $CURRENT_DATE"
