@@ -10,14 +10,17 @@ julia +release --project=. -tauto,auto -e "using Pkg; Pkg.instantiate(); Pkg.upd
 julia +release --project=. -tauto,auto ttfx_snippets_gather_data.jl
 julia +release --project=. -tauto,auto ttfx_snippets_vis.jl
 
-git stash push --include-untracked -- plots/Julia-TTFX-Snippets/*
+git stash push --include-untracked -- *.csv plots/Julia-TTFX-Snippets/*
 git fetch
 git pull
 git checkout jeb_logs
 git pull
 rm -r plots/Julia-TTFX-Snippets/*
+rm -r data/Julia-TTFX-Snippets/*
 git stash pop
+mv ttfx_snippets_data.csv data/Julia-TTFX-Snippets/*
 git add plots
-git commit -m "daily plots $CURRENT_V $CURRENT_DATE"
+git add data
+git commit -m "daily plots and data $CURRENT_V $CURRENT_DATE"
 git push
 git checkout master
