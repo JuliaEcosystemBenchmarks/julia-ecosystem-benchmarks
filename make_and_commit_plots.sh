@@ -17,6 +17,8 @@ git checkout jeb_logs
 git pull
 rm -r plots/Julia-TTFX-Snippets/*
 rm -r data/Julia-TTFX-Snippets/*
+mkdir -p plots/Julia-TTFX-Snippets
+mkdir -p data/Julia-TTFX-Snippets
 git stash pop
 mv ttfx_snippets_data.csv data/Julia-TTFX-Snippets/*
 git add plots
