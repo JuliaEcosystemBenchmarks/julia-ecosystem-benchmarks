@@ -1,0 +1,62 @@
+Precompiling project...
+   1322.7 ms  ✓ PtrArrays
+   1605.0 ms  ✓ DataAPI
+   1616.5 ms  ✓ Unicode
+   1589.8 ms  ✓ Reexport
+   1716.6 ms  ✓ OpenLibm_jll
+   1724.2 ms  ✓ StatsAPI
+   1902.8 ms  ✓ CompilerSupportLibraries_jll
+   2007.8 ms  ✓ Statistics
+   1981.0 ms  ✓ SuiteSparse_jll
+   2078.6 ms  ✓ OrderedCollections
+   2064.1 ms  ✓ DocStringExtensions
+   2213.4 ms  ✓ Serialization
+   1104.2 ms  ✓ AliasTables
+   2448.5 ms  ✓ FillArrays
+    999.9 ms  ✓ Missings
+   2661.2 ms  ✓ IrrationalConstants
+   1097.3 ms  ✓ Preferences
+    529.2 ms  ✓ FillArrays → FillArraysStatisticsExt
+    396.7 ms  ✓ JLLWrappers
+    513.0 ms  ✓ LogExpFunctions
+    401.7 ms  ✓ Rmath_jll
+    408.1 ms  ✓ OpenSpecFun_jll
+   1560.8 ms  ✓ DataStructures
+    400.5 ms  ✓ SortingAlgorithms
+    634.5 ms  ✓ Rmath
+    711.4 ms  ✓ QuadGK
+   2920.8 ms  ✓ SparseArrays
+   1852.2 ms  ✓ SpecialFunctions
+    401.0 ms  ✓ SuiteSparse
+    442.2 ms  ✓ Statistics → SparseArraysExt
+    467.9 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    573.7 ms  ✓ PDMats
+    774.7 ms  ✓ HypergeometricFunctions
+    399.9 ms  ✓ FillArrays → FillArraysPDMatsExt
+   1479.2 ms  ✓ StatsBase
+   1112.1 ms  ✓ StatsFuns
+   3257.4 ms  ✓ Distributions
+  37 dependencies successfully precompiled in 11 seconds. 3 already precompiled.
+	Command being timed: "julia +1.11.7 --project=D/Distributions/Normal-Distribution -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 119.11
+	System time (seconds): 8.82
+	Percent of CPU this job got: 199%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:04.12
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2040116
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 203
+	Minor (reclaiming a frame) page faults: 2663915
+	Voluntary context switches: 77306
+	Involuntary context switches: 6685
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 473080
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

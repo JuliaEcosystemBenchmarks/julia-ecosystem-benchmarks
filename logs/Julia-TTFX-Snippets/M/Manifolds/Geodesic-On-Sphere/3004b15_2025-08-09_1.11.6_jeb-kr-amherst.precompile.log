@@ -1,0 +1,84 @@
+Precompiling project...
+   1813.0 ms  ✓ RealDot
+   1929.8 ms  ✓ Unicode
+   2004.3 ms  ✓ DataAPI
+   2115.1 ms  ✓ OpenLibm_jll
+   2096.9 ms  ✓ Mmap
+   2294.3 ms  ✓ StatsAPI
+   2395.7 ms  ✓ Inflate
+   2605.2 ms  ✓ DocStringExtensions
+   2594.3 ms  ✓ SuiteSparse_jll
+   2691.8 ms  ✓ CompilerSupportLibraries_jll
+   2725.9 ms  ✓ Statistics
+   2909.1 ms  ✓ OrderedCollections
+   3008.3 ms  ✓ Serialization
+   1788.3 ms  ✓ PtrArrays
+   2208.7 ms  ✓ StaticArraysCore
+   2492.1 ms  ✓ Requires
+   1988.4 ms  ✓ Missings
+   2902.2 ms  ✓ ADTypes
+   2407.3 ms  ✓ Quaternions
+   4931.4 ms  ✓ IrrationalConstants
+   2403.2 ms  ✓ Compat
+   1635.8 ms  ✓ AliasTables
+   2877.8 ms  ✓ Preferences
+   6422.9 ms  ✓ LinearMaps
+   4773.2 ms  ✓ InteractiveUtils
+   1800.0 ms  ✓ Compat → CompatLinearAlgebraExt
+   4088.2 ms  ✓ NamedDims
+   1326.8 ms  ✓ PrecompileTools
+   2103.8 ms  ✓ LogExpFunctions
+   1629.8 ms  ✓ JLLWrappers
+   1596.9 ms  ✓ LinearMaps → LinearMapsStatisticsExt
+   3523.7 ms  ✓ DifferentiationInterface
+   1430.2 ms  ✓ Einsum
+   8303.7 ms  ✓ MacroTools
+   1771.5 ms  ✓ OpenSpecFun_jll
+   6029.1 ms  ✓ Distributed
+   1400.4 ms  ✓ SimpleTraits
+   1069.8 ms  ✓ SharedArrays
+   7718.1 ms  ✓ ManifoldsBase
+   3785.9 ms  ✓ DataStructures
+    685.0 ms  ✓ ManifoldsBase → ManifoldsBaseStatisticsExt
+    694.8 ms  ✓ ManifoldsBase → ManifoldsBaseQuaternionsExt
+   4616.1 ms  ✓ MatrixEquations
+   1044.1 ms  ✓ ManifoldDiff
+    636.7 ms  ✓ SortingAlgorithms
+   8455.9 ms  ✓ SparseArrays
+   3040.3 ms  ✓ SpecialFunctions
+    511.0 ms  ✓ Statistics → SparseArraysExt
+    515.7 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+    760.4 ms  ✓ LinearMaps → LinearMapsSparseArraysExt
+   1547.7 ms  ✓ StatsBase
+   1192.3 ms  ✓ Kronecker
+   7904.4 ms  ✓ StaticArrays
+    433.4 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    432.6 ms  ✓ DifferentiationInterface → DifferentiationInterfaceStaticArraysExt
+    826.6 ms  ✓ ArnoldiMethod
+   2739.7 ms  ✓ Graphs
+    757.6 ms  ✓ SimpleWeightedGraphs
+   5292.5 ms  ✓ Manifolds
+  59 dependencies successfully precompiled in 24 seconds. 6 already precompiled.
+	Command being timed: "julia +1.11.6 --project=M/Manifolds/Geodesic-On-Sphere -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 156.31
+	System time (seconds): 12.48
+	Percent of CPU this job got: 218%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:17.41
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2054728
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 252
+	Minor (reclaiming a frame) page faults: 3536482
+	Voluntary context switches: 101426
+	Involuntary context switches: 24344
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 611024
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

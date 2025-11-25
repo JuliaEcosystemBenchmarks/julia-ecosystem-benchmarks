@@ -1,0 +1,42 @@
+Precompiling project...
+    483.5 ms  ✓ Unicode
+    533.1 ms  ✓ OpenLibm_jll
+    546.9 ms  ✓ StaticArraysCore
+    652.8 ms  ✓ CompilerSupportLibraries_jll
+    724.6 ms  ✓ DocStringExtensions
+    438.2 ms  ✓ DiffResults
+    471.0 ms  ✓ NaNMath
+   1146.1 ms  ✓ IrrationalConstants
+    681.7 ms  ✓ Preferences
+    364.6 ms  ✓ JLLWrappers
+    455.6 ms  ✓ LogExpFunctions
+   2004.7 ms  ✓ MacroTools
+    480.0 ms  ✓ OpenSpecFun_jll
+    358.0 ms  ✓ CommonSubexpressions
+   1709.5 ms  ✓ SpecialFunctions
+    441.6 ms  ✓ DiffRules
+   2247.9 ms  ✓ ForwardDiff
+  17 dependencies successfully precompiled in 6 seconds. 3 already precompiled.
+	Command being timed: "julia +1.11.7 --project=F/ForwardDiff/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 104.33
+	System time (seconds): 5.81
+	Percent of CPU this job got: 185%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:59.47
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2041224
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 187
+	Minor (reclaiming a frame) page faults: 1985640
+	Voluntary context switches: 52241
+	Involuntary context switches: 3977
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 395616
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,19 @@
+From https://github.com/JuliaRegistries/General
+   38da78b8ce3..80dc35738fa  master     -> origin/master
+fatal: sha1 file '.git/objects/pack/tmp_pack_Ys0nIg' write error. Out of diskspace
+fatal: failed to run repack
+fatal: sha1 file '/workdir/timetravel_registry/General/.git/index.lock' write error. Out of diskspace
+You are not currently on a branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+fatal: sha1 file '/workdir/timetravel_registry/General/.git/index.lock' write error. Out of diskspace
+[36m[1m    Checking[0m for new Julia versions
+[36m[1m  Installing[0m Julia 1.12.0+0.x64.linux.gnu
+Error: Failed to extract downloaded file from url `https://julialang-s3.julialang.org/bin/linux/x64/1.12/julia-1.12.0-linux-x86_64.tar.gz`.
+
+Caused by:
+    No space left on device (os error 28) when creating dir /root/.julia/juliaup/julia-1.12.0+0.x64.linux.gnu/
+[31m[1mERROR:[0m `1.12.0` is not installed. Please run `juliaup add 1.12.0` to install channel or version.

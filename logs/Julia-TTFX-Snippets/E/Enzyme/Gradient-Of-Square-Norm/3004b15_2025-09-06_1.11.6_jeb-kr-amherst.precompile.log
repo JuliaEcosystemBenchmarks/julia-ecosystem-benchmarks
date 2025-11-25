@@ -1,0 +1,73 @@
+Precompiling Pkg...
+   1019.6 ms  ✓ Logging
+   1082.3 ms  ✓ MozillaCACerts_jll
+   1138.2 ms  ✓ Unicode
+   1118.7 ms  ✓ MbedTLS_jll
+   1120.1 ms  ✓ UUIDs
+   1215.7 ms  ✓ nghttp2_jll
+   1222.3 ms  ✓ Zlib_jll
+   1234.6 ms  ✓ NetworkOptions
+   1226.4 ms  ✓ p7zip_jll
+   1308.7 ms  ✓ Base64
+    435.8 ms  ✓ LibSSH2_jll
+    526.9 ms  ✓ Printf
+    431.6 ms  ✓ LibCURL_jll
+    433.3 ms  ✓ LibGit2_jll
+   2099.1 ms  ✓ ArgTools
+    594.6 ms  ✓ LibCURL
+    597.1 ms  ✓ Tar
+   2470.1 ms  ✓ Dates
+   2849.9 ms  ✓ Markdown
+   2290.9 ms  ✓ LibGit2
+    357.8 ms  ✓ TOML
+   2902.3 ms  ✓ Downloads
+  39111.3 ms  ✓ Pkg
+  23 dependencies successfully precompiled in 45 seconds
+Precompiling project...
+   1089.1 ms  ✓ Reexport
+   1186.6 ms  ✓ CEnum
+   1259.8 ms  ✓ Scratch
+   1277.6 ms  ✓ ExprTools
+   1299.2 ms  ✓ StructIO
+   1411.6 ms  ✓ SuiteSparse_jll
+   1476.0 ms  ✓ CompilerSupportLibraries_jll
+   1498.5 ms  ✓ EnzymeCore
+   1514.1 ms  ✓ Serialization
+   1625.5 ms  ✓ Preferences
+   1949.7 ms  ✓ LazyArtifacts
+    464.6 ms  ✓ PrecompileTools
+    506.3 ms  ✓ JLLWrappers
+   2273.8 ms  ✓ InteractiveUtils
+    519.0 ms  ✓ LibTracyClient_jll
+   1964.1 ms  ✓ ObjectFile
+   1173.1 ms  ✓ Enzyme_jll
+   1208.7 ms  ✓ LLVMExtra_jll
+    784.7 ms  ✓ Tracy
+   3027.6 ms  ✓ SparseArrays
+   4450.4 ms  ✓ LLVM
+  15948.5 ms  ✓ GPUCompiler
+  45552.7 ms  ✓ Enzyme
+  23 dependencies successfully precompiled in 69 seconds. 23 already precompiled.
+	Command being timed: "julia +1.11.6 --project=E/Enzyme/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 251.50
+	System time (seconds): 11.19
+	Percent of CPU this job got: 227%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:55.43
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2364776
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 232
+	Minor (reclaiming a frame) page faults: 3390489
+	Voluntary context switches: 76734
+	Involuntary context switches: 9631
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 776408
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

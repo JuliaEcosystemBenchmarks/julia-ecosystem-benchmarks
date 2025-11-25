@@ -1,0 +1,55 @@
+Precompiling project...
+    728.0 ms  ✓ OpenLibm_jll
+    725.4 ms  ✓ StaticArraysCore
+    840.1 ms  ✓ Unicode
+    900.3 ms  ✓ CompilerSupportLibraries_jll
+   1092.2 ms  ✓ DocStringExtensions
+   1109.5 ms  ✓ Statistics
+   1296.2 ms  ✓ FunctionWrappers
+    664.2 ms  ✓ DiffResults
+    717.3 ms  ✓ NaNMath
+    728.2 ms  ✓ Compat
+    797.6 ms  ✓ Preferences
+   1692.7 ms  ✓ IrrationalConstants
+    445.9 ms  ✓ Compat → CompatLinearAlgebraExt
+    405.1 ms  ✓ PrecompileTools
+    445.4 ms  ✓ JLLWrappers
+    551.2 ms  ✓ LogExpFunctions
+   2716.7 ms  ✓ MacroTools
+    629.7 ms  ✓ OpenSpecFun_jll
+    381.5 ms  ✓ CommonSubexpressions
+   1140.0 ms  ✓ ChainRulesCore
+    911.6 ms  ✓ LogExpFunctions → LogExpFunctionsChainRulesCoreExt
+   1772.3 ms  ✓ SpecialFunctions
+    463.6 ms  ✓ DiffRules
+   1170.6 ms  ✓ SpecialFunctions → SpecialFunctionsChainRulesCoreExt
+   5233.5 ms  ✓ StaticArrays
+   2701.6 ms  ✓ ForwardDiff
+    470.3 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    475.6 ms  ✓ StaticArrays → StaticArraysChainRulesCoreExt
+    536.0 ms  ✓ ForwardDiff → ForwardDiffStaticArraysExt
+   9892.2 ms  ✓ ReverseDiff
+  30 dependencies successfully precompiled in 18 seconds. 4 already precompiled.
+	Command being timed: "julia +1.11.6 --project=R/ReverseDiff/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 126.57
+	System time (seconds): 7.48
+	Percent of CPU this job got: 189%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:10.72
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2037272
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 221
+	Minor (reclaiming a frame) page faults: 2573449
+	Voluntary context switches: 68254
+	Involuntary context switches: 4420
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 526064
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

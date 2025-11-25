@@ -1,0 +1,50 @@
+Precompiling project...
+    964.3 ms  ✓ Unicode
+   1027.8 ms  ✓ Mmap
+   1042.5 ms  ✓ StaticArraysCore
+   1158.7 ms  ✓ Inflate
+   1165.1 ms  ✓ SuiteSparse_jll
+   1264.0 ms  ✓ CompilerSupportLibraries_jll
+   1360.3 ms  ✓ OrderedCollections
+   1370.8 ms  ✓ Statistics
+   1443.2 ms  ✓ Serialization
+    807.9 ms  ✓ Compat
+    915.0 ms  ✓ Preferences
+   2167.2 ms  ✓ InteractiveUtils
+    518.1 ms  ✓ Compat → CompatLinearAlgebraExt
+    429.8 ms  ✓ PrecompileTools
+   3070.3 ms  ✓ MacroTools
+   2118.4 ms  ✓ Distributed
+    808.5 ms  ✓ SimpleTraits
+    515.0 ms  ✓ SharedArrays
+   1859.7 ms  ✓ DataStructures
+   3490.7 ms  ✓ SparseArrays
+    390.2 ms  ✓ Statistics → SparseArraysExt
+   5229.4 ms  ✓ StaticArrays
+    411.1 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    779.6 ms  ✓ ArnoldiMethod
+   2670.5 ms  ✓ Graphs
+  25 dependencies successfully precompiled in 11 seconds. 6 already precompiled.
+	Command being timed: "julia +1.11.6 --project=G/Graphs/Graph-Construction -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 117.74
+	System time (seconds): 7.41
+	Percent of CPU this job got: 195%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:04.12
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2036604
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 194
+	Minor (reclaiming a frame) page faults: 2343274
+	Voluntary context switches: 62208
+	Involuntary context switches: 4788
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 484016
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

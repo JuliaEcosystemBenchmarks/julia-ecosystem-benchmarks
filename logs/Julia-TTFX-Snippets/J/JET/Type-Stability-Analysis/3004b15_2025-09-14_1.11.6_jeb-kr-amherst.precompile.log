@@ -1,0 +1,66 @@
+Precompiling Pkg...
+   1164.6 ms  ✓ nghttp2_jll
+   1108.4 ms  ✓ Logging
+   1116.7 ms  ✓ UUIDs
+   1116.3 ms  ✓ MozillaCACerts_jll
+   1128.2 ms  ✓ p7zip_jll
+   1193.5 ms  ✓ Unicode
+   1192.5 ms  ✓ Zlib_jll
+   1199.7 ms  ✓ Base64
+   1237.1 ms  ✓ MbedTLS_jll
+   1239.7 ms  ✓ NetworkOptions
+    325.2 ms  ✓ LibSSH2_jll
+    424.6 ms  ✓ Printf
+    452.1 ms  ✓ LibCURL_jll
+    470.2 ms  ✓ LibGit2_jll
+   2114.3 ms  ✓ ArgTools
+    584.6 ms  ✓ LibCURL
+    546.1 ms  ✓ Tar
+   2428.9 ms  ✓ Dates
+   2853.7 ms  ✓ Markdown
+   2316.2 ms  ✓ LibGit2
+    367.8 ms  ✓ TOML
+   2867.0 ms  ✓ Downloads
+  39030.5 ms  ✓ Pkg
+  23 dependencies successfully precompiled in 45 seconds
+Precompiling project...
+    516.1 ms  ✓ Serialization
+    614.3 ms  ✓ Preferences
+    334.3 ms  ✓ PrecompileTools
+   1060.6 ms  ✓ InteractiveUtils
+   1792.2 ms  ✓ MacroTools
+    930.9 ms  ✓ CodeTracking
+   2765.7 ms  ✓ Test
+   8978.8 ms  ✓ JuliaInterpreter
+  12389.3 ms  ✓ JuliaSyntax
+   5668.6 ms  ✓ LoweredCodeUtils
+   3034.2 ms  ✓ JET
+  11 dependencies successfully precompiled in 20 seconds. 23 already precompiled.
+  1 dependency had output during precompilation:
+┌ JET
+│  ┌ Warning: `@lookup(mod, frame, node)` at /workdir/depot/packages/JET/yNWjn/src/toplevel/virtualprocess.jl:1321 is deprecated, use `lookup(frame, node)` instead.
+│  └ @ JuliaInterpreter /workdir/depot/packages/JuliaInterpreter/ZNccU/src/interpret.jl:46
+└  
+	Command being timed: "julia +1.11.6 --project=J/JET/Type-Stability-Analysis -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 147.12
+	System time (seconds): 7.20
+	Percent of CPU this job got: 236%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:05.20
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2036280
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 269
+	Minor (reclaiming a frame) page faults: 2327026
+	Voluntary context switches: 47498
+	Involuntary context switches: 5737
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 527160
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

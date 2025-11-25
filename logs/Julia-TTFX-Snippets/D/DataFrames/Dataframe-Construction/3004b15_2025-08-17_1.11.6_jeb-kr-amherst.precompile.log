@@ -1,0 +1,53 @@
+Precompiling project...
+   1419.0 ms  ✓ DataValueInterfaces
+   1420.4 ms  ✓ IteratorInterfaceExtensions
+   1524.6 ms  ✓ Reexport
+   1535.0 ms  ✓ InvertedIndices
+   1575.2 ms  ✓ Future
+   1607.1 ms  ✓ DataAPI
+   1606.3 ms  ✓ Unicode
+   1617.6 ms  ✓ LaTeXStrings
+   2010.5 ms  ✓ Statistics
+   2024.8 ms  ✓ CompilerSupportLibraries_jll
+   2224.7 ms  ✓ OrderedCollections
+   2226.1 ms  ✓ InlineStrings
+    928.3 ms  ✓ TableTraits
+   1049.8 ms  ✓ PooledArrays
+   1131.1 ms  ✓ Missings
+   1186.1 ms  ✓ Compat
+   1398.8 ms  ✓ Preferences
+   3034.6 ms  ✓ Crayons
+   3127.2 ms  ✓ InteractiveUtils
+   1005.5 ms  ✓ Tables
+    551.0 ms  ✓ Compat → CompatLinearAlgebraExt
+    409.1 ms  ✓ PrecompileTools
+   1856.3 ms  ✓ SentinelArrays
+   1184.8 ms  ✓ StringManipulation
+   1287.9 ms  ✓ DataStructures
+    383.6 ms  ✓ SortingAlgorithms
+  11376.3 ms  ✓ PrettyTables
+  26937.1 ms  ✓ DataFrames
+  28 dependencies successfully precompiled in 43 seconds. 6 already precompiled.
+	Command being timed: "julia +1.11.6 --project=D/DataFrames/Dataframe-Construction -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 174.03
+	System time (seconds): 9.16
+	Percent of CPU this job got: 191%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:35.89
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2040016
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 200
+	Minor (reclaiming a frame) page faults: 2856362
+	Voluntary context switches: 66026
+	Involuntary context switches: 9334
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 676048
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

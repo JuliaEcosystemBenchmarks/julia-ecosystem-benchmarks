@@ -1,0 +1,65 @@
+Precompiling project...
+   1609.0 ms  ✓ Reexport
+   1703.0 ms  ✓ Unicode
+   1770.9 ms  ✓ PtrArrays
+   1880.1 ms  ✓ DataAPI
+   1900.4 ms  ✓ OpenLibm_jll
+   1982.5 ms  ✓ StatsAPI
+   2185.6 ms  ✓ DocStringExtensions
+   2288.8 ms  ✓ Statistics
+   2263.0 ms  ✓ SuiteSparse_jll
+   2295.5 ms  ✓ OrderedCollections
+   2286.8 ms  ✓ CompilerSupportLibraries_jll
+   2372.6 ms  ✓ Serialization
+   2802.1 ms  ✓ FillArrays
+   1203.5 ms  ✓ AliasTables
+   1124.1 ms  ✓ Missings
+   1314.3 ms  ✓ Compat
+   3104.0 ms  ✓ IrrationalConstants
+   1480.5 ms  ✓ Preferences
+   3385.7 ms  ✓ InteractiveUtils
+    656.8 ms  ✓ FillArrays → FillArraysStatisticsExt
+    471.0 ms  ✓ Compat → CompatLinearAlgebraExt
+    445.7 ms  ✓ JLLWrappers
+    573.6 ms  ✓ LogExpFunctions
+    390.4 ms  ✓ Rmath_jll
+    389.4 ms  ✓ OpenSpecFun_jll
+    589.2 ms  ✓ Rmath
+   1278.5 ms  ✓ DataStructures
+    394.4 ms  ✓ SortingAlgorithms
+    738.1 ms  ✓ QuadGK
+   3248.0 ms  ✓ SparseArrays
+   1848.6 ms  ✓ SpecialFunctions
+    400.2 ms  ✓ SuiteSparse
+    441.4 ms  ✓ Statistics → SparseArraysExt
+    470.1 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    579.3 ms  ✓ PDMats
+    781.0 ms  ✓ HypergeometricFunctions
+    410.1 ms  ✓ FillArrays → FillArraysPDMatsExt
+   1528.6 ms  ✓ StatsBase
+   1130.1 ms  ✓ StatsFuns
+   3410.4 ms  ✓ Distributions
+  40 dependencies successfully precompiled in 11 seconds. 6 already precompiled.
+	Command being timed: "julia +1.11.6 --project=D/Distributions/Normal-Distribution -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 120.78
+	System time (seconds): 8.96
+	Percent of CPU this job got: 200%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:04.62
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2033820
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 217
+	Minor (reclaiming a frame) page faults: 2760981
+	Voluntary context switches: 79985
+	Involuntary context switches: 8438
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 475488
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

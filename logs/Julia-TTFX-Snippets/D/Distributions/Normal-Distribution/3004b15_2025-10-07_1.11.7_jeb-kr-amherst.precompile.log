@@ -1,0 +1,63 @@
+Precompiling project...
+   1518.4 ms  ✓ DataAPI
+   1623.8 ms  ✓ PtrArrays
+   1617.3 ms  ✓ Reexport
+   1706.3 ms  ✓ OpenLibm_jll
+   1718.2 ms  ✓ StatsAPI
+   1735.5 ms  ✓ Unicode
+   1931.4 ms  ✓ CompilerSupportLibraries_jll
+   1917.5 ms  ✓ SuiteSparse_jll
+   2036.3 ms  ✓ Statistics
+   2124.8 ms  ✓ OrderedCollections
+   2106.2 ms  ✓ DocStringExtensions
+   2231.1 ms  ✓ Serialization
+    936.3 ms  ✓ Missings
+    912.8 ms  ✓ AliasTables
+   2552.7 ms  ✓ FillArrays
+   2758.3 ms  ✓ IrrationalConstants
+   1086.0 ms  ✓ Preferences
+    570.0 ms  ✓ FillArrays → FillArraysStatisticsExt
+    444.8 ms  ✓ JLLWrappers
+    536.7 ms  ✓ LogExpFunctions
+    432.3 ms  ✓ Rmath_jll
+    440.0 ms  ✓ OpenSpecFun_jll
+   1661.2 ms  ✓ DataStructures
+    452.0 ms  ✓ SortingAlgorithms
+    682.9 ms  ✓ Rmath
+    783.3 ms  ✓ QuadGK
+   3051.9 ms  ✓ SparseArrays
+   1962.0 ms  ✓ SpecialFunctions
+    403.4 ms  ✓ SuiteSparse
+    458.0 ms  ✓ Statistics → SparseArraysExt
+    481.0 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    601.0 ms  ✓ PDMats
+    768.4 ms  ✓ HypergeometricFunctions
+    416.4 ms  ✓ FillArrays → FillArraysPDMatsExt
+   1532.1 ms  ✓ StatsBase
+   1104.0 ms  ✓ StatsFuns
+    437.6 ms  ✓ PDMats → StatsBaseExt
+   3346.7 ms  ✓ Distributions
+  38 dependencies successfully precompiled in 11 seconds. 3 already precompiled.
+	Command being timed: "julia +1.11.7 --project=D/Distributions/Normal-Distribution -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 124.00
+	System time (seconds): 9.27
+	Percent of CPU this job got: 197%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:07.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2029060
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 184
+	Minor (reclaiming a frame) page faults: 2710511
+	Voluntary context switches: 79878
+	Involuntary context switches: 7118
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 473016
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

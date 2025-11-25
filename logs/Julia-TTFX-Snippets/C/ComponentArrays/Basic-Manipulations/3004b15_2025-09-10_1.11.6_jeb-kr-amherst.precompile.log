@@ -1,0 +1,46 @@
+Precompiling project...
+    460.6 ms  ✓ IfElse
+    521.5 ms  ✓ CommonWorldInvalidations
+    524.6 ms  ✓ Unicode
+    548.1 ms  ✓ StaticArraysCore
+    578.1 ms  ✓ ConstructionBase
+    708.1 ms  ✓ CompilerSupportLibraries_jll
+    707.1 ms  ✓ Requires
+    490.9 ms  ✓ Compat
+    443.7 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+    368.8 ms  ✓ Adapt
+    586.8 ms  ✓ Preferences
+    308.0 ms  ✓ Compat → CompatLinearAlgebraExt
+    333.3 ms  ✓ PrecompileTools
+    435.6 ms  ✓ ArrayInterface
+    277.3 ms  ✓ ArrayInterface → ArrayInterfaceStaticArraysCoreExt
+    465.6 ms  ✓ Functors
+    600.4 ms  ✓ Static
+    887.4 ms  ✓ ChainRulesCore
+    288.4 ms  ✓ ArrayInterface → ArrayInterfaceChainRulesCoreExt
+    862.3 ms  ✓ StaticArrayInterface
+    657.4 ms  ✓ ComponentArrays
+  21 dependencies successfully precompiled in 4 seconds. 4 already precompiled.
+	Command being timed: "julia +1.11.6 --project=C/ComponentArrays/Basic-Manipulations -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 101.65
+	System time (seconds): 5.90
+	Percent of CPU this job got: 189%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:56.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2032296
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 142
+	Minor (reclaiming a frame) page faults: 2047588
+	Voluntary context switches: 56338
+	Involuntary context switches: 4619
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 374576
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

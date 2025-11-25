@@ -1,0 +1,37 @@
+Precompiling project...
+    407.1 ms  ✓ Future
+    440.7 ms  ✓ StaticArraysCore
+    468.1 ms  ✓ ConstructionBase
+    564.4 ms  ✓ Requires
+    565.7 ms  ✓ CompilerSupportLibraries_jll
+    362.4 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+    331.7 ms  ✓ Adapt
+    380.8 ms  ✓ ArrayInterface
+    384.7 ms  ✓ ArrayInterface → ArrayInterfaceStaticArraysCoreExt
+   1686.6 ms  ✓ MacroTools
+    745.9 ms  ✓ Setfield
+    455.7 ms  ✓ FiniteDiff
+  12 dependencies successfully precompiled in 3 seconds. 1 already precompiled.
+	Command being timed: "julia +1.11.6 --project=F/FiniteDiff/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 99.24
+	System time (seconds): 5.06
+	Percent of CPU this job got: 186%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:56.01
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2036820
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 146
+	Minor (reclaiming a frame) page faults: 1781145
+	Voluntary context switches: 45554
+	Involuntary context switches: 3677
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 363504
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

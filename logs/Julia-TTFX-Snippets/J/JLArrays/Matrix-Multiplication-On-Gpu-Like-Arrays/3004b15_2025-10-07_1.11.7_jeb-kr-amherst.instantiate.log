@@ -1,0 +1,58 @@
+nice: cannot set niceness: Permission denied
+ERROR: Unexpected end of data : General.tar
+ERROR: EOFError: read end of file
+Stacktrace:
+  [1] read_data(tar::Base.Process, file::IOBuffer; size::Int64, buf::Vector{UInt8}, tee::Base.DevNull)
+    @ Tar ~/.julia/juliaup/julia-1.11.7+0.x64.linux.gnu/share/julia/stdlib/v1.11/Tar/src/extract.jl:715
+  [2] read_data
+    @ ~/.julia/juliaup/julia-1.11.7+0.x64.linux.gnu/share/julia/stdlib/v1.11/Tar/src/extract.jl:703 [inlined]
+  [3] (::Pkg.Registry.var"#20#23"{Base.Process, IOBuffer, Vector{UInt8}, Dict{String, String}})(hdr::Tar.Header, ::Vector{SubString{String}})
+    @ Pkg.Registry ~/.julia/juliaup/julia-1.11.7+0.x64.linux.gnu/share/julia/stdlib/v1.11/Pkg/src/Registry/registry_instance.jl:266
+  [4] read_tarball(callback::Pkg.Registry.var"#20#23"{Base.Process, IOBuffer, Vector{UInt8}, Dict{String, String}}, predicate::Pkg.Registry.var"#21#24", tar::Base.Process; buf::Vector{UInt8}, skeleton::Base.DevNull)
+    @ Tar ~/.julia/juliaup/julia-1.11.7+0.x64.linux.gnu/share/julia/stdlib/v1.11/Tar/src/extract.jl:407
+  [5] read_tarball
+    @ ~/.julia/juliaup/julia-1.11.7+0.x64.linux.gnu/share/julia/stdlib/v1.11/Tar/src/extract.jl:341 [inlined]
+  [6] #19
+    @ ~/.julia/juliaup/julia-1.11.7+0.x64.linux.gnu/share/julia/stdlib/v1.11/Pkg/src/Registry/registry_instance.jl:264 [inlined]
+  [7] open(::Pkg.Registry.var"#19#22"{IOBuffer, Vector{UInt8}, Dict{String, String}}, ::Cmd; kwargs::@Kwargs{})
+    @ Base ./process.jl:447
+  [8] open
+    @ ./process.jl:428 [inlined]
+  [9] uncompress_registry(tar_gz::String)
+    @ Pkg.Registry ~/.julia/juliaup/julia-1.11.7+0.x64.linux.gnu/share/julia/stdlib/v1.11/Pkg/src/Registry/registry_instance.jl:263
+ [10] Pkg.Registry.RegistryInstance(path::String)
+    @ Pkg.Registry ~/.julia/juliaup/julia-1.11.7+0.x64.linux.gnu/share/julia/stdlib/v1.11/Pkg/src/Registry/registry_instance.jl:330
+ [11] reachable_registries(; depots::Vector{String})
+    @ Pkg.Registry ~/.julia/juliaup/julia-1.11.7+0.x64.linux.gnu/share/julia/stdlib/v1.11/Pkg/src/Registry/registry_instance.jl:436
+ [12] reachable_registries
+    @ ~/.julia/juliaup/julia-1.11.7+0.x64.linux.gnu/share/julia/stdlib/v1.11/Pkg/src/Registry/registry_instance.jl:406 [inlined]
+ [13] Context
+    @ ~/.julia/juliaup/julia-1.11.7+0.x64.linux.gnu/share/julia/stdlib/v1.11/Pkg/src/Types.jl:401 [inlined]
+ [14] instantiate(; kwargs::@Kwargs{})
+    @ Pkg.API ~/.julia/juliaup/julia-1.11.7+0.x64.linux.gnu/share/julia/stdlib/v1.11/Pkg/src/API.jl:1171
+ [15] top-level scope
+    @ none:1
+Command exited with non-zero status 1
+	Command being timed: "nice -n -10 julia +1.11.7 --project=J/JLArrays/Matrix-Multiplication-On-Gpu-Like-Arrays -e using Pkg; Pkg.instantiate()"
+	User time (seconds): 3.24
+	System time (seconds): 0.28
+	Percent of CPU this job got: 129%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.73
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 535356
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 84418
+	Voluntary context switches: 792
+	Involuntary context switches: 126
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
