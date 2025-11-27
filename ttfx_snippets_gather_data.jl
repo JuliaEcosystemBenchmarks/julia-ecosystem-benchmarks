@@ -107,7 +107,8 @@ end
 function get_corresponding_log_files(precompile_filepath)
     precompile_log = replace(precompile_filepath, r"\.precompile$" => ".precompile.log")
     task_log = replace(precompile_filepath, r"\.precompile$" => ".task.log")
-    return (precompile_log, task_log)
+    instantiate_log = replace(precompile_filepath, r"\.precompile$" => ".instantiate.log")
+    return (precompile_log, task_log, instantiate_log)
 end
 
 function parse_time_command_output(filepath, content)
@@ -170,6 +171,34 @@ function parse_time_command_output(filepath, content)
     return (cpu_percent, max_rss)
 end
 
+function extract_package_version(filepath, content, package_name)
+    content = strip(content)
+    
+    # Handle empty files
+    if isempty(content)
+        @warn "Instantiate log file is empty" filepath=filepath
+        return nothing
+    end
+    
+    lines = split(content, "\n")
+    
+    # Look for lines containing package installation with version
+    # Expected format: "  [hash] + PackageName v1.2.3"
+    for line in lines
+        line = strip(line)
+        
+        # Match pattern: + PackageName vX.Y.Z
+        pattern = Regex("\\+\\s+" * package_name * "\\s+v([0-9]+\\.[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:-[a-zA-Z0-9.\\-]+)?)")
+        m = match(pattern, line)
+        if m !== nothing
+            return m.captures[1]
+        end
+    end
+    
+    @warn "No package version found for package in instantiate log" filepath=filepath package_name=package_name
+    return nothing
+end
+
 function analyze_precompile_logs()
     println("Fetching jeb_logs branch...")
     run(`git fetch origin jeb_logs:jeb_logs`)
@@ -188,6 +217,7 @@ function analyze_precompile_logs()
     julia_versions = String[]
     hostnames = String[]
     hashes = String[]
+    package_versions = Union{String, Missing}[]
     precompile_times = Union{Float64, Missing}[]
     loading_times = Union{Float64, Missing}[]
     task_times = Union{Float64, Missing}[]
@@ -213,12 +243,13 @@ function analyze_precompile_logs()
         
         package_name, task_name = extract_package_and_task_from_path(precompile_filepath)
         task_filepath = get_corresponding_task_file(precompile_filepath)
-        precompile_log_filepath, task_log_filepath = get_corresponding_log_files(precompile_filepath)
+        precompile_log_filepath, task_log_filepath, instantiate_log_filepath = get_corresponding_log_files(precompile_filepath)
         
         # Read precompile, task, and log files
         precompile_time = nothing
         loading_time = nothing
         task_time = nothing
+        package_version = nothing
         precompile_cpu = nothing
         precompile_resident = nothing
         task_cpu = nothing
@@ -262,6 +293,15 @@ function analyze_precompile_logs()
             # Don't skip the entry for log file issues, just set values to nothing
         end
         
+        # Process instantiate log file to extract package version
+        try
+            instantiate_log_content = read(`git show jeb_logs:$instantiate_log_filepath`, String)
+            package_version = extract_package_version(instantiate_log_filepath, instantiate_log_content, package_name)
+        catch e
+            @warn "Error reading or processing instantiate log file content" filepath=instantiate_log_filepath exception=e
+            # Don't skip the entry for instantiate log file issues, just set version to nothing
+        end
+        
         # Only add entry if we have valid data from both main files
         # Log files are optional - missing log data won't skip the entry
         if precompile_time !== nothing && loading_time !== nothing && task_time !== nothing
@@ -271,6 +311,7 @@ function analyze_precompile_logs()
             push!(julia_versions, parsed.julia_version)
             push!(hostnames, parsed.hostname)
             push!(hashes, parsed.hash)
+            push!(package_versions, package_version)
             push!(precompile_times, precompile_time)
             push!(loading_times, loading_time)
             push!(task_times, task_time)
@@ -292,6 +333,7 @@ function analyze_precompile_logs()
         julia_version = julia_versions,
         hostname = hostnames,
         hash = hashes,
+        package_version = package_versions,
         precompile_time = precompile_times,
         loading_time = loading_times,
         task_time = task_times,

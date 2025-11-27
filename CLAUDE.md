@@ -82,11 +82,12 @@ The repository includes Julia analysis scripts for processing benchmark logs:
 #### ttfx_snippets_gather_data.jl
 Data gathering and processing script that:
 - Fetches the `jeb_logs` branch from the remote repository
-- Processes 3,834+ *.precompile files and their corresponding *.task, *.precompile.log, and *.task.log files
+- Processes 3,834+ *.precompile files and their corresponding *.task, *.precompile.log, *.task.log, and *.instantiate.log files
 - Extracts timing data (precompile time, loading time, task time)
+- Extracts package version information from *.instantiate.log files
 - Extracts system metrics from log files (CPU percentage, maximum resident set size)
 - Parses package names and task names from file paths
-- Creates a comprehensive DataFrame with 13 columns of benchmark data
+- Creates a comprehensive DataFrame with 14 columns of benchmark data
 - Exports the data to `ttfx_snippets_data.csv` for analysis
 - Provides detailed logging and error reporting for data quality assessment
 
@@ -127,8 +128,25 @@ julia --project -e "using Pkg; Pkg.add(\"PackageName\")"
 ```
 
 ### Output Files
-- `ttfx_snippets_data.csv`: Comprehensive dataset with timing and system metrics
+- `ttfx_snippets_data.csv`: Comprehensive dataset with timing, package version, and system metrics
 - `plots/Julia-TTFX-Snippets/*.png`: Individual plots for each package/task combination
+
+### CSV Data Columns
+The output CSV file contains the following 14 columns:
+1. `package_name`: Name of the Julia package being tested
+2. `task_name`: Specific benchmark task within the package
+3. `date`: Date of the benchmark run (YYYY-MM-DD format)
+4. `julia_version`: Julia version used for the benchmark
+5. `hostname`: System hostname where benchmark was run
+6. `hash`: Git hash identifier for the benchmark
+7. `package_version`: Version of the package being tested (extracted from instantiate.log)
+8. `precompile_time`: Time taken for package precompilation (seconds)
+9. `loading_time`: Time taken for package loading (seconds)
+10. `task_time`: Time taken to execute the benchmark task (seconds)
+11. `precompile_cpu`: CPU usage percentage during precompilation
+12. `task_cpu`: CPU usage percentage during task execution
+13. `precompile_resident`: Maximum resident memory during precompilation (kbytes)
+14. `task_resident`: Maximum resident memory during task execution (kbytes)
 
 ## Build/Lint Commands
 No build or lint commands identified. This is primarily a bash-based benchmarking suite.
