@@ -22,7 +22,7 @@ else
     echo "[`date`] # ... AND FORCED CHECKOUT ..."
     git -C General checkout --force master
     echo "[`date`] # ... AND FORCED PULL"
-    git -C General pull --force
+    git -C General pull --force origin master
 fi
 cd General
 echo "[`date`] # CHECKOUT DATE=$JEB_REGISTRY_DATE"
