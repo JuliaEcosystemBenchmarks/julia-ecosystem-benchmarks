@@ -25,18 +25,18 @@ do
     mkdir -p $LOGS_DIR/$SNIPPET
     LOG_FILE=$LOGS_DIR/$SNIPPET/${GITHASH}_${JEB_REGISTRY_DATE}_${JEB_JULIA_VERSION}_${JEB_HOSTNAME}
     echo "[`date`] # Instantiating $SNIPPET on $JEB_JULIA_VERSION"
-    env time -v nice -n -10 \
+    env time -v nice -n -10 timeout -k120 -v 3600 \
         julia +$JEB_JULIA_VERSION \
         --project=$SNIPPET \
 	-e 'using Pkg; Pkg.instantiate()' 2>$LOG_FILE.instantiate.log || continue
     rm -rf $JULIA_DEPOT_PATH/compiled
     echo "[`date`] # Precompiling $SNIPPET on $JEB_JULIA_VERSION"
-    env time -v \
+    env time -v nice -n -10 timeout -k120 -v 3600 \
         julia +$JEB_JULIA_VERSION \
         --project=$SNIPPET \
 	-e 'using Pkg; @time @eval Pkg.precompile()' > $LOG_FILE.precompile 2>$LOG_FILE.precompile.log 
     echo "[`date`] # Running $SNIPPET on $JEB_JULIA_VERSION"
-    env time -v \
+    env time -v nice -n -10 timeout -k120 -v 3600 \
         julia +$JEB_JULIA_VERSION \
         --project=$SNIPPET \
 	$SNIPPET/task.jl > $LOG_FILE.task 2>$LOG_FILE.task.log
