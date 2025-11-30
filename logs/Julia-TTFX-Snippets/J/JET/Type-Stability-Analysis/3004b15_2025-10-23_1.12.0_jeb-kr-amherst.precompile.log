@@ -1,0 +1,77 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1690.4 ms  ✓ nghttp2_jll
+   1682.6 ms  ✓ Logging
+   1782.5 ms  ✓ UUIDs
+   1817.4 ms  ✓ OpenSSL_jll
+   1794.7 ms  ✓ p7zip_jll
+   1787.2 ms  ✓ Zlib_jll
+   1795.2 ms  ✓ MozillaCACerts_jll
+   1798.5 ms  ✓ NetworkOptions
+   1818.5 ms  ✓ Unicode
+   1842.9 ms  ✓ Base64
+    419.2 ms  ✓ LibSSH2_jll
+    598.1 ms  ✓ Printf
+    463.8 ms  ✓ LibGit2_jll
+    462.3 ms  ✓ LibCURL_jll
+   3207.2 ms  ✓ ArgTools
+    775.4 ms  ✓ LibCURL
+    638.4 ms  ✓ Tar
+   2115.1 ms  ✓ Dates
+   2216.1 ms  ✓ LibGit2
+    436.9 ms  ✓ TOML
+   2535.7 ms  ✓ Downloads
+   8616.8 ms  ✓ StyledStrings
+   1644.5 ms  ✓ JuliaSyntaxHighlighting
+   3925.3 ms  ✓ Markdown
+  46833.5 ms  ✓ Pkg
+  25 dependencies successfully precompiled in 61 seconds
+Precompiling packages...
+    801.0 ms  ✓ Compiler
+   1179.2 ms  ✓ OrderedCollections
+   1174.1 ms  ✓ Preferences
+   1189.7 ms  ✓ Serialization
+   1287.2 ms  ✓ Requires
+    437.7 ms  ✓ PrecompileTools
+   1880.3 ms  ✓ InteractiveUtils
+   2791.2 ms  ✓ MacroTools
+    967.4 ms  ✓ CodeTracking
+   3598.0 ms  ✓ Test
+   6069.2 ms  ✓ JuliaInterpreter
+   9129.6 ms  ✓ LoweredCodeUtils
+  18861.1 ms  ✓ JuliaSyntax
+  28737.2 ms  ✓ REPL
+   3940.3 ms  ✓ Pkg → REPLExt
+   7785.2 ms  ✓ Revise
+  46752.5 ms  ✓ JET
+  17 dependencies successfully precompiled in 85 seconds. 25 already precompiled.
+  1 dependency had output during precompilation:
+┌ Revise
+│  ┌ Warning: precompile directive
+│  │     precompile(Tuple{mbody.sig.parameters[1], Symbol, Bool, Bool, Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:skip_include,), Tuple{Bool}}}, typeof(methods_by_execution!), Compiled, MI, Module, Expr})
+│  │ failed. Please report an issue in Revise (after checking for duplicates) or remove this directive.
+│  └ @ Revise /workdir/depot/packages/Revise/Rfg3u/src/precompile.jl:65
+└  
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.0 --project=J/JET/Type-Stability-Analysis -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 350.12
+	System time (seconds): 12.35
+	Percent of CPU this job got: 246%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:26.98
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2301756
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 296
+	Minor (reclaiming a frame) page faults: 3950708
+	Voluntary context switches: 9733
+	Involuntary context switches: 14851
+	Swaps: 0
+	File system inputs: 16
+	File system outputs: 674048
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

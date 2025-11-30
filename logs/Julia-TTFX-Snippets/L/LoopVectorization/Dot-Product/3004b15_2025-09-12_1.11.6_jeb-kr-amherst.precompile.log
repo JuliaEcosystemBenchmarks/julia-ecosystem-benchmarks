@@ -1,0 +1,57 @@
+nice: cannot set niceness: Permission denied
+Precompiling project...
+    939.1 ms  ✓ SIMDTypes
+   1008.2 ms  ✓ IfElse
+   1090.4 ms  ✓ UnPack
+   1103.6 ms  ✓ CommonWorldInvalidations
+   1180.8 ms  ✓ Unicode
+   1172.5 ms  ✓ ManualMemory
+   1369.4 ms  ✓ DocStringExtensions
+   1384.0 ms  ✓ CompilerSupportLibraries_jll
+   1418.7 ms  ✓ Requires
+   1476.9 ms  ✓ CpuId
+   1827.3 ms  ✓ OffsetArrays
+    718.4 ms  ✓ Compat
+    838.4 ms  ✓ Preferences
+    605.6 ms  ✓ Adapt
+    974.5 ms  ✓ ThreadingUtilities
+    479.9 ms  ✓ Compat → CompatLinearAlgebraExt
+    380.9 ms  ✓ PrecompileTools
+    393.8 ms  ✓ OffsetArrays → OffsetArraysAdaptExt
+    475.5 ms  ✓ ArrayInterface
+    598.3 ms  ✓ Static
+    334.7 ms  ✓ BitTwiddlingConvenienceFunctions
+    756.2 ms  ✓ CPUSummary
+    643.0 ms  ✓ HostCPUFeatures
+    979.5 ms  ✓ StaticArrayInterface
+    503.2 ms  ✓ PolyesterWeave
+    407.4 ms  ✓ CloseOpenIntervals
+    410.1 ms  ✓ StaticArrayInterface → StaticArrayInterfaceOffsetArraysExt
+    480.9 ms  ✓ LayoutPointers
+   5025.3 ms  ✓ VectorizationBase
+    705.0 ms  ✓ SLEEFPirates
+  17087.2 ms  ✓ LoopVectorization
+  31 dependencies successfully precompiled in 27 seconds. 6 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.11.6 --project=L/LoopVectorization/Dot-Product -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 156.19
+	System time (seconds): 8.30
+	Percent of CPU this job got: 191%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:26.10
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2028176
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 188
+	Minor (reclaiming a frame) page faults: 2658198
+	Voluntary context switches: 69909
+	Involuntary context switches: 6216
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 522536
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

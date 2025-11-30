@@ -1,0 +1,59 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1596.5 ms  ✓ OpenSSL_jll
+   1659.9 ms  ✓ p7zip_jll
+   1657.9 ms  ✓ MozillaCACerts_jll
+   1674.9 ms  ✓ nghttp2_jll
+   1722.4 ms  ✓ Unicode
+   1729.1 ms  ✓ UUIDs
+   1751.7 ms  ✓ Logging
+   1753.7 ms  ✓ Zlib_jll
+   1845.5 ms  ✓ Base64
+   1839.4 ms  ✓ NetworkOptions
+    532.2 ms  ✓ LibSSH2_jll
+    598.0 ms  ✓ Printf
+    434.5 ms  ✓ LibCURL_jll
+    457.7 ms  ✓ LibGit2_jll
+   3096.0 ms  ✓ ArgTools
+    766.7 ms  ✓ LibCURL
+    633.2 ms  ✓ Tar
+   2132.9 ms  ✓ Dates
+   2220.4 ms  ✓ LibGit2
+    451.5 ms  ✓ TOML
+   2593.8 ms  ✓ Downloads
+   8452.4 ms  ✓ StyledStrings
+   1690.5 ms  ✓ JuliaSyntaxHighlighting
+   3862.3 ms  ✓ Markdown
+  47070.5 ms  ✓ Pkg
+  25 dependencies successfully precompiled in 61 seconds
+Precompiling packages...
+    524.8 ms  ✓ Preferences
+    357.3 ms  ✓ PrecompileTools
+   1119.1 ms  ✓ InteractiveUtils
+  23709.8 ms  ✓ REPL
+   3659.8 ms  ✓ Pkg → REPLExt
+   4653.6 ms  ✓ ShareAdd
+  6 dependencies successfully precompiled in 33 seconds. 25 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.1 --project=S/ShareAdd/Get-Info-On-Stdlib-In-Internal-Shareadd-Format -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 183.83
+	System time (seconds): 7.74
+	Percent of CPU this job got: 201%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:35.04
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2137352
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 168
+	Minor (reclaiming a frame) page faults: 2435036
+	Voluntary context switches: 6958
+	Involuntary context switches: 5619
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 427216
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

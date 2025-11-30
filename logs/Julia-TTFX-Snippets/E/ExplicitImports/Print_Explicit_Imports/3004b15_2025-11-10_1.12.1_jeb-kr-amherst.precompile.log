@@ -1,0 +1,56 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1524.7 ms  ✓ UUIDs
+   1555.5 ms  ✓ OpenSSL_jll
+   1606.3 ms  ✓ MozillaCACerts_jll
+   1635.1 ms  ✓ nghttp2_jll
+   1708.8 ms  ✓ Logging
+   1732.9 ms  ✓ p7zip_jll
+   1746.1 ms  ✓ Zlib_jll
+   1756.1 ms  ✓ Unicode
+   1808.8 ms  ✓ Base64
+   1828.3 ms  ✓ NetworkOptions
+    552.9 ms  ✓ LibSSH2_jll
+    592.2 ms  ✓ Printf
+    437.8 ms  ✓ LibCURL_jll
+    443.8 ms  ✓ LibGit2_jll
+   3143.6 ms  ✓ ArgTools
+    794.2 ms  ✓ LibCURL
+    629.2 ms  ✓ Tar
+   2120.9 ms  ✓ Dates
+   2232.2 ms  ✓ LibGit2
+    440.7 ms  ✓ TOML
+   2550.2 ms  ✓ Downloads
+   8370.8 ms  ✓ StyledStrings
+   1678.4 ms  ✓ JuliaSyntaxHighlighting
+   3796.9 ms  ✓ Markdown
+  47087.1 ms  ✓ Pkg
+  25 dependencies successfully precompiled in 61 seconds
+Precompiling packages...
+    513.3 ms  ✓ Preferences
+    334.0 ms  ✓ PrecompileTools
+  22338.7 ms  ✓ ExplicitImports
+  3 dependencies successfully precompiled in 23 seconds. 25 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.1 --project=E/ExplicitImports/Print_Explicit_Imports -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 159.66
+	System time (seconds): 6.99
+	Percent of CPU this job got: 196%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:24.95
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2130192
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 151
+	Minor (reclaiming a frame) page faults: 2155734
+	Voluntary context switches: 5836
+	Involuntary context switches: 5659
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 394264
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

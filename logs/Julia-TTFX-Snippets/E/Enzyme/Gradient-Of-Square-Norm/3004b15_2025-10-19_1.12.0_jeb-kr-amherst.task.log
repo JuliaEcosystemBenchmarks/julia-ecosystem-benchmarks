@@ -1,0 +1,195 @@
+nice: cannot set niceness: Permission denied
+Internal error: during type inference of
+active_reg_nothrow(Type{Array{Float64, 1}})
+Encountered unexpected error in runtime:
+AssertionError(msg="invalid `given_argtypes` for `mi`")
+va_process_argtypes at ./../usr/share/julia/Compiler/src/inferenceresult.jl:123
+InferenceState at ./../usr/share/julia/Compiler/src/inferencestate.jl:352
+jfptr_InferenceState_44820.1 at /root/.julia/juliaup/julia-1.12.0+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+tojlinvoke122185.1 at /root/.julia/juliaup/julia-1.12.0+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+j_InferenceState_114514.1 at /root/.julia/juliaup/julia-1.12.0+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+InferenceState at ./../usr/share/julia/Compiler/src/inferencestate.jl:605
+InferenceState at ./../usr/share/julia/Compiler/src/inferencestate.jl:607 [inlined]
+typeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1253
+typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1442 [inlined]
+typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1451
+jfptr_typeinf_ext_toplevel_117555.1 at /root/.julia/juliaup/julia-1.12.0+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/julia.h:2387 [inlined]
+jl_type_infer at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/gf.c:462
+jl_compile_method_internal at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/gf.c:3512
+_jl_invoke at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/gf.c:4002 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/gf.c:4210
+macro expansion at /workdir/depot/packages/Enzyme/LJjsP/src/sugar.jl:308 [inlined]
+#s699#157 at ./none:0
+GeneratedFunctionStub at ./expr.jl:1694
+jl_call_staged at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/method.c:662
+ijl_code_for_staged at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/method.c:735
+call_get_staged at ./../usr/share/julia/Compiler/src/utilities.jl:103 [inlined]
+get_staged at ./../usr/share/julia/Compiler/src/utilities.jl:88
+jfptr_get_staged_45134.1 at /root/.julia/juliaup/julia-1.12.0+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+tojlinvoke122184.1 at /root/.julia/juliaup/julia-1.12.0+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+j_get_staged_114517.1 at /root/.julia/juliaup/julia-1.12.0+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+retrieve_code_info at ./../usr/share/julia/Compiler/src/utilities.jl:121
+InferenceState at ./../usr/share/julia/Compiler/src/inferencestate.jl:602
+InferenceState at ./../usr/share/julia/Compiler/src/inferencestate.jl:607 [inlined]
+typeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1253
+typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1442 [inlined]
+typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1451
+jfptr_typeinf_ext_toplevel_117555.1 at /root/.julia/juliaup/julia-1.12.0+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/julia.h:2387 [inlined]
+jl_type_infer at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/gf.c:462
+jl_compile_method_internal at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/gf.c:3512
+_jl_invoke at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/gf.c:4002 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/gf.c:4210
+jl_apply at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/julia.h:2387 [inlined]
+do_call at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/interpreter.c:123
+eval_value at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/interpreter.c:243
+eval_stmt_value at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/interpreter.c:194 [inlined]
+eval_body at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/interpreter.c:707
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/interpreter.c:898
+top-level scope at /tmp/tmp.PNJPEVBs7O/Julia-TTFX-Snippets/tasks/E/Enzyme/Gradient-Of-Square-Norm/task.jl:16
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/toplevel.c:1035
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/toplevel.c:975
+ijl_toplevel_eval at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/toplevel.c:1047
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/toplevel.c:1092
+eval at ./boot.jl:489
+include_string at ./loading.jl:2843
+_include at ./loading.jl:2903
+include at ./Base.jl:306
+exec_options at ./client.jl:317
+_start at ./client.jl:550
+jfptr__start_85044.1 at /root/.julia/juliaup/julia-1.12.0+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/julia.h:2387 [inlined]
+true_main at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/jlapi.c:971
+jl_repl_entrypoint at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/jlapi.c:1139
+main at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/cli/loader_exe.c:58
+unknown function (ip: 0x7754fe6d0249) at /lib/x86_64-linux-gnu/libc.so.6
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+Internal error: during type inference of
+gradient(EnzymeCore.ReverseMode{false, false, false, EnzymeCore.FFIABI, false, false}, typeof(Main.f), Array{Float64, 1})
+Encountered unexpected error in runtime:
+AssertionError(msg="invalid `given_argtypes` for `mi`")
+va_process_argtypes at ./../usr/share/julia/Compiler/src/inferenceresult.jl:123
+InferenceState at ./../usr/share/julia/Compiler/src/inferencestate.jl:352
+jfptr_InferenceState_44820.1 at /root/.julia/juliaup/julia-1.12.0+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+tojlinvoke122185.1 at /root/.julia/juliaup/julia-1.12.0+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+j_InferenceState_114514.1 at /root/.julia/juliaup/julia-1.12.0+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+InferenceState at ./../usr/share/julia/Compiler/src/inferencestate.jl:605
+typeinf_edge at ./../usr/share/julia/Compiler/src/typeinfer.jl:963
+abstract_call_method at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:735
+infercalls at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:167
+abstract_call_gf_by_type at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:338
+abstract_call_known at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:2782
+abstract_call at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:2889
+abstract_call at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:2882 [inlined]
+abstract_call at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:3042
+abstract_eval_call at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:3060 [inlined]
+abstract_eval_statement_expr at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:3389
+abstract_eval_basic_statement at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:3830 [inlined]
+abstract_eval_basic_statement at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:3787 [inlined]
+typeinf_local at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4337
+jfptr_typeinf_local_116659.1 at /root/.julia/juliaup/julia-1.12.0+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+typeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4495
+typeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1259
+typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1442 [inlined]
+typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1451
+jfptr_typeinf_ext_toplevel_117555.1 at /root/.julia/juliaup/julia-1.12.0+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/julia.h:2387 [inlined]
+jl_type_infer at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/gf.c:462
+jl_compile_method_internal at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/gf.c:3512
+_jl_invoke at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/gf.c:4002 [inlined]
+ijl_apply_generic at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/gf.c:4210
+jl_apply at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/julia.h:2387 [inlined]
+do_call at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/interpreter.c:123
+eval_value at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/interpreter.c:243
+eval_stmt_value at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/interpreter.c:194 [inlined]
+eval_body at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/interpreter.c:707
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/interpreter.c:898
+top-level scope at /tmp/tmp.PNJPEVBs7O/Julia-TTFX-Snippets/tasks/E/Enzyme/Gradient-Of-Square-Norm/task.jl:16
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/toplevel.c:1035
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/toplevel.c:975
+ijl_toplevel_eval at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/toplevel.c:1047
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/toplevel.c:1092
+eval at ./boot.jl:489
+include_string at ./loading.jl:2843
+_include at ./loading.jl:2903
+include at ./Base.jl:306
+exec_options at ./client.jl:317
+_start at ./client.jl:550
+jfptr__start_85044.1 at /root/.julia/juliaup/julia-1.12.0+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/julia.h:2387 [inlined]
+true_main at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/jlapi.c:971
+jl_repl_entrypoint at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/src/jlapi.c:1139
+main at /cache/build/builder-amdci4-0/julialang/julia-release-1-dot-12/cli/loader_exe.c:58
+unknown function (ip: 0x7754fe6d0249) at /lib/x86_64-linux-gnu/libc.so.6
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+ERROR: LoadError: UndefVarError: `scoped_no_alias_aa!` not defined in `Enzyme.Compiler`
+Suggestion: check for spelling errors or missing imports.
+Stacktrace:
+  [1] (::Enzyme.Compiler.var"#optimize!##0#optimize!##1"{LLVM.Module, LLVM.TargetMachine})(pm::LLVM.ModulePassManager)
+    @ Enzyme.Compiler /workdir/depot/packages/Enzyme/LJjsP/src/compiler/optimize.jl:460
+  [2] LLVM.ModulePassManager(::Enzyme.Compiler.var"#optimize!##0#optimize!##1"{LLVM.Module, LLVM.TargetMachine}; kwargs::@Kwargs{})
+    @ LLVM /workdir/depot/packages/LLVM/iza6e/src/passmanager.jl:33
+  [3] ModulePassManager
+    @ /workdir/depot/packages/LLVM/iza6e/src/passmanager.jl:30 [inlined]
+  [4] optimize!(mod::LLVM.Module, tm::LLVM.TargetMachine)
+    @ Enzyme.Compiler /workdir/depot/packages/Enzyme/LJjsP/src/compiler/optimize.jl:455
+  [5] compile_unhooked(output::Symbol, job::GPUCompiler.CompilerJob{Enzyme.Compiler.EnzymeTarget{GPUCompiler.NativeCompilerTarget}, Enzyme.Compiler.EnzymeCompilerParams{Enzyme.Compiler.PrimalCompilerParams}})
+    @ Enzyme.Compiler /workdir/depot/packages/Enzyme/LJjsP/src/compiler.jl:4761
+  [6] compile(target::Symbol, job::GPUCompiler.CompilerJob; kwargs::@Kwargs{})
+    @ GPUCompiler /workdir/depot/packages/GPUCompiler/Gp8bZ/src/driver.jl:67
+  [7] compile
+    @ /workdir/depot/packages/GPUCompiler/Gp8bZ/src/driver.jl:55 [inlined]
+  [8] _thunk(job::GPUCompiler.CompilerJob{Enzyme.Compiler.EnzymeTarget{GPUCompiler.NativeCompilerTarget}, Enzyme.Compiler.EnzymeCompilerParams{Enzyme.Compiler.PrimalCompilerParams}}, postopt::Bool)
+    @ Enzyme.Compiler /workdir/depot/packages/Enzyme/LJjsP/src/compiler.jl:5946
+  [9] _thunk
+    @ /workdir/depot/packages/Enzyme/LJjsP/src/compiler.jl:5944 [inlined]
+ [10] cached_compilation
+    @ /workdir/depot/packages/Enzyme/LJjsP/src/compiler.jl:6001 [inlined]
+ [11] thunkbase(mi::Core.MethodInstance, World::UInt64, FA::Type{<:Annotation}, A::Type{<:Annotation}, TT::Type, Mode::Enzyme.API.CDerivativeMode, width::Int64, ModifiedBetween::NTuple{N, Bool} where N, ReturnPrimal::Bool, ShadowInit::Bool, ABI::Type, ErrIfFuncWritten::Bool, RuntimeActivity::Bool, StrongZero::Bool, edges::Vector{Any})
+    @ Enzyme.Compiler /workdir/depot/packages/Enzyme/LJjsP/src/compiler.jl:6117
+ [12] thunk_generator(world::UInt64, source::Union{LineNumberNode, Method}, FA::Type, A::Type, TT::Type, Mode::Enzyme.API.CDerivativeMode, Width::Int64, ModifiedBetween::NTuple{N, Bool} where N, ReturnPrimal::Bool, ShadowInit::Bool, ABI::Type, ErrIfFuncWritten::Bool, RuntimeActivity::Bool, StrongZero::Bool, self::Any, fakeworld::Any, fa::Type, a::Type, tt::Type, mode::Type, width::Type, modifiedbetween::Type, returnprimal::Type, shadowinit::Type, abi::Type, erriffuncwritten::Type, runtimeactivity::Type, strongzero::Type)
+    @ Enzyme.Compiler /workdir/depot/packages/Enzyme/LJjsP/src/compiler.jl:6312
+ [13] autodiff(mode::ReverseMode{ReturnPrimal, RuntimeActivity, StrongZero, RABI, Holomorphic, ErrIfFuncWritten}, f::FA, ::Type{A0}, args::Vararg{Annotation, Nargs}) where {FA<:Annotation, A0<:Annotation, ReturnPrimal, RuntimeActivity, StrongZero, RABI<:EnzymeCore.ABI, Holomorphic, Nargs, ErrIfFuncWritten}
+    @ Enzyme /workdir/depot/packages/Enzyme/LJjsP/src/Enzyme.jl:502
+ [14] autodiff(mode::CMode, f::F, ::Type{RT}, args::Vararg{Annotation, Nargs}) where {F, RT<:Annotation, CMode<:Mode, Nargs}
+    @ Enzyme /workdir/depot/packages/Enzyme/LJjsP/src/Enzyme.jl:542
+ [15] top-level scope
+    @ /workdir/depot/packages/Enzyme/LJjsP/src/sugar.jl:273
+ [16] macro expansion
+    @ /workdir/depot/packages/Enzyme/LJjsP/src/sugar.jl:336 [inlined]
+ [17] top-level scope
+    @ /tmp/tmp.PNJPEVBs7O/Julia-TTFX-Snippets/tasks/E/Enzyme/Gradient-Of-Square-Norm/task.jl:16
+ [18] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [19] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:317
+ [20] _start()
+    @ Base ./client.jl:550
+in expression starting at /tmp/tmp.PNJPEVBs7O/Julia-TTFX-Snippets/tasks/E/Enzyme/Gradient-Of-Square-Norm/task.jl:16
+Command exited with non-zero status 1
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.0 --project=E/Enzyme/Gradient-Of-Square-Norm E/Enzyme/Gradient-Of-Square-Norm/task.jl"
+	User time (seconds): 42.58
+	System time (seconds): 0.72
+	Percent of CPU this job got: 103%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:41.84
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 728280
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 62
+	Minor (reclaiming a frame) page faults: 146769
+	Voluntary context switches: 10637
+	Involuntary context switches: 362
+	Swaps: 0
+	File system inputs: 14904
+	File system outputs: 48
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

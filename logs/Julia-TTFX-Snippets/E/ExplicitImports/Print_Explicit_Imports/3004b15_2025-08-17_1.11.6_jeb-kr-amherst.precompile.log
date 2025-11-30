@@ -1,0 +1,53 @@
+Precompiling Pkg...
+   1007.7 ms  ✓ Logging
+   1120.6 ms  ✓ UUIDs
+   1222.5 ms  ✓ nghttp2_jll
+   1135.3 ms  ✓ MozillaCACerts_jll
+   1137.5 ms  ✓ p7zip_jll
+   1138.7 ms  ✓ Unicode
+   1137.5 ms  ✓ Zlib_jll
+   1143.6 ms  ✓ Base64
+   1153.8 ms  ✓ MbedTLS_jll
+   1207.8 ms  ✓ NetworkOptions
+    345.9 ms  ✓ LibSSH2_jll
+    427.3 ms  ✓ Printf
+    364.4 ms  ✓ LibGit2_jll
+    403.1 ms  ✓ LibCURL_jll
+   2124.4 ms  ✓ ArgTools
+    571.7 ms  ✓ LibCURL
+    548.9 ms  ✓ Tar
+   2410.7 ms  ✓ Dates
+   2887.1 ms  ✓ Markdown
+   2397.2 ms  ✓ LibGit2
+    366.2 ms  ✓ TOML
+   3011.6 ms  ✓ Downloads
+  39174.5 ms  ✓ Pkg
+  23 dependencies successfully precompiled in 45 seconds
+Precompiling project...
+    464.7 ms  ✓ Preferences
+    297.7 ms  ✓ PrecompileTools
+  17400.4 ms  ✓ ExplicitImports
+  3 dependencies successfully precompiled in 18 seconds. 23 already precompiled.
+	Command being timed: "julia +1.11.6 --project=E/ExplicitImports/Print_Explicit_Imports -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 129.22
+	System time (seconds): 5.41
+	Percent of CPU this job got: 210%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:03.93
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2056464
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 149
+	Minor (reclaiming a frame) page faults: 1886286
+	Voluntary context switches: 35693
+	Involuntary context switches: 6561
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 494760
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

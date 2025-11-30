@@ -1,0 +1,88 @@
+nice: cannot set niceness: Permission denied
+Precompiling project...
+   1923.6 ms  ✓ Unicode
+   1982.7 ms  ✓ DataAPI
+   2116.7 ms  ✓ EnumX
+   2181.4 ms  ✓ StatsAPI
+   2299.0 ms  ✓ ConstructionBase
+   2343.5 ms  ✓ UnPack
+   2513.1 ms  ✓ PositiveFactorizations
+   2670.8 ms  ✓ CompilerSupportLibraries_jll
+   2608.6 ms  ✓ SuiteSparse_jll
+   2718.2 ms  ✓ Statistics
+   3214.9 ms  ✓ OpenLibm_jll
+   3222.2 ms  ✓ OrderedCollections
+   3414.1 ms  ✓ DocStringExtensions
+   3902.6 ms  ✓ Serialization
+   2203.0 ms  ✓ Future
+   2097.5 ms  ✓ PtrArrays
+   4309.0 ms  ✓ FillArrays
+   1994.3 ms  ✓ StaticArraysCore
+   2408.0 ms  ✓ Missings
+   3029.4 ms  ✓ ADTypes
+   2806.3 ms  ✓ Compat
+   2987.3 ms  ✓ Requires
+   2782.7 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   2301.1 ms  ✓ NaNMath
+   5512.2 ms  ✓ IrrationalConstants
+   2404.8 ms  ✓ Parameters
+   3437.0 ms  ✓ Preferences
+   2013.1 ms  ✓ FillArrays → FillArraysStatisticsExt
+   2124.0 ms  ✓ AliasTables
+   2124.9 ms  ✓ DiffResults
+   1516.5 ms  ✓ ADTypes → ADTypesConstructionBaseExt
+   1499.3 ms  ✓ Adapt
+   1595.8 ms  ✓ Compat → CompatLinearAlgebraExt
+   1785.8 ms  ✓ LogExpFunctions
+   1170.6 ms  ✓ JLLWrappers
+    916.6 ms  ✓ ArrayInterface
+   2619.9 ms  ✓ DifferentiationInterface
+   4878.2 ms  ✓ DataStructures
+   1306.6 ms  ✓ OpenSpecFun_jll
+   6734.0 ms  ✓ MacroTools
+   4549.3 ms  ✓ Distributed
+   1016.9 ms  ✓ ArrayInterface → ArrayInterfaceStaticArraysCoreExt
+    965.8 ms  ✓ SortingAlgorithms
+    511.4 ms  ✓ CommonSubexpressions
+    998.4 ms  ✓ Setfield
+   6214.2 ms  ✓ SparseArrays
+    568.0 ms  ✓ FiniteDiff
+   1022.8 ms  ✓ Adapt → AdaptSparseArraysExt
+   1031.1 ms  ✓ FillArrays → FillArraysSparseArraysExt
+   1033.9 ms  ✓ ArrayInterface → ArrayInterfaceSparseArraysExt
+   1039.1 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+    937.5 ms  ✓ DifferentiationInterface → DifferentiationInterfaceFiniteDiffExt
+   1061.1 ms  ✓ Statistics → SparseArraysExt
+    987.4 ms  ✓ FiniteDiff → FiniteDiffSparseArraysExt
+   2696.9 ms  ✓ SpecialFunctions
+    478.8 ms  ✓ DiffRules
+   1540.5 ms  ✓ StatsBase
+   2423.4 ms  ✓ ForwardDiff
+    517.4 ms  ✓ DifferentiationInterface → DifferentiationInterfaceForwardDiffExt
+    640.0 ms  ✓ NLSolversBase
+   1274.2 ms  ✓ LineSearches
+   1901.8 ms  ✓ Optim
+  62 dependencies successfully precompiled in 19 seconds. 4 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.11.7 --project=O/Optim/Rosenbrock-Minimization-With-Bfgs -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 153.02
+	System time (seconds): 13.58
+	Percent of CPU this job got: 217%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:16.53
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2050656
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 315
+	Minor (reclaiming a frame) page faults: 3460679
+	Voluntary context switches: 106158
+	Involuntary context switches: 27573
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 502392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

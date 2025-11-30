@@ -1,0 +1,74 @@
+nice: cannot set niceness: Permission denied
+Precompiling Pkg...
+   1208.1 ms  ✓ UUIDs
+   1213.1 ms  ✓ Logging
+   1284.6 ms  ✓ nghttp2_jll
+   1290.3 ms  ✓ MozillaCACerts_jll
+   1294.6 ms  ✓ Zlib_jll
+   1372.1 ms  ✓ Unicode
+   1313.0 ms  ✓ Base64
+   1322.3 ms  ✓ MbedTLS_jll
+   1394.0 ms  ✓ p7zip_jll
+   1415.5 ms  ✓ NetworkOptions
+    400.0 ms  ✓ LibSSH2_jll
+    502.4 ms  ✓ Printf
+    490.2 ms  ✓ LibCURL_jll
+    547.3 ms  ✓ LibGit2_jll
+   2320.8 ms  ✓ ArgTools
+    611.9 ms  ✓ LibCURL
+    618.2 ms  ✓ Tar
+   2681.3 ms  ✓ Dates
+   3217.7 ms  ✓ Markdown
+   2515.6 ms  ✓ LibGit2
+    420.4 ms  ✓ TOML
+   3309.3 ms  ✓ Downloads
+  43274.6 ms  ✓ Pkg
+  23 dependencies successfully precompiled in 50 seconds
+Precompiling project...
+   1306.7 ms  ✓ CEnum
+   1327.7 ms  ✓ Reexport
+   1327.5 ms  ✓ Scratch
+   1413.3 ms  ✓ StructIO
+   1449.7 ms  ✓ ExprTools
+   1633.8 ms  ✓ SuiteSparse_jll
+   1702.5 ms  ✓ CompilerSupportLibraries_jll
+   1729.0 ms  ✓ EnzymeCore
+   1777.5 ms  ✓ Serialization
+   1862.7 ms  ✓ Preferences
+   2240.6 ms  ✓ LazyArtifacts
+    551.0 ms  ✓ PrecompileTools
+    585.9 ms  ✓ JLLWrappers
+   2568.7 ms  ✓ InteractiveUtils
+    545.4 ms  ✓ LibTracyClient_jll
+   2294.2 ms  ✓ ObjectFile
+   1326.7 ms  ✓ Enzyme_jll
+   1370.5 ms  ✓ LLVMExtra_jll
+    848.5 ms  ✓ Tracy
+   3222.7 ms  ✓ SparseArrays
+   4763.4 ms  ✓ LLVM
+  18252.0 ms  ✓ GPUCompiler
+  51650.2 ms  ✓ Enzyme
+  23 dependencies successfully precompiled in 79 seconds. 23 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.11.6 --project=E/Enzyme/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 285.14
+	System time (seconds): 12.60
+	Percent of CPU this job got: 229%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:09.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2351488
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 236
+	Minor (reclaiming a frame) page faults: 3397082
+	Voluntary context switches: 79151
+	Involuntary context switches: 13258
+	Swaps: 0
+	File system inputs: 80
+	File system outputs: 778480
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

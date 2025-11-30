@@ -1,0 +1,54 @@
+nice: cannot set niceness: Permission denied
+Precompiling Pkg...
+    915.3 ms  ✓ UUIDs
+    915.8 ms  ✓ Logging
+   1045.3 ms  ✓ MbedTLS_jll
+   1104.1 ms  ✓ MozillaCACerts_jll
+   1117.6 ms  ✓ Unicode
+   1121.4 ms  ✓ p7zip_jll
+   1193.7 ms  ✓ Base64
+   1266.8 ms  ✓ nghttp2_jll
+   1200.5 ms  ✓ Zlib_jll
+   1220.1 ms  ✓ NetworkOptions
+    407.4 ms  ✓ LibSSH2_jll
+    475.5 ms  ✓ Printf
+    361.3 ms  ✓ LibGit2_jll
+    393.0 ms  ✓ LibCURL_jll
+   2100.1 ms  ✓ ArgTools
+    599.6 ms  ✓ LibCURL
+    560.6 ms  ✓ Tar
+   2401.8 ms  ✓ Dates
+   2894.2 ms  ✓ Markdown
+   2399.2 ms  ✓ LibGit2
+    361.5 ms  ✓ TOML
+   2995.0 ms  ✓ Downloads
+  38898.1 ms  ✓ Pkg
+  23 dependencies successfully precompiled in 44 seconds
+Precompiling project...
+    453.0 ms  ✓ Preferences
+    292.8 ms  ✓ PrecompileTools
+  17341.4 ms  ✓ ExplicitImports
+  3 dependencies successfully precompiled in 18 seconds. 23 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.11.6 --project=E/ExplicitImports/Print_Explicit_Imports -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 128.38
+	System time (seconds): 5.70
+	Percent of CPU this job got: 211%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:03.53
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2032456
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 145
+	Minor (reclaiming a frame) page faults: 1875539
+	Voluntary context switches: 35794
+	Involuntary context switches: 5506
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 494808
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

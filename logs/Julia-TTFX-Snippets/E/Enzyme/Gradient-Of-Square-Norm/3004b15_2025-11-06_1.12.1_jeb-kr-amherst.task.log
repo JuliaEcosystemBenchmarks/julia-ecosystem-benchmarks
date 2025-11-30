@@ -1,0 +1,70 @@
+nice: cannot set niceness: Permission denied
+ERROR: LoadError: Taking the type of an opaque pointer is illegal
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:44
+  [2] eltype
+    @ /workdir/depot/packages/LLVM/iza6e/src/core/type.jl:293 [inlined]
+  [3] propagate_returned!(mod::LLVM.Module)
+    @ Enzyme.Compiler /workdir/depot/packages/Enzyme/EPXUy/src/llvm/transforms.jl:1688
+  [4] removeDeadArgs!(mod::LLVM.Module, tm::LLVM.TargetMachine)
+    @ Enzyme.Compiler /workdir/depot/packages/Enzyme/EPXUy/src/llvm/transforms.jl:2588
+  [5] optimize!(mod::LLVM.Module, tm::LLVM.TargetMachine)
+    @ Enzyme.Compiler /workdir/depot/packages/Enzyme/EPXUy/src/compiler/optimize.jl:181
+  [6] compile_unhooked(output::Symbol, job::GPUCompiler.CompilerJob{Enzyme.Compiler.EnzymeTarget{GPUCompiler.NativeCompilerTarget}, Enzyme.Compiler.EnzymeCompilerParams{Enzyme.Compiler.PrimalCompilerParams}})
+    @ Enzyme.Compiler /workdir/depot/packages/Enzyme/EPXUy/src/compiler.jl:4774
+  [7] compile(target::Symbol, job::GPUCompiler.CompilerJob; kwargs::@Kwargs{})
+    @ GPUCompiler /workdir/depot/packages/GPUCompiler/Gp8bZ/src/driver.jl:67
+  [8] compile
+    @ /workdir/depot/packages/GPUCompiler/Gp8bZ/src/driver.jl:55 [inlined]
+  [9] _thunk(job::GPUCompiler.CompilerJob{Enzyme.Compiler.EnzymeTarget{GPUCompiler.NativeCompilerTarget}, Enzyme.Compiler.EnzymeCompilerParams{Enzyme.Compiler.PrimalCompilerParams}}, postopt::Bool)
+    @ Enzyme.Compiler /workdir/depot/packages/Enzyme/EPXUy/src/compiler.jl:5960
+ [10] _thunk
+    @ /workdir/depot/packages/Enzyme/EPXUy/src/compiler.jl:5958 [inlined]
+ [11] cached_compilation
+    @ /workdir/depot/packages/Enzyme/EPXUy/src/compiler.jl:6015 [inlined]
+ [12] thunkbase(mi::Core.MethodInstance, World::UInt64, FA::Type{<:Annotation}, A::Type{<:Annotation}, TT::Type, Mode::Enzyme.API.CDerivativeMode, width::Int64, ModifiedBetween::NTuple{N, Bool} where N, ReturnPrimal::Bool, ShadowInit::Bool, ABI::Type, ErrIfFuncWritten::Bool, RuntimeActivity::Bool, StrongZero::Bool, edges::Vector{Any})
+    @ Enzyme.Compiler /workdir/depot/packages/Enzyme/EPXUy/src/compiler.jl:6131
+ [13] thunk_generator(world::UInt64, source::Union{LineNumberNode, Method}, FA::Type, A::Type, TT::Type, Mode::Enzyme.API.CDerivativeMode, Width::Int64, ModifiedBetween::NTuple{N, Bool} where N, ReturnPrimal::Bool, ShadowInit::Bool, ABI::Type, ErrIfFuncWritten::Bool, RuntimeActivity::Bool, StrongZero::Bool, self::Any, fakeworld::Any, fa::Type, a::Type, tt::Type, mode::Type, width::Type, modifiedbetween::Type, returnprimal::Type, shadowinit::Type, abi::Type, erriffuncwritten::Type, runtimeactivity::Type, strongzero::Type)
+    @ Enzyme.Compiler /workdir/depot/packages/Enzyme/EPXUy/src/compiler.jl:6275
+ [14] autodiff
+    @ /workdir/depot/packages/Enzyme/EPXUy/src/Enzyme.jl:502 [inlined]
+ [15] autodiff
+    @ /workdir/depot/packages/Enzyme/EPXUy/src/Enzyme.jl:542 [inlined]
+ [16] macro expansion
+    @ /workdir/depot/packages/Enzyme/EPXUy/src/sugar.jl:336 [inlined]
+ [17] gradient(::ReverseMode{false, false, false, FFIABI, false, false}, ::typeof(f), ::Vector{Float64})
+    @ Enzyme /workdir/depot/packages/Enzyme/EPXUy/src/sugar.jl:273
+ [18] top-level scope
+    @ /tmp/tmp.7NKgNTHhZy/Julia-TTFX-Snippets/tasks/E/Enzyme/Gradient-Of-Square-Norm/task.jl:16
+ [19] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [20] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:317
+ [21] _start()
+    @ Base ./client.jl:550
+in expression starting at /tmp/tmp.7NKgNTHhZy/Julia-TTFX-Snippets/tasks/E/Enzyme/Gradient-Of-Square-Norm/task.jl:16
+Command exited with non-zero status 1
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.1 --project=E/Enzyme/Gradient-Of-Square-Norm E/Enzyme/Gradient-Of-Square-Norm/task.jl"
+	User time (seconds): 19.97
+	System time (seconds): 0.51
+	Percent of CPU this job got: 104%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:19.64
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 666056
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 140846
+	Voluntary context switches: 5092
+	Involuntary context switches: 247
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

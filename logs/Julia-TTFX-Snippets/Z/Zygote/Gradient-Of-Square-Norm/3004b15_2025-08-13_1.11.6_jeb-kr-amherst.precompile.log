@@ -1,0 +1,84 @@
+Precompiling project...
+   1821.8 ms  ✓ DataValueInterfaces
+   1788.0 ms  ✓ DataAPI
+   1878.1 ms  ✓ IteratorInterfaceExtensions
+   1912.7 ms  ✓ Unicode
+   2106.9 ms  ✓ RealDot
+   2305.9 ms  ✓ OpenLibm_jll
+   2315.2 ms  ✓ DocStringExtensions
+   2396.3 ms  ✓ ConstructionBase
+   2460.1 ms  ✓ CompilerSupportLibraries_jll
+   3021.5 ms  ✓ AbstractFFTs
+   3017.5 ms  ✓ Statistics
+   2920.8 ms  ✓ SuiteSparse_jll
+   3024.6 ms  ✓ OrderedCollections
+   3118.5 ms  ✓ Serialization
+   1508.6 ms  ✓ StaticArraysCore
+   1411.3 ms  ✓ TableTraits
+   1718.8 ms  ✓ Requires
+   4025.5 ms  ✓ FillArrays
+   1890.5 ms  ✓ NaNMath
+   4308.9 ms  ✓ IrrationalConstants
+   2091.5 ms  ✓ Preferences
+   2107.0 ms  ✓ Compat
+   1991.1 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   1391.1 ms  ✓ DiffResults
+   1377.3 ms  ✓ Adapt
+   1304.3 ms  ✓ FillArrays → FillArraysStatisticsExt
+   1114.7 ms  ✓ PrecompileTools
+   1124.5 ms  ✓ Compat → CompatLinearAlgebraExt
+   1293.3 ms  ✓ JLLWrappers
+   2389.1 ms  ✓ Tables
+   1594.1 ms  ✓ LogExpFunctions
+   1007.4 ms  ✓ GPUArraysCore
+   4197.7 ms  ✓ InteractiveUtils
+    717.6 ms  ✓ OpenSpecFun_jll
+   3989.7 ms  ✓ Distributed
+   1299.0 ms  ✓ StructArrays
+   5533.3 ms  ✓ MacroTools
+   2166.1 ms  ✓ ChainRulesCore
+    702.6 ms  ✓ StructArrays → StructArraysAdaptExt
+    755.3 ms  ✓ StructArrays → StructArraysLinearAlgebraExt
+    762.8 ms  ✓ CommonSubexpressions
+    603.5 ms  ✓ AbstractFFTs → AbstractFFTsChainRulesCoreExt
+    836.0 ms  ✓ ZygoteRules
+   1266.0 ms  ✓ LogExpFunctions → LogExpFunctionsChainRulesCoreExt
+   1694.8 ms  ✓ IRTools
+   5984.7 ms  ✓ SparseArrays
+   3245.2 ms  ✓ SpecialFunctions
+    635.2 ms  ✓ SuiteSparse
+    800.9 ms  ✓ Adapt → AdaptSparseArraysExt
+    815.5 ms  ✓ ChainRulesCore → ChainRulesCoreSparseArraysExt
+    822.4 ms  ✓ Statistics → SparseArraysExt
+    826.5 ms  ✓ StructArrays → StructArraysSparseArraysExt
+    836.3 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    499.2 ms  ✓ SparseInverseSubset
+    600.2 ms  ✓ DiffRules
+   1297.4 ms  ✓ SpecialFunctions → SpecialFunctionsChainRulesCoreExt
+   2380.4 ms  ✓ ForwardDiff
+   3798.3 ms  ✓ ChainRules
+  20518.4 ms  ✓ Zygote
+  59 dependencies successfully precompiled in 35 seconds. 6 already precompiled.
+	Command being timed: "julia +1.11.6 --project=Z/Zygote/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 170.49
+	System time (seconds): 11.64
+	Percent of CPU this job got: 208%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:27.29
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2026932
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 414
+	Minor (reclaiming a frame) page faults: 3622080
+	Voluntary context switches: 102623
+	Involuntary context switches: 17961
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 627080
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

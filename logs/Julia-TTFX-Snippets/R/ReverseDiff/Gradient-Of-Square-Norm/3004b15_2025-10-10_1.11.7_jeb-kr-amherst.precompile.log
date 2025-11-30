@@ -1,0 +1,56 @@
+nice: cannot set niceness: Permission denied
+Precompiling project...
+    779.9 ms  ✓ OpenLibm_jll
+    845.9 ms  ✓ StaticArraysCore
+   1040.5 ms  ✓ Unicode
+   1138.2 ms  ✓ DocStringExtensions
+   1164.5 ms  ✓ CompilerSupportLibraries_jll
+   1342.3 ms  ✓ Statistics
+   1468.4 ms  ✓ FunctionWrappers
+    729.1 ms  ✓ DiffResults
+    820.0 ms  ✓ NaNMath
+   1788.5 ms  ✓ IrrationalConstants
+    765.3 ms  ✓ Compat
+    883.1 ms  ✓ Preferences
+    583.7 ms  ✓ LogExpFunctions
+    526.2 ms  ✓ Compat → CompatLinearAlgebraExt
+    443.9 ms  ✓ PrecompileTools
+    490.9 ms  ✓ JLLWrappers
+   3014.7 ms  ✓ MacroTools
+    677.6 ms  ✓ OpenSpecFun_jll
+    429.9 ms  ✓ CommonSubexpressions
+   1189.7 ms  ✓ ChainRulesCore
+   1029.9 ms  ✓ LogExpFunctions → LogExpFunctionsChainRulesCoreExt
+   1930.0 ms  ✓ SpecialFunctions
+    490.4 ms  ✓ DiffRules
+   1303.9 ms  ✓ SpecialFunctions → SpecialFunctionsChainRulesCoreExt
+   5690.8 ms  ✓ StaticArrays
+   2972.5 ms  ✓ ForwardDiff
+    544.9 ms  ✓ StaticArrays → StaticArraysChainRulesCoreExt
+    549.7 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    591.6 ms  ✓ ForwardDiff → ForwardDiffStaticArraysExt
+   9876.3 ms  ✓ ReverseDiff
+  30 dependencies successfully precompiled in 19 seconds. 4 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.11.7 --project=R/ReverseDiff/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 140.82
+	System time (seconds): 8.87
+	Percent of CPU this job got: 192%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:17.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2044520
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 263
+	Minor (reclaiming a frame) page faults: 2567840
+	Voluntary context switches: 67746
+	Involuntary context switches: 5761
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 527304
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

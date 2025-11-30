@@ -1,0 +1,32 @@
+Precompiling project...
+    280.2 ms  ✓ Unicode
+    288.1 ms  ✓ Glob
+    504.1 ms  ✓ Preferences
+    417.2 ms  ✓ PrecompileTools
+   6866.8 ms  ✓ CommonMark
+  12369.6 ms  ✓ JuliaSyntax
+  19059.6 ms  ✓ JuliaFormatter
+  7 dependencies successfully precompiled in 31 seconds. 3 already precompiled.
+	Command being timed: "julia +1.11.6 --project=J/JuliaFormatter/Format-Text -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 169.12
+	System time (seconds): 6.14
+	Percent of CPU this job got: 197%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:28.82
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2049868
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 158
+	Minor (reclaiming a frame) page faults: 2152158
+	Voluntary context switches: 38730
+	Involuntary context switches: 7256
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 566688
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

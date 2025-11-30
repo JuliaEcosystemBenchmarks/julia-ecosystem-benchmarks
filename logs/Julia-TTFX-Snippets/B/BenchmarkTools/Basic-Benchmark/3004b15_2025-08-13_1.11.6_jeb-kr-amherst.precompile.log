@@ -1,0 +1,37 @@
+Precompiling project...
+    341.9 ms  ✓ Unicode
+    355.4 ms  ✓ Mmap
+    398.0 ms  ✓ CompilerSupportLibraries_jll
+    473.5 ms  ✓ Statistics
+    430.4 ms  ✓ Compat
+    551.4 ms  ✓ Preferences
+    391.3 ms  ✓ Compat → CompatLinearAlgebraExt
+    321.7 ms  ✓ PrecompileTools
+   2544.2 ms  ✓ Profile
+   7895.2 ms  ✓ Parsers
+    901.2 ms  ✓ JSON
+    872.7 ms  ✓ BenchmarkTools
+  12 dependencies successfully precompiled in 11 seconds. 5 already precompiled.
+	Command being timed: "julia +1.11.6 --project=B/BenchmarkTools/Basic-Benchmark -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 114.92
+	System time (seconds): 5.08
+	Percent of CPU this job got: 186%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:04.22
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2035288
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 154
+	Minor (reclaiming a frame) page faults: 1949448
+	Voluntary context switches: 44594
+	Involuntary context switches: 4770
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 449072
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

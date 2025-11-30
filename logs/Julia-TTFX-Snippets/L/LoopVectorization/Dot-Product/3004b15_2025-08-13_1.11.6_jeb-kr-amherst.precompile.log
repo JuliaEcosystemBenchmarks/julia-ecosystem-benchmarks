@@ -1,0 +1,56 @@
+Precompiling project...
+    898.5 ms  ✓ SIMDTypes
+    932.8 ms  ✓ IfElse
+    929.4 ms  ✓ Unicode
+   1030.5 ms  ✓ CommonWorldInvalidations
+   1095.9 ms  ✓ UnPack
+   1099.6 ms  ✓ ManualMemory
+   1120.0 ms  ✓ CompilerSupportLibraries_jll
+   1218.4 ms  ✓ Requires
+   1303.9 ms  ✓ DocStringExtensions
+   1435.1 ms  ✓ CpuId
+    717.1 ms  ✓ Compat
+   1775.8 ms  ✓ OffsetArrays
+    572.7 ms  ✓ Adapt
+    863.9 ms  ✓ Preferences
+    881.1 ms  ✓ ThreadingUtilities
+    457.0 ms  ✓ Compat → CompatLinearAlgebraExt
+    348.5 ms  ✓ OffsetArrays → OffsetArraysAdaptExt
+    355.9 ms  ✓ PrecompileTools
+    414.9 ms  ✓ ArrayInterface
+    543.1 ms  ✓ Static
+    294.7 ms  ✓ BitTwiddlingConvenienceFunctions
+    688.3 ms  ✓ CPUSummary
+    583.8 ms  ✓ HostCPUFeatures
+    886.2 ms  ✓ StaticArrayInterface
+    422.1 ms  ✓ PolyesterWeave
+    346.0 ms  ✓ CloseOpenIntervals
+    352.7 ms  ✓ StaticArrayInterface → StaticArrayInterfaceOffsetArraysExt
+    424.4 ms  ✓ LayoutPointers
+   4714.4 ms  ✓ VectorizationBase
+    673.7 ms  ✓ SLEEFPirates
+  15431.2 ms  ✓ LoopVectorization
+  31 dependencies successfully precompiled in 25 seconds. 6 already precompiled.
+	Command being timed: "julia +1.11.6 --project=L/LoopVectorization/Dot-Product -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 139.10
+	System time (seconds): 7.45
+	Percent of CPU this job got: 187%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:18.25
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2054844
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 234
+	Minor (reclaiming a frame) page faults: 2664659
+	Voluntary context switches: 69685
+	Involuntary context switches: 5944
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 522360
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

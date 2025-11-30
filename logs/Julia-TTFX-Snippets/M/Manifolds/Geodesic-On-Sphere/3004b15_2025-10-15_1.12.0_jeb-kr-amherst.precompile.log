@@ -1,0 +1,98 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   2385.8 ms  ✓ Unicode
+   2701.1 ms  ✓ OpenLibm_jll
+   2938.1 ms  ✓ RealDot
+   3245.9 ms  ✓ StatsAPI
+   3278.2 ms  ✓ Inflate
+   3287.9 ms  ✓ CompilerSupportLibraries_jll
+   3434.6 ms  ✓ Statistics
+   3642.3 ms  ✓ OrderedCollections
+   3691.7 ms  ✓ Serialization
+   3569.8 ms  ✓ Mmap
+   4631.2 ms  ✓ DataAPI
+   4700.1 ms  ✓ DocStringExtensions
+   5003.0 ms  ✓ SuiteSparse_jll
+   2883.2 ms  ✓ PtrArrays
+   3259.2 ms  ✓ ADTypes
+   2418.3 ms  ✓ Quaternions
+   3285.5 ms  ✓ Preferences
+   4095.1 ms  ✓ StaticArraysCore
+   7589.2 ms  ✓ IrrationalConstants
+   4534.8 ms  ✓ Compat
+   2531.6 ms  ✓ AliasTables
+   3101.8 ms  ✓ Missings
+   5247.4 ms  ✓ Requires
+   1450.7 ms  ✓ Compat → CompatLinearAlgebraExt
+   2573.0 ms  ✓ PrecompileTools
+   9797.0 ms  ✓ LinearMaps
+   6984.0 ms  ✓ NamedDims
+   3337.6 ms  ✓ LogExpFunctions
+   4247.5 ms  ✓ JLLWrappers
+   1852.5 ms  ✓ LinearMaps → LinearMapsStatisticsExt
+   2564.6 ms  ✓ Einsum
+   8895.1 ms  ✓ InteractiveUtils
+   6140.5 ms  ✓ DifferentiationInterface
+  13132.5 ms  ✓ MacroTools
+   8763.2 ms  ✓ DataStructures
+   2880.0 ms  ✓ OpenSpecFun_jll
+  10512.5 ms  ✓ Distributed
+   2417.1 ms  ✓ SortingAlgorithms
+   2804.0 ms  ✓ SimpleTraits
+   6814.8 ms  ✓ MatrixEquations
+   1594.2 ms  ✓ SharedArrays
+  14551.0 ms  ✓ ManifoldsBase
+   1294.9 ms  ✓ ManifoldsBase → ManifoldsBaseStatisticsExt
+   1310.0 ms  ✓ ManifoldsBase → ManifoldsBaseQuaternionsExt
+   1602.7 ms  ✓ ManifoldDiff
+  14249.9 ms  ✓ SparseArrays
+   6115.2 ms  ✓ SpecialFunctions
+   1132.1 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+   1445.9 ms  ✓ Statistics → SparseArraysExt
+   2099.9 ms  ✓ LinearMaps → LinearMapsSparseArraysExt
+  15878.9 ms  ✓ StaticArrays
+   4219.5 ms  ✓ StatsBase
+   1446.6 ms  ✓ DifferentiationInterface → DifferentiationInterfaceStaticArraysExt
+   1458.1 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+   2526.9 ms  ✓ ArnoldiMethod
+   2470.0 ms  ✓ Kronecker
+   6888.7 ms  ✓ Graphs
+   2035.1 ms  ✓ SimpleWeightedGraphs
+  10213.0 ms  ✓ Manifolds
+  59 dependencies successfully precompiled in 47 seconds. 8 already precompiled.
+  1 dependency had output during precompilation:
+┌ Manifolds
+│  WARNING: Constructor for type "PowerManifold" was extended in `Manifolds` without explicit qualification or import.
+│    NOTE: Assumed "PowerManifold" refers to `ManifoldsBase.PowerManifold`. This behavior is deprecated and may differ in future versions.`
+│    NOTE: This behavior may have differed in Julia versions prior to 1.12.
+│    Hint: If you intended to create a new generic function of the same name, use `function PowerManifold end`.
+│    Hint: To silence the warning, qualify `PowerManifold` as `ManifoldsBase.PowerManifold` in the method signature or explicitly `import ManifoldsBase: PowerManifold`.
+│  WARNING: Constructor for type "Matrix" was extended in `Manifolds` without explicit qualification or import.
+│    NOTE: Assumed "Matrix" refers to `Base.Matrix`. This behavior is deprecated and may differ in future versions.`
+│    NOTE: This behavior may have differed in Julia versions prior to 1.12.
+│    Hint: If you intended to create a new generic function of the same name, use `function Matrix end`.
+│    Hint: To silence the warning, qualify `Matrix` as `Base.Matrix` in the method signature or explicitly `import Base: Matrix`.
+└  
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.0 --project=M/Manifolds/Geodesic-On-Sphere -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 297.17
+	System time (seconds): 18.67
+	Percent of CPU this job got: 210%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:29.87
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2145592
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 227
+	Minor (reclaiming a frame) page faults: 4192857
+	Voluntary context switches: 11994
+	Involuntary context switches: 40595
+	Swaps: 0
+	File system inputs: 1696
+	File system outputs: 531832
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

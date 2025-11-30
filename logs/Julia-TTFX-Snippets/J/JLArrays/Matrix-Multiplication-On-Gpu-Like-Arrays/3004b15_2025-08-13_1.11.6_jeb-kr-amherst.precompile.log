@@ -1,0 +1,79 @@
+Precompiling Pkg...
+   1000.0 ms  ✓ MozillaCACerts_jll
+   1057.4 ms  ✓ Logging
+   1114.0 ms  ✓ p7zip_jll
+   1129.5 ms  ✓ NetworkOptions
+   1127.6 ms  ✓ Zlib_jll
+   1125.8 ms  ✓ Base64
+   1137.2 ms  ✓ UUIDs
+   1170.8 ms  ✓ Unicode
+   1198.9 ms  ✓ MbedTLS_jll
+   1193.8 ms  ✓ nghttp2_jll
+    298.6 ms  ✓ LibSSH2_jll
+    437.9 ms  ✓ Printf
+    372.7 ms  ✓ LibCURL_jll
+    402.0 ms  ✓ LibGit2_jll
+   2098.9 ms  ✓ ArgTools
+    574.4 ms  ✓ LibCURL
+    549.4 ms  ✓ Tar
+   2854.8 ms  ✓ Markdown
+   2411.4 ms  ✓ Dates
+   2324.0 ms  ✓ LibGit2
+    357.0 ms  ✓ TOML
+   2945.7 ms  ✓ Downloads
+  39075.3 ms  ✓ Pkg
+  23 dependencies successfully precompiled in 45 seconds
+Precompiling project...
+   1311.6 ms  ✓ Reexport
+   1440.5 ms  ✓ HashArrayMappedTries
+   1491.7 ms  ✓ CEnum
+   1587.8 ms  ✓ Requires
+   1591.4 ms  ✓ StaticArraysCore
+   1645.5 ms  ✓ CompilerSupportLibraries_jll
+   1749.6 ms  ✓ Serialization
+   1786.7 ms  ✓ Statistics
+   1978.1 ms  ✓ Preferences
+    571.9 ms  ✓ ScopedValues
+    649.7 ms  ✓ Adapt
+   2400.9 ms  ✓ LazyArtifacts
+    592.8 ms  ✓ PrecompileTools
+    618.1 ms  ✓ JLLWrappers
+   2727.3 ms  ✓ InteractiveUtils
+    539.4 ms  ✓ GPUArraysCore
+   3075.8 ms  ✓ UnsafeAtomics
+   3599.7 ms  ✓ MacroTools
+    579.6 ms  ✓ Atomix
+   1232.8 ms  ✓ LLVMExtra_jll
+   5144.8 ms  ✓ StaticArrays
+    407.2 ms  ✓ Adapt → AdaptStaticArraysExt
+    490.3 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+   4871.9 ms  ✓ LLVM
+   1185.2 ms  ✓ UnsafeAtomics → UnsafeAtomicsLLVM
+   2348.3 ms  ✓ KernelAbstractions
+    444.7 ms  ✓ KernelAbstractions → LinearAlgebraExt
+   2350.4 ms  ✓ GPUArrays
+   1048.2 ms  ✓ JLArrays
+  29 dependencies successfully precompiled in 14 seconds. 23 already precompiled.
+	Command being timed: "julia +1.11.6 --project=J/JLArrays/Matrix-Multiplication-On-Gpu-Like-Arrays -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 130.34
+	System time (seconds): 8.37
+	Percent of CPU this job got: 230%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:00.29
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2000756
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 195
+	Minor (reclaiming a frame) page faults: 2694055
+	Voluntary context switches: 69600
+	Involuntary context switches: 7519
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 497608
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
