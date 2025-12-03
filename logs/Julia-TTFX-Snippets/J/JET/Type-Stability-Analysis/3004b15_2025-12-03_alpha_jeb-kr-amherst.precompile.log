@@ -1,0 +1,50 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    655.1 ms  ✓ Serialization
+    656.2 ms  ✓ OrderedCollections
+    743.2 ms  ✓ Requires
+    853.4 ms  ✓ Compiler
+   1283.9 ms  ✓ InteractiveUtils
+   1575.2 ms  ✓ Preferences
+    967.9 ms  ✓ CodeTracking
+    472.8 ms  ✓ PrecompileTools
+   4578.6 ms  ✓ MacroTools
+   7800.3 ms  ✓ Test
+   8427.0 ms  ✓ JuliaInterpreter
+  19597.2 ms  ✓ JuliaSyntax
+   9322.2 ms  ✓ LoweredCodeUtils
+  48123.5 ms  ✓ REPL
+   7054.0 ms  ✓ Pkg → REPLExt
+  10765.6 ms  ✓ Revise
+  52128.5 ms  ✓ JET
+  17 dependencies successfully precompiled in 113 seconds. 27 already precompiled.
+  1 dependency had output during precompilation:
+┌ Revise
+│  ┌ Warning: precompile directive
+│  │     precompile(Tuple{mbody.sig.parameters[1], Symbol, Bool, Bool, Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:skip_include,), Tuple{Bool}}}, typeof(methods_by_execution!), Compiled, MI, Module, Expr})
+│  │ failed. Please report an issue in Revise (after checking for duplicates) or remove this directive.
+│  └ @ Revise /workdir/depot/packages/Revise/KjLt4/src/precompile.jl:65
+└  
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +alpha --project=J/JET/Type-Stability-Analysis -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 351.12
+	System time (seconds): 13.04
+	Percent of CPU this job got: 179%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:23.02
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2585420
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 320
+	Minor (reclaiming a frame) page faults: 5432305
+	Voluntary context switches: 10766
+	Involuntary context switches: 5222
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 691944
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

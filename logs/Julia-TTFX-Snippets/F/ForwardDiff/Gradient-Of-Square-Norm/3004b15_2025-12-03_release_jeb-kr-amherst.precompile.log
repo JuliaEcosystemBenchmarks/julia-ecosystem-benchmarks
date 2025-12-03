@@ -1,0 +1,46 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  73275.1 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 73 seconds
+Precompiling packages...
+    649.9 ms  ✓ OpenLibm_jll
+    707.6 ms  ✓ Unicode
+    723.1 ms  ✓ CompilerSupportLibraries_jll
+    812.9 ms  ✓ StaticArraysCore
+    906.3 ms  ✓ DocStringExtensions
+    489.6 ms  ✓ DiffResults
+    696.0 ms  ✓ Preferences
+    454.2 ms  ✓ JLLWrappers
+   1472.5 ms  ✓ NaNMath
+   2383.2 ms  ✓ IrrationalConstants
+    554.1 ms  ✓ OpenSpecFun_jll
+    564.7 ms  ✓ LogExpFunctions
+   3067.0 ms  ✓ MacroTools
+    422.5 ms  ✓ CommonSubexpressions
+   1929.2 ms  ✓ SpecialFunctions
+    494.1 ms  ✓ DiffRules
+   3167.1 ms  ✓ ForwardDiff
+  17 dependencies successfully precompiled in 9 seconds. 3 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=F/ForwardDiff/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 136.84
+	System time (seconds): 6.79
+	Percent of CPU this job got: 174%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:22.47
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2148140
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 175
+	Minor (reclaiming a frame) page faults: 2481246
+	Voluntary context switches: 7662
+	Involuntary context switches: 4229
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 343648
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
