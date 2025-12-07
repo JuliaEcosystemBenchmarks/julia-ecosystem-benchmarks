@@ -1,0 +1,48 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  72959.6 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 73 seconds
+Precompiling packages...
+   1035.3 ms  ✓ Unicode
+   1124.9 ms  ✓ Inflate
+   1193.5 ms  ✓ SuiteSparse_jll
+   1224.6 ms  ✓ StaticArraysCore
+   1287.3 ms  ✓ Statistics
+   1350.3 ms  ✓ Serialization
+    820.5 ms  ✓ Preferences
+    446.7 ms  ✓ PrecompileTools
+   2431.9 ms  ✓ OrderedCollections
+   2998.3 ms  ✓ InteractiveUtils
+   3853.3 ms  ✓ MacroTools
+   1727.9 ms  ✓ DataStructures
+    632.2 ms  ✓ SimpleTraits
+   4472.5 ms  ✓ SparseArrays
+    479.1 ms  ✓ Statistics → SparseArraysExt
+   6310.9 ms  ✓ StaticArrays
+    452.8 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+   1825.6 ms  ✓ ArnoldiMethod
+   3764.0 ms  ✓ Graphs
+  19 dependencies successfully precompiled in 14 seconds. 7 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=G/Graphs/Graph-Construction -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 149.57
+	System time (seconds): 8.13
+	Percent of CPU this job got: 179%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:27.84
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2101640
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 196
+	Minor (reclaiming a frame) page faults: 2758833
+	Voluntary context switches: 7873
+	Involuntary context switches: 4007
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 414072
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
