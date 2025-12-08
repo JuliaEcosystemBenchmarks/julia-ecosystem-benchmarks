@@ -1,0 +1,78 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1568.6 ms  ✓ UUIDs
+   1691.7 ms  ✓ OpenSSL_jll
+   1656.1 ms  ✓ Unicode
+   1653.9 ms  ✓ MozillaCACerts_jll
+   1668.3 ms  ✓ Zlib_jll
+   1680.4 ms  ✓ Logging
+   1682.6 ms  ✓ NetworkOptions
+   1759.1 ms  ✓ CompilerSupportLibraries_jll
+   1787.0 ms  ✓ nghttp2_jll
+   1796.0 ms  ✓ Base64
+    522.8 ms  ✓ LibSSH2_jll
+    543.7 ms  ✓ p7zip_jll
+    711.2 ms  ✓ Printf
+    484.2 ms  ✓ LibGit2_jll
+    484.4 ms  ✓ LibCURL_jll
+   3199.7 ms  ✓ ArgTools
+    761.1 ms  ✓ LibCURL
+    654.0 ms  ✓ Tar
+   2953.7 ms  ✓ Dates
+   3034.3 ms  ✓ LibGit2
+    448.5 ms  ✓ TOML
+   2957.6 ms  ✓ Downloads
+   9105.3 ms  ✓ StyledStrings
+   1652.6 ms  ✓ JuliaSyntaxHighlighting
+   3681.1 ms  ✓ Markdown
+  46328.2 ms  ✓ Pkg
+  26 dependencies successfully precompiled in 61 seconds
+Precompiling packages...
+    851.1 ms  ✓ Compiler
+   1207.6 ms  ✓ Serialization
+   1225.1 ms  ✓ Preferences
+   1308.8 ms  ✓ Requires
+    484.5 ms  ✓ PrecompileTools
+   2200.1 ms  ✓ OrderedCollections
+   2733.4 ms  ✓ InteractiveUtils
+   3680.2 ms  ✓ MacroTools
+    997.9 ms  ✓ CodeTracking
+   4210.4 ms  ✓ Test
+   5923.7 ms  ✓ JuliaInterpreter
+  18923.4 ms  ✓ JuliaSyntax
+   9305.0 ms  ✓ LoweredCodeUtils
+  30859.9 ms  ✓ REPL
+   4275.4 ms  ✓ Pkg → REPLExt
+   7500.5 ms  ✓ Revise
+  45981.8 ms  ✓ JET
+  17 dependencies successfully precompiled in 87 seconds. 26 already precompiled.
+  1 dependency had output during precompilation:
+┌ Revise
+│  ┌ Warning: precompile directive
+│  │     precompile(Tuple{mbody.sig.parameters[1], Symbol, Bool, Bool, Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:skip_include,), Tuple{Bool}}}, typeof(methods_by_execution!), Compiled, MI, Module, Expr})
+│  │ failed. Please report an issue in Revise (after checking for duplicates) or remove this directive.
+│  └ @ Revise /workdir/depot/packages/Revise/KjLt4/src/precompile.jl:65
+└  
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=J/JET/Type-Stability-Analysis -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 358.20
+	System time (seconds): 12.62
+	Percent of CPU this job got: 249%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:28.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2289252
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 287
+	Minor (reclaiming a frame) page faults: 4169110
+	Voluntary context switches: 9799
+	Involuntary context switches: 12373
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 689280
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
