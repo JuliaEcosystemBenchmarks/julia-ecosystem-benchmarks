@@ -1,0 +1,90 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    426.6 ms  ✓ RealDot
+    463.6 ms  ✓ DataAPI
+    595.9 ms  ✓ Statistics
+    494.3 ms  ✓ StaticArraysCore
+    477.5 ms  ✓ StatsAPI
+   1363.8 ms  ✓ IrrationalConstants
+    962.2 ms  ✓ SuiteSparse_jll
+    801.1 ms  ✓ Requires
+    693.4 ms  ✓ OrderedCollections
+    733.0 ms  ✓ ADTypes
+    672.5 ms  ✓ Serialization
+   1568.0 ms  ✓ LinearMaps
+    486.6 ms  ✓ Unicode
+    618.2 ms  ✓ DocStringExtensions
+    565.9 ms  ✓ Inflate
+    453.2 ms  ✓ PtrArrays
+    689.0 ms  ✓ OpenLibm_jll
+    559.8 ms  ✓ Quaternions
+    501.1 ms  ✓ Missings
+   1399.4 ms  ✓ InteractiveUtils
+   1007.9 ms  ✓ NamedDims
+   1053.5 ms  ✓ DifferentiationInterface
+    505.4 ms  ✓ LinearMaps → LinearMapsStatisticsExt
+   1852.3 ms  ✓ DataStructures
+   5577.1 ms  ✓ MacroTools
+    585.8 ms  ✓ Compat
+    651.9 ms  ✓ LogExpFunctions
+   2347.1 ms  ✓ MatrixEquations
+    496.7 ms  ✓ AliasTables
+    547.2 ms  ✓ SortingAlgorithms
+   2103.0 ms  ✓ Preferences
+    482.4 ms  ✓ Compat → CompatLinearAlgebraExt
+    775.6 ms  ✓ SimpleTraits
+   3006.7 ms  ✓ ManifoldsBase
+    545.2 ms  ✓ PrecompileTools
+    611.8 ms  ✓ JLLWrappers
+   4327.2 ms  ✓ SparseArrays
+    564.4 ms  ✓ Einsum
+    580.1 ms  ✓ ManifoldsBase → ManifoldsBaseQuaternionsExt
+    548.9 ms  ✓ ManifoldsBase → ManifoldsBaseStatisticsExt
+    848.0 ms  ✓ ManifoldDiff
+    663.4 ms  ✓ OpenSpecFun_jll
+    598.2 ms  ✓ Statistics → SparseArraysExt
+    820.5 ms  ✓ LinearMaps → LinearMapsSparseArraysExt
+    563.1 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+   2031.0 ms  ✓ SpecialFunctions
+   1984.1 ms  ✓ StatsBase
+   1100.6 ms  ✓ Kronecker
+  10662.7 ms  ✓ StaticArrays
+    489.9 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    488.1 ms  ✓ DifferentiationInterface → DifferentiationInterfaceStaticArraysExt
+   1001.9 ms  ✓ ArnoldiMethod
+   2932.2 ms  ✓ Graphs
+    919.2 ms  ✓ SimpleWeightedGraphs
+[0KWARNING: Method definition rand!(ManifoldsBase.AbstractManifold{𝔽} where 𝔽, Any) in module ManifoldsBase at /workdir/depot/packages/ManifoldsBase/MPJfA/src/ManifoldsBase.jl:1061 overwritten in module Manifolds at /workdir/depot/packages/Manifolds/gYgOy/src/manifold_fallbacks.jl:1.
+[0KERROR: Method overwriting is not permitted during Module precompilation. Use `__precompile__(false)` to opt-out of precompilation.
+    840.0 ms  ? Manifolds
+  54 dependencies successfully precompiled in 25 seconds. 8 already precompiled.
+  1 dependencies failed but may be precompilable after restarting julia
+
+  1 dependency had output during precompilation:
+┌ Manifolds
+│  WARNING: Method definition rand!(ManifoldsBase.AbstractManifold{𝔽} where 𝔽, Any) in module ManifoldsBase at /workdir/depot/packages/ManifoldsBase/MPJfA/src/ManifoldsBase.jl:1061 overwritten in module Manifolds at /workdir/depot/packages/Manifolds/gYgOy/src/manifold_fallbacks.jl:1.
+│  ERROR: Method overwriting is not permitted during Module precompilation. Use `__precompile__(false)` to opt-out of precompilation.
+└  
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +nightly --project=M/Manifolds/Geodesic-On-Sphere -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 210.87
+	System time (seconds): 13.82
+	Percent of CPU this job got: 149%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:30.06
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2521172
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 267
+	Minor (reclaiming a frame) page faults: 5056981
+	Voluntary context switches: 13216
+	Involuntary context switches: 3950
+	Swaps: 0
+	File system inputs: 80
+	File system outputs: 533656
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
