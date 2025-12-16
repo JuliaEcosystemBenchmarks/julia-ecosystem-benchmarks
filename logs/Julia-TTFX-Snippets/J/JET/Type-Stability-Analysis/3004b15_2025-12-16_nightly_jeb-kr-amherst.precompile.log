@@ -1,0 +1,55 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    652.2 ms  ✓ OrderedCollections
+    682.7 ms  ✓ Serialization
+    743.1 ms  ✓ Requires
+    860.7 ms  ✓ Compiler
+   1287.1 ms  ✓ InteractiveUtils
+   2073.3 ms  ✓ Preferences
+    986.7 ms  ✓ CodeTracking
+    453.0 ms  ✓ PrecompileTools
+   5482.9 ms  ✓ MacroTools
+   9261.2 ms  ✓ Test
+   9386.0 ms  ✓ JuliaInterpreter
+  19931.4 ms  ✓ JuliaSyntax
+   9958.4 ms  ✓ LoweredCodeUtils
+  55956.8 ms  ✓ REPL
+[0K┌ Warning: precompile directive
+[0K│     precompile(Tuple{mbody.sig.parameters[1], Symbol, Bool, Bool, Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:skip_include,), Tuple{Bool}}}, typeof(methods_by_execution!), Compiled, MI, Module, Expr})
+[0K│ failed. Please report an issue in Revise (after checking for duplicates) or remove this directive.
+[0K└ @ Revise /workdir/depot/packages/Revise/KjLt4/src/precompile.jl:65
+   9265.2 ms  ✓ Pkg → REPLExt
+  13142.0 ms  ✓ Revise
+    664.9 ms  ✓ JET
+  17 dependencies successfully precompiled in 73 seconds. 27 already precompiled.
+
+  1 dependency had output during precompilation:
+┌ Revise
+│  ┌ Warning: precompile directive
+│  │     precompile(Tuple{mbody.sig.parameters[1], Symbol, Bool, Bool, Iterators.Pairs{Symbol, Bool, Tuple{Symbol}, NamedTuple{(:skip_include,), Tuple{Bool}}}, typeof(methods_by_execution!), Compiled, MI, Module, Expr})
+│  │ failed. Please report an issue in Revise (after checking for duplicates) or remove this directive.
+│  └ @ Revise /workdir/depot/packages/Revise/KjLt4/src/precompile.jl:65
+└  
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +nightly --project=J/JET/Type-Stability-Analysis -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 319.65
+	System time (seconds): 12.84
+	Percent of CPU this job got: 186%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:57.86
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2578052
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 356
+	Minor (reclaiming a frame) page faults: 5119442
+	Voluntary context switches: 10854
+	Involuntary context switches: 4062
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 620464
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
