@@ -1,0 +1,110 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  73217.3 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 73 seconds
+Precompiling packages...
+   2517.2 ms  ✓ UnPack
+   2546.9 ms  ✓ DataValueInterfaces
+   2542.6 ms  ✓ Reexport
+   2622.9 ms  ✓ LorentzVectors
+   2640.8 ms  ✓ LaTeXStrings
+   2649.0 ms  ✓ Unicode
+   3213.6 ms  ✓ InverseFunctions
+   3342.9 ms  ✓ LRUCache
+   3873.8 ms  ✓ DocStringExtensions
+   3823.5 ms  ✓ AbstractTrees
+   3999.1 ms  ✓ Statistics
+   4217.3 ms  ✓ Serialization
+   4316.7 ms  ✓ Calculus
+   2829.5 ms  ✓ IteratorInterfaceExtensions
+   2875.7 ms  ✓ DataAPI
+   2887.6 ms  ✓ StatsAPI
+   2899.6 ms  ✓ Mmap
+   3027.2 ms  ✓ SuiteSparse_jll
+   3767.5 ms  ✓ IterTools
+   2504.8 ms  ✓ CompositionsBase
+   2501.6 ms  ✓ PtrArrays
+   3129.9 ms  ✓ StaticArraysCore
+   3630.7 ms  ✓ TranscodingStreams
+   2528.5 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+   2427.9 ms  ✓ LRUCache → SerializationExt
+   2401.4 ms  ✓ TableTraits
+   3799.2 ms  ✓ ArraysOfArrays
+   3998.6 ms  ✓ Preferences
+   3628.9 ms  ✓ Measurements
+  10183.2 ms  ✓ ConstructionBase
+  11251.9 ms  ✓ OrderedCollections
+   2669.1 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+   2330.3 ms  ✓ ArraysOfArrays → ArraysOfArraysStaticArraysCoreExt
+   2974.2 ms  ✓ AliasTables
+   2600.8 ms  ✓ PrecompileTools
+   2699.8 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   3368.4 ms  ✓ JLLWrappers
+  11081.2 ms  ✓ BitIntegers
+   8797.5 ms  ✓ BayesHistogram
+   2824.7 ms  ✓ Parameters
+  14802.0 ms  ✓ IrrationalConstants
+  13501.8 ms  ✓ Crayons
+   3232.9 ms  ✓ libdeflate_jll
+   9099.2 ms  ✓ Missings
+  11711.4 ms  ✓ SentinelArrays
+   3817.8 ms  ✓ Zstd_jll
+   2792.3 ms  ✓ LogExpFunctions
+   4128.3 ms  ✓ XZ_jll
+   3682.8 ms  ✓ Lz4_jll
+  12826.6 ms  ✓ InteractiveUtils
+   1702.4 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+   2670.0 ms  ✓ LibDeflate
+   8214.4 ms  ✓ DataStructures
+   1730.4 ms  ✓ CodecXz
+   7575.1 ms  ✓ StringManipulation
+  16609.3 ms  ✓ MacroTools
+   8311.8 ms  ✓ Tables
+   3029.6 ms  ✓ CodecLz4
+   3402.1 ms  ✓ CodecZstd
+   1624.1 ms  ✓ SortingAlgorithms
+    879.9 ms  ✓ Memoization
+    930.5 ms  ✓ Mixers
+   2061.7 ms  ✓ StructArrays
+  14508.4 ms  ✓ SparseArrays
+    509.1 ms  ✓ StructArrays → StructArraysLinearAlgebraExt
+    719.4 ms  ✓ Statistics → SparseArraysExt
+    718.0 ms  ✓ StructArrays → StructArraysSparseArraysExt
+   3523.7 ms  ✓ Accessors
+    485.6 ms  ✓ Accessors → StructArraysExt
+    500.2 ms  ✓ Accessors → LinearAlgebraExt
+  14226.1 ms  ✓ StaticArrays
+   3180.4 ms  ✓ StatsBase
+    865.8 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    875.0 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+    902.6 ms  ✓ Accessors → StaticArraysExt
+   1292.9 ms  ✓ XXHashNative
+   1747.5 ms  ✓ StructArrays → StructArraysStaticArraysExt
+   2127.2 ms  ✓ FHist
+  28188.5 ms  ✓ REPL
+  15764.5 ms  ✓ PrettyTables
+  15515.0 ms  ✓ UnROOT
+  81 dependencies successfully precompiled in 78 seconds. 7 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=U/UnROOT/Loading-A-Typical-Hep-Ex--Root-File -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 327.25
+	System time (seconds): 21.58
+	Percent of CPU this job got: 230%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:31.62
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2096404
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 449
+	Minor (reclaiming a frame) page faults: 6032939
+	Voluntary context switches: 16496
+	Involuntary context switches: 18869
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 689768
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
