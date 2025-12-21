@@ -1,0 +1,46 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    791.7 ms  ✓ LazyArtifacts
+    862.0 ms  ✓ Reexport
+    867.8 ms  ✓ Scratch
+    893.4 ms  ✓ CEnum
+    902.6 ms  ✓ ExprTools
+   1064.5 ms  ✓ StructIO
+    914.4 ms  ✓ SuiteSparse_jll
+   1070.5 ms  ✓ EnzymeCore
+   1075.2 ms  ✓ Preferences
+    280.5 ms  ✓ PrecompileTools
+    319.2 ms  ✓ JLLWrappers
+    399.2 ms  ✓ LibTracyClient_jll
+    464.2 ms  ✓ Enzyme_jll
+    470.6 ms  ✓ LLVMExtra_jll
+   1445.8 ms  ✓ ObjectFile
+    619.7 ms  ✓ Tracy
+   2485.3 ms  ✓ SparseArrays
+   3413.0 ms  ✓ LLVM
+  12904.7 ms  ✓ GPUCompiler
+  34579.6 ms  ✓ Enzyme
+  20 dependencies successfully precompiled in 53 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=E/Enzyme/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 121.85
+	System time (seconds): 6.14
+	Percent of CPU this job got: 233%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:54.79
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1971528
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 124
+	Minor (reclaiming a frame) page faults: 1669216
+	Voluntary context switches: 29880
+	Involuntary context switches: 4485
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 332312
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,82 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   2058.3 ms  ✓ StatsAPI
+   2077.6 ms  ✓ EnumX
+   2071.7 ms  ✓ DataAPI
+   2163.8 ms  ✓ OpenLibm_jll
+   2137.5 ms  ✓ CompilerSupportLibraries_jll
+   2279.9 ms  ✓ Requires
+   2279.3 ms  ✓ ConstructionBase
+   2374.9 ms  ✓ PositiveFactorizations
+   2449.2 ms  ✓ SuiteSparse_jll
+   2911.1 ms  ✓ Compat
+   2872.9 ms  ✓ DocStringExtensions
+   2978.4 ms  ✓ OrderedCollections
+   1799.5 ms  ✓ PtrArrays
+   1793.3 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   2093.9 ms  ✓ StaticArraysCore
+   4235.6 ms  ✓ FillArrays
+   1985.1 ms  ✓ Adapt
+   2114.9 ms  ✓ NaNMath
+   2093.8 ms  ✓ Missings
+   1713.4 ms  ✓ Compat → CompatLinearAlgebraExt
+   2602.5 ms  ✓ ADTypes
+   2617.8 ms  ✓ Preferences
+   4867.5 ms  ✓ IrrationalConstants
+   1403.9 ms  ✓ AliasTables
+   1218.5 ms  ✓ DiffResults
+   1497.4 ms  ✓ ArrayInterface
+   1098.5 ms  ✓ ADTypes → ADTypesConstructionBaseExt
+   5945.9 ms  ✓ Distributed
+   1204.4 ms  ✓ JLLWrappers
+   1415.9 ms  ✓ LogExpFunctions
+    709.6 ms  ✓ ArrayInterface → ArrayInterfaceStaticArraysCoreExt
+   6550.9 ms  ✓ MacroTools
+    737.9 ms  ✓ OpenSpecFun_jll
+   2061.3 ms  ✓ DifferentiationInterface
+   3932.1 ms  ✓ DataStructures
+    414.9 ms  ✓ CommonSubexpressions
+    374.3 ms  ✓ SortingAlgorithms
+    798.0 ms  ✓ Setfield
+    447.9 ms  ✓ FiniteDiff
+   5572.1 ms  ✓ SparseArrays
+    454.2 ms  ✓ DifferentiationInterface → DifferentiationInterfaceFiniteDiffExt
+    486.4 ms  ✓ Adapt → AdaptSparseArraysExt
+    521.2 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+    548.5 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    603.0 ms  ✓ Statistics
+   1934.3 ms  ✓ SpecialFunctions
+    388.3 ms  ✓ ArrayInterface → ArrayInterfaceSparseArraysExt
+    430.8 ms  ✓ FillArrays → FillArraysStatisticsExt
+    450.3 ms  ✓ DiffRules
+    389.6 ms  ✓ FiniteDiff → FiniteDiffSparseArraysExt
+   1326.9 ms  ✓ StatsBase
+   2049.5 ms  ✓ ForwardDiff
+    432.1 ms  ✓ DifferentiationInterface → DifferentiationInterfaceForwardDiffExt
+    568.5 ms  ✓ NLSolversBase
+    638.3 ms  ✓ LineSearches
+   1605.9 ms  ✓ Optim
+  56 dependencies successfully precompiled in 15 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=O/Optim/Rosenbrock-Minimization-With-Bfgs -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 38.80
+	System time (seconds): 9.24
+	Percent of CPU this job got: 302%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:15.89
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 365264
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 159
+	Minor (reclaiming a frame) page faults: 2217059
+	Voluntary context switches: 71793
+	Involuntary context switches: 11461
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 130776
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
