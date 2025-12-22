@@ -1,0 +1,15 @@
+  Module ExplicitImports is not relying on any implicit imports.
+
+  However, module ExplicitImports has stale explicit imports for this 1 unused
+  name:
+
+    •  parse is unused but it was imported from
+       ExplicitImports.Vendored.JuliaSyntax at
+       /workdir/depot/packages/ExplicitImports/fjM9z/src/ExplicitImports.jl:9:30
+
+  Additionally, module ExplicitImports has 1 self-qualified access:
+
+    •  parent was accessed as ExplicitImports.parent inside
+       ExplicitImports at
+       /workdir/depot/packages/ExplicitImports/fjM9z/src/deprecated.jl:79:21
+0.15143203735351562, 0.3440070152282715, 0.4954390525817871 seconds
