@@ -1,0 +1,56 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    994.1 ms  ✓ LazyArtifacts
+   1002.6 ms  ✓ Reexport
+   1096.5 ms  ✓ CEnum
+   1122.6 ms  ✓ HashArrayMappedTries
+   1127.6 ms  ✓ Requires
+   1131.0 ms  ✓ StaticArraysCore
+   1187.3 ms  ✓ SuiteSparse_jll
+   1390.2 ms  ✓ Preferences
+    557.0 ms  ✓ ScopedValues
+    555.4 ms  ✓ Adapt
+    488.0 ms  ✓ PrecompileTools
+    534.6 ms  ✓ JLLWrappers
+    465.5 ms  ✓ GPUArraysCore
+    591.2 ms  ✓ LLVMExtra_jll
+   2961.1 ms  ✓ UnsafeAtomics
+   2875.8 ms  ✓ MacroTools
+    361.9 ms  ✓ Atomix
+   3016.4 ms  ✓ SparseArrays
+    361.2 ms  ✓ Adapt → AdaptSparseArraysExt
+    479.0 ms  ✓ Statistics
+   4308.2 ms  ✓ LLVM
+   5144.5 ms  ✓ StaticArrays
+    390.5 ms  ✓ Adapt → AdaptStaticArraysExt
+    553.4 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    899.3 ms  ✓ UnsafeAtomics → UnsafeAtomicsLLVM
+   1838.8 ms  ✓ KernelAbstractions
+    426.8 ms  ✓ KernelAbstractions → LinearAlgebraExt
+    541.6 ms  ✓ KernelAbstractions → SparseArraysExt
+   2066.4 ms  ✓ GPUArrays
+    793.1 ms  ✓ JLArrays
+  30 dependencies successfully precompiled in 14 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=J/JLArrays/Matrix-Multiplication-On-Gpu-Like-Arrays -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 30.94
+	System time (seconds): 5.26
+	Percent of CPU this job got: 243%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:14.86
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 444252
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 204
+	Minor (reclaiming a frame) page faults: 1377631
+	Voluntary context switches: 40932
+	Involuntary context switches: 1613
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 148192
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

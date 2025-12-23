@@ -1,0 +1,161 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    482.1 ms  ✓ DataAPI
+    570.4 ms  ✓ ConstructionBase
+    618.1 ms  ✓ Statistics
+    446.5 ms  ✓ RealDot
+    452.2 ms  ✓ DataValueInterfaces
+    531.0 ms  ✓ StaticArraysCore
+   1356.8 ms  ✓ IrrationalConstants
+    455.9 ms  ✓ MistyClosures
+    935.7 ms  ✓ SuiteSparse_jll
+    810.6 ms  ✓ Requires
+    700.1 ms  ✓ OrderedCollections
+    755.5 ms  ✓ ADTypes
+    486.1 ms  ✓ Unicode
+    554.1 ms  ✓ Inflate
+    501.4 ms  ✓ ExprTools
+    705.6 ms  ✓ Serialization
+    469.3 ms  ✓ IteratorInterfaceExtensions
+    463.5 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+    512.2 ms  ✓ Adapt
+    398.3 ms  ✓ ADTypes → ADTypesConstructionBaseExt
+   1351.5 ms  ✓ InteractiveUtils
+   1030.1 ms  ✓ DifferentiationInterface
+    580.9 ms  ✓ Compat
+   1724.0 ms  ✓ DataStructures
+    479.0 ms  ✓ TableTraits
+    691.3 ms  ✓ GPUArraysCore
+   5847.7 ms  ✓ MacroTools
+    441.2 ms  ✓ Compat → CompatLinearAlgebraExt
+   2351.7 ms  ✓ Preferences
+    457.7 ms  ✓ DifferentiationInterface → DifferentiationInterfaceGPUArraysCoreExt
+   2813.5 ms  ✓ Distributed
+    962.3 ms  ✓ Tables
+    759.6 ms  ✓ SimpleTraits
+    460.4 ms  ✓ PrecompileTools
+   1405.8 ms  ✓ ChainRulesCore
+    814.4 ms  ✓ StructArrays
+   4451.4 ms  ✓ SparseArrays
+   1391.7 ms  ✓ DispatchDoctor
+    445.8 ms  ✓ ADTypes → ADTypesChainRulesCoreExt
+    469.6 ms  ✓ DifferentiationInterface → DifferentiationInterfaceChainRulesCoreExt
+    454.7 ms  ✓ StructArrays → StructArraysLinearAlgebraExt
+    423.2 ms  ✓ StructArrays → StructArraysAdaptExt
+    594.5 ms  ✓ Statistics → SparseArraysExt
+    593.3 ms  ✓ SuiteSparse
+    582.9 ms  ✓ Adapt → AdaptSparseArraysExt
+    613.9 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+    596.3 ms  ✓ StructArrays → StructArraysSparseArraysExt
+    607.4 ms  ✓ ChainRulesCore → ChainRulesCoreSparseArraysExt
+    519.4 ms  ✓ DispatchDoctor → DispatchDoctorChainRulesCoreExt
+    503.8 ms  ✓ SparseInverseSubset
+   8837.6 ms  ✓ Test
+   4421.3 ms  ✓ ChainRules
+  11060.0 ms  ✓ StaticArrays
+    579.7 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    593.4 ms  ✓ Adapt → AdaptStaticArraysExt
+    601.1 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+    610.1 ms  ✓ StaticArrays → StaticArraysChainRulesCoreExt
+    513.3 ms  ✓ DifferentiationInterface → DifferentiationInterfaceStaticArraysExt
+    549.2 ms  ✓ StructArrays → StructArraysStaticArraysExt
+   1165.9 ms  ✓ ArnoldiMethod
+   2927.4 ms  ✓ Graphs
+[0KERROR: LoadError: UndefVarError: `WorldView` not defined in `Compiler`
+[0KSuggestion: check for spelling errors or missing imports.
+[0KStacktrace:
+[0K  [1] getproperty(x::Module, f::Symbol)
+[0K    @ Base ./Base_compiler.jl:50
+[0K  [2] top-level scope
+[0K    @ /workdir/depot/packages/Mooncake/WqeJP/src/interpreter/abstract_interpretation.jl:89
+[0K  [3] include(mapexpr::Function, mod::Module, _path::String)
+[0K    @ Base ./Base.jl:310
+[0K  [4] top-level scope
+[0K    @ /workdir/depot/packages/Mooncake/WqeJP/src/Mooncake.jl:119
+[0K  [5] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K  [6] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3282
+[0K  [7] top-level scope
+[0K    @ stdin:5
+[0K  [8] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K  [9] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3124
+[0K [10] include_string
+[0K    @ ./loading.jl:3134 [inlined]
+[0K [11] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [12] _start()
+[0K    @ Base ./client.jl:577
+[0Kin expression starting at /workdir/depot/packages/Mooncake/WqeJP/src/interpreter/abstract_interpretation.jl:89
+[0Kin expression starting at /workdir/depot/packages/Mooncake/WqeJP/src/Mooncake.jl:1
+[0Kin expression starting at stdin:5
+              ✗ Mooncake
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("da2b9cff-9c12-43a0-ae48-6db2b0edb7d6"), "Mooncake") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:44
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2845
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2697
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2625 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2589
+[0K  [7] require
+[0K    @ ./loading.jl:2565 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/DifferentiationInterface/6H4dc/ext/DifferentiationInterfaceMooncakeExt/DifferentiationInterfaceMooncakeExt.jl:5
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3282
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3124
+[0K [17] include_string
+[0K    @ ./loading.jl:3134 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:577
+[0Kin expression starting at /workdir/depot/packages/DifferentiationInterface/6H4dc/ext/DifferentiationInterfaceMooncakeExt/DifferentiationInterfaceMooncakeExt.jl:1
+[0Kin expression starting at stdin:5
+              ✗ DifferentiationInterface → DifferentiationInterfaceMooncakeExt
+  61 dependencies successfully precompiled in 27 seconds. 9 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +nightly --project=M/Mooncake/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 223.13
+	System time (seconds): 14.79
+	Percent of CPU this job got: 156%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:31.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2510804
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 311
+	Minor (reclaiming a frame) page faults: 5431765
+	Voluntary context switches: 14720
+	Involuntary context switches: 3835
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 529704
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

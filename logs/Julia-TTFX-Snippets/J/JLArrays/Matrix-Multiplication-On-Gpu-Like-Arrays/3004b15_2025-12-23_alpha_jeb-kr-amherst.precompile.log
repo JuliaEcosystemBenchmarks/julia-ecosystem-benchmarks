@@ -1,0 +1,59 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    427.5 ms  ✓ Reexport
+    514.7 ms  ✓ StaticArraysCore
+    612.4 ms  ✓ Statistics
+    864.6 ms  ✓ SuiteSparse_jll
+    516.3 ms  ✓ HashArrayMappedTries
+    755.3 ms  ✓ Requires
+    688.3 ms  ✓ Serialization
+    445.1 ms  ✓ CEnum
+   1920.0 ms  ✓ UnsafeAtomics
+    897.6 ms  ✓ LazyArtifacts
+   1383.0 ms  ✓ InteractiveUtils
+    454.2 ms  ✓ ScopedValues
+    486.0 ms  ✓ Adapt
+   1649.6 ms  ✓ Preferences
+    590.6 ms  ✓ GPUArraysCore
+    605.1 ms  ✓ JLLWrappers
+    970.7 ms  ✓ Atomix
+    537.1 ms  ✓ PrecompileTools
+   4527.3 ms  ✓ MacroTools
+   1155.6 ms  ✓ LLVMExtra_jll
+   3549.9 ms  ✓ SparseArrays
+    483.8 ms  ✓ Adapt → AdaptSparseArraysExt
+    569.4 ms  ✓ Statistics → SparseArraysExt
+   5041.5 ms  ✓ LLVM
+   1275.2 ms  ✓ UnsafeAtomics → UnsafeAtomicsLLVM
+  10071.7 ms  ✓ StaticArrays
+    467.9 ms  ✓ Adapt → AdaptStaticArraysExt
+    469.2 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+   2867.8 ms  ✓ KernelAbstractions
+    537.7 ms  ✓ KernelAbstractions → LinearAlgebraExt
+    694.6 ms  ✓ KernelAbstractions → SparseArraysExt
+   3116.9 ms  ✓ GPUArrays
+   1374.6 ms  ✓ JLArrays
+  33 dependencies successfully precompiled in 23 seconds. 27 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +alpha --project=J/JLArrays/Matrix-Multiplication-On-Gpu-Like-Arrays -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 182.76
+	System time (seconds): 11.29
+	Percent of CPU this job got: 174%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:51.37
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2641736
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 259
+	Minor (reclaiming a frame) page faults: 4215741
+	Voluntary context switches: 11661
+	Involuntary context switches: 2813
+	Swaps: 0
+	File system inputs: 24
+	File system outputs: 482096
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
