@@ -1,0 +1,41 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    764.3 ms  ✓ PackageExtensionCompat
+    800.8 ms  ✓ LaTeXStrings
+    869.3 ms  ✓ Zlib_jll
+    883.2 ms  ✓ Requires
+    983.3 ms  ✓ OrderedCollections
+   1029.0 ms  ✓ Preferences
+   1368.9 ms  ✓ Combinatorics
+   1349.0 ms  ✓ Format
+    337.4 ms  ✓ PrecompileTools
+    384.0 ms  ✓ JLLWrappers
+    369.0 ms  ✓ JpegTurbo_jll
+   1973.0 ms  ✓ MacroTools
+    612.4 ms  ✓ Ghostscript_jll
+   1503.8 ms  ✓ Latexify
+   7339.4 ms  ✓ QuantumAlgebra
+  15 dependencies successfully precompiled in 12 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=Q/QuantumAlgebra/Commute-Two-Operators -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 22.20
+	System time (seconds): 2.83
+	Percent of CPU this job got: 197%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:12.68
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 664396
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 63
+	Minor (reclaiming a frame) page faults: 753023
+	Voluntary context switches: 21705
+	Involuntary context switches: 685
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 87936
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

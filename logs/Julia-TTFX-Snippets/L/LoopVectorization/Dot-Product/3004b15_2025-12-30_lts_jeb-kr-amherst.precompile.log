@@ -1,0 +1,56 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1407.0 ms  ✓ IfElse
+   1262.6 ms  ✓ UnPack
+   1335.8 ms  ✓ SIMDTypes
+   1356.2 ms  ✓ SciMLPublic
+   1357.2 ms  ✓ CommonWorldInvalidations
+   1405.9 ms  ✓ ManualMemory
+   1484.9 ms  ✓ Requires
+   1578.0 ms  ✓ Compat
+   1586.3 ms  ✓ DocStringExtensions
+   1650.4 ms  ✓ CpuId
+   1687.2 ms  ✓ Preferences
+    475.1 ms  ✓ Adapt
+    394.0 ms  ✓ Compat → CompatLinearAlgebraExt
+   1975.6 ms  ✓ OffsetArrays
+    379.7 ms  ✓ PrecompileTools
+    779.0 ms  ✓ ThreadingUtilities
+    300.9 ms  ✓ OffsetArrays → OffsetArraysAdaptExt
+    389.3 ms  ✓ ArrayInterface
+    533.2 ms  ✓ Static
+    278.2 ms  ✓ BitTwiddlingConvenienceFunctions
+    561.9 ms  ✓ CPUSummary
+    833.6 ms  ✓ StaticArrayInterface
+    404.8 ms  ✓ PolyesterWeave
+    697.2 ms  ✓ HostCPUFeatures
+    339.9 ms  ✓ StaticArrayInterface → StaticArrayInterfaceOffsetArraysExt
+    339.0 ms  ✓ CloseOpenIntervals
+    411.5 ms  ✓ LayoutPointers
+   4089.9 ms  ✓ VectorizationBase
+    595.9 ms  ✓ SLEEFPirates
+  11546.9 ms  ✓ LoopVectorization
+  30 dependencies successfully precompiled in 21 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=L/LoopVectorization/Dot-Product -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 38.56
+	System time (seconds): 5.11
+	Percent of CPU this job got: 202%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:21.56
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 824436
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 122
+	Minor (reclaiming a frame) page faults: 1341896
+	Voluntary context switches: 41559
+	Involuntary context switches: 1623
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 137304
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
