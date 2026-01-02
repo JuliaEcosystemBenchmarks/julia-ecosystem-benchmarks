@@ -1,0 +1,81 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   2040.3 ms  ✓ Reexport
+   2041.0 ms  ✓ PtrArrays
+   2073.7 ms  ✓ ArgCheck
+   2072.1 ms  ✓ StatsAPI
+   2136.5 ms  ✓ OpenLibm_jll
+   2128.7 ms  ✓ CompilerSupportLibraries_jll
+   2138.8 ms  ✓ DataAPI
+   2217.6 ms  ✓ SuiteSparse_jll
+   2266.3 ms  ✓ InverseFunctions
+   2463.1 ms  ✓ DocStringExtensions
+   2621.8 ms  ✓ Compat
+   2564.2 ms  ✓ OrderedCollections
+   2660.6 ms  ✓ Preferences
+   3174.0 ms  ✓ FillArrays
+   1207.8 ms  ✓ AliasTables
+    804.5 ms  ✓ Compat → CompatLinearAlgebraExt
+   1067.1 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+   1231.5 ms  ✓ Missings
+   3568.6 ms  ✓ IrrationalConstants
+    860.3 ms  ✓ JLLWrappers
+    603.6 ms  ✓ Rmath_jll
+    646.4 ms  ✓ OpenSpecFun_jll
+    794.3 ms  ✓ LogExpFunctions
+   1599.9 ms  ✓ ChainRulesCore
+    802.9 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+   2812.9 ms  ✓ DataStructures
+   1369.6 ms  ✓ Rmath
+   5678.9 ms  ✓ Test
+    633.8 ms  ✓ SortingAlgorithms
+    473.7 ms  ✓ InverseFunctions → InverseFunctionsTestExt
+    991.6 ms  ✓ QuadGK
+   1542.4 ms  ✓ LogExpFunctions → LogExpFunctionsChainRulesCoreExt
+    424.3 ms  ✓ DensityInterface
+   4549.7 ms  ✓ SparseArrays
+    396.5 ms  ✓ SuiteSparse
+   2820.5 ms  ✓ SpecialFunctions
+    459.8 ms  ✓ ChainRulesCore → ChainRulesCoreSparseArraysExt
+    492.5 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    574.4 ms  ✓ Statistics
+    472.2 ms  ✓ FillArrays → FillArraysStatisticsExt
+    661.4 ms  ✓ PDMats
+    766.2 ms  ✓ HypergeometricFunctions
+    411.2 ms  ✓ FillArrays → FillArraysPDMatsExt
+   1127.7 ms  ✓ SpecialFunctions → SpecialFunctionsChainRulesCoreExt
+   1366.0 ms  ✓ StatsBase
+    979.5 ms  ✓ StatsFuns
+    436.5 ms  ✓ PDMats → StatsBaseExt
+    332.9 ms  ✓ StatsFuns → StatsFunsInverseFunctionsExt
+    833.8 ms  ✓ StatsFuns → StatsFunsChainRulesCoreExt
+    936.1 ms  ✓ HiddenMarkovModels
+   3105.7 ms  ✓ Distributions
+    620.8 ms  ✓ Distributions → DistributionsChainRulesCoreExt
+    658.1 ms  ✓ Distributions → DistributionsTestExt
+    583.9 ms  ✓ Distributions → DistributionsDensityInterfaceExt
+    597.3 ms  ✓ HiddenMarkovModels → HiddenMarkovModelsDistributionsExt
+  55 dependencies successfully precompiled in 15 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=H/HiddenMarkovModels/Estimate-Hmm-With-Baum-Welch -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 39.15
+	System time (seconds): 8.70
+	Percent of CPU this job got: 306%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:15.61
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 378404
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 186
+	Minor (reclaiming a frame) page faults: 2253600
+	Voluntary context switches: 72870
+	Involuntary context switches: 6397
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 133568
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
