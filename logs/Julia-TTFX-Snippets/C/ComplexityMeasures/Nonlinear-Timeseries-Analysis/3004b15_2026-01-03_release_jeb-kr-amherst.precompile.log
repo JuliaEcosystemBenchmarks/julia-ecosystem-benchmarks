@@ -1,0 +1,128 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1436.6 ms  ✓ Logging
+   1523.6 ms  ✓ UUIDs
+   1518.9 ms  ✓ MozillaCACerts_jll
+   1657.3 ms  ✓ OpenSSL_jll
+   1702.8 ms  ✓ nghttp2_jll
+   1708.5 ms  ✓ Zlib_jll
+   1735.6 ms  ✓ Base64
+   1751.6 ms  ✓ Unicode
+   1745.9 ms  ✓ CompilerSupportLibraries_jll
+   1813.1 ms  ✓ NetworkOptions
+    524.3 ms  ✓ LibSSH2_jll
+    583.7 ms  ✓ p7zip_jll
+    682.9 ms  ✓ Printf
+    485.0 ms  ✓ LibGit2_jll
+    483.5 ms  ✓ LibCURL_jll
+   3135.6 ms  ✓ ArgTools
+    772.3 ms  ✓ LibCURL
+    638.3 ms  ✓ Tar
+   2907.1 ms  ✓ Dates
+   3058.8 ms  ✓ LibGit2
+    435.7 ms  ✓ TOML
+   3012.0 ms  ✓ Downloads
+   9059.9 ms  ✓ StyledStrings
+   1687.6 ms  ✓ JuliaSyntaxHighlighting
+   3702.3 ms  ✓ Markdown
+  45994.2 ms  ✓ Pkg
+  26 dependencies successfully precompiled in 61 seconds
+Precompiling packages...
+   2468.3 ms  ✓ OpenLibm_jll
+   2473.1 ms  ✓ Reexport
+   2655.1 ms  ✓ StatsAPI
+   2856.7 ms  ✓ DataAPI
+   3474.6 ms  ✓ AbstractFFTs
+   3583.0 ms  ✓ Statistics
+   3637.5 ms  ✓ DocStringExtensions
+   3635.6 ms  ✓ AbstractTrees
+   3883.5 ms  ✓ Serialization
+   3857.8 ms  ✓ IterTools
+   2469.6 ms  ✓ Future
+   2603.8 ms  ✓ PtrArrays
+   5495.4 ms  ✓ FillArrays
+   3114.1 ms  ✓ SuiteSparse_jll
+   5789.5 ms  ✓ Combinatorics
+   3048.8 ms  ✓ StaticArraysCore
+   3829.5 ms  ✓ Requires
+   3826.2 ms  ✓ Preferences
+   2299.8 ms  ✓ FillArrays → FillArraysStatisticsExt
+   2596.1 ms  ✓ AliasTables
+   4793.5 ms  ✓ LazyArtifacts
+   8977.3 ms  ✓ ConstructionBase
+   1592.5 ms  ✓ PrecompileTools
+   9195.7 ms  ✓ Bessels
+   9396.9 ms  ✓ OrderedCollections
+   2499.5 ms  ✓ JLLWrappers
+   1701.9 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   6991.0 ms  ✓ Missings
+  11974.6 ms  ✓ IrrationalConstants
+   3032.7 ms  ✓ FFTW_jll
+   3084.8 ms  ✓ Rmath_jll
+   3022.2 ms  ✓ OpenSpecFun_jll
+   7950.3 ms  ✓ Distances
+  10121.6 ms  ✓ InteractiveUtils
+   2190.4 ms  ✓ LogExpFunctions
+   5403.9 ms  ✓ RecipesBase
+   4585.7 ms  ✓ IntelOpenMP_jll
+   4674.6 ms  ✓ oneTBB_jll
+   5598.3 ms  ✓ DataStructures
+   2292.8 ms  ✓ Rmath
+  13131.4 ms  ✓ MacroTools
+   1276.4 ms  ✓ SortingAlgorithms
+   2369.0 ms  ✓ MKL_jll
+   1787.9 ms  ✓ Setfield
+   3231.4 ms  ✓ QuadGK
+   4156.8 ms  ✓ SpecialFunctions
+  13021.2 ms  ✓ SparseArrays
+   1234.0 ms  ✓ Distances → DistancesSparseArraysExt
+   1272.6 ms  ✓ SuiteSparse
+   1281.3 ms  ✓ Statistics → SparseArraysExt
+   1765.5 ms  ✓ HypergeometricFunctions
+   1664.8 ms  ✓ FillArrays → FillArraysSparseArraysExt
+   8087.1 ms  ✓ Test
+   2087.0 ms  ✓ PDMats
+    906.4 ms  ✓ FillArrays → FillArraysPDMatsExt
+   2005.5 ms  ✓ AbstractFFTs → AbstractFFTsTestExt
+   4136.7 ms  ✓ StatsFuns
+  16195.0 ms  ✓ StaticArrays
+   5437.5 ms  ✓ StatsBase
+   1063.3 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+   1599.7 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+   1723.7 ms  ✓ PDMats → StatsBaseExt
+  12140.5 ms  ✓ FFTW
+   5242.5 ms  ✓ NearestNeighbors
+    726.3 ms  ✓ Neighborhood
+   5532.5 ms  ✓ Distributions
+    992.5 ms  ✓ Distributions → DistributionsTestExt
+   1680.2 ms  ✓ StateSpaceSets
+   2272.5 ms  ✓ DelayEmbeddings
+  21873.9 ms  ✓ Polynomials
+    741.4 ms  ✓ Polynomials → PolynomialsFFTWExt
+   1997.0 ms  ✓ DSP
+   2369.9 ms  ✓ Wavelets
+   2980.7 ms  ✓ ComplexityMeasures
+  74 dependencies successfully precompiled in 49 seconds. 26 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=C/ComplexityMeasures/Nonlinear-Timeseries-Analysis -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 280.76
+	System time (seconds): 21.62
+	Percent of CPU this job got: 275%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:49.77
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2158136
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 409
+	Minor (reclaiming a frame) page faults: 5812303
+	Voluntary context switches: 16651
+	Involuntary context switches: 14228
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 696224
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
