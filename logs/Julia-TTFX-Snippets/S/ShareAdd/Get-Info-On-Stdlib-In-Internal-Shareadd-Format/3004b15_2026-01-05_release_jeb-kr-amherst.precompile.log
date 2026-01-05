@@ -1,0 +1,128 @@
+nice: cannot set niceness: Permission denied
+timeout: sending signal TERM to command 'julia'
+
+[3277007] signal 15: Terminated
+in expression starting at none:1
+unknown function (ip: 0x79e77f990f14) at /lib/x86_64-linux-gnu/libc.so.6
+pthread_cond_wait at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:822
+jl_parallel_gc_threadfun at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/gc-stock.c:3626
+unknown function (ip: 0x79e77f9941f4) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: 0x79e77fa148db) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: (nil)) at (unknown file)
+unknown function (ip: 0x79e77f990f14) at /lib/x86_64-linux-gnu/libc.so.6
+pthread_cond_wait at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:822
+jl_parallel_gc_threadfun at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/gc-stock.c:3626
+unknown function (ip: 0x79e77f9941f4) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: 0x79e77fa148db) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: (nil)) at (unknown file)
+unknown function (ip: 0x79e77f990f14) at /lib/x86_64-linux-gnu/libc.so.6
+pthread_cond_wait at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:822
+jl_parallel_gc_threadfun at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/gc-stock.c:3626
+unknown function (ip: 0x79e77f9941f4) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: 0x79e77fa148db) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: (nil)) at (unknown file)
+unknown function (ip: 0x79e77f990f14) at /lib/x86_64-linux-gnu/libc.so.6
+pthread_cond_wait at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:822
+ijl_task_get_next at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/scheduler.c:523
+poptask at ./task.jl:1216
+wait at ./task.jl:1228
+task_done_hook at ./task.jl:868
+jfptr_task_done_hook_44962.1 at /root/.julia/juliaup/julia-1.12.3+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+jl_finish_task at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/task.c:345
+jl_threadfun at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/scheduler.c:122
+unknown function (ip: 0x79e77f9941f4) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: 0x79e77fa148db) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: (nil)) at (unknown file)
+unknown function (ip: 0x79e77f990f14) at /lib/x86_64-linux-gnu/libc.so.6
+pthread_cond_wait at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:822
+ijl_task_get_next at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/scheduler.c:523
+poptask at ./task.jl:1216
+wait at ./task.jl:1228
+task_done_hook at ./task.jl:868
+jfptr_task_done_hook_44962.1 at /root/.julia/juliaup/julia-1.12.3+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+jl_finish_task at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/task.c:345
+jl_threadfun at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/scheduler.c:122
+unknown function (ip: 0x79e77f9941f4) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: 0x79e77fa148db) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: (nil)) at (unknown file)
+unknown function (ip: 0x79e77f990f14) at /lib/x86_64-linux-gnu/libc.so.6
+pthread_cond_wait at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:822
+ijl_task_get_next at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/scheduler.c:523
+poptask at ./task.jl:1216
+wait at ./task.jl:1228
+task_done_hook at ./task.jl:868
+jfptr_task_done_hook_44962.1 at /root/.julia/juliaup/julia-1.12.3+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+jl_finish_task at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/task.c:345
+jl_threadfun at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/scheduler.c:122
+unknown function (ip: 0x79e77f9941f4) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: 0x79e77fa148db) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: (nil)) at (unknown file)
+unknown function (ip: 0x79e77f990f14) at /lib/x86_64-linux-gnu/libc.so.6
+pthread_cond_wait at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:822
+ijl_task_get_next at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/scheduler.c:523
+poptask at ./task.jl:1216
+wait at ./task.jl:1228
+#wait#398 at ./condition.jl:141
+wait at ./condition.jl:136 [inlined]
+_trywait at ./asyncevent.jl:185
+profile_printing_listener at ./Base.jl:332
+#start_profile_listener##0 at ./Base.jl:352
+jfptr_YY.start_profile_listenerYY.YY.0_18868.1 at /root/.julia/juliaup/julia-1.12.3+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+start_task at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/task.c:1249
+unknown function (ip: (nil)) at (unknown file)
+epoll_pwait at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+uv__io_poll at /workspace/srcdir/libuv/src/unix/linux.c:1404
+uv_run at /workspace/srcdir/libuv/src/unix/core.c:430
+ijl_task_get_next at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/scheduler.c:457
+poptask at ./task.jl:1216
+wait at ./task.jl:1228
+#wait#398 at ./condition.jl:141
+wait at ./condition.jl:136 [inlined]
+wait_readnb at ./stream.jl:416
+eof at ./stream.jl:106 [inlined]
+eof at ./io.jl:472 [inlined]
+monitor_std at ./precompilation.jl:832
+monitor_std at ./precompilation.jl:828
+jfptr_monitor_std_57964.1 at /root/.julia/juliaup/julia-1.12.3+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+#_precompilepkgs##34 at ./precompilation.jl:999
+jfptr_YY._precompilepkgsYY.YY.34_18935.1 at /root/.julia/juliaup/julia-1.12.3+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+start_task at /cache/build/tester-amdci4-9/julialang/julia-release-1-dot-12/src/task.c:1249
+unknown function (ip: (nil)) at (unknown file)
+Allocations: 1089925 (Pool: 1089806; Big: 119); GC: 2
+timeout: sending signal KILL to command 'julia'
+Command terminated by signal 9
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=S/ShareAdd/Get-Info-On-Stdlib-In-Internal-Shareadd-Format -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 0%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:02:00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1536
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 151
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 24
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
