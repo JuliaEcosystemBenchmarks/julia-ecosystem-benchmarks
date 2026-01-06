@@ -1,0 +1,42 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    639.3 ms  ✓ OrderedCollections
+    662.2 ms  ✓ Serialization
+    874.3 ms  ✓ Compiler
+   1240.2 ms  ✓ InteractiveUtils
+   2135.0 ms  ✓ Preferences
+   1136.4 ms  ✓ CodeTracking
+    492.1 ms  ✓ PrecompileTools
+   6035.0 ms  ✓ MacroTools
+  10190.0 ms  ✓ Test
+   9833.9 ms  ✓ JuliaInterpreter
+  19877.6 ms  ✓ JuliaSyntax
+  10386.8 ms  ✓ LoweredCodeUtils
+  61835.7 ms  ✓ REPL
+   9487.0 ms  ✓ Pkg → REPLExt
+  15586.1 ms  ✓ Revise
+    762.1 ms  ✓ JET
+  16 dependencies successfully precompiled in 81 seconds. 27 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +nightly --project=J/JET/Type-Stability-Analysis -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 338.10
+	System time (seconds): 13.77
+	Percent of CPU this job got: 184%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:11.23
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2623020
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 309
+	Minor (reclaiming a frame) page faults: 5262207
+	Voluntary context switches: 10194
+	Involuntary context switches: 3993
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 636520
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
