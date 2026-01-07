@@ -1,0 +1,92 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  72818.6 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 73 seconds
+Precompiling packages...
+   2404.3 ms  ✓ RealDot
+   2494.8 ms  ✓ DataValueInterfaces
+   2491.1 ms  ✓ MistyClosures
+   2599.0 ms  ✓ IteratorInterfaceExtensions
+   2711.0 ms  ✓ Unicode
+   2899.6 ms  ✓ ExprTools
+   2962.3 ms  ✓ DataAPI
+   3109.1 ms  ✓ Inflate
+   3253.1 ms  ✓ SuiteSparse_jll
+   3306.7 ms  ✓ Statistics
+   3703.5 ms  ✓ Serialization
+   4003.2 ms  ✓ ADTypes
+   2001.1 ms  ✓ TableTraits
+   2482.4 ms  ✓ StaticArraysCore
+   2504.7 ms  ✓ Preferences
+   3098.2 ms  ✓ Requires
+   1398.9 ms  ✓ PrecompileTools
+   6892.4 ms  ✓ ConstructionBase
+   7302.1 ms  ✓ OrderedCollections
+   1801.9 ms  ✓ Adapt
+   1587.0 ms  ✓ ADTypes → ADTypesConstructionBaseExt
+   1712.4 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   6595.9 ms  ✓ Compat
+   2095.7 ms  ✓ GPUArraysCore
+   9685.8 ms  ✓ IrrationalConstants
+   1015.4 ms  ✓ Compat → CompatLinearAlgebraExt
+   7999.8 ms  ✓ InteractiveUtils
+   6714.3 ms  ✓ DifferentiationInterface
+  11733.6 ms  ✓ MacroTools
+   1385.6 ms  ✓ DifferentiationInterface → DifferentiationInterfaceGPUArraysCoreExt
+   5085.1 ms  ✓ DataStructures
+   8995.6 ms  ✓ Distributed
+   5588.9 ms  ✓ Tables
+   1567.4 ms  ✓ SimpleTraits
+   4202.5 ms  ✓ ChainRulesCore
+    693.7 ms  ✓ ADTypes → ADTypesChainRulesCoreExt
+    700.0 ms  ✓ DifferentiationInterface → DifferentiationInterfaceChainRulesCoreExt
+  11556.9 ms  ✓ SparseArrays
+   3470.5 ms  ✓ DispatchDoctor
+   2703.7 ms  ✓ StructArrays
+   1399.9 ms  ✓ DispatchDoctor → DispatchDoctorChainRulesCoreExt
+   1637.1 ms  ✓ SuiteSparse
+   1326.0 ms  ✓ StructArrays → StructArraysAdaptExt
+   1415.8 ms  ✓ StructArrays → StructArraysLinearAlgebraExt
+   1769.4 ms  ✓ Statistics → SparseArraysExt
+   1810.9 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+   1900.1 ms  ✓ Adapt → AdaptSparseArraysExt
+   1613.9 ms  ✓ StructArrays → StructArraysSparseArraysExt
+    895.9 ms  ✓ SparseInverseSubset
+   2954.0 ms  ✓ ChainRulesCore → ChainRulesCoreSparseArraysExt
+   7764.4 ms  ✓ Test
+  13667.3 ms  ✓ StaticArrays
+   1039.9 ms  ✓ DifferentiationInterface → DifferentiationInterfaceStaticArraysExt
+   1047.7 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+   1049.6 ms  ✓ Adapt → AdaptStaticArraysExt
+   1050.2 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+   1899.9 ms  ✓ StaticArrays → StaticArraysChainRulesCoreExt
+   1935.1 ms  ✓ StructArrays → StructArraysStaticArraysExt
+   2553.5 ms  ✓ ArnoldiMethod
+   6138.9 ms  ✓ ChainRules
+   3848.6 ms  ✓ Graphs
+  35805.3 ms  ✓ Mooncake
+   1925.8 ms  ✓ DifferentiationInterface → DifferentiationInterfaceMooncakeExt
+  63 dependencies successfully precompiled in 65 seconds. 9 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=M/Mooncake/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 286.90
+	System time (seconds): 17.95
+	Percent of CPU this job got: 220%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:18.17
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2096080
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 302
+	Minor (reclaiming a frame) page faults: 5175835
+	Voluntary context switches: 14384
+	Involuntary context switches: 11591
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 606632
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,55 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    742.3 ms  ✓ StaticArraysCore
+    781.7 ms  ✓ Statistics
+    801.2 ms  ✓ DocStringExtensions
+    882.7 ms  ✓ OpenLibm_jll
+    776.6 ms  ✓ Unicode
+    729.5 ms  ✓ DiffResults
+    788.1 ms  ✓ NaNMath
+   2141.3 ms  ✓ IrrationalConstants
+    989.1 ms  ✓ Compat
+    915.0 ms  ✓ LogExpFunctions
+   2344.2 ms  ✓ Preferences
+    693.4 ms  ✓ Compat → CompatLinearAlgebraExt
+    682.7 ms  ✓ PrecompileTools
+    906.5 ms  ✓ JLLWrappers
+   4525.6 ms  ✓ FunctionWrappers
+    993.1 ms  ✓ OpenSpecFun_jll
+   1962.8 ms  ✓ ChainRulesCore
+   6476.9 ms  ✓ MacroTools
+    606.7 ms  ✓ CommonSubexpressions
+   1521.4 ms  ✓ LogExpFunctions → LogExpFunctionsChainRulesCoreExt
+   2717.9 ms  ✓ SpecialFunctions
+    629.9 ms  ✓ DiffRules
+   1525.0 ms  ✓ SpecialFunctions → SpecialFunctionsChainRulesCoreExt
+   3682.2 ms  ✓ ForwardDiff
+  13394.4 ms  ✓ StaticArrays
+    577.6 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    592.3 ms  ✓ StaticArrays → StaticArraysChainRulesCoreExt
+    708.0 ms  ✓ ForwardDiff → ForwardDiffStaticArraysExt
+  14838.9 ms  ✓ ReverseDiff
+  29 dependencies successfully precompiled in 34 seconds. 4 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +alpha --project=R/ReverseDiff/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 252.82
+	System time (seconds): 12.59
+	Percent of CPU this job got: 142%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:06.76
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2572664
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 211
+	Minor (reclaiming a frame) page faults: 3977750
+	Voluntary context switches: 9898
+	Involuntary context switches: 4681
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 498640
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
