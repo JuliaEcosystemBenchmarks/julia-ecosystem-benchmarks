@@ -1,0 +1,57 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  73021.5 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 73 seconds
+Precompiling packages...
+   1599.9 ms  ✓ IteratorInterfaceExtensions
+   1692.9 ms  ✓ Future
+   1708.1 ms  ✓ DataValueInterfaces
+   1880.8 ms  ✓ Reexport
+   1895.1 ms  ✓ InvertedIndices
+   1899.3 ms  ✓ Unicode
+   1983.8 ms  ✓ LaTeXStrings
+   1983.5 ms  ✓ DataAPI
+   2292.7 ms  ✓ Statistics
+   1289.3 ms  ✓ TableTraits
+   3002.0 ms  ✓ InlineStrings
+   1224.5 ms  ✓ PooledArrays
+   1526.6 ms  ✓ Preferences
+    761.3 ms  ✓ PrecompileTools
+   4297.1 ms  ✓ OrderedCollections
+   2798.7 ms  ✓ SentinelArrays
+   2931.6 ms  ✓ Missings
+   5083.6 ms  ✓ Crayons
+   3276.7 ms  ✓ Compat
+   5368.2 ms  ✓ InteractiveUtils
+    435.8 ms  ✓ Compat → CompatLinearAlgebraExt
+   1961.0 ms  ✓ StringManipulation
+   2045.5 ms  ✓ DataStructures
+   2224.6 ms  ✓ Tables
+    434.5 ms  ✓ SortingAlgorithms
+  23748.9 ms  ✓ REPL
+  15796.4 ms  ✓ PrettyTables
+  31257.1 ms  ✓ DataFrames
+  28 dependencies successfully precompiled in 76 seconds. 8 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=D/DataFrames/Dataframe-Construction -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 272.72
+	System time (seconds): 11.95
+	Percent of CPU this job got: 189%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:29.97
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2137352
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 256
+	Minor (reclaiming a frame) page faults: 3867549
+	Voluntary context switches: 9500
+	Involuntary context switches: 8423
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 696176
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

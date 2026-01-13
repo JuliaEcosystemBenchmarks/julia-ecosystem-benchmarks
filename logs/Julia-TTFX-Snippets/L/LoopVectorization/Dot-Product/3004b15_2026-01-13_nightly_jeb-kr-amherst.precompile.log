@@ -1,0 +1,57 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    428.7 ms  ✓ IfElse
+    444.4 ms  ✓ CommonWorldInvalidations
+    525.2 ms  ✓ ManualMemory
+    626.3 ms  ✓ DocStringExtensions
+    459.2 ms  ✓ SIMDTypes
+    527.2 ms  ✓ Unicode
+    472.0 ms  ✓ UnPack
+    888.8 ms  ✓ SciMLPublic
+   1604.7 ms  ✓ OffsetArrays
+    799.5 ms  ✓ Requires
+    829.7 ms  ✓ CpuId
+    471.6 ms  ✓ Adapt
+    568.7 ms  ✓ Compat
+   1225.1 ms  ✓ ThreadingUtilities
+    414.3 ms  ✓ OffsetArrays → OffsetArraysAdaptExt
+    414.7 ms  ✓ Compat → CompatLinearAlgebraExt
+    551.8 ms  ✓ ArrayInterface
+   2014.4 ms  ✓ Preferences
+    368.3 ms  ✓ PrecompileTools
+  19523.7 ms  ✓ Static
+    399.5 ms  ✓ BitTwiddlingConvenienceFunctions
+    837.6 ms  ✓ CPUSummary
+    550.6 ms  ✓ PolyesterWeave
+   1014.6 ms  ✓ HostCPUFeatures
+  13930.4 ms  ✓ StaticArrayInterface
+    437.5 ms  ✓ StaticArrayInterface → StaticArrayInterfaceOffsetArraysExt
+    448.0 ms  ✓ CloseOpenIntervals
+    530.6 ms  ✓ LayoutPointers
+   5738.7 ms  ✓ VectorizationBase
+    867.1 ms  ✓ SLEEFPirates
+  18382.3 ms  ✓ LoopVectorization
+  31 dependencies successfully precompiled in 63 seconds. 8 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +nightly --project=L/LoopVectorization/Dot-Product -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 240.39
+	System time (seconds): 12.01
+	Percent of CPU this job got: 133%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:09.66
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2545952
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 270
+	Minor (reclaiming a frame) page faults: 4665065
+	Voluntary context switches: 11913
+	Involuntary context switches: 2276
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 495280
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
