@@ -1,0 +1,87 @@
+nice: cannot set niceness: Permission denied
+┌ Warning: Module OrdinaryDiffEqCoreEnzymeCoreExt with build ID ffffffff-ffff-ffff-04e6-bbefc1357964 is missing from the cache.
+│ This may mean OrdinaryDiffEqCoreEnzymeCoreExt [ca1c724a-f4aa-55ef-b8e4-2f05449449ac] does not support precompilation but is imported by a module that does.
+└ @ Base loading.jl:2018
+┌ Error: Error during loading of extension OrdinaryDiffEqCoreEnzymeCoreExt of OrdinaryDiffEqCore, use `Base.retry_load_extensions()` to retry.
+│   exception =
+│    1-element ExceptionStack:
+│    Declaring __precompile__(false) is not allowed in files that are being precompiled.
+│    Stacktrace:
+│      [1] _require(pkg::Base.PkgId, env::Nothing)
+│        @ Base ./loading.jl:2022
+│      [2] __require_prelocked(uuidkey::Base.PkgId, env::Nothing)
+│        @ Base ./loading.jl:1882
+│      [3] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│      [4] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│      [5] _require_prelocked
+│        @ ./loading.jl:1873 [inlined]
+│      [6] _require_prelocked
+│        @ ./loading.jl:1872 [inlined]
+│      [7] run_extension_callbacks(extid::Base.ExtensionId)
+│        @ Base ./loading.jl:1365
+│      [8] run_extension_callbacks(pkgid::Base.PkgId)
+│        @ Base ./loading.jl:1400
+│      [9] run_package_callbacks(modkey::Base.PkgId)
+│        @ Base ./loading.jl:1224
+│     [10] __require_prelocked(uuidkey::Base.PkgId, env::String)
+│        @ Base ./loading.jl:1889
+│     [11] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│     [12] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│     [13] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│        @ Base ./loading.jl:1873
+│     [14] macro expansion
+│        @ ./loading.jl:1860 [inlined]
+│     [15] macro expansion
+│        @ ./lock.jl:267 [inlined]
+│     [16] __require(into::Module, mod::Symbol)
+│        @ Base ./loading.jl:1823
+│     [17] #invoke_in_world#3
+│        @ ./essentials.jl:926 [inlined]
+│     [18] invoke_in_world
+│        @ ./essentials.jl:923 [inlined]
+│     [19] require(into::Module, mod::Symbol)
+│        @ Base ./loading.jl:1816
+│     [20] include
+│        @ ./Base.jl:495 [inlined]
+│     [21] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+│        @ Base ./loading.jl:2292
+│     [22] top-level scope
+│        @ stdin:4
+│     [23] eval
+│        @ ./boot.jl:385 [inlined]
+│     [24] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│        @ Base ./loading.jl:2146
+│     [25] include_string
+│        @ ./loading.jl:2156 [inlined]
+│     [26] exec_options(opts::Base.JLOptions)
+│        @ Base ./client.jl:321
+│     [27] _start()
+│        @ Base ./client.jl:557
+└ @ Base loading.jl:1371
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=O/OrdinaryDiffEq/Solve-The-Lorenz-Equation O/OrdinaryDiffEq/Solve-The-Lorenz-Equation/task.jl"
+	User time (seconds): 197.12
+	System time (seconds): 9.38
+	Percent of CPU this job got: 155%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:13.05
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1443712
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 179
+	Minor (reclaiming a frame) page faults: 3400327
+	Voluntary context switches: 45596
+	Involuntary context switches: 4032
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 586504
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
