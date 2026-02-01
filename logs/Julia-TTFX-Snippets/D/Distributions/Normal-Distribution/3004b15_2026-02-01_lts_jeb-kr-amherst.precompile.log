@@ -1,0 +1,61 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1266.1 ms  ✓ Reexport
+   1276.6 ms  ✓ PtrArrays
+   1351.0 ms  ✓ DataAPI
+   1354.6 ms  ✓ OpenLibm_jll
+   1362.0 ms  ✓ StatsAPI
+   1457.1 ms  ✓ CompilerSupportLibraries_jll
+   1454.8 ms  ✓ SuiteSparse_jll
+   1569.1 ms  ✓ DocStringExtensions
+   1651.7 ms  ✓ OrderedCollections
+   1742.6 ms  ✓ Preferences
+    718.0 ms  ✓ AliasTables
+    647.7 ms  ✓ Missings
+   2200.2 ms  ✓ FillArrays
+   2224.2 ms  ✓ IrrationalConstants
+    497.3 ms  ✓ JLLWrappers
+    396.2 ms  ✓ Rmath_jll
+    402.1 ms  ✓ OpenSpecFun_jll
+    512.0 ms  ✓ LogExpFunctions
+   1465.6 ms  ✓ DataStructures
+    491.3 ms  ✓ Rmath
+    343.2 ms  ✓ SortingAlgorithms
+    605.1 ms  ✓ QuadGK
+   2745.0 ms  ✓ SparseArrays
+   1726.0 ms  ✓ SpecialFunctions
+    355.8 ms  ✓ SuiteSparse
+    446.0 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    491.3 ms  ✓ Statistics
+    410.5 ms  ✓ FillArrays → FillArraysStatisticsExt
+    566.4 ms  ✓ PDMats
+    690.6 ms  ✓ HypergeometricFunctions
+    405.3 ms  ✓ FillArrays → FillArraysPDMatsExt
+   1401.3 ms  ✓ StatsBase
+    991.0 ms  ✓ StatsFuns
+    401.1 ms  ✓ PDMats → StatsBaseExt
+   3065.2 ms  ✓ Distributions
+  35 dependencies successfully precompiled in 10 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=D/Distributions/Normal-Distribution -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 23.35
+	System time (seconds): 5.25
+	Percent of CPU this job got: 260%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:11.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 355168
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 107
+	Minor (reclaiming a frame) page faults: 1412313
+	Voluntary context switches: 46858
+	Involuntary context switches: 1405
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 105296
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

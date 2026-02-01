@@ -1,0 +1,239 @@
+nice: cannot set niceness: Permission denied
+┌ Warning: Circular dependency detected.
+│ Precompilation will be skipped for dependencies in this cycle:
+│  ┌ OrdinaryDiffEqCore → OrdinaryDiffEqCoreEnzymeCoreExt
+│  └─ OrdinaryDiffEqCore → OrdinaryDiffEqCoreSparseArraysExt
+│ Precompilation will also be skipped for the following, which depend on the above cycle:
+│   OrdinaryDiffEqExplicitRK
+│   OrdinaryDiffEq
+│   OrdinaryDiffEqDifferentiation → OrdinaryDiffEqDifferentiationSparseArraysExt
+│   OrdinaryDiffEqPDIRK
+│   OrdinaryDiffEqHighOrderRK
+│   OrdinaryDiffEqLowStorageRK
+│   OrdinaryDiffEqStabilizedRK
+│   OrdinaryDiffEqSymplecticRK
+│   OrdinaryDiffEqStabilizedIRK
+│   OrdinaryDiffEqSSPRK
+│   OrdinaryDiffEqLowOrderRK
+│   OrdinaryDiffEqFunctionMap
+│   OrdinaryDiffEqExponentialRK
+│   OrdinaryDiffEqLinear
+│   OrdinaryDiffEqDifferentiation
+│   OrdinaryDiffEqNonlinearSolve
+│   OrdinaryDiffEqTsit5
+│   OrdinaryDiffEqSDIRK
+│   OrdinaryDiffEqBDF
+│   OrdinaryDiffEqExtrapolation
+│   OrdinaryDiffEqVerner
+│   OrdinaryDiffEqNordsieck
+│   OrdinaryDiffEqPRK
+│   OrdinaryDiffEqDefault
+│   OrdinaryDiffEqFIRK
+│   OrdinaryDiffEqRKN
+│   OrdinaryDiffEqRosenbrock
+│   OrdinaryDiffEqIMEXMultistep
+│   OrdinaryDiffEqFeagin
+│   OrdinaryDiffEqQPRK
+│   OrdinaryDiffEqAdamsBashforthMoulton
+└ @ Pkg.API.Precompilation ~/.julia/juliaup/julia-1.10.10+0.x64.linux.gnu/share/julia/stdlib/v1.10/Pkg/src/precompilation.jl:583
+Precompiling packages...
+   1864.8 ms  ✓ IteratorInterfaceExtensions
+   1921.2 ms  ✓ CommonSolve
+   1950.5 ms  ✓ LazyArtifacts
+   1960.5 ms  ✓ ConcreteStructs
+   2052.4 ms  ✓ MuladdMacro
+   2030.1 ms  ✓ CompilerSupportLibraries_jll
+   2058.5 ms  ✓ OpenLibm_jll
+   2160.1 ms  ✓ ExprTools
+   2248.0 ms  ✓ InverseFunctions
+   2331.1 ms  ✓ SuiteSparse_jll
+   3148.6 ms  ✓ ADTypes
+   3797.9 ms  ✓ FunctionWrappers
+   1916.6 ms  ✓ ManualMemory
+   1897.9 ms  ✓ EnumX
+   1800.1 ms  ✓ SIMDTypes
+   1900.8 ms  ✓ Reexport
+   2291.9 ms  ✓ Requires
+   4449.5 ms  ✓ FillArrays
+   2499.5 ms  ✓ Compat
+   2896.7 ms  ✓ OrderedCollections
+   5046.0 ms  ✓ GenericSchur
+   3106.3 ms  ✓ Preferences
+   2782.1 ms  ✓ DocStringExtensions
+   1903.5 ms  ✓ CompositionsBase
+   1801.7 ms  ✓ FastPower
+   1903.9 ms  ✓ IfElse
+   1888.8 ms  ✓ FastClosures
+   1914.0 ms  ✓ CommonWorldInvalidations
+   2204.5 ms  ✓ ConstructionBase
+   2075.1 ms  ✓ SciMLPublic
+   3304.5 ms  ✓ CpuId
+   3206.9 ms  ✓ EnzymeCore
+   2402.9 ms  ✓ StaticArraysCore
+   2609.4 ms  ✓ LoggingExtras
+   2418.2 ms  ✓ NaNMath
+   2204.3 ms  ✓ RuntimeGeneratedFunctions
+   2097.6 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+   8446.2 ms  ✓ ExproniconLite
+   1910.5 ms  ✓ FunctionWrappersWrappers
+   5404.1 ms  ✓ IrrationalConstants
+   8534.7 ms  ✓ Distributed
+   1912.6 ms  ✓ Compat → CompatLinearAlgebraExt
+   2001.9 ms  ✓ PrecompileTools
+   2484.2 ms  ✓ Adapt
+   2268.4 ms  ✓ JLLWrappers
+   2205.4 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   1998.2 ms  ✓ ADTypes → ADTypesEnzymeCoreExt
+   1916.7 ms  ✓ DiffResults
+   2199.6 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+   2889.2 ms  ✓ SciMLLogging
+   4321.2 ms  ✓ ThreadingUtilities
+   5129.9 ms  ✓ DifferentiationInterface
+  10418.4 ms  ✓ MacroTools
+   3295.4 ms  ✓ LogExpFunctions
+   2592.4 ms  ✓ GPUArraysCore
+   2797.0 ms  ✓ EnzymeCore → AdaptExt
+   2370.5 ms  ✓ IntelOpenMP_jll
+   3761.5 ms  ✓ ArrayInterface
+   8200.8 ms  ✓ TimerOutputs
+   2312.5 ms  ✓ OpenSpecFun_jll
+   2815.5 ms  ✓ oneTBB_jll
+   2483.7 ms  ✓ ADTypes → ADTypesConstructionBaseExt
+   4899.1 ms  ✓ Static
+   5559.6 ms  ✓ ChainRulesCore
+   2592.8 ms  ✓ TruncatedStacktraces
+   2887.7 ms  ✓ CommonSubexpressions
+   2013.7 ms  ✓ DifferentiationInterface → DifferentiationInterfaceGPUArraysCoreExt
+   2219.5 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+   8887.4 ms  ✓ DataStructures
+   7803.5 ms  ✓ Jieko
+   2288.3 ms  ✓ ArrayInterface → ArrayInterfaceGPUArraysCoreExt
+   6941.7 ms  ✓ RecipesBase
+   2300.4 ms  ✓ ArrayInterface → ArrayInterfaceStaticArraysCoreExt
+   3408.4 ms  ✓ MaybeInplace
+   2815.5 ms  ✓ SciMLStructures
+   2099.7 ms  ✓ BitTwiddlingConvenienceFunctions
+   2403.5 ms  ✓ MKL_jll
+   2084.2 ms  ✓ ADTypes → ADTypesChainRulesCoreExt
+   2000.5 ms  ✓ EnzymeCore → EnzymeCoreChainRulesCoreExt
+   5002.0 ms  ✓ Setfield
+   1599.0 ms  ✓ ArrayInterface → ArrayInterfaceChainRulesCoreExt
+   3125.3 ms  ✓ CPUSummary
+   4439.9 ms  ✓ PreallocationTools
+   1204.1 ms  ✓ DifferentiationInterface → DifferentiationInterfaceChainRulesCoreExt
+   3620.2 ms  ✓ StaticArrayInterface
+   1502.6 ms  ✓ FiniteDiff
+  14202.0 ms  ✓ SparseArrays
+   7025.4 ms  ✓ Accessors
+   1781.9 ms  ✓ PolyesterWeave
+   4198.4 ms  ✓ LogExpFunctions → LogExpFunctionsChainRulesCoreExt
+   1795.9 ms  ✓ CloseOpenIntervals
+   1811.9 ms  ✓ DifferentiationInterface → DifferentiationInterfaceFiniteDiffExt
+   2045.7 ms  ✓ LayoutPointers
+   1791.9 ms  ✓ ChainRulesCore → ChainRulesCoreSparseArraysExt
+   1823.8 ms  ✓ Accessors → LinearAlgebraExt
+   2095.4 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+   2115.3 ms  ✓ Adapt → AdaptSparseArraysExt
+   2398.1 ms  ✓ FillArrays → FillArraysSparseArraysExt
+   2511.4 ms  ✓ Statistics
+   1795.1 ms  ✓ NLSolversBase
+   1378.2 ms  ✓ ArrayInterface → ArrayInterfaceSparseArraysExt
+   8925.0 ms  ✓ SpecialFunctions
+   2286.2 ms  ✓ StrideArraysCore
+   1907.2 ms  ✓ FillArrays → FillArraysStatisticsExt
+   1599.8 ms  ✓ MaybeInplace → MaybeInplaceSparseArraysExt
+   2183.9 ms  ✓ LineSearches
+   1921.5 ms  ✓ FiniteDiff → FiniteDiffSparseArraysExt
+   3509.0 ms  ✓ SymbolicIndexingInterface
+   2009.3 ms  ✓ DiffRules
+   1799.7 ms  ✓ Polyester
+   4577.3 ms  ✓ SciMLOperators
+   1393.9 ms  ✓ FastBroadcast
+   3880.5 ms  ✓ SpecialFunctions → SpecialFunctionsChainRulesCoreExt
+   1200.1 ms  ✓ SciMLOperators → SciMLOperatorsStaticArraysCoreExt
+   1236.1 ms  ✓ SciMLOperators → SciMLOperatorsSparseArraysExt
+  20527.0 ms  ✓ StaticArrays
+   1691.2 ms  ✓ Adapt → AdaptStaticArraysExt
+   2079.7 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+   2472.7 ms  ✓ StaticArrays → StaticArraysChainRulesCoreExt
+   2676.5 ms  ✓ DifferentiationInterface → DifferentiationInterfaceStaticArraysExt
+   2867.4 ms  ✓ FillArrays → FillArraysStaticArraysExt
+   3075.3 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+   3839.0 ms  ✓ StaticArrayInterface → StaticArrayInterfaceStaticArraysExt
+  10305.5 ms  ✓ ForwardDiff
+   4098.8 ms  ✓ Accessors → StaticArraysExt
+  10811.3 ms  ✓ RecursiveArrayTools
+   4697.9 ms  ✓ FiniteDiff → FiniteDiffStaticArraysExt
+   7141.9 ms  ✓ FastGaussQuadrature
+  18214.4 ms  ✓ SparseMatrixColorings
+   2426.2 ms  ✓ FastPower → FastPowerForwardDiffExt
+   3099.1 ms  ✓ ForwardDiff → ForwardDiffStaticArraysExt
+   3120.7 ms  ✓ DifferentiationInterface → DifferentiationInterfaceForwardDiffExt
+   2781.7 ms  ✓ RecursiveArrayTools → RecursiveArrayToolsFastBroadcastExt
+   2711.7 ms  ✓ RecursiveArrayTools → RecursiveArrayToolsForwardDiffExt
+   2816.2 ms  ✓ RecursiveArrayTools → RecursiveArrayToolsSparseArraysExt
+  22517.6 ms  ✓ Moshi
+   3458.8 ms  ✓ PreallocationTools → PreallocationToolsForwardDiffExt
+   1371.8 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseMatrixColoringsExt
+  19790.7 ms  ✓ Krylov
+    556.9 ms  ✓ RecursiveArrayTools → RecursiveArrayToolsStatisticsExt
+   7443.9 ms  ✓ SciMLBase
+    846.5 ms  ✓ SciMLBase → SciMLBaseDifferentiationInterfaceExt
+    890.4 ms  ✓ SciMLBase → SciMLBaseChainRulesCoreExt
+   1075.6 ms  ✓ SciMLBase → SciMLBaseForwardDiffExt
+   2255.1 ms  ✓ SciMLJacobianOperators
+  32597.7 ms  ✓ ExponentialUtilities
+   5887.7 ms  ✓ LineSearch
+   1057.1 ms  ✓ ExponentialUtilities → ExponentialUtilitiesStaticArraysExt
+    880.2 ms  ✓ LineSearch → LineSearchLineSearchesExt
+   7064.1 ms  ✓ NonlinearSolveBase
+   1693.7 ms  ✓ NonlinearSolveBase → NonlinearSolveBaseSparseArraysExt
+  11290.5 ms  ✓ LinearSolve
+   1330.4 ms  ✓ NonlinearSolveBase → NonlinearSolveBaseChainRulesCoreExt
+   1336.1 ms  ✓ NonlinearSolveBase → NonlinearSolveBaseSparseMatrixColoringsExt
+   1334.6 ms  ✓ NonlinearSolveBase → NonlinearSolveBaseLineSearchExt
+   1511.4 ms  ✓ NonlinearSolveBase → NonlinearSolveBaseForwardDiffExt
+   2695.0 ms  ✓ LinearSolve → LinearSolveSparseArraysExt
+   3481.7 ms  ✓ BracketingNonlinearSolve
+   1213.8 ms  ✓ LinearSolve → LinearSolveEnzymeExt
+   1171.1 ms  ✓ BracketingNonlinearSolve → BracketingNonlinearSolveForwardDiffExt
+   2050.5 ms  ✓ LinearSolve → LinearSolveForwardDiffExt
+   1293.8 ms  ✓ NonlinearSolveBase → NonlinearSolveBaseLinearSolveExt
+   1387.7 ms  ✓ BracketingNonlinearSolve → BracketingNonlinearSolveChainRulesCoreExt
+   2650.6 ms  ✓ DiffEqBase
+   6267.5 ms  ✓ NonlinearSolveSpectralMethods
+   1791.6 ms  ✓ DiffEqBase → DiffEqBaseSparseArraysExt
+   1638.2 ms  ✓ NonlinearSolveSpectralMethods → NonlinearSolveSpectralMethodsForwardDiffExt
+   1718.3 ms  ✓ DiffEqBase → DiffEqBaseChainRulesCoreExt
+   1810.4 ms  ✓ DiffEqBase → DiffEqBaseForwardDiffExt
+   3650.6 ms  ✓ OrdinaryDiffEqCore
+   9102.4 ms  ✓ SimpleNonlinearSolve
+   1061.6 ms  ✓ SimpleNonlinearSolve → SimpleNonlinearSolveChainRulesCoreExt
+  11429.5 ms  ✓ NonlinearSolveQuasiNewton
+   1142.4 ms  ✓ NonlinearSolveQuasiNewton → NonlinearSolveQuasiNewtonForwardDiffExt
+  19673.1 ms  ✓ NonlinearSolveFirstOrder
+   6783.9 ms  ✓ NonlinearSolve
+  176 dependencies successfully precompiled in 93 seconds. 33 skipped due to circular dependency.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=O/OrdinaryDiffEq/Solve-The-Lorenz-Equation -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 313.52
+	System time (seconds): 34.10
+	Percent of CPU this job got: 372%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:33.41
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1069200
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 674
+	Minor (reclaiming a frame) page faults: 8547427
+	Voluntary context switches: 215773
+	Involuntary context switches: 86731
+	Swaps: 0
+	File system inputs: 8040
+	File system outputs: 775440
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
