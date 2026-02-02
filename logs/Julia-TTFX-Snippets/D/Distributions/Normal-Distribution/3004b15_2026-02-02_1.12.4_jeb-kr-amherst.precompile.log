@@ -1,0 +1,67 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  72948.2 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 73 seconds
+Precompiling packages...
+   2118.7 ms  ✓ OpenLibm_jll
+   2210.2 ms  ✓ PtrArrays
+   2228.9 ms  ✓ DataAPI
+   2305.5 ms  ✓ Reexport
+   2313.6 ms  ✓ StatsAPI
+   2431.7 ms  ✓ Statistics
+   2427.4 ms  ✓ Unicode
+   2425.2 ms  ✓ CompilerSupportLibraries_jll
+   2509.6 ms  ✓ SuiteSparse_jll
+   2608.2 ms  ✓ DocStringExtensions
+   2648.5 ms  ✓ Serialization
+   3145.1 ms  ✓ FillArrays
+    959.3 ms  ✓ AliasTables
+   1047.6 ms  ✓ Preferences
+    590.8 ms  ✓ FillArrays → FillArraysStatisticsExt
+   4017.7 ms  ✓ OrderedCollections
+    629.0 ms  ✓ JLLWrappers
+   2139.4 ms  ✓ Missings
+   4743.4 ms  ✓ IrrationalConstants
+    738.8 ms  ✓ Rmath_jll
+    737.2 ms  ✓ OpenSpecFun_jll
+    527.8 ms  ✓ LogExpFunctions
+    611.5 ms  ✓ Rmath
+   1635.3 ms  ✓ DataStructures
+    447.1 ms  ✓ SortingAlgorithms
+   1617.6 ms  ✓ QuadGK
+   2024.2 ms  ✓ SpecialFunctions
+   4748.7 ms  ✓ SparseArrays
+    453.7 ms  ✓ SuiteSparse
+    500.5 ms  ✓ Statistics → SparseArraysExt
+    532.0 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    839.3 ms  ✓ HypergeometricFunctions
+    681.2 ms  ✓ PDMats
+    479.0 ms  ✓ FillArrays → FillArraysPDMatsExt
+   1982.8 ms  ✓ StatsFuns
+   2544.3 ms  ✓ StatsBase
+    486.5 ms  ✓ PDMats → StatsBaseExt
+   3480.9 ms  ✓ Distributions
+  38 dependencies successfully precompiled in 14 seconds. 3 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.4 --project=D/Distributions/Normal-Distribution -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 157.80
+	System time (seconds): 10.61
+	Percent of CPU this job got: 191%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:28.03
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2135412
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 220
+	Minor (reclaiming a frame) page faults: 3355674
+	Voluntary context switches: 10698
+	Involuntary context switches: 4917
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 419256
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
