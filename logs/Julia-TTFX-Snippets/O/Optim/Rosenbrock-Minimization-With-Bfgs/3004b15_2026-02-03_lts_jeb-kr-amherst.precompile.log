@@ -1,0 +1,57 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1644.6 ms  ✓ EnumX
+   2055.8 ms  ✓ OpenLibm_jll
+   2070.3 ms  ✓ SuiteSparse_jll
+   2372.9 ms  ✓ PositiveFactorizations
+   2370.9 ms  ✓ StaticArraysCore
+   2468.3 ms  ✓ ADTypes
+   2600.2 ms  ✓ Requires
+   2687.3 ms  ✓ ConstructionBase
+   1113.4 ms  ✓ NaNMath
+   1073.0 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   1253.2 ms  ✓ Adapt
+   4344.1 ms  ✓ FillArrays
+    928.5 ms  ✓ ADTypes → ADTypesConstructionBaseExt
+   2286.0 ms  ✓ DifferentiationInterface
+   1069.9 ms  ✓ ArrayInterface
+    550.7 ms  ✓ ArrayInterface → ArrayInterfaceStaticArraysCoreExt
+   6190.2 ms  ✓ MacroTools
+   1606.6 ms  ✓ Setfield
+   5756.0 ms  ✓ SparseArrays
+    869.0 ms  ✓ Adapt → AdaptSparseArraysExt
+    974.2 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+   1105.1 ms  ✓ FillArrays → FillArraysSparseArraysExt
+   1178.3 ms  ✓ Statistics
+   1236.1 ms  ✓ FiniteDiff
+   1036.2 ms  ✓ ArrayInterface → ArrayInterfaceSparseArraysExt
+    752.7 ms  ✓ DifferentiationInterface → DifferentiationInterfaceFiniteDiffExt
+    888.7 ms  ✓ FillArrays → FillArraysStatisticsExt
+    846.2 ms  ✓ FiniteDiff → FiniteDiffSparseArraysExt
+    993.3 ms  ✓ NLSolversBase
+    918.9 ms  ✓ LineSearches
+   2962.0 ms  ✓ Optim
+  31 dependencies successfully precompiled in 16 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=O/Optim/Rosenbrock-Minimization-With-Bfgs -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 32.10
+	System time (seconds): 5.73
+	Percent of CPU this job got: 209%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:18.04
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 350404
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 47
+	Minor (reclaiming a frame) page faults: 1193060
+	Voluntary context switches: 37650
+	Involuntary context switches: 16850
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 62488
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
