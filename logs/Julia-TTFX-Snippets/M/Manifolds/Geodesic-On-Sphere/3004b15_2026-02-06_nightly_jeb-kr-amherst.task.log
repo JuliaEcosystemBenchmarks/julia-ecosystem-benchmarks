@@ -1,0 +1,147 @@
+nice: cannot set niceness: Permission denied
+[0KERROR: LoadError: UndefVarError: `_shrink` not defined in `Base`
+[0KSuggestion: check for spelling errors or missing imports.
+[0KStacktrace:
+[0K  [1] getproperty
+[0K    @ ./Base_compiler.jl:50 [inlined]
+[0K  [2] _precompile_()
+[0K    @ Tullio._Precompile_Base /workdir/depot/packages/Tullio/2zyFP/src/precompile/precompile_Base.jl:77
+[0K  [3] top-level scope
+[0K    @ /workdir/depot/packages/Tullio/2zyFP/src/precompile.jl:14
+[0K  [4] include(mapexpr::Function, mod::Module, _path::String)
+[0K    @ Base ./Base.jl:310
+[0K  [5] top-level scope
+[0K    @ /workdir/depot/packages/Tullio/2zyFP/src/Tullio.jl:27
+[0K  [6] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K  [7] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K  [8] top-level scope
+[0K    @ stdin:5
+[0K  [9] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [10] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [11] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [12] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [13] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/Tullio/2zyFP/src/precompile.jl:13
+[0Kin expression starting at /workdir/depot/packages/Tullio/2zyFP/src/Tullio.jl:1
+[0Kin expression starting at stdin:5
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("bc48ee85-29a4-5162-ae0b-a64e1601d4bc"), "Tullio") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/Manifolds/9wrdP/src/Manifolds.jl:214
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/Manifolds/9wrdP/src/Manifolds.jl:1
+[0Kin expression starting at stdin:5
+
+  2 dependencies had output during precompilation:
+┌ Tullio
+│  ERROR: LoadError: UndefVarError: `_shrink` not defined in `Base`
+│  Suggestion: check for spelling errors or missing imports.
+│  Stacktrace:
+│    [1] getproperty
+│      @ ./Base_compiler.jl:50 [inlined]
+│    [2] _precompile_()
+│      @ Tullio._Precompile_Base /workdir/depot/packages/Tullio/2zyFP/src/precompile/precompile_Base.jl:77
+│    [3] top-level scope
+│      @ /workdir/depot/packages/Tullio/2zyFP/src/precompile.jl:14
+│    [4] include(mapexpr::Function, mod::Module, _path::String)
+│      @ Base ./Base.jl:310
+│    [5] top-level scope
+│      @ /workdir/depot/packages/Tullio/2zyFP/src/Tullio.jl:27
+│    [6] include(mod::Module, _path::String)
+│      @ Base ./Base.jl:309
+│    [7] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+│      @ Base ./loading.jl:3288
+│    [8] top-level scope
+│      @ stdin:5
+│    [9] eval(m::Module, e::Any)
+│      @ Core ./boot.jl:489
+│   [10] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│      @ Base ./loading.jl:3130
+│   [11] include_string
+│      @ ./loading.jl:3140 [inlined]
+│   [12] exec_options(opts::Base.JLOptions)
+│      @ Base ./client.jl:342
+│   [13] _start()
+│      @ Base ./client.jl:585
+│  in expression starting at /workdir/depot/packages/Tullio/2zyFP/src/precompile.jl:13
+│  in expression starting at /workdir/depot/packages/Tullio/2zyFP/src/Tullio.jl:1
+│  in expression starting at stdin:5
+└  
+┌ Manifolds
+│  [Output was shown above]
+└  
+ERROR: LoadError: The following 2 packages failed to precompile:
+
+Tullio 
+Failed to precompile Tullio [bc48ee85-29a4-5162-ae0b-a64e1601d4bc] to "/workdir/depot/compiled/v1.14/Tullio/jl_IjImOh" (ProcessExited(1)).
+
+Manifolds 
+Failed to precompile Manifolds [1cead3c2-87b3-11e9-0ccd-23c62b72b94e] to "/workdir/depot/compiled/v1.14/Manifolds/jl_oEonsN" (ProcessExited(1)).
+
+in expression starting at /tmp/tmp.p9ItrCGxyv/Julia-TTFX-Snippets/tasks/M/Manifolds/Geodesic-On-Sphere/task.jl:10
+Command exited with non-zero status 1
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +nightly --project=M/Manifolds/Geodesic-On-Sphere M/Manifolds/Geodesic-On-Sphere/task.jl"
+	User time (seconds): 4.97
+	System time (seconds): 0.50
+	Percent of CPU this job got: 101%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.41
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 543956
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 213649
+	Voluntary context switches: 163
+	Involuntary context switches: 68
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 40
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
