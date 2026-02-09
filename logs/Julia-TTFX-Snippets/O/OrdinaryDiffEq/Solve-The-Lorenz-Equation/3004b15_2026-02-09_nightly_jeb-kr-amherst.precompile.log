@@ -1,0 +1,815 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    434.5 ms  ✓ CommonSolve
+    448.3 ms  ✓ Reexport
+    590.8 ms  ✓ ConstructionBase
+    507.6 ms  ✓ StaticArraysCore
+    601.1 ms  ✓ Statistics
+   1336.1 ms  ✓ IrrationalConstants
+    489.7 ms  ✓ IfElse
+   1018.8 ms  ✓ SuiteSparse_jll
+    772.4 ms  ✓ EnzymeCore
+    527.4 ms  ✓ ManualMemory
+    440.0 ms  ✓ CommonWorldInvalidations
+    449.4 ms  ✓ Future
+    908.1 ms  ✓ SciMLPublic
+    448.6 ms  ✓ FastPower
+    540.3 ms  ✓ InverseFunctions
+    453.0 ms  ✓ CompositionsBase
+    466.0 ms  ✓ MuladdMacro
+    485.7 ms  ✓ EnumX
+    770.6 ms  ✓ OpenLibm_jll
+    491.2 ms  ✓ ExprTools
+   2230.1 ms  ✓ ExproniconLite
+    473.9 ms  ✓ ConcreteStructs
+   1126.5 ms  ✓ FillArrays
+    679.7 ms  ✓ OrderedCollections
+    774.9 ms  ✓ ADTypes
+    766.9 ms  ✓ Serialization
+    748.1 ms  ✓ DocStringExtensions
+    567.9 ms  ✓ FastClosures
+    575.3 ms  ✓ SIMDTypes
+   5608.1 ms  ✓ MacroTools
+    515.6 ms  ✓ IteratorInterfaceExtensions
+    758.8 ms  ✓ Requires
+    751.0 ms  ✓ CpuId
+   1206.0 ms  ✓ GenericSchur
+    577.7 ms  ✓ LoggingExtras
+    622.3 ms  ✓ Compat
+   1393.8 ms  ✓ InteractiveUtils
+    487.6 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+    545.8 ms  ✓ DiffResults
+   3887.5 ms  ✓ FunctionWrappers
+    999.3 ms  ✓ LazyArtifacts
+    447.1 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+    452.9 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+    558.9 ms  ✓ NaNMath
+   1193.2 ms  ✓ ThreadingUtilities
+    512.6 ms  ✓ FillArrays → FillArraysStatisticsExt
+   2286.4 ms  ✓ Preferences
+    417.2 ms  ✓ ADTypes → ADTypesConstructionBaseExt
+    457.6 ms  ✓ ADTypes → ADTypesEnzymeCoreExt
+   1155.9 ms  ✓ DifferentiationInterface
+   2007.3 ms  ✓ Jieko
+   1882.8 ms  ✓ DataStructures
+    496.6 ms  ✓ RuntimeGeneratedFunctions
+    712.3 ms  ✓ LogExpFunctions
+    659.8 ms  ✓ CommonSubexpressions
+    601.3 ms  ✓ Adapt
+    578.6 ms  ✓ Compat → CompatLinearAlgebraExt
+   4088.6 ms  ✓ TimerOutputs
+    504.6 ms  ✓ FunctionWrappersWrappers
+   2847.0 ms  ✓ Distributed
+    507.1 ms  ✓ PrecompileTools
+    592.0 ms  ✓ JLLWrappers
+   1574.3 ms  ✓ Setfield
+    637.3 ms  ✓ SciMLLogging
+    591.7 ms  ✓ TruncatedStacktraces
+    444.3 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+    639.8 ms  ✓ ArrayInterface
+    614.7 ms  ✓ GPUArraysCore
+   4530.7 ms  ✓ SparseArrays
+   2716.6 ms  ✓ Accessors
+    509.1 ms  ✓ EnzymeCore → AdaptExt
+   1482.7 ms  ✓ ChainRulesCore
+    731.3 ms  ✓ OpenSpecFun_jll
+   1951.1 ms  ✓ RecipesBase
+   1090.8 ms  ✓ IntelOpenMP_jll
+   1147.0 ms  ✓ oneTBB_jll
+    437.2 ms  ✓ ArrayInterface → ArrayInterfaceStaticArraysCoreExt
+    723.7 ms  ✓ MaybeInplace
+    668.4 ms  ✓ SciMLStructures
+    422.6 ms  ✓ DifferentiationInterface → DifferentiationInterfaceGPUArraysCoreExt
+    460.8 ms  ✓ ArrayInterface → ArrayInterfaceGPUArraysCoreExt
+   1233.6 ms  ✓ PreallocationTools
+    686.2 ms  ✓ Statistics → SparseArraysExt
+    765.8 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    757.7 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+    698.5 ms  ✓ Adapt → AdaptSparseArraysExt
+   9823.7 ms  ✓ Moshi
+    613.8 ms  ✓ ArrayInterface → ArrayInterfaceSparseArraysExt
+    605.5 ms  ✓ Accessors → LinearAlgebraExt
+    759.5 ms  ✓ ChainRulesCore → ChainRulesCoreSparseArraysExt
+    574.6 ms  ✓ EnzymeCore → EnzymeCoreChainRulesCoreExt
+    501.7 ms  ✓ ADTypes → ADTypesChainRulesCoreExt
+    593.6 ms  ✓ DifferentiationInterface → DifferentiationInterfaceChainRulesCoreExt
+   8083.7 ms  ✓ Krylov
+   1529.9 ms  ✓ LogExpFunctions → LogExpFunctionsChainRulesCoreExt
+    541.6 ms  ✓ ArrayInterface → ArrayInterfaceChainRulesCoreExt
+  14898.3 ms  ✓ StaticArrays
+   1475.3 ms  ✓ MKL_jll
+    873.6 ms  ✓ FiniteDiff
+    707.5 ms  ✓ MaybeInplace → MaybeInplaceSparseArraysExt
+   3089.2 ms  ✓ SpecialFunctions
+   9204.5 ms  ✓ SparseMatrixColorings
+   1996.2 ms  ✓ SciMLOperators
+   1322.5 ms  ✓ SymbolicIndexingInterface
+    739.8 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    732.0 ms  ✓ StaticArrays → StaticArraysChainRulesCoreExt
+    779.5 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+    849.2 ms  ✓ FillArrays → FillArraysStaticArraysExt
+    762.8 ms  ✓ DifferentiationInterface → DifferentiationInterfaceStaticArraysExt
+    719.5 ms  ✓ Adapt → AdaptStaticArraysExt
+    796.3 ms  ✓ Accessors → StaticArraysExt
+    728.2 ms  ✓ FiniteDiff → FiniteDiffStaticArraysExt
+    731.5 ms  ✓ FiniteDiff → FiniteDiffSparseArraysExt
+    636.4 ms  ✓ DifferentiationInterface → DifferentiationInterfaceFiniteDiffExt
+    807.1 ms  ✓ DiffRules
+   1758.9 ms  ✓ FastGaussQuadrature
+    951.8 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseMatrixColoringsExt
+   2056.1 ms  ✓ SpecialFunctions → SpecialFunctionsChainRulesCoreExt
+    590.3 ms  ✓ SciMLOperators → SciMLOperatorsStaticArraysCoreExt
+    808.2 ms  ✓ SciMLOperators → SciMLOperatorsSparseArraysExt
+    849.7 ms  ✓ NLSolversBase
+    877.9 ms  ✓ LineSearches
+   3723.6 ms  ✓ ForwardDiff
+   4843.6 ms  ✓ RecursiveArrayTools
+    704.8 ms  ✓ FastPower → FastPowerForwardDiffExt
+    918.0 ms  ✓ ForwardDiff → ForwardDiffStaticArraysExt
+    772.4 ms  ✓ DifferentiationInterface → DifferentiationInterfaceForwardDiffExt
+  27713.0 ms  ✓ Static
+    741.0 ms  ✓ RecursiveArrayTools → RecursiveArrayToolsSparseArraysExt
+    551.0 ms  ✓ RecursiveArrayTools → RecursiveArrayToolsStatisticsExt
+    626.9 ms  ✓ RecursiveArrayTools → RecursiveArrayToolsForwardDiffExt
+   1393.3 ms  ✓ PreallocationTools → PreallocationToolsForwardDiffExt
+    516.9 ms  ✓ BitTwiddlingConvenienceFunctions
+    959.8 ms  ✓ CPUSummary
+    549.5 ms  ✓ PolyesterWeave
+   9321.9 ms  ✓ SciMLBase
+   1062.9 ms  ✓ SciMLBase → SciMLBaseDifferentiationInterfaceExt
+   1165.7 ms  ✓ SciMLBase → SciMLBaseChainRulesCoreExt
+   1599.0 ms  ✓ SciMLBase → SciMLBaseForwardDiffExt
+   3373.6 ms  ✓ SciMLJacobianOperators
+  27856.7 ms  ✓ ExponentialUtilities
+  16455.6 ms  ✓ StaticArrayInterface
+    641.2 ms  ✓ StaticArrayInterface → StaticArrayInterfaceStaticArraysExt
+   2283.3 ms  ✓ ExponentialUtilities → ExponentialUtilitiesStaticArraysExt
+    537.6 ms  ✓ CloseOpenIntervals
+    601.3 ms  ✓ LayoutPointers
+    770.8 ms  ✓ StrideArraysCore
+   4676.2 ms  ✓ LineSearch
+    633.9 ms  ✓ Polyester
+    772.7 ms  ✓ LineSearch → LineSearchLineSearchesExt
+    683.5 ms  ✓ FastBroadcast
+   6104.5 ms  ✓ NonlinearSolveBase
+    771.2 ms  ✓ RecursiveArrayTools → RecursiveArrayToolsFastBroadcastExt
+   1058.0 ms  ✓ NonlinearSolveBase → NonlinearSolveBaseChainRulesCoreExt
+   1507.4 ms  ✓ NonlinearSolveBase → NonlinearSolveBaseSparseMatrixColoringsExt
+   1548.8 ms  ✓ NonlinearSolveBase → NonlinearSolveBaseSparseArraysExt
+   1079.5 ms  ✓ NonlinearSolveBase → NonlinearSolveBaseLineSearchExt
+  11678.1 ms  ✓ LinearSolve
+   1369.4 ms  ✓ NonlinearSolveBase → NonlinearSolveBaseForwardDiffExt
+   1710.6 ms  ✓ NonlinearSolveBase → NonlinearSolveBaseLinearSolveExt
+   2834.8 ms  ✓ LinearSolve → LinearSolveForwardDiffExt
+   3729.5 ms  ✓ BracketingNonlinearSolve
+    972.2 ms  ✓ BracketingNonlinearSolve → BracketingNonlinearSolveForwardDiffExt
+   1146.4 ms  ✓ BracketingNonlinearSolve → BracketingNonlinearSolveChainRulesCoreExt
+   5164.2 ms  ✓ LinearSolve → LinearSolveSparseArraysExt
+   2768.8 ms  ✓ DiffEqBase
+   1842.3 ms  ✓ LinearSolve → LinearSolveEnzymeExt
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("5895cdaf-549a-54a7-82ae-fc9d8ce60a0b"), "LinearSolveEnzymeExt") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::Nothing)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::Nothing)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] _require_prelocked
+[0K    @ ./loading.jl:2688 [inlined]
+[0K  [5] run_extension_callbacks(extid::Base.ExtensionId)
+[0K    @ Base ./loading.jl:1764
+[0K  [6] run_extension_callbacks(pkgid::Base.PkgId)
+[0K    @ Base ./loading.jl:1801
+[0K  [7] run_package_callbacks(modkey::Base.PkgId)
+[0K    @ Base ./loading.jl:1617
+[0K  [8] _require_search_from_serialized(pkg::Base.PkgId, sourcespec::Base.PkgLoadSpec, build_id::UInt128, stalecheck::Bool; reasons::Dict{String, Int64}, DEPOT_PATH::Vector{String})
+[0K    @ Base ./loading.jl:2323
+[0K  [9] _require_search_from_serialized
+[0K    @ ./loading.jl:2200 [inlined]
+[0K [10] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2833
+[0K [11] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K [12] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K [13] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K [14] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K [15] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K [16] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K [17] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [18] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [19] top-level scope
+[0K    @ /workdir/depot/packages/NonlinearSolveQuasiNewton/wYNEY/src/NonlinearSolveQuasiNewton.jl:14
+[0K [20] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K [21] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [22] top-level scope
+[0K    @ stdin:5
+[0K [23] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [24] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [25] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [26] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [27] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/NonlinearSolveQuasiNewton/wYNEY/src/NonlinearSolveQuasiNewton.jl:1
+[0Kin expression starting at stdin:5
+              ✗ NonlinearSolveQuasiNewton
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("5895cdaf-549a-54a7-82ae-fc9d8ce60a0b"), "LinearSolveEnzymeExt") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::Nothing)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::Nothing)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] _require_prelocked
+[0K    @ ./loading.jl:2688 [inlined]
+[0K  [5] run_extension_callbacks(extid::Base.ExtensionId)
+[0K    @ Base ./loading.jl:1764
+[0K  [6] run_extension_callbacks(pkgid::Base.PkgId)
+[0K    @ Base ./loading.jl:1801
+[0K  [7] run_package_callbacks(modkey::Base.PkgId)
+[0K    @ Base ./loading.jl:1617
+[0K  [8] _require_search_from_serialized(pkg::Base.PkgId, sourcespec::Base.PkgLoadSpec, build_id::UInt128, stalecheck::Bool; reasons::Dict{String, Int64}, DEPOT_PATH::Vector{String})
+[0K    @ Base ./loading.jl:2323
+[0K  [9] _require_search_from_serialized
+[0K    @ ./loading.jl:2200 [inlined]
+[0K [10] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2833
+[0K [11] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K [12] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K [13] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K [14] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K [15] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K [16] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K [17] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [18] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [19] top-level scope
+[0K    @ /workdir/depot/packages/NonlinearSolveFirstOrder/ih1YC/src/NonlinearSolveFirstOrder.jl:17
+[0K [20] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K [21] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [22] top-level scope
+[0K    @ stdin:5
+[0K [23] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [24] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [25] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [26] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [27] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/NonlinearSolveFirstOrder/ih1YC/src/NonlinearSolveFirstOrder.jl:1
+[0Kin expression starting at stdin:5
+              ✗ NonlinearSolveFirstOrder
+   1287.7 ms  ✓ DiffEqBase → DiffEqBaseSparseArraysExt
+   1243.2 ms  ✓ DiffEqBase → DiffEqBaseChainRulesCoreExt
+   1364.0 ms  ✓ DiffEqBase → DiffEqBaseForwardDiffExt
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("9a2c21bd-3a47-402d-9113-8faf9a0ee114"), "NonlinearSolveQuasiNewton") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/NonlinearSolveQuasiNewton/wYNEY/ext/NonlinearSolveQuasiNewtonForwardDiffExt.jl:9
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/NonlinearSolveQuasiNewton/wYNEY/ext/NonlinearSolveQuasiNewtonForwardDiffExt.jl:1
+[0Kin expression starting at stdin:5
+              ✗ NonlinearSolveQuasiNewton → NonlinearSolveQuasiNewtonForwardDiffExt
+   3683.8 ms  ✓ OrdinaryDiffEqCore
+  14301.5 ms  ✓ NonlinearSolveSpectralMethods
+   1778.3 ms  ✓ OrdinaryDiffEqCore → OrdinaryDiffEqCoreSparseArraysExt
+   2073.3 ms  ✓ OrdinaryDiffEqFunctionMap
+   3182.5 ms  ✓ OrdinaryDiffEqStabilizedRK
+   2499.0 ms  ✓ OrdinaryDiffEqQPRK
+   2775.3 ms  ✓ OrdinaryDiffEqSymplecticRK
+  14850.3 ms  ✓ SimpleNonlinearSolve
+   2809.6 ms  ✓ OrdinaryDiffEqFeagin
+   4061.0 ms  ✓ OrdinaryDiffEqLowOrderRK
+   3043.9 ms  ✓ OrdinaryDiffEqSSPRK
+   2562.6 ms  ✓ OrdinaryDiffEqRKN
+   2212.9 ms  ✓ OrdinaryDiffEqExplicitRK
+   2494.4 ms  ✓ OrdinaryDiffEqHighOrderRK
+   1176.2 ms  ✓ NonlinearSolveSpectralMethods → NonlinearSolveSpectralMethodsForwardDiffExt
+   2215.2 ms  ✓ OrdinaryDiffEqPRK
+   3182.7 ms  ✓ OrdinaryDiffEqLowStorageRK
+   2873.2 ms  ✓ OrdinaryDiffEqLinear
+   1200.9 ms  ✓ SimpleNonlinearSolve → SimpleNonlinearSolveChainRulesCoreExt
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("5959db7a-ea39-4486-b5fe-2dd0bf03d60d"), "NonlinearSolveFirstOrder") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/NonlinearSolve/ycBd4/src/NonlinearSolve.jl:22
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/NonlinearSolve/ycBd4/src/NonlinearSolve.jl:1
+[0Kin expression starting at stdin:5
+              ✗ NonlinearSolve
+   4019.4 ms  ✓ OrdinaryDiffEqDifferentiation
+   2272.8 ms  ✓ OrdinaryDiffEqAdamsBashforthMoulton
+   2125.4 ms  ✓ OrdinaryDiffEqDifferentiation → OrdinaryDiffEqDifferentiationSparseArraysExt
+  12435.4 ms  ✓ OrdinaryDiffEqTsit5
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("8913a72c-1f9b-4ce2-8d82-65094dcecaec"), "NonlinearSolve") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/OrdinaryDiffEqNonlinearSolve/VLsDD/src/OrdinaryDiffEqNonlinearSolve.jl:14
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/OrdinaryDiffEqNonlinearSolve/VLsDD/src/OrdinaryDiffEqNonlinearSolve.jl:1
+[0Kin expression starting at stdin:5
+              ✗ OrdinaryDiffEqNonlinearSolve
+   4979.2 ms  ✓ OrdinaryDiffEqExponentialRK
+   5271.0 ms  ✓ OrdinaryDiffEqExtrapolation
+   1757.3 ms  ✓ OrdinaryDiffEqNordsieck
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("127b3ac7-2247-4354-8eb6-78cf4e7c58e8"), "OrdinaryDiffEqNonlinearSolve") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/OrdinaryDiffEqIMEXMultistep/4kNGT/src/OrdinaryDiffEqIMEXMultistep.jl:13
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/OrdinaryDiffEqIMEXMultistep/4kNGT/src/OrdinaryDiffEqIMEXMultistep.jl:1
+[0Kin expression starting at stdin:5
+              ✗ OrdinaryDiffEqIMEXMultistep
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("127b3ac7-2247-4354-8eb6-78cf4e7c58e8"), "OrdinaryDiffEqNonlinearSolve") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/OrdinaryDiffEqStabilizedIRK/oOtOW/src/OrdinaryDiffEqStabilizedIRK.jl:17
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/OrdinaryDiffEqStabilizedIRK/oOtOW/src/OrdinaryDiffEqStabilizedIRK.jl:1
+[0Kin expression starting at stdin:5
+              ✗ OrdinaryDiffEqStabilizedIRK
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("127b3ac7-2247-4354-8eb6-78cf4e7c58e8"), "OrdinaryDiffEqNonlinearSolve") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/OrdinaryDiffEqPDIRK/l3OBX/src/OrdinaryDiffEqPDIRK.jl:19
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/OrdinaryDiffEqPDIRK/l3OBX/src/OrdinaryDiffEqPDIRK.jl:1
+[0Kin expression starting at stdin:5
+              ✗ OrdinaryDiffEqPDIRK
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("127b3ac7-2247-4354-8eb6-78cf4e7c58e8"), "OrdinaryDiffEqNonlinearSolve") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/OrdinaryDiffEqSDIRK/x9yQd/src/OrdinaryDiffEqSDIRK.jl:25
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/OrdinaryDiffEqSDIRK/x9yQd/src/OrdinaryDiffEqSDIRK.jl:1
+[0Kin expression starting at stdin:5
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("127b3ac7-2247-4354-8eb6-78cf4e7c58e8"), "OrdinaryDiffEqNonlinearSolve") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/OrdinaryDiffEqFIRK/TbiIL/src/OrdinaryDiffEqFIRK.jl:34
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/OrdinaryDiffEqFIRK/TbiIL/src/OrdinaryDiffEqFIRK.jl:1
+[0Kin expression starting at stdin:5
+              ✗ OrdinaryDiffEqSDIRK
+              ✗ OrdinaryDiffEqFIRK
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("2d112036-d095-4a1e-ab9a-08536f3ecdbf"), "OrdinaryDiffEqSDIRK") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/OrdinaryDiffEqBDF/GYL83/src/OrdinaryDiffEqBDF.jl:25
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/OrdinaryDiffEqBDF/GYL83/src/OrdinaryDiffEqBDF.jl:1
+[0Kin expression starting at stdin:5
+              ✗ OrdinaryDiffEqBDF
+  33380.5 ms  ✓ OrdinaryDiffEqVerner
+  26039.0 ms  ✓ OrdinaryDiffEqRosenbrock
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("6ad6398a-0878-4a85-9266-38940aa047c8"), "OrdinaryDiffEqBDF") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/OrdinaryDiffEqDefault/UBKOj/src/OrdinaryDiffEqDefault.jl:10
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/OrdinaryDiffEqDefault/UBKOj/src/OrdinaryDiffEqDefault.jl:1
+[0Kin expression starting at stdin:5
+              ✗ OrdinaryDiffEqDefault
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("127b3ac7-2247-4354-8eb6-78cf4e7c58e8"), "OrdinaryDiffEqNonlinearSolve") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/OrdinaryDiffEq/4eLaL/src/OrdinaryDiffEq.jl:26
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/OrdinaryDiffEq/4eLaL/src/OrdinaryDiffEq.jl:1
+[0Kin expression starting at stdin:5
+              ✗ OrdinaryDiffEq
+  198 dependencies successfully precompiled in 126 seconds. 27 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +nightly --project=O/OrdinaryDiffEq/Solve-The-Lorenz-Equation -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 611.90
+	System time (seconds): 45.26
+	Percent of CPU this job got: 296%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:41.52
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2563036
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1006
+	Minor (reclaiming a frame) page faults: 15827113
+	Voluntary context switches: 36791
+	Involuntary context switches: 16717
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1252448
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
