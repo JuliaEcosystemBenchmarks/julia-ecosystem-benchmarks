@@ -1,0 +1,32 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  72234.8 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 72 seconds
+Precompiling packages...
+    350.5 ms  ✓ Unicode
+    526.0 ms  ✓ Calculus
+    503.4 ms  ✓ Measurements
+  3 dependencies successfully precompiled in 1 seconds. 1 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=M/Measurements/Addition-With-Uncertainties -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 120.57
+	System time (seconds): 5.03
+	Percent of CPU this job got: 169%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:13.96
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2138756
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 158
+	Minor (reclaiming a frame) page faults: 1850925
+	Voluntary context switches: 5282
+	Involuntary context switches: 3577
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 309224
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
