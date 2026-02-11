@@ -1,0 +1,55 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    504.3 ms  ✓ StaticArraysCore
+    575.2 ms  ✓ Statistics
+    583.3 ms  ✓ DocStringExtensions
+    633.3 ms  ✓ OpenLibm_jll
+    470.7 ms  ✓ Unicode
+    455.1 ms  ✓ DiffResults
+    547.4 ms  ✓ NaNMath
+   1353.1 ms  ✓ IrrationalConstants
+    634.3 ms  ✓ Compat
+    678.7 ms  ✓ LogExpFunctions
+    490.0 ms  ✓ Compat → CompatLinearAlgebraExt
+   2000.9 ms  ✓ Preferences
+    447.9 ms  ✓ PrecompileTools
+    579.4 ms  ✓ JLLWrappers
+   3623.0 ms  ✓ FunctionWrappers
+   1431.7 ms  ✓ ChainRulesCore
+    695.3 ms  ✓ OpenSpecFun_jll
+   5169.7 ms  ✓ MacroTools
+   1104.9 ms  ✓ LogExpFunctions → LogExpFunctionsChainRulesCoreExt
+    462.8 ms  ✓ CommonSubexpressions
+   2119.7 ms  ✓ SpecialFunctions
+    529.6 ms  ✓ DiffRules
+   1318.5 ms  ✓ SpecialFunctions → SpecialFunctionsChainRulesCoreExt
+   2910.1 ms  ✓ ForwardDiff
+  10860.9 ms  ✓ StaticArrays
+    498.8 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    515.1 ms  ✓ StaticArrays → StaticArraysChainRulesCoreExt
+    576.3 ms  ✓ ForwardDiff → ForwardDiffStaticArraysExt
+  12808.4 ms  ✓ ReverseDiff
+  29 dependencies successfully precompiled in 28 seconds. 4 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +alpha --project=R/ReverseDiff/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 189.46
+	System time (seconds): 10.56
+	Percent of CPU this job got: 142%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:20.24
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2739960
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 264
+	Minor (reclaiming a frame) page faults: 4073074
+	Voluntary context switches: 10779
+	Involuntary context switches: 2522
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 499600
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

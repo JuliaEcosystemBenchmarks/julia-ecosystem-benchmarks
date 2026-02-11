@@ -1,0 +1,74 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    423.4 ms  ✓ RealDot
+    449.3 ms  ✓ DataAPI
+    569.9 ms  ✓ Statistics
+    511.6 ms  ✓ StaticArraysCore
+    464.4 ms  ✓ StatsAPI
+    897.2 ms  ✓ SuiteSparse_jll
+   1359.9 ms  ✓ IrrationalConstants
+    793.7 ms  ✓ Requires
+    674.1 ms  ✓ OrderedCollections
+    719.8 ms  ✓ ADTypes
+    678.8 ms  ✓ Serialization
+    486.0 ms  ✓ Unicode
+   1556.0 ms  ✓ LinearMaps
+    605.3 ms  ✓ DocStringExtensions
+    543.1 ms  ✓ Inflate
+    460.2 ms  ✓ PtrArrays
+    653.6 ms  ✓ OpenLibm_jll
+    554.3 ms  ✓ Quaternions
+    500.1 ms  ✓ Missings
+   1285.7 ms  ✓ InteractiveUtils
+    992.1 ms  ✓ NamedDims
+   1095.6 ms  ✓ DifferentiationInterface
+   1867.6 ms  ✓ DataStructures
+   5462.3 ms  ✓ MacroTools
+    463.2 ms  ✓ LinearMaps → LinearMapsStatisticsExt
+    606.1 ms  ✓ LogExpFunctions
+   2060.5 ms  ✓ Preferences
+    508.8 ms  ✓ AliasTables
+    513.5 ms  ✓ NaNMath
+   3157.0 ms  ✓ ManifoldsBase
+   2228.4 ms  ✓ MatrixEquations
+    597.1 ms  ✓ SortingAlgorithms
+    578.6 ms  ✓ JLLWrappers
+    773.6 ms  ✓ SimpleTraits
+    484.9 ms  ✓ PrecompileTools
+    573.0 ms  ✓ ManifoldsBase → ManifoldsBaseQuaternionsExt
+   4334.9 ms  ✓ SparseArrays
+    560.1 ms  ✓ ManifoldsBase → ManifoldsBaseStatisticsExt
+    689.2 ms  ✓ OpenSpecFun_jll
+    572.7 ms  ✓ Statistics → SparseArraysExt
+    834.7 ms  ✓ ManifoldDiff
+    828.8 ms  ✓ LinearMaps → LinearMapsSparseArraysExt
+    578.0 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+   2069.5 ms  ✓ StatsBase
+   2104.6 ms  ✓ SpecialFunctions
+    530.4 ms  ✓ DiffRules
+   1105.5 ms  ✓ Kronecker
+  10871.8 ms  ✓ StaticArrays
+
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +alpha --project=M/Manifolds/Geodesic-On-Sphere -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 193.03
+	System time (seconds): 12.78
+	Percent of CPU this job got: 157%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:10.88
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2775104
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 373
+	Minor (reclaiming a frame) page faults: 4773854
+	Voluntary context switches: 12634
+	Involuntary context switches: 3026
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 504584
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
