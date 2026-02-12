@@ -1,0 +1,155 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    439.2 ms  ✓ RealDot
+    469.6 ms  ✓ DataAPI
+    600.7 ms  ✓ Statistics
+    523.7 ms  ✓ StaticArraysCore
+    488.9 ms  ✓ StatsAPI
+    883.1 ms  ✓ SuiteSparse_jll
+   1358.3 ms  ✓ IrrationalConstants
+    818.7 ms  ✓ Requires
+    694.8 ms  ✓ OrderedCollections
+    738.2 ms  ✓ ADTypes
+    700.1 ms  ✓ Serialization
+    495.3 ms  ✓ Unicode
+    632.1 ms  ✓ DocStringExtensions
+   1597.3 ms  ✓ LinearMaps
+    572.4 ms  ✓ Inflate
+    468.9 ms  ✓ PtrArrays
+    786.7 ms  ✓ OpenLibm_jll
+    569.0 ms  ✓ Quaternions
+    526.7 ms  ✓ Missings
+   1304.7 ms  ✓ InteractiveUtils
+   1013.7 ms  ✓ NamedDims
+   1094.6 ms  ✓ DifferentiationInterface
+   5488.3 ms  ✓ MacroTools
+   1900.5 ms  ✓ DataStructures
+    644.3 ms  ✓ LogExpFunctions
+    413.5 ms  ✓ LinearMaps → LinearMapsStatisticsExt
+   2202.9 ms  ✓ Preferences
+    507.7 ms  ✓ AliasTables
+    520.8 ms  ✓ NaNMath
+   3175.4 ms  ✓ ManifoldsBase
+   2224.0 ms  ✓ MatrixEquations
+    792.7 ms  ✓ SimpleTraits
+    593.3 ms  ✓ SortingAlgorithms
+    608.9 ms  ✓ JLLWrappers
+    515.3 ms  ✓ PrecompileTools
+   4395.1 ms  ✓ SparseArrays
+    592.1 ms  ✓ ManifoldsBase → ManifoldsBaseQuaternionsExt
+    590.9 ms  ✓ ManifoldsBase → ManifoldsBaseStatisticsExt
+    710.6 ms  ✓ OpenSpecFun_jll
+    593.3 ms  ✓ Statistics → SparseArraysExt
+    881.1 ms  ✓ ManifoldDiff
+    821.5 ms  ✓ LinearMaps → LinearMapsSparseArraysExt
+    573.1 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+   2060.1 ms  ✓ SpecialFunctions
+   2134.3 ms  ✓ StatsBase
+    548.0 ms  ✓ DiffRules
+   1126.0 ms  ✓ Kronecker
+[0KERROR: LoadError: UndefVarError: `_shrink` not defined in `Base`
+[0KSuggestion: check for spelling errors or missing imports.
+[0KStacktrace:
+[0K  [1] getproperty
+[0K    @ ./Base_compiler.jl:50 [inlined]
+[0K  [2] _precompile_()
+[0K    @ Tullio._Precompile_Base /workdir/depot/packages/Tullio/2zyFP/src/precompile/precompile_Base.jl:77
+[0K  [3] top-level scope
+[0K    @ /workdir/depot/packages/Tullio/2zyFP/src/precompile.jl:14
+[0K  [4] include(mapexpr::Function, mod::Module, _path::String)
+[0K    @ Base ./Base.jl:310
+[0K  [5] top-level scope
+[0K    @ /workdir/depot/packages/Tullio/2zyFP/src/Tullio.jl:27
+[0K  [6] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K  [7] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K  [8] top-level scope
+[0K    @ stdin:5
+[0K  [9] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [10] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [11] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [12] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [13] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/Tullio/2zyFP/src/precompile.jl:13
+[0Kin expression starting at /workdir/depot/packages/Tullio/2zyFP/src/Tullio.jl:1
+[0Kin expression starting at stdin:5
+              ✗ Tullio
+  10550.0 ms  ✓ StaticArrays
+    502.6 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    500.9 ms  ✓ DifferentiationInterface → DifferentiationInterfaceStaticArraysExt
+   1040.8 ms  ✓ ArnoldiMethod
+   3007.9 ms  ✓ Graphs
+    926.5 ms  ✓ SimpleWeightedGraphs
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("bc48ee85-29a4-5162-ae0b-a64e1601d4bc"), "Tullio") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/Manifolds/9wrdP/src/Manifolds.jl:214
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:309
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/Manifolds/9wrdP/src/Manifolds.jl:1
+[0Kin expression starting at stdin:5
+              ✗ Manifolds
+  53 dependencies successfully precompiled in 25 seconds. 8 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +nightly --project=M/Manifolds/Geodesic-On-Sphere -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 207.85
+	System time (seconds): 13.98
+	Percent of CPU this job got: 156%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:21.85
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2547872
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 356
+	Minor (reclaiming a frame) page faults: 5183774
+	Voluntary context switches: 13507
+	Involuntary context switches: 3152
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 541576
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
