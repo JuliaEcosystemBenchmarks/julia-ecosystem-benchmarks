@@ -1,0 +1,60 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1428.7 ms  ✓ Logging
+   1518.7 ms  ✓ UUIDs
+   1564.6 ms  ✓ OpenSSL_jll
+   1547.7 ms  ✓ CompilerSupportLibraries_jll
+   1635.2 ms  ✓ NetworkOptions
+   1639.8 ms  ✓ Zlib_jll
+   1720.6 ms  ✓ Unicode
+   1718.6 ms  ✓ MozillaCACerts_jll
+   1723.0 ms  ✓ nghttp2_jll
+   1827.0 ms  ✓ Base64
+    582.6 ms  ✓ LibSSH2_jll
+    640.6 ms  ✓ p7zip_jll
+    640.4 ms  ✓ Printf
+    462.2 ms  ✓ LibGit2_jll
+    472.1 ms  ✓ LibCURL_jll
+   3211.3 ms  ✓ ArgTools
+    763.4 ms  ✓ LibCURL
+    632.6 ms  ✓ Tar
+   2944.1 ms  ✓ Dates
+   3121.7 ms  ✓ LibGit2
+    446.7 ms  ✓ TOML
+   3074.4 ms  ✓ Downloads
+   9292.0 ms  ✓ StyledStrings
+   1679.4 ms  ✓ JuliaSyntaxHighlighting
+   3822.8 ms  ✓ Markdown
+  46257.1 ms  ✓ Pkg
+  26 dependencies successfully precompiled in 61 seconds
+Precompiling packages...
+    550.8 ms  ✓ Preferences
+    563.4 ms  ✓ Serialization
+    340.6 ms  ✓ PrecompileTools
+   1829.3 ms  ✓ InteractiveUtils
+   3228.1 ms  ✓ Test
+  24269.1 ms  ✓ ExplicitImports
+  6 dependencies successfully precompiled in 29 seconds. 26 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=E/ExplicitImports/Print_Explicit_Imports -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 171.93
+	System time (seconds): 7.60
+	Percent of CPU this job got: 196%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:31.14
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2169824
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 176
+	Minor (reclaiming a frame) page faults: 2504634
+	Voluntary context switches: 6952
+	Involuntary context switches: 4780
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 421952
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
