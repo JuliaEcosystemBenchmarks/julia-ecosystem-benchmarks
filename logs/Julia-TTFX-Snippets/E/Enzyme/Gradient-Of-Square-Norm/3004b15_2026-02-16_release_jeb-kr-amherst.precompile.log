@@ -1,0 +1,76 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1414.3 ms  ✓ Logging
+   1415.1 ms  ✓ UUIDs
+   1533.1 ms  ✓ nghttp2_jll
+   1590.9 ms  ✓ MozillaCACerts_jll
+   1724.9 ms  ✓ OpenSSL_jll
+   1694.0 ms  ✓ Zlib_jll
+   1711.2 ms  ✓ NetworkOptions
+   1726.6 ms  ✓ Unicode
+   1742.4 ms  ✓ CompilerSupportLibraries_jll
+   1798.2 ms  ✓ Base64
+    468.3 ms  ✓ LibSSH2_jll
+    569.5 ms  ✓ p7zip_jll
+    641.9 ms  ✓ Printf
+    483.6 ms  ✓ LibGit2_jll
+    482.1 ms  ✓ LibCURL_jll
+   3249.2 ms  ✓ ArgTools
+    757.6 ms  ✓ LibCURL
+    647.1 ms  ✓ Tar
+   2928.8 ms  ✓ Dates
+   3026.8 ms  ✓ LibGit2
+    444.7 ms  ✓ TOML
+   2986.2 ms  ✓ Downloads
+   9244.4 ms  ✓ StyledStrings
+   1696.1 ms  ✓ JuliaSyntaxHighlighting
+   3803.8 ms  ✓ Markdown
+  46264.7 ms  ✓ Pkg
+  26 dependencies successfully precompiled in 61 seconds
+Precompiling packages...
+   1280.2 ms  ✓ Reexport
+   1368.5 ms  ✓ Scratch
+   1377.0 ms  ✓ ExprTools
+   1390.9 ms  ✓ StructIO
+   1477.1 ms  ✓ SuiteSparse_jll
+   1798.6 ms  ✓ EnzymeCore
+   1814.3 ms  ✓ Serialization
+   1849.5 ms  ✓ Preferences
+   2170.3 ms  ✓ LazyArtifacts
+    629.8 ms  ✓ PrecompileTools
+    728.5 ms  ✓ JLLWrappers
+   3086.2 ms  ✓ CEnum
+    908.5 ms  ✓ LibTracyClient_jll
+   2610.5 ms  ✓ ObjectFile
+   4075.8 ms  ✓ InteractiveUtils
+   1586.2 ms  ✓ Enzyme_jll
+   1673.5 ms  ✓ LLVMExtra_jll
+    887.6 ms  ✓ Tracy
+   4845.9 ms  ✓ SparseArrays
+   5186.4 ms  ✓ LLVM
+  25537.0 ms  ✓ GPUCompiler
+  59525.4 ms  ✓ Enzyme
+  22 dependencies successfully precompiled in 95 seconds. 26 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=E/Enzyme/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 321.93
+	System time (seconds): 13.16
+	Percent of CPU this job got: 213%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:36.70
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2543568
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 242
+	Minor (reclaiming a frame) page faults: 4095602
+	Voluntary context switches: 10764
+	Involuntary context switches: 9974
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 692600
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
