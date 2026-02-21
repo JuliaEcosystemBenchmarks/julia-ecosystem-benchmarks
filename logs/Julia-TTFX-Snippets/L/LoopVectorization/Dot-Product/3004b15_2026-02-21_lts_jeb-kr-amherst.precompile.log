@@ -1,0 +1,56 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1379.1 ms  ✓ CommonWorldInvalidations
+   1601.7 ms  ✓ IfElse
+   1438.7 ms  ✓ UnPack
+   1446.7 ms  ✓ ManualMemory
+   1450.8 ms  ✓ SIMDTypes
+   1455.1 ms  ✓ SciMLPublic
+   1538.5 ms  ✓ Requires
+   1577.3 ms  ✓ DocStringExtensions
+   1620.3 ms  ✓ Compat
+   1681.5 ms  ✓ CpuId
+   1744.7 ms  ✓ Preferences
+    455.9 ms  ✓ Adapt
+   1994.7 ms  ✓ OffsetArrays
+    415.8 ms  ✓ Compat → CompatLinearAlgebraExt
+    384.2 ms  ✓ PrecompileTools
+    831.3 ms  ✓ ThreadingUtilities
+    329.3 ms  ✓ OffsetArrays → OffsetArraysAdaptExt
+    416.7 ms  ✓ ArrayInterface
+    541.8 ms  ✓ Static
+    299.9 ms  ✓ BitTwiddlingConvenienceFunctions
+    589.6 ms  ✓ CPUSummary
+    876.1 ms  ✓ StaticArrayInterface
+    706.0 ms  ✓ HostCPUFeatures
+    398.9 ms  ✓ PolyesterWeave
+    341.2 ms  ✓ StaticArrayInterface → StaticArrayInterfaceOffsetArraysExt
+    356.8 ms  ✓ CloseOpenIntervals
+    413.6 ms  ✓ LayoutPointers
+   4306.9 ms  ✓ VectorizationBase
+    625.6 ms  ✓ SLEEFPirates
+  12274.7 ms  ✓ LoopVectorization
+  30 dependencies successfully precompiled in 22 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=L/LoopVectorization/Dot-Product -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 40.77
+	System time (seconds): 5.08
+	Percent of CPU this job got: 201%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:22.78
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 862580
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 127
+	Minor (reclaiming a frame) page faults: 1368012
+	Voluntary context switches: 39999
+	Involuntary context switches: 6705
+	Swaps: 0
+	File system inputs: 3056
+	File system outputs: 137912
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,41 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    787.3 ms  ✓ StaticArraysCore
+    637.4 ms  ✓ SuiteSparse_jll
+    645.1 ms  ✓ Inflate
+    751.0 ms  ✓ OrderedCollections
+    819.5 ms  ✓ Preferences
+    329.8 ms  ✓ PrecompileTools
+   1868.3 ms  ✓ MacroTools
+   1394.3 ms  ✓ DataStructures
+    550.8 ms  ✓ SimpleTraits
+   2641.2 ms  ✓ SparseArrays
+    497.7 ms  ✓ Statistics
+   4774.8 ms  ✓ StaticArrays
+    548.8 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    741.0 ms  ✓ ArnoldiMethod
+   2619.1 ms  ✓ Graphs
+  15 dependencies successfully precompiled in 10 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=G/Graphs/Graph-Construction -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 19.39
+	System time (seconds): 2.66
+	Percent of CPU this job got: 202%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:10.91
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 442920
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 52
+	Minor (reclaiming a frame) page faults: 740559
+	Voluntary context switches: 21621
+	Involuntary context switches: 587
+	Swaps: 0
+	File system inputs: 2096
+	File system outputs: 104112
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
