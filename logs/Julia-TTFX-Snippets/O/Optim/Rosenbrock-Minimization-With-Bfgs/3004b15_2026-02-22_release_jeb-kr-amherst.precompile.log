@@ -1,0 +1,64 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  73596.2 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 74 seconds
+Precompiling packages...
+   2016.6 ms  ✓ OpenLibm_jll
+   2111.3 ms  ✓ PositiveFactorizations
+   2117.2 ms  ✓ EnumX
+   2176.2 ms  ✓ Future
+   2209.7 ms  ✓ Unicode
+   2391.5 ms  ✓ SuiteSparse_jll
+   2420.1 ms  ✓ StaticArraysCore
+   2441.1 ms  ✓ Statistics
+   2539.1 ms  ✓ Serialization
+   2633.3 ms  ✓ ADTypes
+   2809.3 ms  ✓ Requires
+   3056.2 ms  ✓ FillArrays
+    781.3 ms  ✓ Adapt
+    744.5 ms  ✓ FillArrays → FillArraysStatisticsExt
+   4215.9 ms  ✓ ConstructionBase
+   2722.2 ms  ✓ NaNMath
+    614.0 ms  ✓ ADTypes → ADTypesConstructionBaseExt
+    632.1 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   2772.6 ms  ✓ DifferentiationInterface
+   1906.4 ms  ✓ ArrayInterface
+   5857.8 ms  ✓ MacroTools
+    434.2 ms  ✓ ArrayInterface → ArrayInterfaceStaticArraysCoreExt
+    870.8 ms  ✓ Setfield
+    538.2 ms  ✓ FiniteDiff
+   5098.1 ms  ✓ SparseArrays
+    433.6 ms  ✓ DifferentiationInterface → DifferentiationInterfaceFiniteDiffExt
+    845.9 ms  ✓ Adapt → AdaptSparseArraysExt
+    854.1 ms  ✓ ArrayInterface → ArrayInterfaceSparseArraysExt
+    853.6 ms  ✓ FiniteDiff → FiniteDiffSparseArraysExt
+    857.2 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+    879.7 ms  ✓ Statistics → SparseArraysExt
+    910.6 ms  ✓ FillArrays → FillArraysSparseArraysExt
+   1792.5 ms  ✓ NLSolversBase
+   1394.4 ms  ✓ LineSearches
+   1783.2 ms  ✓ Optim
+  35 dependencies successfully precompiled in 13 seconds. 2 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=O/Optim/Rosenbrock-Minimization-With-Bfgs -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 152.60
+	System time (seconds): 10.32
+	Percent of CPU this job got: 187%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:27.03
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2147720
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 254
+	Minor (reclaiming a frame) page faults: 3253685
+	Voluntary context switches: 10216
+	Involuntary context switches: 4502
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 377064
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
