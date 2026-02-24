@@ -1,0 +1,673 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    464.5 ms  ✓ DataAPI
+    572.0 ms  ✓ ConstructionBase
+    607.6 ms  ✓ Statistics
+    457.3 ms  ✓ RealDot
+    459.3 ms  ✓ DataValueInterfaces
+    556.5 ms  ✓ StaticArraysCore
+   1355.4 ms  ✓ IrrationalConstants
+    908.4 ms  ✓ SuiteSparse_jll
+    828.1 ms  ✓ Requires
+    705.7 ms  ✓ OrderedCollections
+    745.0 ms  ✓ Serialization
+    505.0 ms  ✓ Unicode
+    630.0 ms  ✓ DocStringExtensions
+    611.4 ms  ✓ AbstractFFTs
+    416.7 ms  ✓ IteratorInterfaceExtensions
+    775.7 ms  ✓ OpenLibm_jll
+   1080.7 ms  ✓ FillArrays
+    479.3 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+    501.8 ms  ✓ DiffResults
+    529.6 ms  ✓ Adapt
+   1393.2 ms  ✓ InteractiveUtils
+    571.7 ms  ✓ Compat
+    723.9 ms  ✓ LogExpFunctions
+    516.5 ms  ✓ TableTraits
+   5670.1 ms  ✓ MacroTools
+    579.8 ms  ✓ NaNMath
+    552.8 ms  ✓ FillArrays → FillArraysStatisticsExt
+   2398.0 ms  ✓ Preferences
+   2791.4 ms  ✓ Distributed
+    493.9 ms  ✓ Compat → CompatLinearAlgebraExt
+    651.8 ms  ✓ GPUArraysCore
+    571.8 ms  ✓ CommonSubexpressions
+    916.6 ms  ✓ Tables
+    576.3 ms  ✓ JLLWrappers
+    497.9 ms  ✓ PrecompileTools
+   4432.7 ms  ✓ SparseArrays
+    802.4 ms  ✓ StructArrays
+    700.6 ms  ✓ OpenSpecFun_jll
+    642.9 ms  ✓ Statistics → SparseArraysExt
+   1476.1 ms  ✓ ChainRulesCore
+    619.8 ms  ✓ SuiteSparse
+   2086.8 ms  ✓ IRTools
+    749.9 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    652.9 ms  ✓ Adapt → AdaptSparseArraysExt
+    491.9 ms  ✓ StructArrays → StructArraysLinearAlgebraExt
+    481.2 ms  ✓ StructArrays → StructArraysAdaptExt
+    659.4 ms  ✓ StructArrays → StructArraysSparseArraysExt
+    633.4 ms  ✓ ChainRulesCore → ChainRulesCoreSparseArraysExt
+    481.3 ms  ✓ AbstractFFTs → AbstractFFTsChainRulesCoreExt
+    685.2 ms  ✓ ZygoteRules
+    513.4 ms  ✓ SparseInverseSubset
+   1159.5 ms  ✓ LogExpFunctions → LogExpFunctionsChainRulesCoreExt
+   2181.3 ms  ✓ SpecialFunctions
+    540.7 ms  ✓ DiffRules
+   1393.0 ms  ✓ SpecialFunctions → SpecialFunctionsChainRulesCoreExt
+   2691.9 ms  ✓ ForwardDiff
+   4296.4 ms  ✓ ChainRules
+[0KInternal error: during type inference of
+[0K_pullback(Zygote.Context{false}, typeof(Zygote.pow), Int64, Int64)
+[0KEncountered unexpected error in runtime:
+[0KTypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x71b016ab0560)[pow(Int64, Int64) from pow(Any, Any)]))
+[0Kijl_type_error_rt at /cache/build/builder-amdci4-3/julialang/julia-master/src/rtutils.c:121
+[0Kijl_type_error at /cache/build/builder-amdci4-3/julialang/julia-master/src/rtutils.c:140
+[0Kcompute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+[0Kfinishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+[0Kfinish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+[0Kjfptr_finish_nocycle_88385.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Ktypeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4583
+[0Ktypeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1532
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1715 [inlined]
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1724
+[0Kjfptr_typeinf_ext_toplevel_86279.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_type_infer at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:467
+[0Kjl_compile_method_internal at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:3640
+[0K_jl_invoke at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:4112 [inlined]
+[0Kijl_apply_generic at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:4317
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_f__apply_iterate at /cache/build/builder-amdci4-3/julialang/julia-master/src/builtins.c:897
+[0Kpullback at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:96
+[0Kpullback at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:94
+[0Kunknown function (ip: 0x71b00f834ac0) at (unknown file)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_f__apply_iterate at /cache/build/builder-amdci4-3/julialang/julia-master/src/builtins.c:897
+[0Kgradient at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:153
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/precompile.jl:17
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:765
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:779
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:824
+[0Keval at ./boot.jl:489
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:324
+[0KIncludeInto at ./Base.jl:325
+[0Kjfptr_IncludeInto_60989.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:679
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:558
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:884
+[0Kmacro expansion at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:68 [inlined]
+[0Kmacro expansion at /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:85
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:765
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_eval_module_expr at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:263 [inlined]
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:665
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:779
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:824
+[0Keval at ./boot.jl:489
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:323
+[0Kinclude_package_for_output at ./loading.jl:3288
+[0Kjfptr_include_package_for_output_35238.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at stdin:5
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:765
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:779
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:824
+[0Keval at ./boot.jl:489
+[0Kinclude_string at ./loading.jl:3130
+[0Kinclude_string at ./loading.jl:3140 [inlined]
+[0Kexec_options at ./client.jl:342
+[0K_start at ./client.jl:585
+[0Kjfptr__start_45777.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Ktrue_main at /cache/build/builder-amdci4-3/julialang/julia-master/src/jlapi.c:971
+[0Kjl_repl_entrypoint at /cache/build/builder-amdci4-3/julialang/julia-master/src/jlapi.c:1138
+[0Kmain at /cache/build/builder-amdci4-3/julialang/julia-master/cli/loader_exe.c:58
+[0Kunknown function (ip: 0x71b03f563249) at /lib/x86_64-linux-gnu/libc.so.6
+[0K__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+[0Kunknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+[0KInternal error: during type inference of
+[0K(::Zygote.var"#pullback##0#pullback##1"{Zygote.Pullback{Tuple{typeof(Zygote.pow), Int64, Int64}, Any}})(Int64)
+[0KEncountered unexpected error in runtime:
+[0KTypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x71b00ea40fa0)[pow(Int64, Int64) from pow(Any, Any)]))
+[0Kijl_type_error_rt at /cache/build/builder-amdci4-3/julialang/julia-master/src/rtutils.c:121
+[0Kijl_type_error at /cache/build/builder-amdci4-3/julialang/julia-master/src/rtutils.c:140
+[0Kcompute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+[0Kfinishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+[0Kfinish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+[0Kjfptr_finish_nocycle_88385.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Ktypeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4583
+[0Ktypeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1532
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1715 [inlined]
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1724
+[0Kjfptr_typeinf_ext_toplevel_86279.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_type_infer at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:467
+[0Kjl_compile_method_internal at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:3640
+[0K_jl_invoke at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:4112 [inlined]
+[0Kijl_apply_generic at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:4317
+[0Kgradient at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:154
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/precompile.jl:17
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:765
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:779
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:824
+[0Keval at ./boot.jl:489
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:324
+[0KIncludeInto at ./Base.jl:325
+[0Kjfptr_IncludeInto_60989.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:679
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:558
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:884
+[0Kmacro expansion at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:68 [inlined]
+[0Kmacro expansion at /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:85
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:765
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_eval_module_expr at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:263 [inlined]
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:665
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:779
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:824
+[0Keval at ./boot.jl:489
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:323
+[0Kinclude_package_for_output at ./loading.jl:3288
+[0Kjfptr_include_package_for_output_35238.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at stdin:5
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:765
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:779
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:824
+[0Keval at ./boot.jl:489
+[0Kinclude_string at ./loading.jl:3130
+[0Kinclude_string at ./loading.jl:3140 [inlined]
+[0Kexec_options at ./client.jl:342
+[0K_start at ./client.jl:585
+[0Kjfptr__start_45777.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Ktrue_main at /cache/build/builder-amdci4-3/julialang/julia-master/src/jlapi.c:971
+[0Kjl_repl_entrypoint at /cache/build/builder-amdci4-3/julialang/julia-master/src/jlapi.c:1138
+[0Kmain at /cache/build/builder-amdci4-3/julialang/julia-master/cli/loader_exe.c:58
+[0Kunknown function (ip: 0x71b03f563249) at /lib/x86_64-linux-gnu/libc.so.6
+[0K__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+[0Kunknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+[0KInternal error: during type inference of
+[0K_pullback(Zygote.Context{false}, Zygote.var"#2206#2207", Array{Int64, 1}, Array{Int64, 1})
+[0KEncountered unexpected error in runtime:
+[0KTypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x71b0110a55c0)[materialize(Array{Int64, 1}) from materialize(Any)]))
+[0Kijl_type_error_rt at /cache/build/builder-amdci4-3/julialang/julia-master/src/rtutils.c:121
+[0Kijl_type_error at /cache/build/builder-amdci4-3/julialang/julia-master/src/rtutils.c:140
+[0Kcompute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+[0Kfinishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+[0Kfinish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+[0Kjfptr_finish_nocycle_88385.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Ktypeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4583
+[0Ktypeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1532
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1715 [inlined]
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1724
+[0Kjfptr_typeinf_ext_toplevel_86279.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_type_infer at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:467
+[0Kjl_compile_method_internal at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:3640
+[0K_jl_invoke at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:4112 [inlined]
+[0Kijl_apply_generic at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:4317
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_f__apply_iterate at /cache/build/builder-amdci4-3/julialang/julia-master/src/builtins.c:897
+[0Kpullback at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:96
+[0Kpullback at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:94
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_f__apply_iterate at /cache/build/builder-amdci4-3/julialang/julia-master/src/builtins.c:897
+[0Kgradient at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:153
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/precompile.jl:18
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:765
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:779
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:824
+[0Keval at ./boot.jl:489
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:324
+[0KIncludeInto at ./Base.jl:325
+[0Kjfptr_IncludeInto_60989.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:679
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:558
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:884
+[0Kmacro expansion at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:68 [inlined]
+[0Kmacro expansion at /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:85
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:765
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_eval_module_expr at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:263 [inlined]
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:665
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:779
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:824
+[0Keval at ./boot.jl:489
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:323
+[0Kinclude_package_for_output at ./loading.jl:3288
+[0Kjfptr_include_package_for_output_35238.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at stdin:5
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:765
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:779
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:824
+[0Keval at ./boot.jl:489
+[0Kinclude_string at ./loading.jl:3130
+[0Kinclude_string at ./loading.jl:3140 [inlined]
+[0Kexec_options at ./client.jl:342
+[0K_start at ./client.jl:585
+[0Kjfptr__start_45777.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Ktrue_main at /cache/build/builder-amdci4-3/julialang/julia-master/src/jlapi.c:971
+[0Kjl_repl_entrypoint at /cache/build/builder-amdci4-3/julialang/julia-master/src/jlapi.c:1138
+[0Kmain at /cache/build/builder-amdci4-3/julialang/julia-master/cli/loader_exe.c:58
+[0Kunknown function (ip: 0x71b03f563249) at /lib/x86_64-linux-gnu/libc.so.6
+[0K__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+[0Kunknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+[0KInternal error: during type inference of
+[0K(::Zygote.var"#pullback##0#pullback##1"{Zygote.Pullback{Tuple{Zygote.var"#2206#2207", Array{Int64, 1}, Array{Int64, 1}}, Tuple{Zygote.ZBack{ChainRules.var"#sum_pullback#551"{Base.Colon, Array{Int64, 1}, ChainRulesCore.ProjectTo{AbstractArray{T, N} where N where T, NamedTuple{(:element, :axes), Tuple{ChainRulesCore.ProjectTo{Float64, NamedTuple{(), Tuple{}}}, Tuple{Base.OneTo{Int64}}}}}}}, Zygote.Pullback{Tuple{typeof(Base.Broadcast.materialize), Array{Int64, 1}}, Tuple{}}, Zygote.var"#1681#1682"{Zygote.var"#1679#1680"{Array{Int64, 1}, Array{Int64, 1}}}}}})(Int64)
+[0KEncountered unexpected error in runtime:
+[0KTypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x71b011d23de0)[materialize(Array{Int64, 1}) from materialize(Any)]))
+[0Kijl_type_error_rt at /cache/build/builder-amdci4-3/julialang/julia-master/src/rtutils.c:121
+[0Kijl_type_error at /cache/build/builder-amdci4-3/julialang/julia-master/src/rtutils.c:140
+[0Kcompute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+[0Kfinishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+[0Kfinish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+[0Kjfptr_finish_nocycle_88385.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Ktypeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4583
+[0Ktypeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1532
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1715 [inlined]
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1724
+[0Kjfptr_typeinf_ext_toplevel_86279.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_type_infer at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:467
+[0Kjl_compile_method_internal at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:3640
+[0K_jl_invoke at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:4112 [inlined]
+[0Kijl_apply_generic at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:4317
+[0Kgradient at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:154
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/precompile.jl:18
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:765
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:779
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:824
+[0Keval at ./boot.jl:489
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:324
+[0KIncludeInto at ./Base.jl:325
+[0Kjfptr_IncludeInto_60989.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:679
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:558
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:884
+[0Kmacro expansion at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:68 [inlined]
+[0Kmacro expansion at /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:85
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:765
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_eval_module_expr at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:263 [inlined]
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:665
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:779
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:824
+[0Keval at ./boot.jl:489
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:323
+[0Kinclude_package_for_output at ./loading.jl:3288
+[0Kjfptr_include_package_for_output_35238.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at stdin:5
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:765
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:779
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:824
+[0Keval at ./boot.jl:489
+[0Kinclude_string at ./loading.jl:3130
+[0Kinclude_string at ./loading.jl:3140 [inlined]
+[0Kexec_options at ./client.jl:342
+[0K_start at ./client.jl:585
+[0Kjfptr__start_45777.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Ktrue_main at /cache/build/builder-amdci4-3/julialang/julia-master/src/jlapi.c:971
+[0Kjl_repl_entrypoint at /cache/build/builder-amdci4-3/julialang/julia-master/src/jlapi.c:1138
+[0Kmain at /cache/build/builder-amdci4-3/julialang/julia-master/cli/loader_exe.c:58
+[0Kunknown function (ip: 0x71b03f563249) at /lib/x86_64-linux-gnu/libc.so.6
+[0K__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+[0Kunknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+[0KInternal error: during type inference of
+[0K_pullback(Zygote.Context{false}, Zygote.var"#2209#2210", Array{Float64, 1})
+[0KEncountered unexpected error in runtime:
+[0KTypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x71b0196232e0)[materialize(Array{Float32, 1}) from materialize(Any)]))
+[0Kijl_type_error_rt at /cache/build/builder-amdci4-3/julialang/julia-master/src/rtutils.c:121
+[0Kijl_type_error at /cache/build/builder-amdci4-3/julialang/julia-master/src/rtutils.c:140
+[0Kcompute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+[0Kfinishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+[0Kfinish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+[0Kjfptr_finish_nocycle_88385.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Ktypeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4583
+[0Ktypeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1532
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1715 [inlined]
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1724
+[0Kjfptr_typeinf_ext_toplevel_86279.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_type_infer at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:467
+[0Kjl_compile_method_internal at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:3640
+[0K_jl_invoke at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:4112 [inlined]
+[0Kijl_apply_generic at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:4317
+[0Kpullback at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:96
+[0Kpullback at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:94 [inlined]
+[0Kgradient at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:153
+[0Kunknown function (ip: 0x71b00f8b1a18) at (unknown file)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/precompile.jl:20
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:765
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:779
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:824
+[0Keval at ./boot.jl:489
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:324
+[0KIncludeInto at ./Base.jl:325
+[0Kjfptr_IncludeInto_60989.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:679
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:558
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:884
+[0Kmacro expansion at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:68 [inlined]
+[0Kmacro expansion at /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:85
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:765
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_eval_module_expr at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:263 [inlined]
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:665
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:779
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:824
+[0Keval at ./boot.jl:489
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:323
+[0Kinclude_package_for_output at ./loading.jl:3288
+[0Kjfptr_include_package_for_output_35238.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at stdin:5
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:765
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:779
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:824
+[0Keval at ./boot.jl:489
+[0Kinclude_string at ./loading.jl:3130
+[0Kinclude_string at ./loading.jl:3140 [inlined]
+[0Kexec_options at ./client.jl:342
+[0K_start at ./client.jl:585
+[0Kjfptr__start_45777.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Ktrue_main at /cache/build/builder-amdci4-3/julialang/julia-master/src/jlapi.c:971
+[0Kjl_repl_entrypoint at /cache/build/builder-amdci4-3/julialang/julia-master/src/jlapi.c:1138
+[0Kmain at /cache/build/builder-amdci4-3/julialang/julia-master/cli/loader_exe.c:58
+[0Kunknown function (ip: 0x71b03f563249) at /lib/x86_64-linux-gnu/libc.so.6
+[0K__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+[0Kunknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+[0KInternal error: during type inference of
+[0K(::Zygote.var"#pullback##0#pullback##1"{Zygote.Pullback{Tuple{Zygote.var"#2209#2210", Array{Float64, 1}}, Tuple{Zygote.Pullback{Tuple{typeof(Base.Broadcast.materialize), Array{Float32, 1}}, Tuple{}}, Zygote.ZBack{ChainRules.var"#sum_pullback#551"{Base.Colon, Array{Float32, 1}, ChainRulesCore.ProjectTo{AbstractArray{T, N} where N where T, NamedTuple{(:element, :axes), Tuple{ChainRulesCore.ProjectTo{Float32, NamedTuple{(), Tuple{}}}, Tuple{Base.OneTo{Int64}}}}}}}, Zygote.var"#1912#1913"{Zygote.var"#1910#1911"{Array{Float64, 1}}}}}})(Float32)
+[0KEncountered unexpected error in runtime:
+[0KTypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x71b01f18d100)[materialize(Array{Float32, 1}) from materialize(Any)]))
+[0Kijl_type_error_rt at /cache/build/builder-amdci4-3/julialang/julia-master/src/rtutils.c:121
+[0Kijl_type_error at /cache/build/builder-amdci4-3/julialang/julia-master/src/rtutils.c:140
+[0Kcompute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+[0Kfinishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+[0Kfinish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+[0Kjfptr_finish_nocycle_88385.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Ktypeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4583
+[0Ktypeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1532
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1715 [inlined]
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1724
+[0Kjfptr_typeinf_ext_toplevel_86279.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_type_infer at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:467
+[0Kjl_compile_method_internal at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:3640
+[0K_jl_invoke at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:4112 [inlined]
+[0Kijl_apply_generic at /cache/build/builder-amdci4-3/julialang/julia-master/src/gf.c:4317
+[0Kgradient at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:154
+[0Kunknown function (ip: 0x71b00f8b1a18) at (unknown file)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/precompile.jl:20
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:765
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:779
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:824
+[0Keval at ./boot.jl:489
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:324
+[0KIncludeInto at ./Base.jl:325
+[0Kjfptr_IncludeInto_60989.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:679
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:558
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:884
+[0Kmacro expansion at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:68 [inlined]
+[0Kmacro expansion at /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:85
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:765
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_eval_module_expr at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:263 [inlined]
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:665
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:779
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:824
+[0Keval at ./boot.jl:489
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:323
+[0Kinclude_package_for_output at ./loading.jl:3288
+[0Kjfptr_include_package_for_output_35238.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at stdin:5
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:765
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:779
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-3/julialang/julia-master/src/toplevel.c:824
+[0Keval at ./boot.jl:489
+[0Kinclude_string at ./loading.jl:3130
+[0Kinclude_string at ./loading.jl:3140 [inlined]
+[0Kexec_options at ./client.jl:342
+[0K_start at ./client.jl:585
+[0Kjfptr__start_45777.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Ktrue_main at /cache/build/builder-amdci4-3/julialang/julia-master/src/jlapi.c:971
+[0Kjl_repl_entrypoint at /cache/build/builder-amdci4-3/julialang/julia-master/src/jlapi.c:1138
+[0Kmain at /cache/build/builder-amdci4-3/julialang/julia-master/cli/loader_exe.c:58
+[0Kunknown function (ip: 0x71b03f563249) at /lib/x86_64-linux-gnu/libc.so.6
+[0K__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+[0Kunknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+[0Kfatal: error thrown and no exception handler available.
+[0KTypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x71b01f1f3200)[materialize(Array{Float32, 1}) from materialize(Any)]))
+[0Kijl_type_error_rt at /cache/build/builder-amdci4-3/julialang/julia-master/src/rtutils.c:121
+[0Kijl_type_error at /cache/build/builder-amdci4-3/julialang/julia-master/src/rtutils.c:140
+[0Kcompute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+[0Kfinishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+[0Kfinish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+[0Kjfptr_finish_nocycle_88385.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Ktypeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4583
+[0Ktypeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1532
+[0Kjfptr_typeinf_ext_85785.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0K#compile!#169 at ./../usr/share/julia/Compiler/src/typeinfer.jl:1742
+[0Kcompile! at ./../usr/share/julia/Compiler/src/typeinfer.jl:1727 [inlined]
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1827
+[0Kcompile_and_emit_native at ./../usr/share/julia/Compiler/src/precompile.jl:415
+[0Kjfptr_compile_and_emit_native_91069.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-3/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_create_native_impl at /cache/build/builder-amdci4-3/julialang/julia-master/src/aotcompile.cpp:750
+[0Kijl_create_system_image at /cache/build/builder-amdci4-3/julialang/julia-master/src/staticdata.c:3395
+[0Kijl_write_compiler_output at /cache/build/builder-amdci4-3/julialang/julia-master/src/precompile.c:140
+[0Kijl_atexit_hook at /cache/build/builder-amdci4-3/julialang/julia-master/src/init.c:280
+[0Kjl_repl_entrypoint at /cache/build/builder-amdci4-3/julialang/julia-master/src/jlapi.c:1139
+[0Kmain at /cache/build/builder-amdci4-3/julialang/julia-master/cli/loader_exe.c:58
+[0Kunknown function (ip: 0x71b03f563249) at /lib/x86_64-linux-gnu/libc.so.6
+[0K__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+[0Kunknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+              ✗ Zygote
+  57 dependencies successfully precompiled in 30 seconds. 8 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +nightly --project=Z/Zygote/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 208.45
+	System time (seconds): 13.84
+	Percent of CPU this job got: 151%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:27.08
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2547884
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 375
+	Minor (reclaiming a frame) page faults: 5180374
+	Voluntary context switches: 13806
+	Involuntary context switches: 3043
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 479056
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
