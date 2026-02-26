@@ -1,0 +1,34 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  74155.7 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 74 seconds
+Precompiling packages...
+    357.4 ms  ✓ Unicode
+    406.8 ms  ✓ SuiteSparse_jll
+    544.3 ms  ✓ Serialization
+   3691.6 ms  ✓ SparseArrays
+   5395.0 ms  ✓ Krylov
+  5 dependencies successfully precompiled in 10 seconds. 1 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=K/Krylov/Conjugate-Gradient-Solve -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 131.69
+	System time (seconds): 5.48
+	Percent of CPU this job got: 162%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:24.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2148456
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 132
+	Minor (reclaiming a frame) page faults: 2011782
+	Voluntary context switches: 5850
+	Involuntary context switches: 3634
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 360944
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
