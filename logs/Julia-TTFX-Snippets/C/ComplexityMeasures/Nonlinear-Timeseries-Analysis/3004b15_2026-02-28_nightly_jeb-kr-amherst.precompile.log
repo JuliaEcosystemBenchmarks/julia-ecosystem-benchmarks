@@ -1,0 +1,99 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    433.6 ms  ✓ Reexport
+    484.8 ms  ✓ DataAPI
+    602.4 ms  ✓ ConstructionBase
+    628.6 ms  ✓ Statistics
+    521.5 ms  ✓ StaticArraysCore
+    487.8 ms  ✓ StatsAPI
+    877.8 ms  ✓ SuiteSparse_jll
+    441.3 ms  ✓ Future
+   1290.6 ms  ✓ IrrationalConstants
+    728.2 ms  ✓ OrderedCollections
+    750.6 ms  ✓ Serialization
+    632.6 ms  ✓ DocStringExtensions
+   1745.7 ms  ✓ Bessels
+    680.5 ms  ✓ IterTools
+    696.8 ms  ✓ AbstractTrees
+    600.7 ms  ✓ AbstractFFTs
+   1085.8 ms  ✓ Combinatorics
+    714.7 ms  ✓ OpenLibm_jll
+    483.6 ms  ✓ PtrArrays
+   1120.4 ms  ✓ FillArrays
+    727.0 ms  ✓ Missings
+   4764.6 ms  ✓ MacroTools
+   1108.2 ms  ✓ LazyArtifacts
+   1583.7 ms  ✓ InteractiveUtils
+    470.1 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+    791.7 ms  ✓ Distances
+   1946.7 ms  ✓ Preferences
+    650.9 ms  ✓ LogExpFunctions
+    507.0 ms  ✓ AliasTables
+    497.4 ms  ✓ FillArrays → FillArraysStatisticsExt
+   1732.9 ms  ✓ DataStructures
+    567.6 ms  ✓ JLLWrappers
+    485.2 ms  ✓ PrecompileTools
+   1203.0 ms  ✓ Setfield
+    597.0 ms  ✓ SortingAlgorithms
+    927.4 ms  ✓ QuadGK
+   1112.0 ms  ✓ IntelOpenMP_jll
+   1175.8 ms  ✓ oneTBB_jll
+    735.8 ms  ✓ FFTW_jll
+   3991.5 ms  ✓ SparseArrays
+    701.7 ms  ✓ Rmath_jll
+    735.3 ms  ✓ OpenSpecFun_jll
+    576.7 ms  ✓ Statistics → SparseArraysExt
+    574.2 ms  ✓ SuiteSparse
+   1206.5 ms  ✓ MKL_jll
+    675.5 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    589.4 ms  ✓ Distances → DistancesSparseArraysExt
+    738.2 ms  ✓ Rmath
+   2632.8 ms  ✓ SpecialFunctions
+   7759.0 ms  ✓ Test
+   2663.3 ms  ✓ StatsBase
+    949.1 ms  ✓ PDMats
+   1019.7 ms  ✓ HypergeometricFunctions
+    676.5 ms  ✓ PDMats → StatsBaseExt
+   1600.0 ms  ✓ AbstractFFTs → AbstractFFTsTestExt
+    639.3 ms  ✓ FillArrays → FillArraysPDMatsExt
+   1523.4 ms  ✓ StatsFuns
+  12148.5 ms  ✓ StaticArrays
+    758.4 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+    768.8 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+   5000.0 ms  ✓ Distributions
+    812.7 ms  ✓ FillArrays → FillArraysStaticArraysExt
+   1325.3 ms  ✓ Distributions → DistributionsTestExt
+  10134.7 ms  ✓ FFTW
+   4064.3 ms  ✓ NearestNeighbors
+    773.9 ms  ✓ Neighborhood
+    795.2 ms  ✓ StateSpaceSets
+  18547.0 ms  ✓ Polynomials
+   1502.8 ms  ✓ DelayEmbeddings
+    730.9 ms  ✓ Polynomials → PolynomialsFFTWExt
+   2006.0 ms  ✓ DSP
+   1557.8 ms  ✓ Wavelets
+   2872.0 ms  ✓ ComplexityMeasures
+  73 dependencies successfully precompiled in 36 seconds. 27 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +nightly --project=C/ComplexityMeasures/Nonlinear-Timeseries-Analysis -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 251.32
+	System time (seconds): 16.93
+	Percent of CPU this job got: 218%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:02.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2244748
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 472
+	Minor (reclaiming a frame) page faults: 6159582
+	Voluntary context switches: 17653
+	Involuntary context switches: 5479
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 715856
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
