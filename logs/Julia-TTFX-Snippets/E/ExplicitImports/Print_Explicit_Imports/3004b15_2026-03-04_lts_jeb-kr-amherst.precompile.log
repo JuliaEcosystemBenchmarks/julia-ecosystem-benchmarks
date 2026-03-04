@@ -1,0 +1,30 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    586.0 ms  ✓ Preferences
+    274.7 ms  ✓ PrecompileTools
+   1995.5 ms  ✓ Test
+  13015.1 ms  ✓ ExplicitImports
+  4 dependencies successfully precompiled in 16 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=E/ExplicitImports/Print_Explicit_Imports -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 27.15
+	System time (seconds): 1.63
+	Percent of CPU this job got: 175%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:16.36
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 959352
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 40
+	Minor (reclaiming a frame) page faults: 460362
+	Voluntary context switches: 6358
+	Involuntary context switches: 565
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 118608
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

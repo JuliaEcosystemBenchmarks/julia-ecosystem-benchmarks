@@ -1,0 +1,35 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  96766.3 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 97 seconds
+Precompiling packages...
+    429.8 ms  ✓ Unicode
+    464.8 ms  ✓ Mmap
+    607.3 ms  ✓ Preferences
+    410.2 ms  ✓ PrecompileTools
+   9554.9 ms  ✓ SIMD
+  10275.6 ms  ✓ KangarooTwelve
+  6 dependencies successfully precompiled in 21 seconds. 3 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.5 --project=K/KangarooTwelve/Hash-Nothing -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 198.17
+	System time (seconds): 7.06
+	Percent of CPU this job got: 172%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:58.97
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2158308
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 170
+	Minor (reclaiming a frame) page faults: 2219704
+	Voluntary context switches: 6275
+	Involuntary context switches: 12599
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 372408
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
