@@ -1,0 +1,2901 @@
+nice: cannot set niceness: Permission denied
+[0K
+[0K[151837] signal 11 (1): Segmentation fault
+[0Kin expression starting at /workdir/depot/packages/Accessors/cfsTn/src/functionlenses.jl:2
+[0Kcheckbounds at ./essentials.jl:381 [inlined]
+[0K_iterate_abstractarray at ./abstractarray.jl:1248 [inlined]
+[0Kiterate at ./abstractarray.jl:1241 [inlined]
+[0Kiterate at ./abstractarray.jl:1241 [inlined]
+[0K_foldl_impl at ./reduce.jl:54
+[0Kfoldl_impl at ./reduce.jl:46
+[0Kmapfoldl_impl at ./reduce.jl:42
+[0Kunknown function (ip: 0x78b79e91f1cc) at (unknown file)
+[0K#mapfoldl#265 at ./reduce.jl:173
+[0Kmapfoldl at ./reduce.jl:173 [inlined]
+[0K#foldl#266 at ./reduce.jl:196
+[0Kunknown function (ip: 0x78b79e91f0ad) at (unknown file)
+[0Kfoldl at ./reduce.jl:196 [inlined]
+[0Kfoldtree at /workdir/depot/packages/Accessors/cfsTn/src/sugar.jl:139
+[0Kneed_dynamic_optic at /workdir/depot/packages/Accessors/cfsTn/src/sugar.jl:142
+[0Kunknown function (ip: 0x78b79e91ee52) at (unknown file)
+[0K_any at ./anyall.jl:124
+[0Kunknown function (ip: 0x78b79e91ed7e) at (unknown file)
+[0K#any#756 at ./reducedim.jl:993
+[0Kany at ./reducedim.jl:993
+[0Kunknown function (ip: 0x78b79e91e7b4) at (unknown file)
+[0Kparse_obj_optics at /workdir/depot/packages/Accessors/cfsTn/src/sugar.jl:205
+[0Kparse_obj_optic at /workdir/depot/packages/Accessors/cfsTn/src/sugar.jl:278
+[0Kunknown function (ip: 0x78b79e910949) at (unknown file)
+[0K#setmacro#67 at /workdir/depot/packages/Accessors/cfsTn/src/sugar.jl:321
+[0Ksetmacro at /workdir/depot/packages/Accessors/cfsTn/src/sugar.jl:312
+[0Kunknown function (ip: 0x78b79e90eaad) at (unknown file)
+[0K@set at /workdir/depot/packages/Accessors/cfsTn/src/sugar.jl:33
+[0Kunknown function (ip: 0x78b79e909fe9) at (unknown file)
+[0Kjl_invoke_julia_macro at /cache/build/builder-amdci4-1/julialang/julia-master/src/ast.c:1064
+[0Kjl_expand_macros at /cache/build/builder-amdci4-1/julialang/julia-master/src/ast.c:1126
+[0Kjl_expand_macros at /cache/build/builder-amdci4-1/julialang/julia-master/src/ast.c:1175
+[0Kjl_expand_macros at /cache/build/builder-amdci4-1/julialang/julia-master/src/ast.c:1175
+[0Kjl_fl_lower at /cache/build/builder-amdci4-1/julialang/julia-master/src/ast.c:1204
+[0Kfl_lower at ./flfrontend.jl:24
+[0Kjfptr_fl_lower_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kijl_lower at /cache/build/builder-amdci4-1/julialang/julia-master/src/ast.c:1271
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:598
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:324
+[0KIncludeInto at ./Base.jl:325
+[0Kjfptr_IncludeInto_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_eval_module_expr at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:263 [inlined]
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:665
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:323
+[0Kinclude_package_for_output at ./loading.jl:3288
+[0Kjfptr_include_package_for_output_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0Kinclude_string at ./loading.jl:3140 [inlined]
+[0Kexec_options at ./client.jl:342
+[0K_start at ./client.jl:585
+[0Kjfptr__start_0.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Ktrue_main at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:971
+[0Kjl_repl_entrypoint at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:1138
+[0Kmain at /cache/build/builder-amdci4-1/julialang/julia-master/cli/loader_exe.c:58
+[0Kunknown function (ip: 0x78b7ba172249) at /lib/x86_64-linux-gnu/libc.so.6
+[0K__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+[0Kunknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+[0KAllocations: 1582107 (Pool: 1582087; Big: 20); GC: 2
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("7d9f7c33-5ae7-4f3b-8dc6-eff91059b697"), "Accessors") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("7d9f7c33-5ae7-4f3b-8dc6-eff91059b697"), "Accessors") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_using
+[0K    @ ./module.jl:137 [inlined]
+[0K [11] _eval_using(to::Module, path::Expr)
+[0K    @ Base ./module.jl:137
+[0K [12] top-level scope
+[0K    @ /workdir/depot/packages/Accessors/cfsTn/ext/TestExt.jl:3
+[0K [13] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:323
+[0K [14] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [15] top-level scope
+[0K    @ stdin:5
+[0K [16] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:517
+[0K [17] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [18] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [19] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [20] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/Accessors/cfsTn/ext/TestExt.jl:1
+[0Kin expression starting at stdin:5
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("7d9f7c33-5ae7-4f3b-8dc6-eff91059b697"), "Accessors") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/Accessors/cfsTn/ext/LinearAlgebraExt.jl:3
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:323
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:517
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/Accessors/cfsTn/ext/LinearAlgebraExt.jl:1
+[0Kin expression starting at stdin:5
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_using
+[0K    @ ./module.jl:137 [inlined]
+[0K [11] _eval_using(to::Module, path::Expr)
+[0K    @ Base ./module.jl:137
+[0K [12] top-level scope
+[0K    @ /workdir/depot/packages/Accessors/cfsTn/ext/StructArraysExt.jl:2
+[0K [13] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:323
+[0K [14] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [15] top-level scope
+[0K    @ stdin:5
+[0K [16] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:517
+[0K [17] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [18] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [19] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [20] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/Accessors/cfsTn/ext/StructArraysExt.jl:1
+[0Kin expression starting at stdin:5
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("7d9f7c33-5ae7-4f3b-8dc6-eff91059b697"), "Accessors") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_using
+[0K    @ ./module.jl:137 [inlined]
+[0K [11] _eval_using(to::Module, path::Expr)
+[0K    @ Base ./module.jl:137
+[0K [12] top-level scope
+[0K    @ /workdir/depot/packages/Accessors/cfsTn/ext/StaticArraysExt.jl:3
+[0K [13] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:323
+[0K [14] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [15] top-level scope
+[0K    @ stdin:5
+[0K [16] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:517
+[0K [17] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [18] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [19] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [20] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/Accessors/cfsTn/ext/StaticArraysExt.jl:1
+[0Kin expression starting at stdin:5
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("7d9f7c33-5ae7-4f3b-8dc6-eff91059b697"), "Accessors") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/BangBang/bY1RJ/src/accessors.jl:7
+[0K [12] include(mapexpr::Function, mod::Module, _path::String)
+[0K    @ Base ./Base.jl:324
+[0K [13] top-level scope
+[0K    @ /workdir/depot/packages/BangBang/bY1RJ/src/BangBang.jl:72
+[0K [14] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:323
+[0K [15] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [16] top-level scope
+[0K    @ stdin:5
+[0K [17] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:517
+[0K [18] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [19] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [20] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [21] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/BangBang/bY1RJ/src/accessors.jl:1
+[0Kin expression starting at /workdir/depot/packages/BangBang/bY1RJ/src/BangBang.jl:1
+[0Kin expression starting at stdin:5
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("198e06fe-97b7-11e9-32a5-e1d131e6ad66"), "BangBang") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("198e06fe-97b7-11e9-32a5-e1d131e6ad66"), "BangBang") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("198e06fe-97b7-11e9-32a5-e1d131e6ad66"), "BangBang") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("198e06fe-97b7-11e9-32a5-e1d131e6ad66"), "BangBang") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/BangBang/bY1RJ/ext/BangBangTablesExt.jl:6
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:323
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:517
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/BangBang/bY1RJ/ext/BangBangTablesExt.jl:1
+[0Kin expression starting at stdin:5
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [1] error(s::String)
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ Base ./error.jl:56
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/BangBang/bY1RJ/ext/BangBangStaticArraysExt.jl:4
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:323
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:517
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/BangBang/bY1RJ/ext/BangBangStaticArraysExt.jl:2
+[0Kin expression starting at stdin:5
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/BangBang/bY1RJ/ext/BangBangChainRulesCoreExt.jl:4
+[0K    @ /workdir/depot/packages/BangBang/bY1RJ/ext/BangBangStructArraysExt.jl:3
+[0K [12] include(mod::Module, _path::String)
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:323
+[0K    @ Base ./Base.jl:323
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:517
+[0K    @ Core ./boot.jl:517
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/BangBang/bY1RJ/ext/BangBangChainRulesCoreExt.jl:1
+[0Kin expression starting at stdin:5
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/BangBang/bY1RJ/ext/BangBangStructArraysExt.jl:1
+[0Kin expression starting at stdin:5
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("7d9f7c33-5ae7-4f3b-8dc6-eff91059b697"), "Accessors") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/MicroCollections/79Imf/src/MicroCollections.jl:24
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:323
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:517
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/MicroCollections/79Imf/src/MicroCollections.jl:1
+[0Kin expression starting at stdin:5
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("7d9f7c33-5ae7-4f3b-8dc6-eff91059b697"), "Accessors") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] _eval_import(imported::Bool, to::Module, from::Nothing, paths::Expr)
+[0K    @ Base ./module.jl:111
+[0K [10] top-level scope
+[0K    @ /workdir/depot/packages/Transducers/PqRuk/src/Transducers.jl:83
+[0K [11] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:323
+[0K [12] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [13] top-level scope
+[0K    @ stdin:5
+[0K [14] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:517
+[0K [15] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [16] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [17] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [18] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/Transducers/PqRuk/src/Transducers.jl:1
+[0Kin expression starting at stdin:5
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("28d57a85-8fef-5791-bfe6-a80928e7c999"), "Transducers") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] _eval_import(imported::Bool, to::Module, from::Nothing, paths::Expr)
+[0K    @ Base ./module.jl:111
+[0K [10] top-level scope
+[0K    @ /workdir/depot/packages/Transducers/PqRuk/ext/TransducersAdaptExt.jl:3
+[0K [11] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:323
+[0K [12] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [13] top-level scope
+[0K    @ stdin:5
+[0K [14] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:517
+[0K [15] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [16] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [17] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [18] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/Transducers/PqRuk/ext/TransducersAdaptExt.jl:1
+[0Kin expression starting at stdin:5
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("198e06fe-97b7-11e9-32a5-e1d131e6ad66"), "BangBang") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/FLoops/GN1Bm/src/FLoops.jl:25
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:323
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:517
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/FLoops/GN1Bm/src/FLoops.jl:1
+[0Kin expression starting at stdin:5
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("cc61a311-1640-44b5-9fba-1b764f453329"), "FLoops") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/MLUtils/5jDrc/src/MLUtils.jl:6
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:323
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:517
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/MLUtils/5jDrc/src/MLUtils.jl:1
+[0Kin expression starting at stdin:5
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("f1d291b0-491e-4a28-83b9-f70985020b54"), "MLUtils") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/MLDataDevices/4qHOT/ext/MLUtilsExt.jl:5
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:323
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:517
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/MLDataDevices/4qHOT/ext/MLUtilsExt.jl:1
+[0Kin expression starting at stdin:5
+[0KInternal error: during type inference of
+[0K_pullback(Zygote.Context{false}, typeof(Zygote.pow), Int64, Int64)
+[0KEncountered unexpected error in runtime:
+[0KTypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x7c941201e860)[pow(Int64, Int64) from pow(Any, Any)]))
+[0Kijl_type_error_rt at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:121
+[0Kijl_type_error at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:140
+[0Kcompute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+[0Kfinishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+[0Kfinish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+[0Kjfptr_finish_nocycle_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Ktypeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4765
+[0Ktypeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1533
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1716 [inlined]
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1725
+[0Kjfptr_typeinf_ext_toplevel_2.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_type_infer at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:467
+[0Kjl_compile_method_internal at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:3640
+[0K_jl_invoke at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4105 [inlined]
+[0Kijl_apply_generic at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4339
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_f__apply_iterate at /cache/build/builder-amdci4-1/julialang/julia-master/src/builtins.c:897
+[0Kpullback at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:96
+[0Kpullback at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:94
+[0Kunknown function (ip: 0x7c941264b1d0) at (unknown file)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_f__apply_iterate at /cache/build/builder-amdci4-1/julialang/julia-master/src/builtins.c:897
+[0Kgradient at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:153
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/precompile.jl:17
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:324
+[0KIncludeInto at ./Base.jl:325
+[0Kjfptr_IncludeInto_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:558
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Kmacro expansion at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:68 [inlined]
+[0Kmacro expansion at /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:85
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_eval_module_expr at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:263 [inlined]
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:665
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:323
+[0Kinclude_package_for_output at ./loading.jl:3288
+[0Kjfptr_include_package_for_output_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at stdin:5
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0Kinclude_string at ./loading.jl:3140 [inlined]
+[0Kexec_options at ./client.jl:342
+[0K_start at ./client.jl:585
+[0Kjfptr__start_0.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Ktrue_main at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:971
+[0Kjl_repl_entrypoint at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:1138
+[0Kmain at /cache/build/builder-amdci4-1/julialang/julia-master/cli/loader_exe.c:58
+[0Kunknown function (ip: 0x7c9442384249) at /lib/x86_64-linux-gnu/libc.so.6
+[0K__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+[0Kunknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+[0KInternal error: during type inference of
+[0K(::Zygote.var"#pullback##0#pullback##1"{Zygote.Pullback{Tuple{typeof(Zygote.pow), Int64, Int64}, Any}})(Int64)
+[0KEncountered unexpected error in runtime:
+[0KTypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x7c941b6ffd00)[pow(Int64, Int64) from pow(Any, Any)]))
+[0Kijl_type_error_rt at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:121
+[0Kijl_type_error at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:140
+[0Kcompute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+[0Kfinishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+[0Kfinish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+[0Kjfptr_finish_nocycle_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Ktypeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4765
+[0Ktypeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1533
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1716 [inlined]
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1725
+[0Kjfptr_typeinf_ext_toplevel_2.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_type_infer at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:467
+[0Kjl_compile_method_internal at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:3640
+[0K_jl_invoke at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4105 [inlined]
+[0Kijl_apply_generic at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4339
+[0Kgradient at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:154
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/precompile.jl:17
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:324
+[0KIncludeInto at ./Base.jl:325
+[0Kjfptr_IncludeInto_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:558
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Kmacro expansion at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:68 [inlined]
+[0Kmacro expansion at /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:85
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_eval_module_expr at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:263 [inlined]
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:665
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:323
+[0Kinclude_package_for_output at ./loading.jl:3288
+[0Kjfptr_include_package_for_output_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at stdin:5
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0Kinclude_string at ./loading.jl:3140 [inlined]
+[0Kexec_options at ./client.jl:342
+[0K_start at ./client.jl:585
+[0Kjfptr__start_0.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Ktrue_main at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:971
+[0Kjl_repl_entrypoint at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:1138
+[0Kmain at /cache/build/builder-amdci4-1/julialang/julia-master/cli/loader_exe.c:58
+[0Kunknown function (ip: 0x7c9442384249) at /lib/x86_64-linux-gnu/libc.so.6
+[0K__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+[0Kunknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+[0KInternal error: during type inference of
+[0K_pullback(Zygote.Context{false}, Zygote.var"#2206#2207", Array{Int64, 1}, Array{Int64, 1})
+[0KEncountered unexpected error in runtime:
+[0KTypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x7c942a998fa0)[materialize(Array{Int64, 1}) from materialize(Any)]))
+[0Kijl_type_error_rt at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:121
+[0Kijl_type_error at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:140
+[0Kcompute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+[0Kfinishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+[0Kfinish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+[0Kjfptr_finish_nocycle_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Ktypeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4765
+[0Ktypeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1533
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1716 [inlined]
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1725
+[0Kjfptr_typeinf_ext_toplevel_2.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_type_infer at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:467
+[0Kjl_compile_method_internal at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:3640
+[0K_jl_invoke at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4105 [inlined]
+[0Kijl_apply_generic at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4339
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_f__apply_iterate at /cache/build/builder-amdci4-1/julialang/julia-master/src/builtins.c:897
+[0Kpullback at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:96
+[0Kpullback at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:94
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_f__apply_iterate at /cache/build/builder-amdci4-1/julialang/julia-master/src/builtins.c:897
+[0Kgradient at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:153
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/precompile.jl:18
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:324
+[0KIncludeInto at ./Base.jl:325
+[0Kjfptr_IncludeInto_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:558
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Kmacro expansion at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:68 [inlined]
+[0Kmacro expansion at /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:85
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_eval_module_expr at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:263 [inlined]
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:665
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:323
+[0Kinclude_package_for_output at ./loading.jl:3288
+[0Kjfptr_include_package_for_output_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at stdin:5
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0Kinclude_string at ./loading.jl:3140 [inlined]
+[0Kexec_options at ./client.jl:342
+[0K_start at ./client.jl:585
+[0Kjfptr__start_0.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Ktrue_main at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:971
+[0Kjl_repl_entrypoint at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:1138
+[0Kmain at /cache/build/builder-amdci4-1/julialang/julia-master/cli/loader_exe.c:58
+[0Kunknown function (ip: 0x7c9442384249) at /lib/x86_64-linux-gnu/libc.so.6
+[0K__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+[0Kunknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+[0KInternal error: during type inference of
+[0K(::Zygote.var"#pullback##0#pullback##1"{Zygote.Pullback{Tuple{Zygote.var"#2206#2207", Array{Int64, 1}, Array{Int64, 1}}, Tuple{Zygote.Pullback{Tuple{typeof(Base.Broadcast.materialize), Array{Int64, 1}}, Tuple{}}, Zygote.var"#1681#1682"{Zygote.var"#1679#1680"{Array{Int64, 1}, Array{Int64, 1}}}, Zygote.ZBack{ChainRules.var"#sum_pullback#551"{Base.Colon, Array{Int64, 1}, ChainRulesCore.ProjectTo{AbstractArray{T, N} where N where T, NamedTuple{(:element, :axes), Tuple{ChainRulesCore.ProjectTo{Float64, NamedTuple{(), Tuple{}}}, Tuple{Base.OneTo{Int64}}}}}}}}}})(Int64)
+[0KEncountered unexpected error in runtime:
+[0KTypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x7c942b927000)[materialize(Array{Int64, 1}) from materialize(Any)]))
+[0Kijl_type_error_rt at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:121
+[0Kijl_type_error at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:140
+[0Kcompute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+[0Kfinishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+[0Kfinish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+[0Kjfptr_finish_nocycle_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Ktypeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4765
+[0Ktypeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1533
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1716 [inlined]
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1725
+[0Kjfptr_typeinf_ext_toplevel_2.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_type_infer at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:467
+[0Kjl_compile_method_internal at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:3640
+[0K_jl_invoke at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4105 [inlined]
+[0Kijl_apply_generic at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4339
+[0Kgradient at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:154
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/precompile.jl:18
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:324
+[0KIncludeInto at ./Base.jl:325
+[0Kjfptr_IncludeInto_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:558
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Kmacro expansion at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:68 [inlined]
+[0Kmacro expansion at /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:85
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_eval_module_expr at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:263 [inlined]
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:665
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:323
+[0Kinclude_package_for_output at ./loading.jl:3288
+[0Kjfptr_include_package_for_output_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at stdin:5
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0Kinclude_string at ./loading.jl:3140 [inlined]
+[0Kexec_options at ./client.jl:342
+[0K_start at ./client.jl:585
+[0Kjfptr__start_0.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Ktrue_main at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:971
+[0Kjl_repl_entrypoint at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:1138
+[0Kmain at /cache/build/builder-amdci4-1/julialang/julia-master/cli/loader_exe.c:58
+[0Kunknown function (ip: 0x7c9442384249) at /lib/x86_64-linux-gnu/libc.so.6
+[0K__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+[0Kunknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+[0KInternal error: during type inference of
+[0K_pullback(Zygote.Context{false}, Zygote.var"#2209#2210", Array{Float64, 1})
+[0KEncountered unexpected error in runtime:
+[0KTypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x7c9423ab33a0)[materialize(Array{Float32, 1}) from materialize(Any)]))
+[0Kijl_type_error_rt at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:121
+[0Kijl_type_error at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:140
+[0Kcompute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+[0Kfinishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+[0Kfinish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+[0Kjfptr_finish_nocycle_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Ktypeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4765
+[0Ktypeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1533
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1716 [inlined]
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1725
+[0Kjfptr_typeinf_ext_toplevel_2.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_type_infer at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:467
+[0Kjl_compile_method_internal at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:3640
+[0K_jl_invoke at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4105 [inlined]
+[0Kijl_apply_generic at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4339
+[0Kpullback at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:96
+[0Kpullback at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:94 [inlined]
+[0Kgradient at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:153
+[0Kunknown function (ip: 0x7c94126ca6c8) at (unknown file)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/precompile.jl:20
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:324
+[0KIncludeInto at ./Base.jl:325
+[0Kjfptr_IncludeInto_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:558
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Kmacro expansion at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:68 [inlined]
+[0Kmacro expansion at /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:85
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_eval_module_expr at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:263 [inlined]
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:665
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:323
+[0Kinclude_package_for_output at ./loading.jl:3288
+[0Kjfptr_include_package_for_output_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at stdin:5
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0Kinclude_string at ./loading.jl:3140 [inlined]
+[0Kexec_options at ./client.jl:342
+[0K_start at ./client.jl:585
+[0Kjfptr__start_0.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Ktrue_main at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:971
+[0Kjl_repl_entrypoint at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:1138
+[0Kmain at /cache/build/builder-amdci4-1/julialang/julia-master/cli/loader_exe.c:58
+[0Kunknown function (ip: 0x7c9442384249) at /lib/x86_64-linux-gnu/libc.so.6
+[0K__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+[0Kunknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+[0KInternal error: during type inference of
+[0K(::Zygote.var"#pullback##0#pullback##1"{Zygote.Pullback{Tuple{Zygote.var"#2209#2210", Array{Float64, 1}}, Tuple{Zygote.ZBack{ChainRules.var"#sum_pullback#551"{Base.Colon, Array{Float32, 1}, ChainRulesCore.ProjectTo{AbstractArray{T, N} where N where T, NamedTuple{(:element, :axes), Tuple{ChainRulesCore.ProjectTo{Float32, NamedTuple{(), Tuple{}}}, Tuple{Base.OneTo{Int64}}}}}}}, Zygote.var"#1912#1913"{Zygote.var"#1910#1911"{Array{Float64, 1}}}, Zygote.Pullback{Tuple{typeof(Base.Broadcast.materialize), Array{Float32, 1}}, Tuple{}}}}})(Float32)
+[0KEncountered unexpected error in runtime:
+[0KTypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x7c9420963fc0)[materialize(Array{Float32, 1}) from materialize(Any)]))
+[0Kijl_type_error_rt at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:121
+[0Kijl_type_error at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:140
+[0Kcompute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+[0Kfinishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+[0Kfinish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+[0Kjfptr_finish_nocycle_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Ktypeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4765
+[0Ktypeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1533
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1716 [inlined]
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1725
+[0Kjfptr_typeinf_ext_toplevel_2.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_type_infer at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:467
+[0Kjl_compile_method_internal at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:3640
+[0K_jl_invoke at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4105 [inlined]
+[0Kijl_apply_generic at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4339
+[0Kgradient at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:154
+[0Kunknown function (ip: 0x7c94126ca6c8) at (unknown file)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/precompile.jl:20
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:324
+[0KIncludeInto at ./Base.jl:325
+[0Kjfptr_IncludeInto_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:558
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Kmacro expansion at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:68 [inlined]
+[0Kmacro expansion at /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+[0Ktop-level scope at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:85
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_eval_module_expr at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:263 [inlined]
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:665
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0K_include at ./loading.jl:3190
+[0Kinclude at ./Base.jl:323
+[0Kinclude_package_for_output at ./loading.jl:3288
+[0Kjfptr_include_package_for_output_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kdo_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+[0Keval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+[0Keval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+[0Keval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+[0Kjl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+[0Ktop-level scope at stdin:5
+[0Kijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+[0Kjl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+[0Kjl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+[0Kijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+[0Kijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+[0Keval at ./boot.jl:517
+[0Kinclude_string at ./loading.jl:3130
+[0Kinclude_string at ./loading.jl:3140 [inlined]
+[0Kexec_options at ./client.jl:342
+[0K_start at ./client.jl:585
+[0Kjfptr__start_0.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Ktrue_main at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:971
+[0Kjl_repl_entrypoint at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:1138
+[0Kmain at /cache/build/builder-amdci4-1/julialang/julia-master/cli/loader_exe.c:58
+[0Kunknown function (ip: 0x7c9442384249) at /lib/x86_64-linux-gnu/libc.so.6
+[0K__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+[0Kunknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+[0Kfatal: error thrown and no exception handler available.
+[0KTypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x7c94208fa920)[materialize(Array{Float32, 1}) from materialize(Any)]))
+[0Kijl_type_error_rt at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:121
+[0Kijl_type_error at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:140
+[0Kcompute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+[0Kfinishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+[0Kfinish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+[0Kjfptr_finish_nocycle_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Ktypeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4765
+[0Ktypeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1533
+[0Kjfptr_typeinf_ext_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0K#compile!#175 at ./../usr/share/julia/Compiler/src/typeinfer.jl:1743
+[0Kcompile! at ./../usr/share/julia/Compiler/src/typeinfer.jl:1728 [inlined]
+[0Ktypeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1828
+[0Kcompile_and_emit_native at ./../usr/share/julia/Compiler/src/precompile.jl:421
+[0Kjfptr_compile_and_emit_native_3.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+[0Kjl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+[0Kjl_create_native_impl at /cache/build/builder-amdci4-1/julialang/julia-master/src/aotcompile.cpp:574
+[0Kijl_create_system_image at /cache/build/builder-amdci4-1/julialang/julia-master/src/staticdata.c:3366
+[0Kijl_write_compiler_output at /cache/build/builder-amdci4-1/julialang/julia-master/src/precompile.c:140
+[0Kijl_atexit_hook at /cache/build/builder-amdci4-1/julialang/julia-master/src/init.c:280
+[0Kjl_repl_entrypoint at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:1139
+[0Kmain at /cache/build/builder-amdci4-1/julialang/julia-master/cli/loader_exe.c:58
+[0Kunknown function (ip: 0x7c9442384249) at /lib/x86_64-linux-gnu/libc.so.6
+[0K__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+[0Kunknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("e88e6eb3-aa80-5325-afca-941959d7151f"), "Zygote") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+[0K    @ Base ./module.jl:101
+[0K [11] top-level scope
+[0K    @ /workdir/depot/packages/MLDataDevices/4qHOT/ext/ZygoteExt.jl:5
+[0K [12] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:323
+[0K [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [14] top-level scope
+[0K    @ stdin:5
+[0K [15] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:517
+[0K [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [17] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [18] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [19] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/MLDataDevices/4qHOT/ext/ZygoteExt.jl:1
+[0Kin expression starting at stdin:5
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("f1d291b0-491e-4a28-83b9-f70985020b54"), "MLUtils") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2840
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2694
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2621 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2585
+[0K  [7] require
+[0K    @ ./loading.jl:2561 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+[0K    @ Base ./module.jl:60
+[0K [10] _eval_using
+[0K    @ ./module.jl:137 [inlined]
+[0K [11] _eval_using(to::Module, path::Expr)
+[0K    @ Base ./module.jl:137
+[0K [12] top-level scope
+[0K    @ /workdir/depot/packages/Flux/DZYiO/src/Flux.jl:12
+[0K [13] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:323
+[0K [14] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3288
+[0K [15] top-level scope
+[0K    @ stdin:5
+[0K [16] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:517
+[0K [17] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3130
+[0K [18] include_string
+[0K    @ ./loading.jl:3140 [inlined]
+[0K [19] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [20] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/Flux/DZYiO/src/Flux.jl:1
+[0Kin expression starting at stdin:5
+
+  19 dependencies had output during precompilation:
+┌ Flux
+│  [Output was shown above]
+└  
+┌ Accessors → TestExt
+│  ERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("7d9f7c33-5ae7-4f3b-8dc6-eff91059b697"), "Accessors") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+│  Stacktrace:
+│    [1] error(s::String)
+│      @ Base ./error.jl:56
+│    [2] __require_prelocked(pkg::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2840
+│    [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2694
+│    [4] macro expansion
+│      @ ./loading.jl:2621 [inlined]
+│    [5] macro expansion
+│      @ ./lock.jl:376 [inlined]
+│    [6] __require(into::Module, mod::Symbol)
+│      @ Base ./loading.jl:2585
+│    [7] require
+│      @ ./loading.jl:2561 [inlined]
+│    [8] eval_import_path
+│      @ ./module.jl:36 [inlined]
+│    [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+│      @ Base ./module.jl:60
+│   [10] _eval_using
+│      @ ./module.jl:137 [inlined]
+│   [11] _eval_using(to::Module, path::Expr)
+│      @ Base ./module.jl:137
+│   [12] top-level scope
+│      @ /workdir/depot/packages/Accessors/cfsTn/ext/TestExt.jl:3
+│   [13] include(mod::Module, _path::String)
+│      @ Base ./Base.jl:323
+│   [14] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+│      @ Base ./loading.jl:3288
+│   [15] top-level scope
+│      @ stdin:5
+│   [16] eval(m::Module, e::Any)
+│      @ Core ./boot.jl:517
+│   [17] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│      @ Base ./loading.jl:3130
+│   [18] include_string
+│      @ ./loading.jl:3140 [inlined]
+│   [19] exec_options(opts::Base.JLOptions)
+│      @ Base ./client.jl:342
+│   [20] _start()
+│      @ Base ./client.jl:585
+│  in expression starting at /workdir/depot/packages/Accessors/cfsTn/ext/TestExt.jl:1
+│  in expression starting at stdin:5
+└  
+┌ Transducers → TransducersAdaptExt
+│  ERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("28d57a85-8fef-5791-bfe6-a80928e7c999"), "Transducers") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+│  Stacktrace:
+│    [1] error(s::String)
+│      @ Base ./error.jl:56
+│    [2] __require_prelocked(pkg::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2840
+│    [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2694
+│    [4] macro expansion
+│      @ ./loading.jl:2621 [inlined]
+│    [5] macro expansion
+│      @ ./lock.jl:376 [inlined]
+│    [6] __require(into::Module, mod::Symbol)
+│      @ Base ./loading.jl:2585
+│    [7] require
+│      @ ./loading.jl:2561 [inlined]
+│    [8] eval_import_path
+│      @ ./module.jl:36 [inlined]
+│    [9] _eval_import(imported::Bool, to::Module, from::Nothing, paths::Expr)
+│      @ Base ./module.jl:111
+│   [10] top-level scope
+│      @ /workdir/depot/packages/Transducers/PqRuk/ext/TransducersAdaptExt.jl:3
+│   [11] include(mod::Module, _path::String)
+│      @ Base ./Base.jl:323
+│   [12] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+│      @ Base ./loading.jl:3288
+│   [13] top-level scope
+│      @ stdin:5
+│   [14] eval(m::Module, e::Any)
+│      @ Core ./boot.jl:517
+│   [15] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│      @ Base ./loading.jl:3130
+│   [16] include_string
+│      @ ./loading.jl:3140 [inlined]
+│   [17] exec_options(opts::Base.JLOptions)
+│      @ Base ./client.jl:342
+│   [18] _start()
+│      @ Base ./client.jl:585
+│  in expression starting at /workdir/depot/packages/Transducers/PqRuk/ext/TransducersAdaptExt.jl:1
+│  in expression starting at stdin:5
+└  
+┌ FLoops
+│  ERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("198e06fe-97b7-11e9-32a5-e1d131e6ad66"), "BangBang") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+│  Stacktrace:
+│    [1] error(s::String)
+│      @ Base ./error.jl:56
+│    [2] __require_prelocked(pkg::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2840
+│    [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2694
+│    [4] macro expansion
+│      @ ./loading.jl:2621 [inlined]
+│    [5] macro expansion
+│      @ ./lock.jl:376 [inlined]
+│    [6] __require(into::Module, mod::Symbol)
+│      @ Base ./loading.jl:2585
+│    [7] require
+│      @ ./loading.jl:2561 [inlined]
+│    [8] eval_import_path
+│      @ ./module.jl:36 [inlined]
+│    [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+│      @ Base ./module.jl:60
+│   [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+│      @ Base ./module.jl:101
+│   [11] top-level scope
+│      @ /workdir/depot/packages/FLoops/GN1Bm/src/FLoops.jl:25
+│   [12] include(mod::Module, _path::String)
+│      @ Base ./Base.jl:323
+│   [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+│      @ Base ./loading.jl:3288
+│   [14] top-level scope
+│      @ stdin:5
+│   [15] eval(m::Module, e::Any)
+│      @ Core ./boot.jl:517
+│   [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│      @ Base ./loading.jl:3130
+│   [17] include_string
+│      @ ./loading.jl:3140 [inlined]
+│   [18] exec_options(opts::Base.JLOptions)
+│      @ Base ./client.jl:342
+│   [19] _start()
+│      @ Base ./client.jl:585
+│  in expression starting at /workdir/depot/packages/FLoops/GN1Bm/src/FLoops.jl:1
+│  in expression starting at stdin:5
+└  
+┌ MLDataDevices → MLUtilsExt
+│  ERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("f1d291b0-491e-4a28-83b9-f70985020b54"), "MLUtils") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+│  Stacktrace:
+│    [1] error(s::String)
+│      @ Base ./error.jl:56
+│    [2] __require_prelocked(pkg::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2840
+│    [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2694
+│    [4] macro expansion
+│      @ ./loading.jl:2621 [inlined]
+│    [5] macro expansion
+│      @ ./lock.jl:376 [inlined]
+│    [6] __require(into::Module, mod::Symbol)
+│      @ Base ./loading.jl:2585
+│    [7] require
+│      @ ./loading.jl:2561 [inlined]
+│    [8] eval_import_path
+│      @ ./module.jl:36 [inlined]
+│    [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+│      @ Base ./module.jl:60
+│   [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+│      @ Base ./module.jl:101
+│   [11] top-level scope
+│      @ /workdir/depot/packages/MLDataDevices/4qHOT/ext/MLUtilsExt.jl:5
+│   [12] include(mod::Module, _path::String)
+│      @ Base ./Base.jl:323
+│   [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+│      @ Base ./loading.jl:3288
+│   [14] top-level scope
+│      @ stdin:5
+│   [15] eval(m::Module, e::Any)
+│      @ Core ./boot.jl:517
+│   [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│      @ Base ./loading.jl:3130
+│   [17] include_string
+│      @ ./loading.jl:3140 [inlined]
+│   [18] exec_options(opts::Base.JLOptions)
+│      @ Base ./client.jl:342
+│   [19] _start()
+│      @ Base ./client.jl:585
+│  in expression starting at /workdir/depot/packages/MLDataDevices/4qHOT/ext/MLUtilsExt.jl:1
+│  in expression starting at stdin:5
+└  
+┌ Accessors
+│  [151837] signal 11 (1): Segmentation fault
+│  in expression starting at /workdir/depot/packages/Accessors/cfsTn/src/functionlenses.jl:2
+│  checkbounds at ./essentials.jl:381 [inlined]
+│  _iterate_abstractarray at ./abstractarray.jl:1248 [inlined]
+│  iterate at ./abstractarray.jl:1241 [inlined]
+│  iterate at ./abstractarray.jl:1241 [inlined]
+│  _foldl_impl at ./reduce.jl:54
+│  foldl_impl at ./reduce.jl:46
+│  mapfoldl_impl at ./reduce.jl:42
+│  unknown function (ip: 0x78b79e91f1cc) at (unknown file)
+│  #mapfoldl#265 at ./reduce.jl:173
+│  mapfoldl at ./reduce.jl:173 [inlined]
+│  #foldl#266 at ./reduce.jl:196
+│  unknown function (ip: 0x78b79e91f0ad) at (unknown file)
+│  foldl at ./reduce.jl:196 [inlined]
+│  foldtree at /workdir/depot/packages/Accessors/cfsTn/src/sugar.jl:139
+│  need_dynamic_optic at /workdir/depot/packages/Accessors/cfsTn/src/sugar.jl:142
+│  unknown function (ip: 0x78b79e91ee52) at (unknown file)
+│  _any at ./anyall.jl:124
+│  unknown function (ip: 0x78b79e91ed7e) at (unknown file)
+│  #any#756 at ./reducedim.jl:993
+│  any at ./reducedim.jl:993
+│  unknown function (ip: 0x78b79e91e7b4) at (unknown file)
+│  parse_obj_optics at /workdir/depot/packages/Accessors/cfsTn/src/sugar.jl:205
+│  parse_obj_optic at /workdir/depot/packages/Accessors/cfsTn/src/sugar.jl:278
+│  unknown function (ip: 0x78b79e910949) at (unknown file)
+│  #setmacro#67 at /workdir/depot/packages/Accessors/cfsTn/src/sugar.jl:321
+│  setmacro at /workdir/depot/packages/Accessors/cfsTn/src/sugar.jl:312
+│  unknown function (ip: 0x78b79e90eaad) at (unknown file)
+│  @set at /workdir/depot/packages/Accessors/cfsTn/src/sugar.jl:33
+│  unknown function (ip: 0x78b79e909fe9) at (unknown file)
+│  jl_invoke_julia_macro at /cache/build/builder-amdci4-1/julialang/julia-master/src/ast.c:1064
+│  jl_expand_macros at /cache/build/builder-amdci4-1/julialang/julia-master/src/ast.c:1126
+│  jl_expand_macros at /cache/build/builder-amdci4-1/julialang/julia-master/src/ast.c:1175
+│  jl_expand_macros at /cache/build/builder-amdci4-1/julialang/julia-master/src/ast.c:1175
+│  jl_fl_lower at /cache/build/builder-amdci4-1/julialang/julia-master/src/ast.c:1204
+│  fl_lower at ./flfrontend.jl:24
+│  jfptr_fl_lower_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  ijl_lower at /cache/build/builder-amdci4-1/julialang/julia-master/src/ast.c:1271
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:598
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  _include at ./loading.jl:3190
+│  include at ./Base.jl:324
+│  IncludeInto at ./Base.jl:325
+│  jfptr_IncludeInto_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_eval_module_expr at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:263 [inlined]
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:665
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  _include at ./loading.jl:3190
+│  include at ./Base.jl:323
+│  include_package_for_output at ./loading.jl:3288
+│  jfptr_include_package_for_output_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  include_string at ./loading.jl:3140 [inlined]
+│  exec_options at ./client.jl:342
+│  _start at ./client.jl:585
+│  jfptr__start_0.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  true_main at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:971
+│  jl_repl_entrypoint at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:1138
+│  main at /cache/build/builder-amdci4-1/julialang/julia-master/cli/loader_exe.c:58
+│  unknown function (ip: 0x78b7ba172249) at /lib/x86_64-linux-gnu/libc.so.6
+│  __libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+│  unknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+│  Allocations: 1582107 (Pool: 1582087; Big: 20); GC: 2
+└  
+┌ Accessors → LinearAlgebraExt
+│  ERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("7d9f7c33-5ae7-4f3b-8dc6-eff91059b697"), "Accessors") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+│  Stacktrace:
+│    [1] error(s::String)
+│      @ Base ./error.jl:56
+│    [2] __require_prelocked(pkg::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2840
+│    [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2694
+│    [4] macro expansion
+│      @ ./loading.jl:2621 [inlined]
+│    [5] macro expansion
+│      @ ./lock.jl:376 [inlined]
+│    [6] __require(into::Module, mod::Symbol)
+│      @ Base ./loading.jl:2585
+│    [7] require
+│      @ ./loading.jl:2561 [inlined]
+│    [8] eval_import_path
+│      @ ./module.jl:36 [inlined]
+│    [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+│      @ Base ./module.jl:60
+│   [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+│      @ Base ./module.jl:101
+│   [11] top-level scope
+│      @ /workdir/depot/packages/Accessors/cfsTn/ext/LinearAlgebraExt.jl:3
+│   [12] include(mod::Module, _path::String)
+│      @ Base ./Base.jl:323
+│   [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+│      @ Base ./loading.jl:3288
+│   [14] top-level scope
+│      @ stdin:5
+│   [15] eval(m::Module, e::Any)
+│      @ Core ./boot.jl:517
+│   [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│      @ Base ./loading.jl:3130
+│   [17] include_string
+│      @ ./loading.jl:3140 [inlined]
+│   [18] exec_options(opts::Base.JLOptions)
+│      @ Base ./client.jl:342
+│   [19] _start()
+│      @ Base ./client.jl:585
+│  in expression starting at /workdir/depot/packages/Accessors/cfsTn/ext/LinearAlgebraExt.jl:1
+│  in expression starting at stdin:5
+└  
+┌ MLUtils
+│  ERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("cc61a311-1640-44b5-9fba-1b764f453329"), "FLoops") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+│  Stacktrace:
+│    [1] error(s::String)
+│      @ Base ./error.jl:56
+│    [2] __require_prelocked(pkg::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2840
+│    [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2694
+│    [4] macro expansion
+│      @ ./loading.jl:2621 [inlined]
+│    [5] macro expansion
+│      @ ./lock.jl:376 [inlined]
+│    [6] __require(into::Module, mod::Symbol)
+│      @ Base ./loading.jl:2585
+│    [7] require
+│      @ ./loading.jl:2561 [inlined]
+│    [8] eval_import_path
+│      @ ./module.jl:36 [inlined]
+│    [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+│      @ Base ./module.jl:60
+│   [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+│      @ Base ./module.jl:101
+│   [11] top-level scope
+│      @ /workdir/depot/packages/MLUtils/5jDrc/src/MLUtils.jl:6
+│   [12] include(mod::Module, _path::String)
+│      @ Base ./Base.jl:323
+│   [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+│      @ Base ./loading.jl:3288
+│   [14] top-level scope
+│      @ stdin:5
+│   [15] eval(m::Module, e::Any)
+│      @ Core ./boot.jl:517
+│   [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│      @ Base ./loading.jl:3130
+│   [17] include_string
+│      @ ./loading.jl:3140 [inlined]
+│   [18] exec_options(opts::Base.JLOptions)
+│      @ Base ./client.jl:342
+│   [19] _start()
+│      @ Base ./client.jl:585
+│  in expression starting at /workdir/depot/packages/MLUtils/5jDrc/src/MLUtils.jl:1
+│  in expression starting at stdin:5
+└  
+┌ BangBang → BangBangTablesExt
+│  ERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("198e06fe-97b7-11e9-32a5-e1d131e6ad66"), "BangBang") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+│  Stacktrace:
+│    [1] error(s::String)
+│      @ Base ./error.jl:56
+│    [2] __require_prelocked(pkg::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2840
+│    [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2694
+│    [4] macro expansion
+│      @ ./loading.jl:2621 [inlined]
+│    [5] macro expansion
+│      @ ./lock.jl:376 [inlined]
+│    [6] __require(into::Module, mod::Symbol)
+│      @ Base ./loading.jl:2585
+│    [7] require
+│      @ ./loading.jl:2561 [inlined]
+│    [8] eval_import_path
+│      @ ./module.jl:36 [inlined]
+│    [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+│      @ Base ./module.jl:60
+│   [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+│      @ Base ./module.jl:101
+│   [11] top-level scope
+│      @ /workdir/depot/packages/BangBang/bY1RJ/ext/BangBangTablesExt.jl:6
+│   [12] include(mod::Module, _path::String)
+│      @ Base ./Base.jl:323
+│   [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+│      @ Base ./loading.jl:3288
+│   [14] top-level scope
+│      @ stdin:5
+│   [15] eval(m::Module, e::Any)
+│      @ Core ./boot.jl:517
+│   [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│      @ Base ./loading.jl:3130
+│   [17] include_string
+│      @ ./loading.jl:3140 [inlined]
+│   [18] exec_options(opts::Base.JLOptions)
+│      @ Base ./client.jl:342
+│   [19] _start()
+│      @ Base ./client.jl:585
+│  in expression starting at /workdir/depot/packages/BangBang/bY1RJ/ext/BangBangTablesExt.jl:1
+│  in expression starting at stdin:5
+└  
+┌ MLDataDevices → ZygoteExt
+│  ERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("e88e6eb3-aa80-5325-afca-941959d7151f"), "Zygote") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+│  Stacktrace:
+│    [1] error(s::String)
+│      @ Base ./error.jl:56
+│    [2] __require_prelocked(pkg::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2840
+│    [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2694
+│    [4] macro expansion
+│      @ ./loading.jl:2621 [inlined]
+│    [5] macro expansion
+│      @ ./lock.jl:376 [inlined]
+│    [6] __require(into::Module, mod::Symbol)
+│      @ Base ./loading.jl:2585
+│    [7] require
+│      @ ./loading.jl:2561 [inlined]
+│    [8] eval_import_path
+│      @ ./module.jl:36 [inlined]
+│    [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+│      @ Base ./module.jl:60
+│   [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+│      @ Base ./module.jl:101
+│   [11] top-level scope
+│      @ /workdir/depot/packages/MLDataDevices/4qHOT/ext/ZygoteExt.jl:5
+│   [12] include(mod::Module, _path::String)
+│      @ Base ./Base.jl:323
+│   [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+│      @ Base ./loading.jl:3288
+│   [14] top-level scope
+│      @ stdin:5
+│   [15] eval(m::Module, e::Any)
+│      @ Core ./boot.jl:517
+│   [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│      @ Base ./loading.jl:3130
+│   [17] include_string
+│      @ ./loading.jl:3140 [inlined]
+│   [18] exec_options(opts::Base.JLOptions)
+│      @ Base ./client.jl:342
+│   [19] _start()
+│      @ Base ./client.jl:585
+│  in expression starting at /workdir/depot/packages/MLDataDevices/4qHOT/ext/ZygoteExt.jl:1
+│  in expression starting at stdin:5
+└  
+┌ Accessors → StaticArraysExt
+│  ERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("7d9f7c33-5ae7-4f3b-8dc6-eff91059b697"), "Accessors") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+│  Stacktrace:
+│    [1] error(s::String)
+│      @ Base ./error.jl:56
+│    [2] __require_prelocked(pkg::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2840
+│    [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2694
+│    [4] macro expansion
+│      @ ./loading.jl:2621 [inlined]
+│    [5] macro expansion
+│      @ ./lock.jl:376 [inlined]
+│    [6] __require(into::Module, mod::Symbol)
+│      @ Base ./loading.jl:2585
+│    [7] require
+│      @ ./loading.jl:2561 [inlined]
+│    [8] eval_import_path
+│      @ ./module.jl:36 [inlined]
+│    [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+│      @ Base ./module.jl:60
+│   [10] _eval_using
+│      @ ./module.jl:137 [inlined]
+│   [11] _eval_using(to::Module, path::Expr)
+│      @ Base ./module.jl:137
+│   [12] top-level scope
+│      @ /workdir/depot/packages/Accessors/cfsTn/ext/StaticArraysExt.jl:3
+│   [13] include(mod::Module, _path::String)
+│      @ Base ./Base.jl:323
+│   [14] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+│      @ Base ./loading.jl:3288
+│   [15] top-level scope
+│      @ stdin:5
+│   [16] eval(m::Module, e::Any)
+│      @ Core ./boot.jl:517
+│   [17] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│      @ Base ./loading.jl:3130
+│   [18] include_string
+│      @ ./loading.jl:3140 [inlined]
+│   [19] exec_options(opts::Base.JLOptions)
+│      @ Base ./client.jl:342
+│   [20] _start()
+│      @ Base ./client.jl:585
+│  in expression starting at /workdir/depot/packages/Accessors/cfsTn/ext/StaticArraysExt.jl:1
+│  in expression starting at stdin:5
+└  
+┌ Zygote
+│  Internal error: during type inference of
+│  _pullback(Zygote.Context{false}, typeof(Zygote.pow), Int64, Int64)
+│  Encountered unexpected error in runtime:
+│  TypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x7c941201e860)[pow(Int64, Int64) from pow(Any, Any)]))
+│  ijl_type_error_rt at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:121
+│  ijl_type_error at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:140
+│  compute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+│  finishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+│  finish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+│  jfptr_finish_nocycle_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  typeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4765
+│  typeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1533
+│  typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1716 [inlined]
+│  typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1725
+│  jfptr_typeinf_ext_toplevel_2.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  jl_type_infer at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:467
+│  jl_compile_method_internal at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:3640
+│  _jl_invoke at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4105 [inlined]
+│  ijl_apply_generic at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4339
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  jl_f__apply_iterate at /cache/build/builder-amdci4-1/julialang/julia-master/src/builtins.c:897
+│  pullback at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:96
+│  pullback at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:94
+│  unknown function (ip: 0x7c941264b1d0) at (unknown file)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  jl_f__apply_iterate at /cache/build/builder-amdci4-1/julialang/julia-master/src/builtins.c:897
+│  gradient at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:153
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  top-level scope at /workdir/depot/packages/Zygote/55SqB/src/precompile.jl:17
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  _include at ./loading.jl:3190
+│  include at ./Base.jl:324
+│  IncludeInto at ./Base.jl:325
+│  jfptr_IncludeInto_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:558
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  macro expansion at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:68 [inlined]
+│  macro expansion at /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+│  top-level scope at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:85
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_eval_module_expr at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:263 [inlined]
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:665
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  _include at ./loading.jl:3190
+│  include at ./Base.jl:323
+│  include_package_for_output at ./loading.jl:3288
+│  jfptr_include_package_for_output_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  top-level scope at stdin:5
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  include_string at ./loading.jl:3140 [inlined]
+│  exec_options at ./client.jl:342
+│  _start at ./client.jl:585
+│  jfptr__start_0.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  true_main at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:971
+│  jl_repl_entrypoint at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:1138
+│  main at /cache/build/builder-amdci4-1/julialang/julia-master/cli/loader_exe.c:58
+│  unknown function (ip: 0x7c9442384249) at /lib/x86_64-linux-gnu/libc.so.6
+│  __libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+│  unknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+│  Internal error: during type inference of
+│  (::Zygote.var"#pullback##0#pullback##1"{Zygote.Pullback{Tuple{typeof(Zygote.pow), Int64, Int64}, Any}})(Int64)
+│  Encountered unexpected error in runtime:
+│  TypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x7c941b6ffd00)[pow(Int64, Int64) from pow(Any, Any)]))
+│  ijl_type_error_rt at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:121
+│  ijl_type_error at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:140
+│  compute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+│  finishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+│  finish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+│  jfptr_finish_nocycle_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  typeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4765
+│  typeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1533
+│  typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1716 [inlined]
+│  typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1725
+│  jfptr_typeinf_ext_toplevel_2.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  jl_type_infer at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:467
+│  jl_compile_method_internal at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:3640
+│  _jl_invoke at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4105 [inlined]
+│  ijl_apply_generic at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4339
+│  gradient at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:154
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  top-level scope at /workdir/depot/packages/Zygote/55SqB/src/precompile.jl:17
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  _include at ./loading.jl:3190
+│  include at ./Base.jl:324
+│  IncludeInto at ./Base.jl:325
+│  jfptr_IncludeInto_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:558
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  macro expansion at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:68 [inlined]
+│  macro expansion at /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+│  top-level scope at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:85
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_eval_module_expr at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:263 [inlined]
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:665
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  _include at ./loading.jl:3190
+│  include at ./Base.jl:323
+│  include_package_for_output at ./loading.jl:3288
+│  jfptr_include_package_for_output_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  top-level scope at stdin:5
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  include_string at ./loading.jl:3140 [inlined]
+│  exec_options at ./client.jl:342
+│  _start at ./client.jl:585
+│  jfptr__start_0.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  true_main at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:971
+│  jl_repl_entrypoint at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:1138
+│  main at /cache/build/builder-amdci4-1/julialang/julia-master/cli/loader_exe.c:58
+│  unknown function (ip: 0x7c9442384249) at /lib/x86_64-linux-gnu/libc.so.6
+│  __libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+│  unknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+│  Internal error: during type inference of
+│  _pullback(Zygote.Context{false}, Zygote.var"#2206#2207", Array{Int64, 1}, Array{Int64, 1})
+│  Encountered unexpected error in runtime:
+│  TypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x7c942a998fa0)[materialize(Array{Int64, 1}) from materialize(Any)]))
+│  ijl_type_error_rt at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:121
+│  ijl_type_error at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:140
+│  compute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+│  finishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+│  finish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+│  jfptr_finish_nocycle_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  typeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4765
+│  typeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1533
+│  typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1716 [inlined]
+│  typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1725
+│  jfptr_typeinf_ext_toplevel_2.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  jl_type_infer at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:467
+│  jl_compile_method_internal at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:3640
+│  _jl_invoke at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4105 [inlined]
+│  ijl_apply_generic at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4339
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  jl_f__apply_iterate at /cache/build/builder-amdci4-1/julialang/julia-master/src/builtins.c:897
+│  pullback at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:96
+│  pullback at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:94
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  jl_f__apply_iterate at /cache/build/builder-amdci4-1/julialang/julia-master/src/builtins.c:897
+│  gradient at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:153
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  top-level scope at /workdir/depot/packages/Zygote/55SqB/src/precompile.jl:18
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  _include at ./loading.jl:3190
+│  include at ./Base.jl:324
+│  IncludeInto at ./Base.jl:325
+│  jfptr_IncludeInto_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:558
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  macro expansion at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:68 [inlined]
+│  macro expansion at /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+│  top-level scope at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:85
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_eval_module_expr at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:263 [inlined]
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:665
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  _include at ./loading.jl:3190
+│  include at ./Base.jl:323
+│  include_package_for_output at ./loading.jl:3288
+│  jfptr_include_package_for_output_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  top-level scope at stdin:5
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  include_string at ./loading.jl:3140 [inlined]
+│  exec_options at ./client.jl:342
+│  _start at ./client.jl:585
+│  jfptr__start_0.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  true_main at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:971
+│  jl_repl_entrypoint at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:1138
+│  main at /cache/build/builder-amdci4-1/julialang/julia-master/cli/loader_exe.c:58
+│  unknown function (ip: 0x7c9442384249) at /lib/x86_64-linux-gnu/libc.so.6
+│  __libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+│  unknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+│  Internal error: during type inference of
+│  (::Zygote.var"#pullback##0#pullback##1"{Zygote.Pullback{Tuple{Zygote.var"#2206#2207", Array{Int64, 1}, Array{Int64, 1}}, Tuple{Zygote.Pullback{Tuple{typeof(Base.Broadcast.materialize), Array{Int64, 1}}, Tuple{}}, Zygote.var"#1681#1682"{Zygote.var"#1679#1680"{Array{Int64, 1}, Array{Int64, 1}}}, Zygote.ZBack{ChainRules.var"#sum_pullback#551"{Base.Colon, Array{Int64, 1}, ChainRulesCore.ProjectTo{AbstractArray{T, N} where N where T, NamedTuple{(:element, :axes), Tuple{ChainRulesCore.ProjectTo{Float64, NamedTuple{(), Tuple{}}}, Tuple{Base.OneTo{Int64}}}}}}}}}})(Int64)
+│  Encountered unexpected error in runtime:
+│  TypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x7c942b927000)[materialize(Array{Int64, 1}) from materialize(Any)]))
+│  ijl_type_error_rt at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:121
+│  ijl_type_error at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:140
+│  compute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+│  finishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+│  finish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+│  jfptr_finish_nocycle_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  typeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4765
+│  typeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1533
+│  typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1716 [inlined]
+│  typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1725
+│  jfptr_typeinf_ext_toplevel_2.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  jl_type_infer at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:467
+│  jl_compile_method_internal at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:3640
+│  _jl_invoke at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4105 [inlined]
+│  ijl_apply_generic at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4339
+│  gradient at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:154
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  top-level scope at /workdir/depot/packages/Zygote/55SqB/src/precompile.jl:18
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  _include at ./loading.jl:3190
+│  include at ./Base.jl:324
+│  IncludeInto at ./Base.jl:325
+│  jfptr_IncludeInto_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:558
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  macro expansion at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:68 [inlined]
+│  macro expansion at /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+│  top-level scope at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:85
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_eval_module_expr at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:263 [inlined]
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:665
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  _include at ./loading.jl:3190
+│  include at ./Base.jl:323
+│  include_package_for_output at ./loading.jl:3288
+│  jfptr_include_package_for_output_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  top-level scope at stdin:5
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  include_string at ./loading.jl:3140 [inlined]
+│  exec_options at ./client.jl:342
+│  _start at ./client.jl:585
+│  jfptr__start_0.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  true_main at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:971
+│  jl_repl_entrypoint at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:1138
+│  main at /cache/build/builder-amdci4-1/julialang/julia-master/cli/loader_exe.c:58
+│  unknown function (ip: 0x7c9442384249) at /lib/x86_64-linux-gnu/libc.so.6
+│  __libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+│  unknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+│  Internal error: during type inference of
+│  _pullback(Zygote.Context{false}, Zygote.var"#2209#2210", Array{Float64, 1})
+│  Encountered unexpected error in runtime:
+│  TypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x7c9423ab33a0)[materialize(Array{Float32, 1}) from materialize(Any)]))
+│  ijl_type_error_rt at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:121
+│  ijl_type_error at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:140
+│  compute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+│  finishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+│  finish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+│  jfptr_finish_nocycle_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  typeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4765
+│  typeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1533
+│  typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1716 [inlined]
+│  typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1725
+│  jfptr_typeinf_ext_toplevel_2.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  jl_type_infer at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:467
+│  jl_compile_method_internal at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:3640
+│  _jl_invoke at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4105 [inlined]
+│  ijl_apply_generic at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4339
+│  pullback at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:96
+│  pullback at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:94 [inlined]
+│  gradient at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:153
+│  unknown function (ip: 0x7c94126ca6c8) at (unknown file)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  top-level scope at /workdir/depot/packages/Zygote/55SqB/src/precompile.jl:20
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  _include at ./loading.jl:3190
+│  include at ./Base.jl:324
+│  IncludeInto at ./Base.jl:325
+│  jfptr_IncludeInto_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:558
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  macro expansion at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:68 [inlined]
+│  macro expansion at /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+│  top-level scope at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:85
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_eval_module_expr at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:263 [inlined]
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:665
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  _include at ./loading.jl:3190
+│  include at ./Base.jl:323
+│  include_package_for_output at ./loading.jl:3288
+│  jfptr_include_package_for_output_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  top-level scope at stdin:5
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  include_string at ./loading.jl:3140 [inlined]
+│  exec_options at ./client.jl:342
+│  _start at ./client.jl:585
+│  jfptr__start_0.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  true_main at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:971
+│  jl_repl_entrypoint at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:1138
+│  main at /cache/build/builder-amdci4-1/julialang/julia-master/cli/loader_exe.c:58
+│  unknown function (ip: 0x7c9442384249) at /lib/x86_64-linux-gnu/libc.so.6
+│  __libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+│  unknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+│  Internal error: during type inference of
+│  (::Zygote.var"#pullback##0#pullback##1"{Zygote.Pullback{Tuple{Zygote.var"#2209#2210", Array{Float64, 1}}, Tuple{Zygote.ZBack{ChainRules.var"#sum_pullback#551"{Base.Colon, Array{Float32, 1}, ChainRulesCore.ProjectTo{AbstractArray{T, N} where N where T, NamedTuple{(:element, :axes), Tuple{ChainRulesCore.ProjectTo{Float32, NamedTuple{(), Tuple{}}}, Tuple{Base.OneTo{Int64}}}}}}}, Zygote.var"#1912#1913"{Zygote.var"#1910#1911"{Array{Float64, 1}}}, Zygote.Pullback{Tuple{typeof(Base.Broadcast.materialize), Array{Float32, 1}}, Tuple{}}}}})(Float32)
+│  Encountered unexpected error in runtime:
+│  TypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x7c9420963fc0)[materialize(Array{Float32, 1}) from materialize(Any)]))
+│  ijl_type_error_rt at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:121
+│  ijl_type_error at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:140
+│  compute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+│  finishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+│  finish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+│  jfptr_finish_nocycle_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  typeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4765
+│  typeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1533
+│  typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1716 [inlined]
+│  typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1725
+│  jfptr_typeinf_ext_toplevel_2.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  jl_type_infer at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:467
+│  jl_compile_method_internal at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:3640
+│  _jl_invoke at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4105 [inlined]
+│  ijl_apply_generic at /cache/build/builder-amdci4-1/julialang/julia-master/src/gf.c:4339
+│  gradient at /workdir/depot/packages/Zygote/55SqB/src/compiler/interface.jl:154
+│  unknown function (ip: 0x7c94126ca6c8) at (unknown file)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  top-level scope at /workdir/depot/packages/Zygote/55SqB/src/precompile.jl:20
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  _include at ./loading.jl:3190
+│  include at ./Base.jl:324
+│  IncludeInto at ./Base.jl:325
+│  jfptr_IncludeInto_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:558
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  macro expansion at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:68 [inlined]
+│  macro expansion at /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+│  top-level scope at /workdir/depot/packages/Zygote/55SqB/src/Zygote.jl:85
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_eval_module_expr at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:263 [inlined]
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:665
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  _include at ./loading.jl:3190
+│  include at ./Base.jl:323
+│  include_package_for_output at ./loading.jl:3288
+│  jfptr_include_package_for_output_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  do_call at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:123
+│  eval_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:243
+│  eval_stmt_value at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:194 [inlined]
+│  eval_body at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:679
+│  jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/interpreter.c:884
+│  top-level scope at stdin:5
+│  ijl_eval_thunk at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:766
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:712
+│  jl_eval_toplevel_stmts at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:602
+│  jl_toplevel_eval_flex at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:684
+│  ijl_toplevel_eval at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:780
+│  ijl_toplevel_eval_in at /cache/build/builder-amdci4-1/julialang/julia-master/src/toplevel.c:825
+│  eval at ./boot.jl:517
+│  include_string at ./loading.jl:3130
+│  include_string at ./loading.jl:3140 [inlined]
+│  exec_options at ./client.jl:342
+│  _start at ./client.jl:585
+│  jfptr__start_0.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  true_main at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:971
+│  jl_repl_entrypoint at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:1138
+│  main at /cache/build/builder-amdci4-1/julialang/julia-master/cli/loader_exe.c:58
+│  unknown function (ip: 0x7c9442384249) at /lib/x86_64-linux-gnu/libc.so.6
+│  __libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+│  unknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+│  fatal: error thrown and no exception handler available.
+│  TypeError(func=:typeassert, context="", expected=Union{Nothing, Array{Any, 1}, Core.SimpleVector}, got=Array{Core.MethodInstance, 1}(dims=(1,), mem=Memory{Core.MethodInstance}(1, 0x7c94208fa920)[materialize(Array{Float32, 1}) from materialize(Any)]))
+│  ijl_type_error_rt at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:121
+│  ijl_type_error at /cache/build/builder-amdci4-1/julialang/julia-master/src/rtutils.c:140
+│  compute_edges! at ./../usr/share/julia/Compiler/src/typeinfer.jl:820
+│  finishinfer! at ./../usr/share/julia/Compiler/src/typeinfer.jl:668
+│  finish_nocycle at ./../usr/share/julia/Compiler/src/typeinfer.jl:275
+│  jfptr_finish_nocycle_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  typeinf at ./../usr/share/julia/Compiler/src/abstractinterpretation.jl:4765
+│  typeinf_ext at ./../usr/share/julia/Compiler/src/typeinfer.jl:1533
+│  jfptr_typeinf_ext_1.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  #compile!#175 at ./../usr/share/julia/Compiler/src/typeinfer.jl:1743
+│  compile! at ./../usr/share/julia/Compiler/src/typeinfer.jl:1728 [inlined]
+│  typeinf_ext_toplevel at ./../usr/share/julia/Compiler/src/typeinfer.jl:1828
+│  compile_and_emit_native at ./../usr/share/julia/Compiler/src/precompile.jl:421
+│  jfptr_compile_and_emit_native_3.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+│  jl_apply at /cache/build/builder-amdci4-1/julialang/julia-master/src/julia.h:2295 [inlined]
+│  jl_create_native_impl at /cache/build/builder-amdci4-1/julialang/julia-master/src/aotcompile.cpp:574
+│  ijl_create_system_image at /cache/build/builder-amdci4-1/julialang/julia-master/src/staticdata.c:3366
+│  ijl_write_compiler_output at /cache/build/builder-amdci4-1/julialang/julia-master/src/precompile.c:140
+│  ijl_atexit_hook at /cache/build/builder-amdci4-1/julialang/julia-master/src/init.c:280
+│  jl_repl_entrypoint at /cache/build/builder-amdci4-1/julialang/julia-master/src/jlapi.c:1139
+│  main at /cache/build/builder-amdci4-1/julialang/julia-master/cli/loader_exe.c:58
+│  unknown function (ip: 0x7c9442384249) at /lib/x86_64-linux-gnu/libc.so.6
+│  __libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+│  unknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+└  
+┌ BangBang
+│  ERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("7d9f7c33-5ae7-4f3b-8dc6-eff91059b697"), "Accessors") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+│  Stacktrace:
+│    [1] error(s::String)
+│      @ Base ./error.jl:56
+│    [2] __require_prelocked(pkg::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2840
+│    [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2694
+│    [4] macro expansion
+│      @ ./loading.jl:2621 [inlined]
+│    [5] macro expansion
+│      @ ./lock.jl:376 [inlined]
+│    [6] __require(into::Module, mod::Symbol)
+│      @ Base ./loading.jl:2585
+│    [7] require
+│      @ ./loading.jl:2561 [inlined]
+│    [8] eval_import_path
+│      @ ./module.jl:36 [inlined]
+│    [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+│      @ Base ./module.jl:60
+│   [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+│      @ Base ./module.jl:101
+│   [11] top-level scope
+│      @ /workdir/depot/packages/BangBang/bY1RJ/src/accessors.jl:7
+│   [12] include(mapexpr::Function, mod::Module, _path::String)
+│      @ Base ./Base.jl:324
+│   [13] top-level scope
+│      @ /workdir/depot/packages/BangBang/bY1RJ/src/BangBang.jl:72
+│   [14] include(mod::Module, _path::String)
+│      @ Base ./Base.jl:323
+│   [15] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+│      @ Base ./loading.jl:3288
+│   [16] top-level scope
+│      @ stdin:5
+│   [17] eval(m::Module, e::Any)
+│      @ Core ./boot.jl:517
+│   [18] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│      @ Base ./loading.jl:3130
+│   [19] include_string
+│      @ ./loading.jl:3140 [inlined]
+│   [20] exec_options(opts::Base.JLOptions)
+│      @ Base ./client.jl:342
+│   [21] _start()
+│      @ Base ./client.jl:585
+│  in expression starting at /workdir/depot/packages/BangBang/bY1RJ/src/accessors.jl:1
+│  in expression starting at /workdir/depot/packages/BangBang/bY1RJ/src/BangBang.jl:1
+│  in expression starting at stdin:5
+└  
+┌ BangBang → BangBangStructArraysExt
+│  ERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("198e06fe-97b7-11e9-32a5-e1d131e6ad66"), "BangBang") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+│  Stacktrace:
+│    [1] error(s::String)
+│      @ Base ./error.jl:56
+│    [2] __require_prelocked(pkg::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2840
+│    [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2694
+│    [4] macro expansion
+│      @ ./loading.jl:2621 [inlined]
+│    [5] macro expansion
+│      @ ./lock.jl:376 [inlined]
+│    [6] __require(into::Module, mod::Symbol)
+│      @ Base ./loading.jl:2585
+│    [7] require
+│      @ ./loading.jl:2561 [inlined]
+│    [8] eval_import_path
+│      @ ./module.jl:36 [inlined]
+│    [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+│      @ Base ./module.jl:60
+│   [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+│      @ Base ./module.jl:101
+│   [11] top-level scope
+│      @ /workdir/depot/packages/BangBang/bY1RJ/ext/BangBangStructArraysExt.jl:3
+│   [12] include(mod::Module, _path::String)
+│      @ Base ./Base.jl:323
+│   [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+│      @ Base ./loading.jl:3288
+│   [14] top-level scope
+│      @ stdin:5
+│   [15] eval(m::Module, e::Any)
+│      @ Core ./boot.jl:517
+│   [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│      @ Base ./loading.jl:3130
+│   [17] include_string
+│      @ ./loading.jl:3140 [inlined]
+│   [18] exec_options(opts::Base.JLOptions)
+│      @ Base ./client.jl:342
+│   [19] _start()
+│      @ Base ./client.jl:585
+│  in expression starting at /workdir/depot/packages/BangBang/bY1RJ/ext/BangBangStructArraysExt.jl:1
+│  in expression starting at stdin:5
+└  
+┌ Transducers
+│  ERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("7d9f7c33-5ae7-4f3b-8dc6-eff91059b697"), "Accessors") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+│  Stacktrace:
+│    [1] error(s::String)
+│      @ Base ./error.jl:56
+│    [2] __require_prelocked(pkg::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2840
+│    [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2694
+│    [4] macro expansion
+│      @ ./loading.jl:2621 [inlined]
+│    [5] macro expansion
+│      @ ./lock.jl:376 [inlined]
+│    [6] __require(into::Module, mod::Symbol)
+│      @ Base ./loading.jl:2585
+│    [7] require
+│      @ ./loading.jl:2561 [inlined]
+│    [8] eval_import_path
+│      @ ./module.jl:36 [inlined]
+│    [9] _eval_import(imported::Bool, to::Module, from::Nothing, paths::Expr)
+│      @ Base ./module.jl:111
+│   [10] top-level scope
+│      @ /workdir/depot/packages/Transducers/PqRuk/src/Transducers.jl:83
+│   [11] include(mod::Module, _path::String)
+│      @ Base ./Base.jl:323
+│   [12] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+│      @ Base ./loading.jl:3288
+│   [13] top-level scope
+│      @ stdin:5
+│   [14] eval(m::Module, e::Any)
+│      @ Core ./boot.jl:517
+│   [15] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│      @ Base ./loading.jl:3130
+│   [16] include_string
+│      @ ./loading.jl:3140 [inlined]
+│   [17] exec_options(opts::Base.JLOptions)
+│      @ Base ./client.jl:342
+│   [18] _start()
+│      @ Base ./client.jl:585
+│  in expression starting at /workdir/depot/packages/Transducers/PqRuk/src/Transducers.jl:1
+│  in expression starting at stdin:5
+└  
+┌ BangBang → BangBangChainRulesCoreExt
+│  ERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("198e06fe-97b7-11e9-32a5-e1d131e6ad66"), "BangBang") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+│  Stacktrace:
+│    [1] error(s::String)
+│      @ Base ./error.jl:56
+│    [2] __require_prelocked(pkg::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2840
+│    [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2694
+│    [4] macro expansion
+│      @ ./loading.jl:2621 [inlined]
+│    [5] macro expansion
+│      @ ./lock.jl:376 [inlined]
+│    [6] __require(into::Module, mod::Symbol)
+│      @ Base ./loading.jl:2585
+│    [7] require
+│      @ ./loading.jl:2561 [inlined]
+│    [8] eval_import_path
+│      @ ./module.jl:36 [inlined]
+│    [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+│      @ Base ./module.jl:60
+│   [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+│      @ Base ./module.jl:101
+│   [11] top-level scope
+│      @ /workdir/depot/packages/BangBang/bY1RJ/ext/BangBangChainRulesCoreExt.jl:4
+│   [12] include(mod::Module, _path::String)
+│      @ Base ./Base.jl:323
+│   [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+│      @ Base ./loading.jl:3288
+│   [14] top-level scope
+│      @ stdin:5
+│   [15] eval(m::Module, e::Any)
+│      @ Core ./boot.jl:517
+│   [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│      @ Base ./loading.jl:3130
+│   [17] include_string
+│      @ ./loading.jl:3140 [inlined]
+│   [18] exec_options(opts::Base.JLOptions)
+│      @ Base ./client.jl:342
+│   [19] _start()
+│      @ Base ./client.jl:585
+│  in expression starting at /workdir/depot/packages/BangBang/bY1RJ/ext/BangBangChainRulesCoreExt.jl:1
+│  in expression starting at stdin:5
+└  
+┌ BangBang → BangBangStaticArraysExt
+│  ERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("198e06fe-97b7-11e9-32a5-e1d131e6ad66"), "BangBang") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+│  Stacktrace:
+│    [1] error(s::String)
+│      @ Base ./error.jl:56
+│    [2] __require_prelocked(pkg::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2840
+│    [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2694
+│    [4] macro expansion
+│      @ ./loading.jl:2621 [inlined]
+│    [5] macro expansion
+│      @ ./lock.jl:376 [inlined]
+│    [6] __require(into::Module, mod::Symbol)
+│      @ Base ./loading.jl:2585
+│    [7] require
+│      @ ./loading.jl:2561 [inlined]
+│    [8] eval_import_path
+│      @ ./module.jl:36 [inlined]
+│    [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+│      @ Base ./module.jl:60
+│   [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+│      @ Base ./module.jl:101
+│   [11] top-level scope
+│      @ /workdir/depot/packages/BangBang/bY1RJ/ext/BangBangStaticArraysExt.jl:4
+│   [12] include(mod::Module, _path::String)
+│      @ Base ./Base.jl:323
+│   [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+│      @ Base ./loading.jl:3288
+│   [14] top-level scope
+│      @ stdin:5
+│   [15] eval(m::Module, e::Any)
+│      @ Core ./boot.jl:517
+│   [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│      @ Base ./loading.jl:3130
+│   [17] include_string
+│      @ ./loading.jl:3140 [inlined]
+│   [18] exec_options(opts::Base.JLOptions)
+│      @ Base ./client.jl:342
+│   [19] _start()
+│      @ Base ./client.jl:585
+│  in expression starting at /workdir/depot/packages/BangBang/bY1RJ/ext/BangBangStaticArraysExt.jl:2
+│  in expression starting at stdin:5
+└  
+┌ MicroCollections
+│  ERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("7d9f7c33-5ae7-4f3b-8dc6-eff91059b697"), "Accessors") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+│  Stacktrace:
+│    [1] error(s::String)
+│      @ Base ./error.jl:56
+│    [2] __require_prelocked(pkg::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2840
+│    [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2694
+│    [4] macro expansion
+│      @ ./loading.jl:2621 [inlined]
+│    [5] macro expansion
+│      @ ./lock.jl:376 [inlined]
+│    [6] __require(into::Module, mod::Symbol)
+│      @ Base ./loading.jl:2585
+│    [7] require
+│      @ ./loading.jl:2561 [inlined]
+│    [8] eval_import_path
+│      @ ./module.jl:36 [inlined]
+│    [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+│      @ Base ./module.jl:60
+│   [10] _eval_import(::Bool, ::Module, ::Expr, ::Expr, ::Vararg{Expr})
+│      @ Base ./module.jl:101
+│   [11] top-level scope
+│      @ /workdir/depot/packages/MicroCollections/79Imf/src/MicroCollections.jl:24
+│   [12] include(mod::Module, _path::String)
+│      @ Base ./Base.jl:323
+│   [13] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+│      @ Base ./loading.jl:3288
+│   [14] top-level scope
+│      @ stdin:5
+│   [15] eval(m::Module, e::Any)
+│      @ Core ./boot.jl:517
+│   [16] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│      @ Base ./loading.jl:3130
+│   [17] include_string
+│      @ ./loading.jl:3140 [inlined]
+│   [18] exec_options(opts::Base.JLOptions)
+│      @ Base ./client.jl:342
+│   [19] _start()
+│      @ Base ./client.jl:585
+│  in expression starting at /workdir/depot/packages/MicroCollections/79Imf/src/MicroCollections.jl:1
+│  in expression starting at stdin:5
+└  
+┌ Accessors → StructArraysExt
+│  ERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("7d9f7c33-5ae7-4f3b-8dc6-eff91059b697"), "Accessors") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+│  Stacktrace:
+│    [1] error(s::String)
+│      @ Base ./error.jl:56
+│    [2] __require_prelocked(pkg::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2840
+│    [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+│      @ Base ./loading.jl:2694
+│    [4] macro expansion
+│      @ ./loading.jl:2621 [inlined]
+│    [5] macro expansion
+│      @ ./lock.jl:376 [inlined]
+│    [6] __require(into::Module, mod::Symbol)
+│      @ Base ./loading.jl:2585
+│    [7] require
+│      @ ./loading.jl:2561 [inlined]
+│    [8] eval_import_path
+│      @ ./module.jl:36 [inlined]
+│    [9] eval_import_path_all(at::Module, path::Expr, keyword::String)
+│      @ Base ./module.jl:60
+│   [10] _eval_using
+│      @ ./module.jl:137 [inlined]
+│   [11] _eval_using(to::Module, path::Expr)
+│      @ Base ./module.jl:137
+│   [12] top-level scope
+│      @ /workdir/depot/packages/Accessors/cfsTn/ext/StructArraysExt.jl:2
+│   [13] include(mod::Module, _path::String)
+│      @ Base ./Base.jl:323
+│   [14] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+│      @ Base ./loading.jl:3288
+│   [15] top-level scope
+│      @ stdin:5
+│   [16] eval(m::Module, e::Any)
+│      @ Core ./boot.jl:517
+│   [17] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│      @ Base ./loading.jl:3130
+│   [18] include_string
+│      @ ./loading.jl:3140 [inlined]
+│   [19] exec_options(opts::Base.JLOptions)
+│      @ Base ./client.jl:342
+│   [20] _start()
+│      @ Base ./client.jl:585
+│  in expression starting at /workdir/depot/packages/Accessors/cfsTn/ext/StructArraysExt.jl:1
+│  in expression starting at stdin:5
+└  
+ERROR: LoadError: The following 19 packages failed to precompile:
+
+Flux 
+Failed to precompile Flux [587475ba-b771-5e3f-ad9e-33799f191a9c] to "/workdir/depot/compiled/v1.14/Flux/jl_XiCNbk" (ProcessExited(1)).
+
+Accessors → TestExt 
+Failed to precompile TestExt [80cb845e-b389-59f1-b05e-94f5b8a87482] to "/workdir/depot/compiled/v1.14/TestExt/jl_9CATWr" (ProcessExited(1)).
+
+Transducers → TransducersAdaptExt 
+Failed to precompile TransducersAdaptExt [174f4ccc-8f69-5297-84ee-938c5d7a1db8] to "/workdir/depot/compiled/v1.14/TransducersAdaptExt/jl_p0zitb" (ProcessExited(1)).
+
+FLoops 
+Failed to precompile FLoops [cc61a311-1640-44b5-9fba-1b764f453329] to "/workdir/depot/compiled/v1.14/FLoops/jl_IgmNiq" (ProcessExited(1)).
+
+MLDataDevices → MLUtilsExt 
+Failed to precompile MLUtilsExt [ab0a33d8-abb3-5b75-8d6b-67f8e4bb549b] to "/workdir/depot/compiled/v1.14/MLUtilsExt/jl_jVmwCb" (ProcessExited(1)).
+
+Accessors 
+Failed to precompile Accessors [7d9f7c33-5ae7-4f3b-8dc6-eff91059b697] to "/workdir/depot/compiled/v1.14/Accessors/jl_rri0da" (ProcessSignaled(11)).
+
+Accessors → LinearAlgebraExt 
+Failed to precompile LinearAlgebraExt [286ce1b1-6c8d-5016-ac43-97cd5558974d] to "/workdir/depot/compiled/v1.14/LinearAlgebraExt/jl_gjmGwM" (ProcessExited(1)).
+
+MLUtils 
+Failed to precompile MLUtils [f1d291b0-491e-4a28-83b9-f70985020b54] to "/workdir/depot/compiled/v1.14/MLUtils/jl_zvFGZ3" (ProcessExited(1)).
+
+BangBang → BangBangTablesExt 
+Failed to precompile BangBangTablesExt [dca4c2e9-4174-5c03-a3de-5e34342b8127] to "/workdir/depot/compiled/v1.14/BangBangTablesExt/jl_Utg4lj" (ProcessExited(1)).
+
+MLDataDevices → ZygoteExt 
+Failed to precompile ZygoteExt [9fe36af7-8e80-51e7-9405-1b34352d8990] to "/workdir/depot/compiled/v1.14/ZygoteExt/jl_uthKP3" (ProcessExited(1)).
+
+Accessors → StaticArraysExt 
+Failed to precompile StaticArraysExt [14daa408-29ba-553c-9cbc-1571fc7f00ce] to "/workdir/depot/compiled/v1.14/StaticArraysExt/jl_YsK6fM" (ProcessExited(1)).
+
+Zygote 
+Failed to precompile Zygote [e88e6eb3-aa80-5325-afca-941959d7151f] to "/workdir/depot/compiled/v1.14/Zygote/jl_PUqNwS" (ProcessExited(1)).
+
+BangBang 
+Failed to precompile BangBang [198e06fe-97b7-11e9-32a5-e1d131e6ad66] to "/workdir/depot/compiled/v1.14/BangBang/jl_o0vFLh" (ProcessExited(1)).
+
+BangBang → BangBangStructArraysExt 
+Failed to precompile BangBangStructArraysExt [b64a966a-c40c-594e-a70e-797f9c5e8090] to "/workdir/depot/compiled/v1.14/BangBangStructArraysExt/jl_MZdB5B" (ProcessExited(1)).
+
+Transducers 
+Failed to precompile Transducers [28d57a85-8fef-5791-bfe6-a80928e7c999] to "/workdir/depot/compiled/v1.14/Transducers/jl_02L4tC" (ProcessExited(1)).
+
+BangBang → BangBangChainRulesCoreExt 
+Failed to precompile BangBangChainRulesCoreExt [e83ef9fe-91ad-507b-ac35-41eac30070de] to "/workdir/depot/compiled/v1.14/BangBangChainRulesCoreExt/jl_bljCAd" (ProcessExited(1)).
+
+BangBang → BangBangStaticArraysExt 
+Failed to precompile BangBangStaticArraysExt [b9c58979-57b3-5bf4-9da2-5e5aa80e2034] to "/workdir/depot/compiled/v1.14/BangBangStaticArraysExt/jl_QwaglG" (ProcessExited(1)).
+
+MicroCollections 
+Failed to precompile MicroCollections [128add7d-3638-4c79-886c-908ea0c25c34] to "/workdir/depot/compiled/v1.14/MicroCollections/jl_sbmDu3" (ProcessExited(1)).
+
+Accessors → StructArraysExt 
+Failed to precompile StructArraysExt [f54b88c7-ea68-5a31-b002-88907de8f959] to "/workdir/depot/compiled/v1.14/StructArraysExt/jl_cW1yhQ" (ProcessExited(1)).
+
+in expression starting at /tmp/tmp.o5G8c1gdJg/Julia-TTFX-Snippets/tasks/F/Flux/Basic-Model-Gradient/task.jl:10
+Command exited with non-zero status 1
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +nightly --project=F/Flux/Basic-Model-Gradient F/Flux/Basic-Model-Gradient/task.jl"
+	User time (seconds): 31.34
+	System time (seconds): 3.19
+	Percent of CPU this job got: 180%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:19.16
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 805868
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 19
+	Minor (reclaiming a frame) page faults: 1284762
+	Voluntary context switches: 2313
+	Involuntary context switches: 482
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 536
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

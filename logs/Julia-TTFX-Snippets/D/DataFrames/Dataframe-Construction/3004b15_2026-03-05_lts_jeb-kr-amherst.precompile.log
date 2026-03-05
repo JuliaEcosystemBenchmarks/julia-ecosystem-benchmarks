@@ -1,0 +1,52 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1834.1 ms  ✓ DataValueInterfaces
+   1651.0 ms  ✓ Reexport
+   1664.8 ms  ✓ LaTeXStrings
+   1716.8 ms  ✓ InvertedIndices
+   1723.5 ms  ✓ IteratorInterfaceExtensions
+   1737.0 ms  ✓ DataAPI
+   1747.0 ms  ✓ SuiteSparse_jll
+   1943.8 ms  ✓ Compat
+   2341.0 ms  ✓ OrderedCollections
+   2345.0 ms  ✓ InlineStrings
+   2322.3 ms  ✓ Preferences
+   1020.4 ms  ✓ TableTraits
+   1305.8 ms  ✓ Missings
+   1121.0 ms  ✓ Compat → CompatLinearAlgebraExt
+   3133.7 ms  ✓ Crayons
+   1406.3 ms  ✓ PooledArrays
+    913.8 ms  ✓ PrecompileTools
+   3745.9 ms  ✓ SentinelArrays
+   1035.2 ms  ✓ Tables
+   2128.7 ms  ✓ DataStructures
+   1534.9 ms  ✓ StringManipulation
+    490.0 ms  ✓ SortingAlgorithms
+   3937.4 ms  ✓ SparseArrays
+    546.4 ms  ✓ Statistics
+  19390.2 ms  ✓ PrettyTables
+  30191.0 ms  ✓ DataFrames
+  26 dependencies successfully precompiled in 55 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=D/DataFrames/Dataframe-Construction -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 118.95
+	System time (seconds): 6.29
+	Percent of CPU this job got: 222%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:56.22
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1245036
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 113
+	Minor (reclaiming a frame) page faults: 1574474
+	Voluntary context switches: 33635
+	Involuntary context switches: 12137
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 290800
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
