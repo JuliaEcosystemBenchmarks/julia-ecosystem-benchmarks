@@ -1,0 +1,78 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1499.4 ms  ✓ RealDot
+    924.7 ms  ✓ StaticArraysCore
+   2346.6 ms  ✓ ADTypes
+   2488.0 ms  ✓ StatsAPI
+   2605.7 ms  ✓ Inflate
+   2568.4 ms  ✓ PtrArrays
+   2839.8 ms  ✓ CompilerSupportLibraries_jll
+   3082.6 ms  ✓ OpenLibm_jll
+   3127.5 ms  ✓ Requires
+   3089.7 ms  ✓ DataAPI
+   3469.7 ms  ✓ DocStringExtensions
+   1099.1 ms  ✓ AliasTables
+   3754.7 ms  ✓ SuiteSparse_jll
+   3937.5 ms  ✓ OrderedCollections
+   1975.6 ms  ✓ Missings
+   2898.6 ms  ✓ Quaternions
+   2438.7 ms  ✓ NaNMath
+   5852.2 ms  ✓ LinearMaps
+   3488.3 ms  ✓ Preferences
+   6854.8 ms  ✓ IrrationalConstants
+   1174.6 ms  ✓ PrecompileTools
+   3313.6 ms  ✓ DataStructures
+   1307.9 ms  ✓ JLLWrappers
+   4868.8 ms  ✓ DifferentiationInterface
+   1427.5 ms  ✓ SortingAlgorithms
+   1888.1 ms  ✓ LogExpFunctions
+   1795.3 ms  ✓ OpenSpecFun_jll
+   9489.8 ms  ✓ ManifoldsBase
+   1348.4 ms  ✓ ManifoldsBase → ManifoldsBaseQuaternionsExt
+  10783.5 ms  ✓ MacroTools
+   5301.9 ms  ✓ MatrixEquations
+   2371.8 ms  ✓ ManifoldDiff
+   1124.7 ms  ✓ SimpleTraits
+   9819.7 ms  ✓ SparseArrays
+   1514.1 ms  ✓ Statistics
+   1549.4 ms  ✓ LinearMaps → LinearMapsSparseArraysExt
+   1773.9 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+   6795.1 ms  ✓ SpecialFunctions
+   1065.4 ms  ✓ LinearMaps → LinearMapsStatisticsExt
+   1015.7 ms  ✓ DiffRules
+   1897.9 ms  ✓ ManifoldsBase → ManifoldsBaseStatisticsExt
+   2691.3 ms  ✓ NamedDims
+   3123.0 ms  ✓ StatsBase
+   1635.5 ms  ✓ Kronecker
+  14750.0 ms  ✓ StaticArrays
+    857.8 ms  ✓ DifferentiationInterface → DifferentiationInterfaceStaticArraysExt
+   1097.3 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+   1490.1 ms  ✓ ArnoldiMethod
+  10187.6 ms  ✓ Tullio
+   6273.3 ms  ✓ Graphs
+   1391.9 ms  ✓ SimpleWeightedGraphs
+   9110.6 ms  ✓ Manifolds
+  52 dependencies successfully precompiled in 41 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=M/Manifolds/Geodesic-On-Sphere -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 85.91
+	System time (seconds): 9.51
+	Percent of CPU this job got: 222%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:42.94
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 528228
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 93
+	Minor (reclaiming a frame) page faults: 2235255
+	Voluntary context switches: 57760
+	Involuntary context switches: 44478
+	Swaps: 0
+	File system inputs: 680
+	File system outputs: 243648
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
