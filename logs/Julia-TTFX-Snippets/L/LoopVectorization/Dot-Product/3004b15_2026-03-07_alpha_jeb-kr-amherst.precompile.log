@@ -1,0 +1,57 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    405.2 ms  ✓ IfElse
+    422.1 ms  ✓ CommonWorldInvalidations
+    488.7 ms  ✓ ManualMemory
+    608.8 ms  ✓ DocStringExtensions
+    443.5 ms  ✓ SIMDTypes
+    503.4 ms  ✓ Unicode
+    468.4 ms  ✓ UnPack
+    869.8 ms  ✓ SciMLPublic
+   1408.0 ms  ✓ OffsetArrays
+    844.8 ms  ✓ Requires
+    831.8 ms  ✓ CpuId
+    645.7 ms  ✓ Compat
+    437.2 ms  ✓ Adapt
+   1282.7 ms  ✓ ThreadingUtilities
+    471.5 ms  ✓ Compat → CompatLinearAlgebraExt
+    398.9 ms  ✓ OffsetArrays → OffsetArraysAdaptExt
+    529.0 ms  ✓ ArrayInterface
+   1939.4 ms  ✓ Preferences
+    363.1 ms  ✓ PrecompileTools
+  16831.7 ms  ✓ Static
+    387.6 ms  ✓ BitTwiddlingConvenienceFunctions
+    821.0 ms  ✓ CPUSummary
+    535.7 ms  ✓ PolyesterWeave
+   1008.8 ms  ✓ HostCPUFeatures
+  10705.2 ms  ✓ StaticArrayInterface
+    412.1 ms  ✓ StaticArrayInterface → StaticArrayInterfaceOffsetArraysExt
+    447.9 ms  ✓ CloseOpenIntervals
+    510.2 ms  ✓ LayoutPointers
+   6174.7 ms  ✓ VectorizationBase
+   1151.4 ms  ✓ SLEEFPirates
+  20082.9 ms  ✓ LoopVectorization
+  31 dependencies successfully precompiled in 59 seconds. 8 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +alpha --project=L/LoopVectorization/Dot-Product -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 219.33
+	System time (seconds): 11.32
+	Percent of CPU this job got: 134%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:51.77
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2780084
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 276
+	Minor (reclaiming a frame) page faults: 4547277
+	Voluntary context switches: 12025
+	Involuntary context switches: 2309
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 484736
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
