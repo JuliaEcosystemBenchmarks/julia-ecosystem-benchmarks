@@ -1,0 +1,54 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    412.8 ms  ✓ DataValueInterfaces
+    410.4 ms  ✓ Future
+    419.1 ms  ✓ Reexport
+    667.3 ms  ✓ OrderedCollections
+    807.4 ms  ✓ InlineStrings
+    495.3 ms  ✓ DataAPI
+    569.8 ms  ✓ InvertedIndices
+    684.5 ms  ✓ Statistics
+    474.0 ms  ✓ IteratorInterfaceExtensions
+    521.4 ms  ✓ LaTeXStrings
+    495.7 ms  ✓ Unicode
+    508.6 ms  ✓ Missings
+    549.4 ms  ✓ PooledArrays
+    456.3 ms  ✓ TableTraits
+   1415.2 ms  ✓ InteractiveUtils
+   1987.0 ms  ✓ Crayons
+   1840.9 ms  ✓ DataStructures
+    688.5 ms  ✓ Compat
+   1699.1 ms  ✓ SentinelArrays
+    611.6 ms  ✓ SortingAlgorithms
+    904.8 ms  ✓ Tables
+    437.3 ms  ✓ Compat → CompatLinearAlgebraExt
+   2081.8 ms  ✓ Preferences
+    375.0 ms  ✓ PrecompileTools
+   1759.2 ms  ✓ StringManipulation
+  48224.5 ms  ✓ REPL
+  21811.3 ms  ✓ PrettyTables
+  41817.2 ms  ✓ DataFrames
+  28 dependencies successfully precompiled in 115 seconds. 8 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +alpha --project=D/DataFrames/Dataframe-Construction -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 301.33
+	System time (seconds): 12.59
+	Percent of CPU this job got: 136%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:49.45
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2749844
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 342
+	Minor (reclaiming a frame) page faults: 5037371
+	Voluntary context switches: 11138
+	Involuntary context switches: 5357
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 732320
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
