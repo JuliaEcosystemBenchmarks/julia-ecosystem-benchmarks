@@ -1,0 +1,70 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1476.8 ms  ✓ nghttp2_jll
+   1483.6 ms  ✓ MozillaCACerts_jll
+   1691.5 ms  ✓ OpenSSL_jll
+   1658.7 ms  ✓ Logging
+   1663.2 ms  ✓ UUIDs
+   1666.7 ms  ✓ Zlib_jll
+   1696.6 ms  ✓ Unicode
+   1702.7 ms  ✓ Base64
+   1695.8 ms  ✓ NetworkOptions
+   1739.6 ms  ✓ CompilerSupportLibraries_jll
+    463.3 ms  ✓ LibSSH2_jll
+    547.8 ms  ✓ p7zip_jll
+    671.4 ms  ✓ Printf
+    486.2 ms  ✓ LibCURL_jll
+    488.2 ms  ✓ LibGit2_jll
+   3287.0 ms  ✓ ArgTools
+    798.2 ms  ✓ LibCURL
+    628.5 ms  ✓ Tar
+   2951.9 ms  ✓ Dates
+   3134.1 ms  ✓ LibGit2
+    445.6 ms  ✓ TOML
+   3032.1 ms  ✓ Downloads
+   9100.8 ms  ✓ StyledStrings
+   1672.6 ms  ✓ JuliaSyntaxHighlighting
+   3762.0 ms  ✓ Markdown
+  46689.6 ms  ✓ Pkg
+  26 dependencies successfully precompiled in 61 seconds
+Precompiling packages...
+    653.7 ms  ✓ Compiler
+    943.6 ms  ✓ Serialization
+    998.2 ms  ✓ Preferences
+    438.9 ms  ✓ PrecompileTools
+   1912.1 ms  ✓ OrderedCollections
+   2438.3 ms  ✓ InteractiveUtils
+   3430.3 ms  ✓ MacroTools
+   1045.9 ms  ✓ CodeTracking
+   4406.2 ms  ✓ Test
+   6018.9 ms  ✓ JuliaInterpreter
+  18149.6 ms  ✓ JuliaSyntax
+   8911.7 ms  ✓ LoweredCodeUtils
+  33635.0 ms  ✓ REPL
+   4197.1 ms  ✓ Pkg → REPLExt
+   8497.8 ms  ✓ Revise
+  46232.8 ms  ✓ JET
+  16 dependencies successfully precompiled in 91 seconds. 26 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=J/JET/Type-Stability-Analysis -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 364.67
+	System time (seconds): 12.07
+	Percent of CPU this job got: 246%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:32.89
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2313116
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 299
+	Minor (reclaiming a frame) page faults: 4183843
+	Voluntary context switches: 11094
+	Involuntary context switches: 12799
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 704928
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
