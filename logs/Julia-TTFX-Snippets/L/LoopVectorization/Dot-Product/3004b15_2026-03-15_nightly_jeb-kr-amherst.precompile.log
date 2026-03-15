@@ -1,0 +1,58 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    429.2 ms  ✓ CommonWorldInvalidations
+    426.1 ms  ✓ IfElse
+    502.1 ms  ✓ ManualMemory
+    632.8 ms  ✓ DocStringExtensions
+    450.3 ms  ✓ SIMDTypes
+    517.9 ms  ✓ Unicode
+    476.9 ms  ✓ UnPack
+    746.8 ms  ✓ SciMLPublic
+   1302.3 ms  ✓ OffsetArrays
+    776.4 ms  ✓ Requires
+    823.7 ms  ✓ CpuId
+    667.7 ms  ✓ Compat
+   1078.5 ms  ✓ ThreadingUtilities
+    572.3 ms  ✓ Adapt
+    422.0 ms  ✓ Compat → CompatLinearAlgebraExt
+    385.9 ms  ✓ OffsetArrays → OffsetArraysAdaptExt
+    512.5 ms  ✓ ArrayInterface
+   1621.1 ms  ✓ Preferences
+    452.6 ms  ✓ PrecompileTools
+  18183.4 ms  ✓ Static
+    497.4 ms  ✓ BitTwiddlingConvenienceFunctions
+   1032.6 ms  ✓ CPUSummary
+   1155.6 ms  ✓ HostCPUFeatures
+    654.8 ms  ✓ PolyesterWeave
+   6760.6 ms  ✓ StaticArrayInterface
+    514.6 ms  ✓ StaticArrayInterface → StaticArrayInterfaceOffsetArraysExt
+    550.3 ms  ✓ CloseOpenIntervals
+    618.7 ms  ✓ LayoutPointers
+   5888.9 ms  ✓ VectorizationBase
+    967.5 ms  ✓ SLEEFPirates
+  17358.5 ms  ✓ LoopVectorization
+  31 dependencies successfully precompiled in 53 seconds. 8 already precompiled.
+  8 dependencies precompiled but different versions are currently loaded (Base64, Dates, JuliaSyntaxHighlighting, Markdown, Printf, StyledStrings, TOML and UUIDs). Restart julia to access the new versions. Otherwise, 21 dependents of these packages may trigger further precompilation to work with the unexpected versions.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +nightly --project=L/LoopVectorization/Dot-Product -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 201.92
+	System time (seconds): 10.85
+	Percent of CPU this job got: 135%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:36.84
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2258472
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 292
+	Minor (reclaiming a frame) page faults: 4325463
+	Voluntary context switches: 12247
+	Involuntary context switches: 1962
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 481480
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
