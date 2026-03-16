@@ -1,0 +1,119 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1978.4 ms  ✓ RealDot
+   1978.9 ms  ✓ IteratorInterfaceExtensions
+   1991.9 ms  ✓ DataValueInterfaces
+   2089.9 ms  ✓ MistyClosures
+   2169.7 ms  ✓ ExprTools
+   2173.3 ms  ✓ DataAPI
+   2266.4 ms  ✓ ConstructionBase
+   2358.0 ms  ✓ SuiteSparse_jll
+   2394.7 ms  ✓ Requires
+   2478.6 ms  ✓ Inflate
+   2731.7 ms  ✓ Compat
+   2879.7 ms  ✓ OrderedCollections
+   1232.9 ms  ✓ TableTraits
+   1693.1 ms  ✓ StaticArraysCore
+   1416.7 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   1198.5 ms  ✓ Compat → CompatLinearAlgebraExt
+   1991.3 ms  ✓ ADTypes
+   1599.9 ms  ✓ Adapt
+   2396.5 ms  ✓ Preferences
+   4682.8 ms  ✓ IrrationalConstants
+   1188.7 ms  ✓ ADTypes → ADTypesConstructionBaseExt
+   1600.4 ms  ✓ GPUArraysCore
+   1207.8 ms  ✓ PrecompileTools
+   2389.7 ms  ✓ Tables
+   5766.6 ms  ✓ Distributed
+   6544.6 ms  ✓ MacroTools
+   2892.5 ms  ✓ DifferentiationInterface
+   3192.9 ms  ✓ ChainRulesCore
+   4408.2 ms  ✓ DataStructures
+   2117.1 ms  ✓ StructArrays
+   1331.7 ms  ✓ DifferentiationInterface → DifferentiationInterfaceGPUArraysCoreExt
+   8220.9 ms  ✓ Test
+   1336.5 ms  ✓ ADTypes → ADTypesChainRulesCoreExt
+   1844.1 ms  ✓ SimpleTraits
+    665.4 ms  ✓ StructArrays → StructArraysLinearAlgebraExt
+   2339.4 ms  ✓ DispatchDoctor
+   6878.7 ms  ✓ SparseArrays
+    355.9 ms  ✓ DispatchDoctor → DispatchDoctorChainRulesCoreExt
+    648.1 ms  ✓ SuiteSparse
+    647.8 ms  ✓ Adapt → AdaptSparseArraysExt
+    708.0 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+    707.5 ms  ✓ ChainRulesCore → ChainRulesCoreSparseArraysExt
+    727.9 ms  ✓ StructArrays → StructArraysSparseArraysExt
+    801.5 ms  ✓ Statistics
+    402.2 ms  ✓ SparseInverseSubset
+   6706.9 ms  ✓ StaticArrays
+    677.2 ms  ✓ Adapt → AdaptStaticArraysExt
+    690.2 ms  ✓ StaticArrays → StaticArraysChainRulesCoreExt
+    694.3 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+    695.2 ms  ✓ DifferentiationInterface → DifferentiationInterfaceStaticArraysExt
+    789.4 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    947.4 ms  ✓ ArnoldiMethod
+   2497.0 ms  ✓ Graphs
+DifferentiationInterfaceChainRulesCoreExt Waiting for background task / IO / timer.
+[pid 112077] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x4c8a5b0->0x79749a078880
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+StructArraysAdaptExt Waiting for background task / IO / timer.
+[pid 112116] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x3ad61620->0x75d6c4f92e60
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+StructArraysStaticArraysExt Waiting for background task / IO / timer.
+[pid 112455] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x11725df0->0x7910e2ea2c50
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+  21253.8 ms  ✓ DifferentiationInterface → DifferentiationInterfaceChainRulesCoreExt
+  20680.4 ms  ✓ StructArrays → StructArraysAdaptExt
+   3187.5 ms  ✓ ChainRules
+  20747.4 ms  ✓ StructArrays → StructArraysStaticArraysExt
+  41349.1 ms  ✓ Mooncake
+   1037.3 ms  ✓ DifferentiationInterface → DifferentiationInterfaceMooncakeExt
+  59 dependencies successfully precompiled in 76 seconds
+  3 dependencies had output during precompilation:
+┌ StructArrays → StructArraysAdaptExt
+│  [pid 112116] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x3ad61620->0x75d6c4f92e60
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+┌ StructArrays → StructArraysStaticArraysExt
+│  [pid 112455] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x11725df0->0x7910e2ea2c50
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+┌ DifferentiationInterface → DifferentiationInterfaceChainRulesCoreExt
+│  [pid 112077] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x4c8a5b0->0x79749a078880
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=M/Mooncake/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 138.20
+	System time (seconds): 11.09
+	Percent of CPU this job got: 193%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:16.98
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2063920
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 178
+	Minor (reclaiming a frame) page faults: 2979157
+	Voluntary context switches: 78324
+	Involuntary context switches: 11547
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 388360
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

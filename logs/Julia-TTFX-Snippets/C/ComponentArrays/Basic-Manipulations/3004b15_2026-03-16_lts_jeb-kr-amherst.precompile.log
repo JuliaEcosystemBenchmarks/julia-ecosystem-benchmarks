@@ -1,0 +1,46 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    734.0 ms  ✓ CommonWorldInvalidations
+    738.2 ms  ✓ SciMLPublic
+    936.9 ms  ✓ IfElse
+    837.1 ms  ✓ StaticArraysCore
+    840.7 ms  ✓ ConstructionBase
+    879.2 ms  ✓ Requires
+    911.1 ms  ✓ Compat
+   1013.6 ms  ✓ Preferences
+    302.2 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+    328.6 ms  ✓ Adapt
+    299.9 ms  ✓ Compat → CompatLinearAlgebraExt
+    310.5 ms  ✓ PrecompileTools
+    380.5 ms  ✓ ArrayInterface
+    432.0 ms  ✓ Functors
+    278.1 ms  ✓ ArrayInterface → ArrayInterfaceStaticArraysCoreExt
+    542.3 ms  ✓ Static
+    835.1 ms  ✓ ChainRulesCore
+    277.3 ms  ✓ ArrayInterface → ArrayInterfaceChainRulesCoreExt
+    776.3 ms  ✓ StaticArrayInterface
+    575.9 ms  ✓ ComponentArrays
+  20 dependencies successfully precompiled in 4 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=C/ComponentArrays/Basic-Manipulations -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 8.45
+	System time (seconds): 2.67
+	Percent of CPU this job got: 233%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.76
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 329488
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 45
+	Minor (reclaiming a frame) page faults: 768663
+	Voluntary context switches: 27335
+	Involuntary context switches: 537
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 28952
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
