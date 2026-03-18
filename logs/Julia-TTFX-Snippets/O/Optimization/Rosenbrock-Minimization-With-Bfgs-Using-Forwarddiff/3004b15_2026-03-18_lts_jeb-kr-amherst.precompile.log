@@ -1,0 +1,178 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1850.0 ms  ✓ IteratorInterfaceExtensions
+   1952.0 ms  ✓ CommonSolve
+   2065.5 ms  ✓ OpenLibm_jll
+   2164.7 ms  ✓ Reexport
+   2255.2 ms  ✓ EnumX
+   2258.6 ms  ✓ ExprTools
+   2245.4 ms  ✓ CompilerSupportLibraries_jll
+   2360.4 ms  ✓ InverseFunctions
+   2377.0 ms  ✓ Requires
+   2375.3 ms  ✓ PositiveFactorizations
+   2430.5 ms  ✓ ConstructionBase
+   3048.4 ms  ✓ DocStringExtensions
+   3050.6 ms  ✓ AbstractTrees
+   3990.0 ms  ✓ FunctionWrappers
+   1986.6 ms  ✓ FastClosures
+   1895.8 ms  ✓ CompositionsBase
+   2204.4 ms  ✓ ProgressLogging
+   4351.9 ms  ✓ FillArrays
+   1996.6 ms  ✓ SciMLPublic
+   2279.3 ms  ✓ SuiteSparse_jll
+   2205.1 ms  ✓ Adapt
+   2496.2 ms  ✓ LoggingExtras
+   2316.0 ms  ✓ StaticArraysCore
+   3108.3 ms  ✓ ADTypes
+   2501.8 ms  ✓ NaNMath
+   2009.7 ms  ✓ RuntimeGeneratedFunctions
+   1914.7 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+   5962.2 ms  ✓ IrrationalConstants
+   1821.1 ms  ✓ LeftChildRightSiblingTrees
+   2105.4 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   3209.8 ms  ✓ Preferences
+   1905.6 ms  ✓ FunctionWrappersWrappers
+   2185.9 ms  ✓ ArrayInterface
+   2201.4 ms  ✓ GPUArraysCore
+   1599.9 ms  ✓ DiffResults
+   1518.0 ms  ✓ ADTypes → ADTypesConstructionBaseExt
+   1508.5 ms  ✓ PrecompileTools
+   1512.9 ms  ✓ JLLWrappers
+   2079.2 ms  ✓ SciMLLogging
+   2193.0 ms  ✓ TerminalLoggers
+   1406.5 ms  ✓ ArrayInterface → ArrayInterfaceStaticArraysCoreExt
+   2480.1 ms  ✓ LogExpFunctions
+   1601.4 ms  ✓ ArrayInterface → ArrayInterfaceGPUArraysCoreExt
+   6904.1 ms  ✓ Distributed
+   3524.5 ms  ✓ DifferentiationInterface
+   1770.6 ms  ✓ OpenSpecFun_jll
+   1798.8 ms  ✓ SciMLStructures
+   1124.9 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+   7611.5 ms  ✓ MacroTools
+   6003.4 ms  ✓ ExproniconLite
+   1081.2 ms  ✓ DifferentiationInterface → DifferentiationInterfaceGPUArraysCoreExt
+   2597.4 ms  ✓ PreallocationTools
+   1593.1 ms  ✓ ProgressMeter
+    875.9 ms  ✓ CommonSubexpressions
+   3020.0 ms  ✓ RecipesBase
+    552.9 ms  ✓ ConsoleProgressMonitor
+   1332.4 ms  ✓ Setfield
+   1551.5 ms  ✓ Jieko
+    593.4 ms  ✓ FiniteDiff
+   7158.9 ms  ✓ SparseArrays
+   1083.7 ms  ✓ SuiteSparse
+   1164.6 ms  ✓ DifferentiationInterface → DifferentiationInterfaceFiniteDiffExt
+   1270.7 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+   1564.6 ms  ✓ ArrayInterface → ArrayInterfaceSparseArraysExt
+   1581.6 ms  ✓ Adapt → AdaptSparseArraysExt
+   1635.0 ms  ✓ FillArrays → FillArraysSparseArraysExt
+   3924.8 ms  ✓ SpecialFunctions
+   1688.8 ms  ✓ Statistics
+   1079.2 ms  ✓ NLSolversBase
+   1204.1 ms  ✓ PDMats
+    772.1 ms  ✓ DiffRules
+    784.6 ms  ✓ FillArrays → FillArraysStatisticsExt
+    675.9 ms  ✓ FillArrays → FillArraysPDMatsExt
+    737.6 ms  ✓ LineSearches
+CompositionsBaseInverseFunctionsExt Waiting for background task / IO / timer.
+[pid 924254] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x31dc6490->0x7e87423e4a60
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+   2979.8 ms  ✓ SparseConnectivityTracer
+   2922.5 ms  ✓ ForwardDiff
+   2249.9 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseConnectivityTracerExt
+   2442.3 ms  ✓ PreallocationTools → PreallocationToolsSparseConnectivityTracerExt
+   2312.5 ms  ✓ DifferentiationInterface → DifferentiationInterfaceForwardDiffExt
+   3340.8 ms  ✓ SparseConnectivityTracer → SparseConnectivityTracerLogExpFunctionsExt
+   3438.9 ms  ✓ SparseConnectivityTracer → SparseConnectivityTracerNaNMathExt
+   8224.7 ms  ✓ SparseMatrixColorings
+   2901.6 ms  ✓ PreallocationTools → PreallocationToolsForwardDiffExt
+    734.3 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseMatrixColoringsExt
+   9564.7 ms  ✓ Moshi
+FiniteDiffSparseArraysExt Waiting for background task / IO / timer.
+[pid 925104] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x14d09c10->0x7a085cdba4a0
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+  21576.3 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+   1145.3 ms  ✓ Accessors
+    331.7 ms  ✓ Accessors → LinearAlgebraExt
+    801.1 ms  ✓ SymbolicIndexingInterface
+   1129.3 ms  ✓ SciMLOperators
+SparseConnectivityTracerSpecialFunctionsExt Waiting for background task / IO / timer.
+[pid 925415] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x10c6e690->0x70c4c9404eb0
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+    342.8 ms  ✓ SciMLOperators → SciMLOperatorsStaticArraysCoreExt
+    452.7 ms  ✓ SciMLOperators → SciMLOperatorsSparseArraysExt
+   2203.5 ms  ✓ RecursiveArrayTools
+    432.3 ms  ✓ RecursiveArrayTools → RecursiveArrayToolsForwardDiffExt
+    499.8 ms  ✓ RecursiveArrayTools → RecursiveArrayToolsSparseArraysExt
+  21418.4 ms  ✓ FiniteDiff → FiniteDiffSparseArraysExt
+   1396.3 ms  ✓ Optim
+  22302.6 ms  ✓ SparseConnectivityTracer → SparseConnectivityTracerSpecialFunctionsExt
+RecursiveArrayToolsStatisticsExt Waiting for background task / IO / timer.
+[pid 925816] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x1bad1b90->0x7a4acd008fa0
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+  20571.3 ms  ✓ RecursiveArrayTools → RecursiveArrayToolsStatisticsExt
+   7087.2 ms  ✓ SciMLBase
+    820.2 ms  ✓ SciMLBase → SciMLBaseDifferentiationInterfaceExt
+   1015.4 ms  ✓ SciMLBase → SciMLBaseForwardDiffExt
+   2044.5 ms  ✓ OptimizationBase
+    286.7 ms  ✓ OptimizationBase → OptimizationFiniteDiffExt
+    353.2 ms  ✓ OptimizationBase → OptimizationForwardDiffExt
+   1043.6 ms  ✓ Optimization
+   1121.0 ms  ✓ OptimizationOptimJL
+  107 dependencies successfully precompiled in 63 seconds
+  4 dependencies had output during precompilation:
+┌ FiniteDiff → FiniteDiffSparseArraysExt
+│  [pid 925104] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x14d09c10->0x7a085cdba4a0
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+┌ CompositionsBase → CompositionsBaseInverseFunctionsExt
+│  [pid 924254] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x31dc6490->0x7e87423e4a60
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+┌ SparseConnectivityTracer → SparseConnectivityTracerSpecialFunctionsExt
+│  [pid 925415] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x10c6e690->0x70c4c9404eb0
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+┌ RecursiveArrayTools → RecursiveArrayToolsStatisticsExt
+│  [pid 925816] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x1bad1b90->0x7a4acd008fa0
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=O/Optimization/Rosenbrock-Minimization-With-Bfgs-Using-Forwarddiff -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 104.86
+	System time (seconds): 17.55
+	Percent of CPU this job got: 191%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:03.96
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 497228
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 299
+	Minor (reclaiming a frame) page faults: 4483837
+	Voluntary context switches: 138378
+	Involuntary context switches: 28036
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 301936
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
