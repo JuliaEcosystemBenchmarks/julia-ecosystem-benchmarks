@@ -1,0 +1,95 @@
+nice: cannot set niceness: Permission denied
+    Updating registry at `/workdir/depot/registries/General`
+┌ Info: The General registry is installed via git. Consider reinstalling it via
+│ the newer faster direct from tarball format by running:
+│   pkg> registry rm General; registry add General
+└ 
+    Updating git-repo `/workdir/timetravel_registry/General`
+    Updating `/tmp/tmp.2451YrefYs/Julia-TTFX-Snippets/tasks/Z/Zygote/Gradient-Of-Square-Norm/Project.toml`
+  [e88e6eb3] + Zygote v0.7.10
+    Updating `/tmp/tmp.2451YrefYs/Julia-TTFX-Snippets/tasks/Z/Zygote/Gradient-Of-Square-Norm/Manifest.toml`
+  [621f4979] + AbstractFFTs v1.5.0
+  [79e6a3ab] + Adapt v4.5.0
+  [082447d4] + ChainRules v1.73.0
+  [d360d2e6] + ChainRulesCore v1.26.0
+  [bbf7d656] + CommonSubexpressions v0.3.1
+  [34da2185] + Compat v4.18.1
+  [187b0558] + ConstructionBase v1.6.0
+  [9a962f9c] + DataAPI v1.16.0
+  [e2d170a0] + DataValueInterfaces v1.0.0
+  [163ba53b] + DiffResults v1.1.0
+  [b552c78f] + DiffRules v1.15.1
+  [ffbed154] + DocStringExtensions v0.9.5
+  [1a297f60] + FillArrays v1.16.0
+  [f6369f11] + ForwardDiff v1.3.2
+  [46192b85] + GPUArraysCore v0.2.0
+  [7869d1d1] + IRTools v0.4.15
+  [92d709cd] + IrrationalConstants v0.2.6
+  [82899510] + IteratorInterfaceExtensions v1.0.0
+  [692b3bcd] + JLLWrappers v1.7.1
+  [2ab3a3ac] + LogExpFunctions v0.3.29
+  [1914dd2f] + MacroTools v0.5.16
+  [77ba4419] + NaNMath v1.1.3
+  [bac558e1] + OrderedCollections v1.8.1
+  [aea7be01] + PrecompileTools v1.3.3
+  [21216c6a] + Preferences v1.5.2
+  [c1ae055f] + RealDot v0.1.0
+  [ae029012] + Requires v1.3.1
+  [dc90abb0] + SparseInverseSubset v0.1.2
+  [276daf66] + SpecialFunctions v2.7.1
+  [1e83bf80] + StaticArraysCore v1.4.4
+  [10745b16] + Statistics v1.11.1
+  [09ab397b] + StructArrays v0.7.2
+  [3783bdb8] + TableTraits v1.0.1
+  [bd369af6] + Tables v1.12.1
+  [e88e6eb3] + Zygote v0.7.10
+  [700de1a5] + ZygoteRules v0.2.7
+  [efe28fd5] + OpenSpecFun_jll v0.5.6+0
+  [56f22d72] + Artifacts v1.11.0
+  [2a0f44e3] + Base64 v1.11.0
+  [ade2ca70] + Dates v1.11.0
+  [8ba89e20] + Distributed v1.11.0
+  [b77e0a4c] + InteractiveUtils v1.11.0
+  [ac6e5ff7] + JuliaSyntaxHighlighting v1.12.0
+  [8f399da3] + Libdl v1.11.0
+  [37e2e46d] + LinearAlgebra v1.12.0
+  [d6f4376e] + Markdown v1.11.0
+  [de0858da] + Printf v1.11.0
+  [9a3f8284] + Random v1.11.0
+  [ea8e919c] + SHA v0.7.0
+  [9e88b42a] + Serialization v1.11.0
+  [6462fe0b] + Sockets v1.11.0
+  [2f01184e] + SparseArrays v1.12.0
+  [f489334b] + StyledStrings v1.11.0
+  [4607b0f0] + SuiteSparse
+  [fa267f1f] + TOML v1.0.3
+  [cf7118a7] + UUIDs v1.11.0
+  [4ec0a83e] + Unicode v1.11.0
+  [e66e0078] + CompilerSupportLibraries_jll v1.3.0+1
+  [4536629a] + OpenBLAS_jll v0.3.29+0
+  [05823500] + OpenLibm_jll v0.8.7+0
+  [bea87d4a] + SuiteSparse_jll v7.8.3+2
+  [8e850b90] + libblastrampoline_jll v5.15.0+0
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=Z/Zygote/Gradient-Of-Square-Norm -e using Pkg; Pkg.instantiate()"
+	User time (seconds): 4.61
+	System time (seconds): 2.59
+	Percent of CPU this job got: 117%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:06.11
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 710060
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 146856
+	Voluntary context switches: 329
+	Involuntary context switches: 54
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 5328
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

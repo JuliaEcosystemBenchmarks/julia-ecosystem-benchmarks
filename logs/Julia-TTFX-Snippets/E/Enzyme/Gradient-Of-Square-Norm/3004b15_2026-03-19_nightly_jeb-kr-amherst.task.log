@@ -1,0 +1,220 @@
+nice: cannot set niceness: Permission denied
+[0KERROR: LoadError: MethodError: no method matching Compiler.OverlayCodeCache(::Compiler.InternalCodeCache, ::Vector{Compiler.InferenceResult})
+[0KThe type `Compiler.OverlayCodeCache` exists, but no method is defined for this combination of argument types when trying to construct it.
+[0K
+[0KClosest candidates are:
+[0K  Compiler.OverlayCodeCache(::Cache, !Matched::Compiler.InferenceCache) where Cache
+[0K   @ Base ~/.julia/juliaup/julia-nightly/share/julia/Compiler/src/types.jl:552
+[0K
+[0KStacktrace:
+[0K  [1] code_cache(interp::GPUCompiler.GPUInterpreter{Compiler.CachedMethodTable{Compiler.OverlayMethodTable}})
+[0K    @ Compiler ./../usr/share/julia/Compiler/src/types.jl:586
+[0K  [2] typeinf_ext(interp::GPUCompiler.GPUInterpreter{Compiler.CachedMethodTable{Compiler.OverlayMethodTable}}, mi::Core.MethodInstance, source_mode::UInt8)
+[0K    @ Compiler ./../usr/share/julia/Compiler/src/typeinfer.jl:1491
+[0K  [3] typeinf_type(interp::GPUCompiler.GPUInterpreter{Compiler.CachedMethodTable{Compiler.OverlayMethodTable}}, mi::Core.MethodInstance)
+[0K    @ Compiler ./../usr/share/julia/Compiler/src/typeinfer.jl:1557
+[0K  [4] typeinf_type(mi::Core.MethodInstance; interp::GPUCompiler.GPUInterpreter{Compiler.CachedMethodTable{Compiler.OverlayMethodTable}})
+[0K    @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/validation.jl:27
+[0K  [5] kwcall(::@NamedTuple{interp::GPUCompiler.GPUInterpreter{Compiler.CachedMethodTable{Compiler.OverlayMethodTable}}}, ::typeof(GPUCompiler.typeinf_type), mi::Core.MethodInstance)
+[0K    @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/validation.jl:16
+[0K  [6] check_method(job::GPUCompiler.CompilerJob)
+[0K    @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/validation.jl:43
+[0K  [7] compile_unhooked(output::Symbol, job::GPUCompiler.CompilerJob; kwargs::@Kwargs{})
+[0K    @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/driver.jl:86
+[0K  [8] compile_unhooked(output::Symbol, job::GPUCompiler.CompilerJob)
+[0K    @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/driver.jl:80
+[0K  [9] compile(target::Symbol, job::GPUCompiler.CompilerJob; kwargs::@Kwargs{})
+[0K    @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/driver.jl:67
+[0K [10] compile(target::Symbol, job::GPUCompiler.CompilerJob)
+[0K    @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/driver.jl:55
+[0K [11] (::GPUCompiler.var"#146#147"{GPUCompiler.CompilerJob{GPUCompiler.NativeCompilerTarget, GPUCompiler.var"##155".DummyCompilerParams}})(ctx::LLVM.Context)
+[0K    @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/precompile.jl:35
+[0K [12] JuliaContext(f::GPUCompiler.var"#146#147"{GPUCompiler.CompilerJob{GPUCompiler.NativeCompilerTarget, GPUCompiler.var"##155".DummyCompilerParams}}; kwargs::@Kwargs{})
+[0K    @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/driver.jl:34
+[0K [13] JuliaContext(f::Function)
+[0K    @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/driver.jl:25
+[0K [14] macro expansion
+[0K    @ /workdir/depot/packages/GPUCompiler/OCZFZ/src/precompile.jl:34 [inlined]
+[0K [15] macro expansion
+[0K    @ /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+[0K [16] macro expansion
+[0K    @ /workdir/depot/packages/GPUCompiler/OCZFZ/src/precompile.jl:25 [inlined]
+[0K [17] macro expansion
+[0K    @ /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:121 [inlined]
+[0K [18] top-level scope
+[0K    @ /workdir/depot/packages/GPUCompiler/OCZFZ/src/precompile.jl:118
+[0K [19] include(mapexpr::Function, mod::Module, _path::String)
+[0K    @ Base ./Base.jl:324
+[0K [20] top-level scope
+[0K    @ /workdir/depot/packages/GPUCompiler/OCZFZ/src/GPUCompiler.jl:70
+[0K [21] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:323
+[0K [22] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3289
+[0K [23] top-level scope
+[0K    @ stdin:5
+[0K [24] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:517
+[0K [25] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3131
+[0K [26] include_string
+[0K    @ ./loading.jl:3141 [inlined]
+[0K [27] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [28] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/GPUCompiler/OCZFZ/src/precompile.jl:3
+[0Kin expression starting at /workdir/depot/packages/GPUCompiler/OCZFZ/src/GPUCompiler.jl:1
+[0Kin expression starting at stdin:5
+[0KERROR: LoadError: Precompiled image Base.PkgId(Base.UUID("61eb1bfa-7361-4325-ad38-22787b887f55"), "GPUCompiler") not available with flags CacheFlags(; use_pkgimages=true, debug_level=1, check_bounds=0, inline=true, opt_level=2)
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:56
+[0K  [2] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2841
+[0K  [3] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2695
+[0K  [4] macro expansion
+[0K    @ ./loading.jl:2622 [inlined]
+[0K  [5] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K  [6] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2586
+[0K  [7] require
+[0K    @ ./loading.jl:2562 [inlined]
+[0K  [8] eval_import_path
+[0K    @ ./module.jl:36 [inlined]
+[0K  [9] _eval_import(imported::Bool, to::Module, from::Nothing, paths::Expr)
+[0K    @ Base ./module.jl:111
+[0K [10] top-level scope
+[0K    @ /workdir/depot/packages/Enzyme/RBPHq/src/typetree.jl:6
+[0K [11] include(mapexpr::Function, mod::Module, _path::String)
+[0K    @ Base ./Base.jl:324
+[0K [12] top-level scope
+[0K    @ /workdir/depot/packages/Enzyme/RBPHq/src/Enzyme.jl:140
+[0K [13] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:323
+[0K [14] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3289
+[0K [15] top-level scope
+[0K    @ stdin:5
+[0K [16] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:517
+[0K [17] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:3131
+[0K [18] include_string
+[0K    @ ./loading.jl:3141 [inlined]
+[0K [19] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:342
+[0K [20] _start()
+[0K    @ Base ./client.jl:585
+[0Kin expression starting at /workdir/depot/packages/Enzyme/RBPHq/src/typetree.jl:6
+[0Kin expression starting at /workdir/depot/packages/Enzyme/RBPHq/src/Enzyme.jl:1
+[0Kin expression starting at stdin:5
+
+  2 dependencies had output during precompilation:
+┌ Enzyme
+│  [Output was shown above]
+└  
+┌ GPUCompiler
+│  ERROR: LoadError: MethodError: no method matching Compiler.OverlayCodeCache(::Compiler.InternalCodeCache, ::Vector{Compiler.InferenceResult})
+│  The type `Compiler.OverlayCodeCache` exists, but no method is defined for this combination of argument types when trying to construct it.
+│  
+│  Closest candidates are:
+│    Compiler.OverlayCodeCache(::Cache, !Matched::Compiler.InferenceCache) where Cache
+│     @ Base ~/.julia/juliaup/julia-nightly/share/julia/Compiler/src/types.jl:552
+│  
+│  Stacktrace:
+│    [1] code_cache(interp::GPUCompiler.GPUInterpreter{Compiler.CachedMethodTable{Compiler.OverlayMethodTable}})
+│      @ Compiler ./../usr/share/julia/Compiler/src/types.jl:586
+│    [2] typeinf_ext(interp::GPUCompiler.GPUInterpreter{Compiler.CachedMethodTable{Compiler.OverlayMethodTable}}, mi::Core.MethodInstance, source_mode::UInt8)
+│      @ Compiler ./../usr/share/julia/Compiler/src/typeinfer.jl:1491
+│    [3] typeinf_type(interp::GPUCompiler.GPUInterpreter{Compiler.CachedMethodTable{Compiler.OverlayMethodTable}}, mi::Core.MethodInstance)
+│      @ Compiler ./../usr/share/julia/Compiler/src/typeinfer.jl:1557
+│    [4] typeinf_type(mi::Core.MethodInstance; interp::GPUCompiler.GPUInterpreter{Compiler.CachedMethodTable{Compiler.OverlayMethodTable}})
+│      @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/validation.jl:27
+│    [5] kwcall(::@NamedTuple{interp::GPUCompiler.GPUInterpreter{Compiler.CachedMethodTable{Compiler.OverlayMethodTable}}}, ::typeof(GPUCompiler.typeinf_type), mi::Core.MethodInstance)
+│      @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/validation.jl:16
+│    [6] check_method(job::GPUCompiler.CompilerJob)
+│      @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/validation.jl:43
+│    [7] compile_unhooked(output::Symbol, job::GPUCompiler.CompilerJob; kwargs::@Kwargs{})
+│      @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/driver.jl:86
+│    [8] compile_unhooked(output::Symbol, job::GPUCompiler.CompilerJob)
+│      @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/driver.jl:80
+│    [9] compile(target::Symbol, job::GPUCompiler.CompilerJob; kwargs::@Kwargs{})
+│      @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/driver.jl:67
+│   [10] compile(target::Symbol, job::GPUCompiler.CompilerJob)
+│      @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/driver.jl:55
+│   [11] (::GPUCompiler.var"#146#147"{GPUCompiler.CompilerJob{GPUCompiler.NativeCompilerTarget, GPUCompiler.var"##155".DummyCompilerParams}})(ctx::LLVM.Context)
+│      @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/precompile.jl:35
+│   [12] JuliaContext(f::GPUCompiler.var"#146#147"{GPUCompiler.CompilerJob{GPUCompiler.NativeCompilerTarget, GPUCompiler.var"##155".DummyCompilerParams}}; kwargs::@Kwargs{})
+│      @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/driver.jl:34
+│   [13] JuliaContext(f::Function)
+│      @ GPUCompiler /workdir/depot/packages/GPUCompiler/OCZFZ/src/driver.jl:25
+│   [14] macro expansion
+│      @ /workdir/depot/packages/GPUCompiler/OCZFZ/src/precompile.jl:34 [inlined]
+│   [15] macro expansion
+│      @ /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:73 [inlined]
+│   [16] macro expansion
+│      @ /workdir/depot/packages/GPUCompiler/OCZFZ/src/precompile.jl:25 [inlined]
+│   [17] macro expansion
+│      @ /workdir/depot/packages/PrecompileTools/gn08A/src/workloads.jl:121 [inlined]
+│   [18] top-level scope
+│      @ /workdir/depot/packages/GPUCompiler/OCZFZ/src/precompile.jl:118
+│   [19] include(mapexpr::Function, mod::Module, _path::String)
+│      @ Base ./Base.jl:324
+│   [20] top-level scope
+│      @ /workdir/depot/packages/GPUCompiler/OCZFZ/src/GPUCompiler.jl:70
+│   [21] include(mod::Module, _path::String)
+│      @ Base ./Base.jl:323
+│   [22] include_package_for_output(pkg::Base.PkgId, input::String, syntax_version::VersionNumber, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+│      @ Base ./loading.jl:3289
+│   [23] top-level scope
+│      @ stdin:5
+│   [24] eval(m::Module, e::Any)
+│      @ Core ./boot.jl:517
+│   [25] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+│      @ Base ./loading.jl:3131
+│   [26] include_string
+│      @ ./loading.jl:3141 [inlined]
+│   [27] exec_options(opts::Base.JLOptions)
+│      @ Base ./client.jl:342
+│   [28] _start()
+│      @ Base ./client.jl:585
+│  in expression starting at /workdir/depot/packages/GPUCompiler/OCZFZ/src/precompile.jl:3
+│  in expression starting at /workdir/depot/packages/GPUCompiler/OCZFZ/src/GPUCompiler.jl:1
+│  in expression starting at stdin:5
+└  
+ERROR: LoadError: The following 2 packages failed to precompile:
+
+Enzyme 
+Failed to precompile Enzyme [7da242da-08ed-463a-9acd-ee780be4f1d9] to "/workdir/depot/compiled/v1.14/Enzyme/jl_paskmm" (ProcessExited(1)).
+
+GPUCompiler 
+Failed to precompile GPUCompiler [61eb1bfa-7361-4325-ad38-22787b887f55] to "/workdir/depot/compiled/v1.14/GPUCompiler/jl_NDFa4D" (ProcessExited(1)).
+
+in expression starting at /tmp/tmp.2QI4wNOJXa/Julia-TTFX-Snippets/tasks/E/Enzyme/Gradient-Of-Square-Norm/task.jl:10
+Command exited with non-zero status 1
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +nightly --project=E/Enzyme/Gradient-Of-Square-Norm E/Enzyme/Gradient-Of-Square-Norm/task.jl"
+	User time (seconds): 6.21
+	System time (seconds): 0.86
+	Percent of CPU this job got: 101%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:07.01
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 619196
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 372361
+	Voluntary context switches: 220
+	Involuntary context switches: 62
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 48
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
