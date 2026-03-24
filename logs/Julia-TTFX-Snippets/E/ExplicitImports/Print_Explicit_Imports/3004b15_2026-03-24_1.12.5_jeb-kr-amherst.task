@@ -1,0 +1,48 @@
+  Module ExplicitImports is not relying on any implicit imports.
+
+  However, module ExplicitImports has stale explicit imports for this 1 unused
+  name:
+
+    •  parse is unused but it was imported from
+       ExplicitImports.Vendored.JuliaSyntax at
+       /workdir/depot/packages/ExplicitImports/sATsO/src/ExplicitImports.jl:9:30
+
+  Additionally, module ExplicitImports has 1 self-qualified access:
+
+    •  parent was accessed as ExplicitImports.parent inside
+       ExplicitImports at
+       /workdir/depot/packages/ExplicitImports/sATsO/src/deprecated.jl:79:21
+
+  Additionally, module ExplicitImports accesses 12 non-public names:
+
+    •  Code is not public in Markdown but it was accessed via Markdown at
+       /workdir/depot/packages/ExplicitImports/sATsO/src/precompile.jl:8:51
+    •  List is not public in Markdown but it was accessed via Markdown at
+       /workdir/depot/packages/ExplicitImports/sATsO/src/precompile.jl:10:51
+    •  Paragraph is not public in Markdown but it was accessed via
+       Markdown at
+       /workdir/depot/packages/ExplicitImports/sATsO/src/precompile.jl:9:51
+    •  PkgId is not public in Base but it was accessed via Base at
+       /workdir/depot/packages/ExplicitImports/sATsO/src/improper_explicit_imports.jl:153:18
+    •  Types is not public in Pkg but it was accessed via Pkg at
+       /workdir/depot/packages/ExplicitImports/sATsO/src/main.jl:54:25
+    •  ioproperties is not public in Base but it was accessed via Base at
+       /workdir/depot/packages/ExplicitImports/sATsO/src/main.jl:45:25
+    •  loaded_modules is not public in Base but it was accessed via Base
+       at
+       /workdir/depot/packages/ExplicitImports/sATsO/src/improper_explicit_imports.jl:154:23
+    •  loaded_modules_array is not public in Base but it was accessed via
+       Base at
+       /workdir/depot/packages/ExplicitImports/sATsO/src/ExplicitImports.jl:411:21
+    •  maybe_root_module is not public in Base but it was accessed via
+       Base at
+       /workdir/depot/packages/ExplicitImports/sATsO/src/improper_explicit_imports.jl:54:47
+    •  parent is not public in ExplicitImports but it was accessed via
+       ExplicitImports at
+       /workdir/depot/packages/ExplicitImports/sATsO/src/deprecated.jl:79:21
+    •  set_active_project is not public in Base but it was accessed via
+       Base at
+       /workdir/depot/packages/ExplicitImports/sATsO/src/main.jl:66:22
+    •  term is not public in Markdown but it was accessed via Markdown at
+       /workdir/depot/packages/ExplicitImports/sATsO/src/precompile.jl:10:25
+0.35649919509887695, 0.4666438102722168, 0.8231430053710938 seconds
