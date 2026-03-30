@@ -1,0 +1,60 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  73777.3 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 74 seconds
+Precompiling packages...
+   1187.8 ms  ✓ IfElse
+   1188.8 ms  ✓ CommonWorldInvalidations
+   1291.3 ms  ✓ SIMDTypes
+   1405.3 ms  ✓ UnPack
+   1412.6 ms  ✓ Unicode
+   1415.8 ms  ✓ ManualMemory
+   1420.4 ms  ✓ SciMLPublic
+   1617.5 ms  ✓ DocStringExtensions
+   1830.6 ms  ✓ Requires
+   1898.1 ms  ✓ CpuId
+   2040.1 ms  ✓ OffsetArrays
+    843.3 ms  ✓ Preferences
+    499.9 ms  ✓ Adapt
+    433.7 ms  ✓ PrecompileTools
+    437.6 ms  ✓ OffsetArrays → OffsetArraysAdaptExt
+   1786.9 ms  ✓ Compat
+   2083.2 ms  ✓ ThreadingUtilities
+    379.1 ms  ✓ Compat → CompatLinearAlgebraExt
+   1432.3 ms  ✓ ArrayInterface
+   3780.6 ms  ✓ Static
+    362.1 ms  ✓ BitTwiddlingConvenienceFunctions
+    835.5 ms  ✓ CPUSummary
+    744.4 ms  ✓ HostCPUFeatures
+    514.6 ms  ✓ PolyesterWeave
+   5497.3 ms  ✓ StaticArrayInterface
+    412.7 ms  ✓ StaticArrayInterface → StaticArrayInterfaceOffsetArraysExt
+    428.8 ms  ✓ CloseOpenIntervals
+    505.3 ms  ✓ LayoutPointers
+   6091.3 ms  ✓ VectorizationBase
+   1366.0 ms  ✓ SLEEFPirates
+  16306.6 ms  ✓ LoopVectorization
+  31 dependencies successfully precompiled in 36 seconds. 8 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=L/LoopVectorization/Dot-Product -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 192.12
+	System time (seconds): 10.12
+	Percent of CPU this job got: 182%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:50.89
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2146568
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 263
+	Minor (reclaiming a frame) page faults: 3417923
+	Voluntary context switches: 11163
+	Involuntary context switches: 5616
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 467656
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
