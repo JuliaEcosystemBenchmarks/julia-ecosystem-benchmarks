@@ -1,0 +1,59 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  73591.1 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 74 seconds
+Precompiling packages...
+    987.1 ms  ✓ Unicode
+    996.9 ms  ✓ OpenLibm_jll
+   1108.5 ms  ✓ StaticArraysCore
+   1187.1 ms  ✓ CompilerSupportLibraries_jll
+   1309.4 ms  ✓ Statistics
+   1514.3 ms  ✓ DocStringExtensions
+    870.4 ms  ✓ DiffResults
+   1201.8 ms  ✓ Preferences
+    645.7 ms  ✓ PrecompileTools
+    821.2 ms  ✓ JLLWrappers
+   3321.4 ms  ✓ FunctionWrappers
+   2525.9 ms  ✓ NaNMath
+   2647.0 ms  ✓ Compat
+    886.6 ms  ✓ OpenSpecFun_jll
+   3949.9 ms  ✓ IrrationalConstants
+    485.3 ms  ✓ Compat → CompatLinearAlgebraExt
+    564.9 ms  ✓ LogExpFunctions
+   4838.7 ms  ✓ MacroTools
+    457.9 ms  ✓ CommonSubexpressions
+   2119.7 ms  ✓ ChainRulesCore
+   2323.2 ms  ✓ SpecialFunctions
+    541.8 ms  ✓ DiffRules
+   1180.1 ms  ✓ LogExpFunctions → LogExpFunctionsChainRulesCoreExt
+   1389.3 ms  ✓ SpecialFunctions → SpecialFunctionsChainRulesCoreExt
+   7175.5 ms  ✓ StaticArrays
+    476.7 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+   3658.9 ms  ✓ ForwardDiff
+   1345.4 ms  ✓ StaticArrays → StaticArraysChainRulesCoreExt
+    534.4 ms  ✓ ForwardDiff → ForwardDiffStaticArraysExt
+  13322.8 ms  ✓ ReverseDiff
+  30 dependencies successfully precompiled in 25 seconds. 4 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=R/ReverseDiff/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 171.51
+	System time (seconds): 9.74
+	Percent of CPU this job got: 182%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:39.37
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2149728
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 246
+	Minor (reclaiming a frame) page faults: 3321518
+	Voluntary context switches: 9852
+	Involuntary context switches: 4140
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 482432
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

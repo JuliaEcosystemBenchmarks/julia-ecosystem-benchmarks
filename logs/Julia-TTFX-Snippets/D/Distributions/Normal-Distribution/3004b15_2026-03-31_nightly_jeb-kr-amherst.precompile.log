@@ -1,0 +1,63 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    441.2 ms  ✓ Reexport
+    472.3 ms  ✓ StatsAPI
+    711.8 ms  ✓ OpenLibm_jll
+    787.7 ms  ✓ SuiteSparse_jll
+    633.5 ms  ✓ DocStringExtensions
+   1107.3 ms  ✓ FillArrays
+    687.7 ms  ✓ Serialization
+    532.2 ms  ✓ DataAPI
+    727.7 ms  ✓ OrderedCollections
+    468.3 ms  ✓ PtrArrays
+    618.5 ms  ✓ Statistics
+    498.2 ms  ✓ Unicode
+    526.2 ms  ✓ Missings
+    525.3 ms  ✓ AliasTables
+   1288.7 ms  ✓ IrrationalConstants
+    557.1 ms  ✓ FillArrays → FillArraysStatisticsExt
+    577.3 ms  ✓ LogExpFunctions
+   1680.2 ms  ✓ DataStructures
+    491.5 ms  ✓ SortingAlgorithms
+   1575.0 ms  ✓ Preferences
+    789.4 ms  ✓ QuadGK
+    541.2 ms  ✓ JLLWrappers
+   3730.4 ms  ✓ SparseArrays
+    764.0 ms  ✓ Rmath_jll
+    771.6 ms  ✓ OpenSpecFun_jll
+    601.2 ms  ✓ SuiteSparse
+    641.9 ms  ✓ Statistics → SparseArraysExt
+    702.9 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    835.9 ms  ✓ Rmath
+    779.2 ms  ✓ PDMats
+    571.6 ms  ✓ FillArrays → FillArraysPDMatsExt
+   2282.9 ms  ✓ SpecialFunctions
+   1952.5 ms  ✓ StatsBase
+    555.8 ms  ✓ PDMats → StatsBaseExt
+    930.0 ms  ✓ HypergeometricFunctions
+   1373.1 ms  ✓ StatsFuns
+   3740.6 ms  ✓ Distributions
+  37 dependencies successfully precompiled in 14 seconds. 3 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +nightly --project=D/Distributions/Normal-Distribution -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 157.38
+	System time (seconds): 10.08
+	Percent of CPU this job got: 143%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:56.78
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2251680
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 241
+	Minor (reclaiming a frame) page faults: 3886677
+	Voluntary context switches: 11662
+	Involuntary context switches: 1770
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 442416
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
