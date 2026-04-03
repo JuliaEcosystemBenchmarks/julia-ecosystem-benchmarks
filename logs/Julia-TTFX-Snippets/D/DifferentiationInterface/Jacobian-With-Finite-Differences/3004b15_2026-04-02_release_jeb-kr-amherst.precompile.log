@@ -1,0 +1,31 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  76431.8 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 76 seconds
+Precompiling packages...
+    533.2 ms  ✓ ADTypes
+   1632.6 ms  ✓ DifferentiationInterface
+  2 dependencies successfully precompiled in 2 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=D/DifferentiationInterface/Jacobian-With-Finite-Differences -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 127.66
+	System time (seconds): 5.13
+	Percent of CPU this job got: 167%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:19.48
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2148428
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 214
+	Minor (reclaiming a frame) page faults: 1860339
+	Voluntary context switches: 5587
+	Involuntary context switches: 3399
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 318264
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

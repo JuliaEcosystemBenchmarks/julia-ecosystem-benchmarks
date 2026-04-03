@@ -1,0 +1,135 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1942.1 ms  ✓ Reexport
+   1928.2 ms  ✓ IteratorInterfaceExtensions
+   1959.6 ms  ✓ DataValueInterfaces
+   2048.0 ms  ✓ UnPack
+   2061.2 ms  ✓ LaTeXStrings
+   2134.1 ms  ✓ DataAPI
+   2260.5 ms  ✓ LorentzVectors
+   2329.2 ms  ✓ ConstructionBase
+   2355.8 ms  ✓ InverseFunctions
+   2458.0 ms  ✓ LRUCache
+   2949.6 ms  ✓ DocStringExtensions
+   2948.3 ms  ✓ AbstractTrees
+   3160.7 ms  ✓ OrderedCollections
+   3331.7 ms  ✓ Calculus
+   2098.9 ms  ✓ StatsAPI
+   2089.1 ms  ✓ CompositionsBase
+   2199.2 ms  ✓ SuiteSparse_jll
+   2007.0 ms  ✓ PtrArrays
+   2668.0 ms  ✓ StaticArraysCore
+   3009.4 ms  ✓ IterTools
+   1908.1 ms  ✓ TableTraits
+   2294.8 ms  ✓ BayesHistogram
+   3307.3 ms  ✓ BitIntegers
+   2901.3 ms  ✓ TranscodingStreams
+   2234.8 ms  ✓ Missings
+   5633.9 ms  ✓ IrrationalConstants
+   1995.9 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+   2203.8 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   3305.9 ms  ✓ Preferences
+   6407.3 ms  ✓ SentinelArrays
+   2066.8 ms  ✓ LRUCache → SerializationExt
+   4719.6 ms  ✓ Crayons
+   1736.2 ms  ✓ Parameters
+   1685.1 ms  ✓ AliasTables
+   2030.0 ms  ✓ Measurements
+    830.1 ms  ✓ PrecompileTools
+   1600.0 ms  ✓ LogExpFunctions
+    992.7 ms  ✓ JLLWrappers
+   2092.8 ms  ✓ Tables
+   1113.0 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+   1502.7 ms  ✓ libdeflate_jll
+   1592.2 ms  ✓ Lz4_jll
+   1598.2 ms  ✓ Zstd_jll
+   1695.1 ms  ✓ XZ_jll
+   6716.4 ms  ✓ MacroTools
+   5212.2 ms  ✓ DataStructures
+   2310.6 ms  ✓ StructArrays
+   1003.1 ms  ✓ CodecXz
+   1185.4 ms  ✓ Memoization
+   1209.8 ms  ✓ Mixers
+   1620.9 ms  ✓ LibDeflate
+   1075.6 ms  ✓ SortingAlgorithms
+   1810.4 ms  ✓ CodecZstd
+    917.5 ms  ✓ StructArrays → StructArraysLinearAlgebraExt
+   1930.7 ms  ✓ CodecLz4
+   3709.5 ms  ✓ StringManipulation
+   6207.1 ms  ✓ SparseArrays
+    425.8 ms  ✓ StructArrays → StructArraysSparseArraysExt
+    490.9 ms  ✓ Statistics
+    545.9 ms  ✓ ArraysOfArrays
+    391.1 ms  ✓ ArraysOfArrays → ArraysOfArraysStaticArraysCoreExt
+   1362.2 ms  ✓ StatsBase
+   7365.8 ms  ✓ StaticArrays
+   1178.8 ms  ✓ FHist
+    484.9 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+    602.6 ms  ✓ XXHashNative
+    603.7 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+CompositionsBaseInverseFunctionsExt Waiting for background task / IO / timer.
+[pid 2935816] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x3c410fc0->0x7f075540fa60
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+StructArraysStaticArraysExt Waiting for background task / IO / timer.
+[pid 2936658] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x3055b3f0->0x7136d1a9f4f0
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+  21348.8 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+  16399.9 ms  ✓ PrettyTables
+   1193.2 ms  ✓ Accessors
+    349.0 ms  ✓ Accessors → LinearAlgebraExt
+    499.0 ms  ✓ Accessors → StaticArraysExt
+  20574.0 ms  ✓ StructArrays → StructArraysStaticArraysExt
+StructArraysExt Waiting for background task / IO / timer.
+[pid 2936808] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x11ad0820->0x761e475b9210
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+  20390.4 ms  ✓ Accessors → StructArraysExt
+  10626.3 ms  ✓ UnROOT
+  75 dependencies successfully precompiled in 59 seconds
+  3 dependencies had output during precompilation:
+┌ Accessors → StructArraysExt
+│  [pid 2936808] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x11ad0820->0x761e475b9210
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+┌ CompositionsBase → CompositionsBaseInverseFunctionsExt
+│  [pid 2935816] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x3c410fc0->0x7f075540fa60
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+┌ StructArrays → StructArraysStaticArraysExt
+│  [pid 2936658] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x3055b3f0->0x7136d1a9f4f0
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=U/UnROOT/Loading-A-Typical-Hep-Ex--Root-File -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 101.41
+	System time (seconds): 13.28
+	Percent of CPU this job got: 190%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:00.26
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1124516
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 214
+	Minor (reclaiming a frame) page faults: 3334217
+	Voluntary context switches: 89438
+	Involuntary context switches: 22523
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 295824
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
