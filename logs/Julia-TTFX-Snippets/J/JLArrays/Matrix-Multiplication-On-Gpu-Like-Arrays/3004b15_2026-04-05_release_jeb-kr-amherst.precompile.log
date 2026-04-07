@@ -1,0 +1,87 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1484.4 ms  ✓ Logging
+   1485.5 ms  ✓ UUIDs
+   1706.7 ms  ✓ OpenSSL_jll
+   1727.3 ms  ✓ MozillaCACerts_jll
+   1763.9 ms  ✓ Unicode
+   1761.7 ms  ✓ Zlib_jll
+   1761.2 ms  ✓ nghttp2_jll
+   1797.6 ms  ✓ NetworkOptions
+   1853.2 ms  ✓ CompilerSupportLibraries_jll
+   1875.5 ms  ✓ Base64
+    536.5 ms  ✓ LibSSH2_jll
+    605.2 ms  ✓ p7zip_jll
+    713.0 ms  ✓ Printf
+    511.5 ms  ✓ LibCURL_jll
+    531.2 ms  ✓ LibGit2_jll
+   3320.6 ms  ✓ ArgTools
+    787.1 ms  ✓ LibCURL
+    688.4 ms  ✓ Tar
+   2988.8 ms  ✓ Dates
+   3152.6 ms  ✓ LibGit2
+    452.2 ms  ✓ TOML
+   3132.5 ms  ✓ Downloads
+   9537.4 ms  ✓ StyledStrings
+   1659.2 ms  ✓ JuliaSyntaxHighlighting
+   3917.8 ms  ✓ Markdown
+  47806.1 ms  ✓ Pkg
+  26 dependencies successfully precompiled in 63 seconds
+Precompiling packages...
+   1743.7 ms  ✓ Reexport
+   1951.4 ms  ✓ SuiteSparse_jll
+   2045.4 ms  ✓ HashArrayMappedTries
+   2229.6 ms  ✓ StaticArraysCore
+   2235.3 ms  ✓ Statistics
+   2351.3 ms  ✓ Serialization
+   2630.6 ms  ✓ Requires
+   2632.7 ms  ✓ Preferences
+   1564.6 ms  ✓ ScopedValues
+   3610.7 ms  ✓ LazyArtifacts
+   1071.5 ms  ✓ PrecompileTools
+   1298.5 ms  ✓ JLLWrappers
+   1317.4 ms  ✓ Adapt
+   4516.1 ms  ✓ CEnum
+    964.0 ms  ✓ GPUArraysCore
+   5231.6 ms  ✓ UnsafeAtomics
+   5605.9 ms  ✓ InteractiveUtils
+    587.3 ms  ✓ Atomix
+   1948.8 ms  ✓ LLVMExtra_jll
+   6579.6 ms  ✓ MacroTools
+   6240.0 ms  ✓ SparseArrays
+    471.4 ms  ✓ Adapt → AdaptSparseArraysExt
+    504.8 ms  ✓ Statistics → SparseArraysExt
+   7728.3 ms  ✓ StaticArrays
+    578.2 ms  ✓ Adapt → AdaptStaticArraysExt
+    595.6 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+   6254.4 ms  ✓ LLVM
+   1389.5 ms  ✓ UnsafeAtomics → UnsafeAtomicsLLVM
+   3295.9 ms  ✓ KernelAbstractions
+    559.8 ms  ✓ KernelAbstractions → LinearAlgebraExt
+    718.1 ms  ✓ KernelAbstractions → SparseArraysExt
+   4299.0 ms  ✓ GPUArrays
+   2221.8 ms  ✓ JLArrays
+  33 dependencies successfully precompiled in 23 seconds. 26 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=J/JLArrays/Matrix-Multiplication-On-Gpu-Like-Arrays -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 184.46
+	System time (seconds): 12.13
+	Percent of CPU this job got: 226%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:26.63
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2183984
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 218
+	Minor (reclaiming a frame) page faults: 3591621
+	Voluntary context switches: 10885
+	Involuntary context switches: 6537
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 466976
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
