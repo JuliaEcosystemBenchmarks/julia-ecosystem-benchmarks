@@ -1,0 +1,93 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1907.7 ms  ✓ IteratorInterfaceExtensions
+   1921.3 ms  ✓ RealDot
+   1894.6 ms  ✓ DataAPI
+   1928.4 ms  ✓ DataValueInterfaces
+   2028.3 ms  ✓ OpenLibm_jll
+   2090.4 ms  ✓ CompilerSupportLibraries_jll
+   2206.5 ms  ✓ ConstructionBase
+   2327.3 ms  ✓ Requires
+   2586.7 ms  ✓ SuiteSparse_jll
+   2621.5 ms  ✓ AbstractFFTs
+   2705.8 ms  ✓ DocStringExtensions
+   2855.6 ms  ✓ Compat
+   2734.2 ms  ✓ OrderedCollections
+   1386.4 ms  ✓ TableTraits
+   1309.9 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   3532.8 ms  ✓ FillArrays
+   1694.4 ms  ✓ StaticArraysCore
+   1609.4 ms  ✓ NaNMath
+   1484.2 ms  ✓ Adapt
+   1105.2 ms  ✓ Compat → CompatLinearAlgebraExt
+   2085.2 ms  ✓ Preferences
+   4338.5 ms  ✓ IrrationalConstants
+   1020.4 ms  ✓ DiffResults
+   1092.7 ms  ✓ GPUArraysCore
+    921.3 ms  ✓ PrecompileTools
+   1720.7 ms  ✓ Tables
+   1190.2 ms  ✓ JLLWrappers
+   5300.4 ms  ✓ Distributed
+   1175.4 ms  ✓ LogExpFunctions
+    545.0 ms  ✓ OpenSpecFun_jll
+   1997.4 ms  ✓ ChainRulesCore
+   1107.8 ms  ✓ StructArrays
+   4225.8 ms  ✓ MacroTools
+    889.9 ms  ✓ AbstractFFTs → AbstractFFTsChainRulesCoreExt
+    756.7 ms  ✓ CommonSubexpressions
+    806.6 ms  ✓ StructArrays → StructArraysLinearAlgebraExt
+   1135.6 ms  ✓ ZygoteRules
+   1630.7 ms  ✓ LogExpFunctions → LogExpFunctionsChainRulesCoreExt
+   5084.5 ms  ✓ SparseArrays
+   1862.1 ms  ✓ IRTools
+    709.9 ms  ✓ SuiteSparse
+    735.9 ms  ✓ Adapt → AdaptSparseArraysExt
+    747.5 ms  ✓ StructArrays → StructArraysSparseArraysExt
+    777.2 ms  ✓ ChainRulesCore → ChainRulesCoreSparseArraysExt
+    826.8 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    870.8 ms  ✓ Statistics
+   2930.2 ms  ✓ SpecialFunctions
+    425.8 ms  ✓ SparseInverseSubset
+    427.1 ms  ✓ FillArrays → FillArraysStatisticsExt
+    434.9 ms  ✓ DiffRules
+   1003.5 ms  ✓ SpecialFunctions → SpecialFunctionsChainRulesCoreExt
+   2051.6 ms  ✓ ForwardDiff
+StructArraysAdaptExt Waiting for background task / IO / timer.
+[pid 1285260] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x1360fcb0->0x773d62192d70
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+  20703.5 ms  ✓ StructArrays → StructArraysAdaptExt
+   3198.0 ms  ✓ ChainRules
+  18163.3 ms  ✓ Zygote
+  55 dependencies successfully precompiled in 49 seconds
+  1 dependency had output during precompilation:
+┌ StructArrays → StructArraysAdaptExt
+│  [pid 1285260] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x1360fcb0->0x773d62192d70
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=Z/Zygote/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 68.00
+	System time (seconds): 9.41
+	Percent of CPU this job got: 155%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:49.89
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 958320
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 151
+	Minor (reclaiming a frame) page faults: 2365388
+	Voluntary context switches: 69367
+	Involuntary context switches: 10397
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 227280
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
