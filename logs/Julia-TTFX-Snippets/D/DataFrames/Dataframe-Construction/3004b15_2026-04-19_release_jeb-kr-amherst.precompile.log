@@ -1,0 +1,58 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  75792.5 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 76 seconds
+Precompiling packages...
+   1946.7 ms  ✓ IteratorInterfaceExtensions
+   1973.8 ms  ✓ DataValueInterfaces
+   1969.1 ms  ✓ Reexport
+   1982.6 ms  ✓ Unicode
+   2036.9 ms  ✓ Future
+   2082.3 ms  ✓ InvertedIndices
+   2163.6 ms  ✓ DataAPI
+   2164.8 ms  ✓ LaTeXStrings
+   2364.0 ms  ✓ CompilerSupportLibraries_jll
+   2591.1 ms  ✓ Statistics
+   3262.9 ms  ✓ InlineStrings
+   1340.2 ms  ✓ TableTraits
+   1322.2 ms  ✓ PooledArrays
+   1813.3 ms  ✓ Preferences
+    705.4 ms  ✓ PrecompileTools
+   4799.7 ms  ✓ OrderedCollections
+   2911.6 ms  ✓ SentinelArrays
+   3176.6 ms  ✓ Missings
+   5441.3 ms  ✓ Crayons
+   3427.5 ms  ✓ Compat
+   5759.2 ms  ✓ InteractiveUtils
+    455.3 ms  ✓ Compat → CompatLinearAlgebraExt
+   2014.1 ms  ✓ StringManipulation
+   1976.5 ms  ✓ DataStructures
+   2181.4 ms  ✓ Tables
+    447.1 ms  ✓ SortingAlgorithms
+  26237.4 ms  ✓ REPL
+  17695.5 ms  ✓ PrettyTables
+  31407.1 ms  ✓ DataFrames
+  29 dependencies successfully precompiled in 81 seconds. 8 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=D/DataFrames/Dataframe-Construction -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 290.75
+	System time (seconds): 12.26
+	Percent of CPU this job got: 191%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:37.83
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2153560
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 237
+	Minor (reclaiming a frame) page faults: 3968991
+	Voluntary context switches: 10725
+	Involuntary context switches: 10927
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 708800
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

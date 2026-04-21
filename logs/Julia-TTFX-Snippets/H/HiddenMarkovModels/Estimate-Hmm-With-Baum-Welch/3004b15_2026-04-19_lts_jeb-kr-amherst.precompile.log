@@ -1,0 +1,104 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   2044.6 ms  ✓ Reexport
+   2046.9 ms  ✓ StatsAPI
+   2092.0 ms  ✓ PtrArrays
+   2131.5 ms  ✓ DataAPI
+   2157.0 ms  ✓ OpenLibm_jll
+   2244.4 ms  ✓ ArgCheck
+   2224.5 ms  ✓ SuiteSparse_jll
+   2328.0 ms  ✓ CompilerSupportLibraries_jll
+   2530.0 ms  ✓ InverseFunctions
+   2528.4 ms  ✓ DocStringExtensions
+   2783.1 ms  ✓ Compat
+   2733.5 ms  ✓ OrderedCollections
+   2788.3 ms  ✓ Preferences
+   1197.9 ms  ✓ Missings
+   1206.4 ms  ✓ AliasTables
+   3358.9 ms  ✓ FillArrays
+    993.5 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+    909.7 ms  ✓ Compat → CompatLinearAlgebraExt
+   3640.0 ms  ✓ IrrationalConstants
+    902.3 ms  ✓ JLLWrappers
+    620.3 ms  ✓ Rmath_jll
+    698.9 ms  ✓ OpenSpecFun_jll
+    794.1 ms  ✓ LogExpFunctions
+    628.0 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+   1666.8 ms  ✓ ChainRulesCore
+   2576.4 ms  ✓ DataStructures
+   1292.2 ms  ✓ Rmath
+   6115.9 ms  ✓ Test
+   1050.9 ms  ✓ SortingAlgorithms
+    488.0 ms  ✓ InverseFunctions → InverseFunctionsTestExt
+   1327.7 ms  ✓ QuadGK
+   1687.3 ms  ✓ LogExpFunctions → LogExpFunctionsChainRulesCoreExt
+    425.1 ms  ✓ DensityInterface
+   4866.0 ms  ✓ SparseArrays
+   3020.9 ms  ✓ SpecialFunctions
+    455.2 ms  ✓ SuiteSparse
+    532.0 ms  ✓ ChainRulesCore → ChainRulesCoreSparseArraysExt
+    613.0 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    657.6 ms  ✓ Statistics
+    703.7 ms  ✓ PDMats
+    505.2 ms  ✓ FillArrays → FillArraysStatisticsExt
+    836.4 ms  ✓ HypergeometricFunctions
+    445.0 ms  ✓ FillArrays → FillArraysPDMatsExt
+   1264.6 ms  ✓ SpecialFunctions → SpecialFunctionsChainRulesCoreExt
+   1536.0 ms  ✓ StatsBase
+   1021.1 ms  ✓ StatsFuns
+    354.4 ms  ✓ StatsFuns → StatsFunsInverseFunctionsExt
+    446.6 ms  ✓ PDMats → StatsBaseExt
+    904.2 ms  ✓ StatsFuns → StatsFunsChainRulesCoreExt
+    972.7 ms  ✓ HiddenMarkovModels
+   3173.8 ms  ✓ Distributions
+    684.9 ms  ✓ Distributions → DistributionsChainRulesCoreExt
+    782.9 ms  ✓ Distributions → DistributionsTestExt
+DistributionsDensityInterfaceExt Waiting for background task / IO / timer.
+[pid 2006416] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0xa918e90->0x7c7a71525b10
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+  20771.7 ms  ✓ Distributions → DistributionsDensityInterfaceExt
+HiddenMarkovModelsDistributionsExt Waiting for background task / IO / timer.
+[pid 2006419] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x1bf9c850->0x7a4a7ebeae30
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+  40821.6 ms  ✓ HiddenMarkovModels → HiddenMarkovModelsDistributionsExt
+  55 dependencies successfully precompiled in 54 seconds
+  2 dependencies had output during precompilation:
+┌ Distributions → DistributionsDensityInterfaceExt
+│  [pid 2006416] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0xa918e90->0x7c7a71525b10
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+┌ HiddenMarkovModels → HiddenMarkovModelsDistributionsExt
+│  [pid 2006419] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x1bf9c850->0x7a4a7ebeae30
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=H/HiddenMarkovModels/Estimate-Hmm-With-Baum-Welch -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 42.30
+	System time (seconds): 8.62
+	Percent of CPU this job got: 91%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:55.49
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 378056
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 162
+	Minor (reclaiming a frame) page faults: 2266390
+	Voluntary context switches: 71592
+	Involuntary context switches: 9737
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 139192
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

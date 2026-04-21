@@ -1,0 +1,56 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1380.0 ms  ✓ SIMDTypes
+   1462.0 ms  ✓ SciMLPublic
+   1457.9 ms  ✓ UnPack
+   1606.0 ms  ✓ IfElse
+   1467.0 ms  ✓ CommonWorldInvalidations
+   1502.8 ms  ✓ ManualMemory
+   1589.8 ms  ✓ Requires
+   1612.6 ms  ✓ Compat
+   1688.3 ms  ✓ CpuId
+   1703.3 ms  ✓ DocStringExtensions
+   1798.5 ms  ✓ Preferences
+    415.2 ms  ✓ Compat → CompatLinearAlgebraExt
+    474.0 ms  ✓ Adapt
+   2065.6 ms  ✓ OffsetArrays
+    376.4 ms  ✓ PrecompileTools
+    810.1 ms  ✓ ThreadingUtilities
+    313.3 ms  ✓ OffsetArrays → OffsetArraysAdaptExt
+    397.5 ms  ✓ ArrayInterface
+    538.8 ms  ✓ Static
+    306.7 ms  ✓ BitTwiddlingConvenienceFunctions
+    606.9 ms  ✓ CPUSummary
+    804.1 ms  ✓ StaticArrayInterface
+    744.1 ms  ✓ HostCPUFeatures
+    460.1 ms  ✓ PolyesterWeave
+    374.1 ms  ✓ CloseOpenIntervals
+    375.2 ms  ✓ StaticArrayInterface → StaticArrayInterfaceOffsetArraysExt
+    454.0 ms  ✓ LayoutPointers
+   4138.0 ms  ✓ VectorizationBase
+    622.5 ms  ✓ SLEEFPirates
+  12169.1 ms  ✓ LoopVectorization
+  30 dependencies successfully precompiled in 22 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=L/LoopVectorization/Dot-Product -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 40.36
+	System time (seconds): 5.05
+	Percent of CPU this job got: 200%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:22.63
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 831100
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 97
+	Minor (reclaiming a frame) page faults: 1367460
+	Voluntary context switches: 41182
+	Involuntary context switches: 2783
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 142816
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

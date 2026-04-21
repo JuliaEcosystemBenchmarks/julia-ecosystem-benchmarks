@@ -1,0 +1,40 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    719.4 ms  ✓ Preferences
+    854.8 ms  ✓ CodeTracking
+    367.7 ms  ✓ PrecompileTools
+   1858.9 ms  ✓ MacroTools
+   2617.2 ms  ✓ Test
+   8845.2 ms  ✓ JuliaSyntax
+   8193.4 ms  ✓ JuliaInterpreter
+   4140.7 ms  ✓ LoweredCodeUtils
+  30543.4 ms  ✓ JET
+  9 dependencies successfully precompiled in 44 seconds
+  1 dependency had output during precompilation:
+┌ JET
+│  ┌ Warning: `@lookup(mod, frame, node)` at /workdir/depot/packages/JET/sQkqi/src/toplevel/virtualprocess.jl:1321 is deprecated, use `lookup(frame, node)` instead.
+│  └ @ JuliaInterpreter /workdir/depot/packages/JuliaInterpreter/ZNccU/src/interpret.jl:46
+└  
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=J/JET/Type-Stability-Analysis -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 120.07
+	System time (seconds): 3.74
+	Percent of CPU this job got: 272%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:45.45
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1881516
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 105
+	Minor (reclaiming a frame) page faults: 1224547
+	Voluntary context switches: 15804
+	Involuntary context switches: 4542
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 232960
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
