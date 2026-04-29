@@ -1,0 +1,89 @@
+nice: cannot set niceness: Permission denied
+Invalid instruction at 0x7b5dcb503eed: 0xc4, 0xe3, 0xd5, 0xce, 0xeb, 0x00, 0xc4, 0xe2, 0x6d, 0x00, 0xf6, 0xc4, 0xe2, 0x6d, 0x00
+
+[3695288] signal 4 (2): Illegal instruction
+in expression starting at none:1
+count_ones at ./int.jl:461:3 [inlined]
+#bitcount#149 at ./bitarray.jl:1436:38 [inlined]
+bitcount at ./bitarray.jl:1433:17 [inlined]
+_count at ./bitarray.jl:1441:7 [inlined]
+#count#759 at ./reducedim.jl:413:3 [inlined]
+count at ./reducedim.jl:413:24 [inlined]
+#count#758 at ./reducedim.jl:412:8 [inlined]
+count at ./reducedim.jl:412:3 [inlined]
+LogicalIndex at ./multidimensional.jl:833:11 [inlined]
+LogicalIndex at ./multidimensional.jl:837:6 [inlined]
+_maybe_linear_logical_index at ./multidimensional.jl:944:4 [inlined]
+to_indices at ./multidimensional.jl:942:6 [inlined]
+getindex at ./abstractarray.jl:1357:12 [inlined]
+_vs_string at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/Resolve/graphtype.jl:715:21
+log_event_implicit_req! at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/Resolve/graphtype.jl:824:79
+#propagate_constraints!#71 at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/Resolve/graphtype.jl:1183:238
+propagate_constraints! at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/Resolve/graphtype.jl:1112:2 [inlined]
+propagate_constraints! at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/Resolve/graphtype.jl:1112:5 [inlined]
+#simplify_graph!#115 at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/Resolve/graphtype.jl:1719:5
+simplify_graph! at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/Resolve/graphtype.jl:1718:2 [inlined]
+simplify_graph! at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/Resolve/graphtype.jl:1718:5 [inlined]
+resolve_versions! at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/Operations.jl:828:461
+#up#201 at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/Operations.jl:2537:142
+up at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/Operations.jl:2511:46 [inlined]
+#up#172 at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/API.jl:479:111
+up at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/API.jl:446:112 [inlined]
+#up#52 at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/API.jl:177:12 [inlined]
+up at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/API.jl:177:4 [inlined]
+#instantiate#282 at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/API.jl:1320:175
+instantiate at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/API.jl:1292:7 [inlined]
+#instantiate#281 at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/API.jl:1291:9 [inlined]
+instantiate at /root/.julia/juliaup/julia-nightly/share/julia/stdlib/v1.14/Pkg/src/API.jl:1291:4
+unknown function (ip: 0x7b5de0b000ff) at (unknown file)
+jl_apply at /cache/build/builder-amdci4-4/julialang/julia-master/src/julia.h:2327:12 [inlined]
+do_call at /cache/build/builder-amdci4-4/julialang/julia-master/src/interpreter.c:123:26
+eval_value at /cache/build/builder-amdci4-4/julialang/julia-master/src/interpreter.c:243:16
+eval_stmt_value at /cache/build/builder-amdci4-4/julialang/julia-master/src/interpreter.c:194:23 [inlined]
+eval_body at /cache/build/builder-amdci4-4/julialang/julia-master/src/interpreter.c:679:17
+jl_interpret_toplevel_thunk at /cache/build/builder-amdci4-4/julialang/julia-master/src/interpreter.c:884:21
+ijl_eval_thunk at /cache/build/builder-amdci4-4/julialang/julia-master/src/toplevel.c:768:18
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-4/julialang/julia-master/src/toplevel.c:712:26
+jl_eval_toplevel_stmts at /cache/build/builder-amdci4-4/julialang/julia-master/src/toplevel.c:602:15
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-4/julialang/julia-master/src/toplevel.c:684:27
+jl_eval_toplevel_stmts at /cache/build/builder-amdci4-4/julialang/julia-master/src/toplevel.c:602:15
+jl_toplevel_eval_flex at /cache/build/builder-amdci4-4/julialang/julia-master/src/toplevel.c:684:27
+ijl_toplevel_eval at /cache/build/builder-amdci4-4/julialang/julia-master/src/toplevel.c:782:12
+ijl_toplevel_eval_in at /cache/build/builder-amdci4-4/julialang/julia-master/src/toplevel.c:827:13
+eval at ./boot.jl:517:3
+exec_options at ./client.jl:318:410
+_start at ./client.jl:593:36
+jfptr__start_0.1 at /root/.julia/juliaup/julia-nightly/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/builder-amdci4-4/julialang/julia-master/src/julia.h:2327:12 [inlined]
+true_main at /cache/build/builder-amdci4-4/julialang/julia-master/src/jlapi.c:971:29
+jl_repl_entrypoint at /cache/build/builder-amdci4-4/julialang/julia-master/src/jlapi.c:1138:15
+main at /cache/build/builder-amdci4-4/julialang/julia-master/cli/loader_exe.c:58:15
+unknown function (ip: 0x7b5e17a84249) at /lib/x86_64-linux-gnu/libc.so.6
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+unknown function (ip: 0x4010b8) at /workspace/srcdir/glibc-2.17/csu/../sysdeps/x86_64/start.S
+Allocations: 4909857 (Pool: 4909273; Big: 584); GC: 7
+timeout: the monitored command dumped core
+Command terminated by signal 4
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +nightly --project=A/Attractors/Multistability-Of-Discrete-Time-Systems -e using Pkg; Pkg.instantiate()"
+	User time (seconds): 3.06
+	System time (seconds): 2.76
+	Percent of CPU this job got: 108%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.38
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 655680
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 126610
+	Voluntary context switches: 298
+	Involuntary context switches: 69
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 88
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

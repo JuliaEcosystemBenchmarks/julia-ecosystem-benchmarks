@@ -1,0 +1,68 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1062.1 ms  ✓ Reexport
+   1080.1 ms  ✓ LazyArtifacts
+   1086.6 ms  ✓ CEnum
+   1080.6 ms  ✓ HashArrayMappedTries
+   1147.3 ms  ✓ StaticArraysCore
+   1192.7 ms  ✓ Requires
+   1191.3 ms  ✓ SuiteSparse_jll
+   1447.3 ms  ✓ Preferences
+    556.5 ms  ✓ ScopedValues
+    509.7 ms  ✓ Adapt
+    497.3 ms  ✓ PrecompileTools
+    512.6 ms  ✓ JLLWrappers
+    497.4 ms  ✓ GPUArraysCore
+    673.7 ms  ✓ LLVMExtra_jll
+   2927.3 ms  ✓ UnsafeAtomics
+   2847.4 ms  ✓ MacroTools
+    388.3 ms  ✓ Atomix
+   2951.8 ms  ✓ SparseArrays
+    380.0 ms  ✓ Adapt → AdaptSparseArraysExt
+    495.5 ms  ✓ Statistics
+   4980.9 ms  ✓ StaticArrays
+    556.2 ms  ✓ Adapt → AdaptStaticArraysExt
+    847.5 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+   5200.4 ms  ✓ LLVM
+    857.6 ms  ✓ UnsafeAtomics → UnsafeAtomicsLLVM
+   2042.2 ms  ✓ KernelAbstractions
+    424.4 ms  ✓ KernelAbstractions → LinearAlgebraExt
+SparseArraysExt Waiting for background task / IO / timer.
+[pid 3492843] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x29cf3540->0x7a0d7b037fa0
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+  20516.8 ms  ✓ KernelAbstractions → SparseArraysExt
+   2183.7 ms  ✓ GPUArrays
+    867.3 ms  ✓ JLArrays
+  30 dependencies successfully precompiled in 34 seconds
+  1 dependency had output during precompilation:
+┌ KernelAbstractions → SparseArraysExt
+│  [pid 3492843] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x29cf3540->0x7a0d7b037fa0
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=J/JLArrays/Matrix-Multiplication-On-Gpu-Like-Arrays -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 33.28
+	System time (seconds): 5.32
+	Percent of CPU this job got: 109%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:35.10
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 443680
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 84
+	Minor (reclaiming a frame) page faults: 1407262
+	Voluntary context switches: 39838
+	Involuntary context switches: 1788
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 163192
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
