@@ -1,0 +1,67 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  75925.6 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 76 seconds
+Precompiling packages...
+   1701.8 ms  ✓ MistyClosures
+   1887.6 ms  ✓ Unicode
+   1889.4 ms  ✓ ExprTools
+   1986.5 ms  ✓ SuiteSparse_jll
+   1991.2 ms  ✓ CompilerSupportLibraries_jll
+   2092.5 ms  ✓ Inflate
+   2184.3 ms  ✓ StaticArraysCore
+   2278.5 ms  ✓ Statistics
+   2407.7 ms  ✓ ADTypes
+   2458.0 ms  ✓ Serialization
+   1241.5 ms  ✓ Preferences
+    690.3 ms  ✓ PrecompileTools
+   4131.6 ms  ✓ OrderedCollections
+   2820.8 ms  ✓ Compat
+   5122.2 ms  ✓ InteractiveUtils
+    678.1 ms  ✓ Compat → CompatLinearAlgebraExt
+   3281.2 ms  ✓ DifferentiationInterface
+   6429.8 ms  ✓ MacroTools
+   2749.0 ms  ✓ DataStructures
+    991.9 ms  ✓ SimpleTraits
+   3013.5 ms  ✓ ChainRulesCore
+   6461.7 ms  ✓ SparseArrays
+    536.5 ms  ✓ ADTypes → ADTypesChainRulesCoreExt
+    554.9 ms  ✓ DifferentiationInterface → DifferentiationInterfaceChainRulesCoreExt
+   2770.0 ms  ✓ DispatchDoctor
+    759.6 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+    767.7 ms  ✓ Statistics → SparseArraysExt
+    619.7 ms  ✓ DispatchDoctor → DispatchDoctorChainRulesCoreExt
+   5588.4 ms  ✓ Test
+   2055.4 ms  ✓ ChainRulesCore → ChainRulesCoreSparseArraysExt
+   9138.8 ms  ✓ StaticArrays
+    518.0 ms  ✓ DifferentiationInterface → DifferentiationInterfaceStaticArraysExt
+    524.4 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+   1439.3 ms  ✓ StaticArrays → StaticArraysChainRulesCoreExt
+   1879.7 ms  ✓ ArnoldiMethod
+   4089.2 ms  ✓ Graphs
+  93766.4 ms  ✓ Mooncake
+   1340.3 ms  ✓ DifferentiationInterface → DifferentiationInterfaceMooncakeExt
+  38 dependencies successfully precompiled in 114 seconds. 9 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=M/Mooncake/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 376.18
+	System time (seconds): 13.70
+	Percent of CPU this job got: 204%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:10.90
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3163768
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 263
+	Minor (reclaiming a frame) page faults: 4682341
+	Voluntary context switches: 12792
+	Involuntary context switches: 11354
+	Swaps: 0
+	File system inputs: 184
+	File system outputs: 798336
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

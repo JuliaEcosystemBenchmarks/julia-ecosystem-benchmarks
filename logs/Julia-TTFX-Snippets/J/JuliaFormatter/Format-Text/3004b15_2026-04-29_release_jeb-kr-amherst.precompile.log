@@ -1,0 +1,36 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  75244.8 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 75 seconds
+Precompiling packages...
+    369.4 ms  ✓ Unicode
+    404.5 ms  ✓ Glob
+    538.3 ms  ✓ Preferences
+    345.7 ms  ✓ PrecompileTools
+  10742.1 ms  ✓ CommonMark
+  13411.0 ms  ✓ JuliaSyntax
+  21056.5 ms  ✓ JuliaFormatter
+  7 dependencies successfully precompiled in 34 seconds. 3 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=J/JuliaFormatter/Format-Text -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 196.11
+	System time (seconds): 6.84
+	Percent of CPU this job got: 183%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:50.62
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2145928
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 171
+	Minor (reclaiming a frame) page faults: 2506390
+	Voluntary context switches: 7053
+	Involuntary context switches: 6123
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 472096
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,165 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   2006.9 ms  ✓ OpenLibm_jll
+   1992.2 ms  ✓ IteratorInterfaceExtensions
+   2076.8 ms  ✓ CommonSolve
+   2099.2 ms  ✓ Reexport
+   2209.0 ms  ✓ EnumX
+   2277.0 ms  ✓ CompilerSupportLibraries_jll
+   2288.3 ms  ✓ ConstructionBase
+   2315.8 ms  ✓ ExprTools
+   2328.7 ms  ✓ PositiveFactorizations
+   2423.2 ms  ✓ InverseFunctions
+   2918.6 ms  ✓ Requires
+   2923.0 ms  ✓ DocStringExtensions
+   3015.3 ms  ✓ AbstractTrees
+   3965.0 ms  ✓ FunctionWrappers
+   1917.0 ms  ✓ FastClosures
+   1919.2 ms  ✓ CompositionsBase
+   2188.4 ms  ✓ ProgressLogging
+   4215.8 ms  ✓ FillArrays
+   1978.5 ms  ✓ SciMLPublic
+   2225.9 ms  ✓ SuiteSparse_jll
+   2468.5 ms  ✓ LoggingExtras
+   2386.7 ms  ✓ StaticArraysCore
+   2007.2 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   2193.9 ms  ✓ NaNMath
+   2798.9 ms  ✓ ADTypes
+   5505.8 ms  ✓ IrrationalConstants
+   1616.1 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+   1897.5 ms  ✓ RuntimeGeneratedFunctions
+   2813.1 ms  ✓ Preferences
+   1636.8 ms  ✓ Adapt
+   1631.0 ms  ✓ LeftChildRightSiblingTrees
+   1510.5 ms  ✓ DiffResults
+   1296.4 ms  ✓ ADTypes → ADTypesConstructionBaseExt
+   1200.7 ms  ✓ PrecompileTools
+   1388.6 ms  ✓ JLLWrappers
+   1651.2 ms  ✓ SciMLLogging
+   1607.8 ms  ✓ GPUArraysCore
+   1688.3 ms  ✓ ArrayInterface
+   5563.5 ms  ✓ Distributed
+   1779.3 ms  ✓ TerminalLoggers
+   2106.7 ms  ✓ LogExpFunctions
+   3381.0 ms  ✓ DifferentiationInterface
+   1593.8 ms  ✓ OpenSpecFun_jll
+   1210.7 ms  ✓ ArrayInterface → ArrayInterfaceStaticArraysCoreExt
+   1302.5 ms  ✓ ArrayInterface → ArrayInterfaceGPUArraysCoreExt
+   1397.1 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+   6822.4 ms  ✓ MacroTools
+   1627.5 ms  ✓ SciMLStructures
+   1846.6 ms  ✓ ProgressMeter
+   1028.1 ms  ✓ DifferentiationInterface → DifferentiationInterfaceGPUArraysCoreExt
+    872.7 ms  ✓ TruncatedStacktraces
+    876.6 ms  ✓ CommonSubexpressions
+   2526.5 ms  ✓ PreallocationTools
+   3239.3 ms  ✓ RecipesBase
+    782.0 ms  ✓ ConsoleProgressMonitor
+   1423.6 ms  ✓ Setfield
+    588.8 ms  ✓ FunctionWrappersWrappers
+   6656.2 ms  ✓ SparseArrays
+    668.7 ms  ✓ FiniteDiff
+   1033.8 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+   1097.5 ms  ✓ ArrayInterface → ArrayInterfaceSparseArraysExt
+   1115.7 ms  ✓ Adapt → AdaptSparseArraysExt
+   1199.8 ms  ✓ FillArrays → FillArraysSparseArraysExt
+   1204.1 ms  ✓ SuiteSparse
+   1302.1 ms  ✓ Statistics
+   1065.0 ms  ✓ DifferentiationInterface → DifferentiationInterfaceFiniteDiffExt
+   1186.0 ms  ✓ FiniteDiff → FiniteDiffSparseArraysExt
+   3719.9 ms  ✓ SpecialFunctions
+    663.0 ms  ✓ FillArrays → FillArraysStatisticsExt
+    840.7 ms  ✓ PDMats
+    767.2 ms  ✓ NLSolversBase
+    653.5 ms  ✓ DiffRules
+    531.0 ms  ✓ FillArrays → FillArraysPDMatsExt
+    571.1 ms  ✓ LineSearches
+   2873.0 ms  ✓ SparseConnectivityTracer
+   1776.9 ms  ✓ Optim
+CompositionsBaseInverseFunctionsExt Waiting for background task / IO / timer.
+[pid 3866050] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x17fef710->0x72c6167e4bb0
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+   3230.6 ms  ✓ ForwardDiff
+   1855.6 ms  ✓ PreallocationTools → PreallocationToolsSparseConnectivityTracerExt
+   1924.4 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseConnectivityTracerExt
+   2247.1 ms  ✓ SparseConnectivityTracer → SparseConnectivityTracerLogExpFunctionsExt
+   2747.5 ms  ✓ SparseConnectivityTracer → SparseConnectivityTracerNaNMathExt
+   1733.9 ms  ✓ DifferentiationInterface → DifferentiationInterfaceForwardDiffExt
+   7163.5 ms  ✓ SparseMatrixColorings
+   1890.0 ms  ✓ PreallocationTools → PreallocationToolsForwardDiffExt
+    556.1 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseMatrixColoringsExt
+  21348.0 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+SparseConnectivityTracerSpecialFunctionsExt Waiting for background task / IO / timer.
+[pid 3867212] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x3a9776b0->0x770cc6a051b0
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+   1221.9 ms  ✓ Accessors
+    343.7 ms  ✓ Accessors → LinearAlgebraExt
+    836.0 ms  ✓ SymbolicIndexingInterface
+   1151.4 ms  ✓ SciMLOperators
+    337.4 ms  ✓ SciMLOperators → SciMLOperatorsStaticArraysCoreExt
+    454.9 ms  ✓ SciMLOperators → SciMLOperatorsSparseArraysExt
+   2283.4 ms  ✓ RecursiveArrayTools
+    445.9 ms  ✓ RecursiveArrayTools → RecursiveArrayToolsForwardDiffExt
+    508.2 ms  ✓ RecursiveArrayTools → RecursiveArrayToolsSparseArraysExt
+  21520.2 ms  ✓ SparseConnectivityTracer → SparseConnectivityTracerSpecialFunctionsExt
+RecursiveArrayToolsStatisticsExt Waiting for background task / IO / timer.
+[pid 3867605] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x13609df0->0x741ebf1e8160
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+  20577.8 ms  ✓ RecursiveArrayTools → RecursiveArrayToolsStatisticsExt
+   6006.4 ms  ✓ SciMLBase
+    765.0 ms  ✓ SciMLBase → SciMLBaseDifferentiationInterfaceExt
+    957.5 ms  ✓ SciMLBase → SciMLBaseForwardDiffExt
+   1981.1 ms  ✓ OptimizationBase
+    289.4 ms  ✓ OptimizationBase → OptimizationFiniteDiffExt
+    365.8 ms  ✓ OptimizationBase → OptimizationForwardDiffExt
+    951.9 ms  ✓ Optimization
+    978.5 ms  ✓ OptimizationOptimJL
+  105 dependencies successfully precompiled in 62 seconds
+  3 dependencies had output during precompilation:
+┌ CompositionsBase → CompositionsBaseInverseFunctionsExt
+│  [pid 3866050] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x17fef710->0x72c6167e4bb0
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+┌ SparseConnectivityTracer → SparseConnectivityTracerSpecialFunctionsExt
+│  [pid 3867212] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x3a9776b0->0x770cc6a051b0
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+┌ RecursiveArrayTools → RecursiveArrayToolsStatisticsExt
+│  [pid 3867605] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x13609df0->0x741ebf1e8160
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=O/Optimization/Rosenbrock-Minimization-With-Bfgs-Using-Forwarddiff -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 89.80
+	System time (seconds): 16.76
+	Percent of CPU this job got: 170%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:02.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 504744
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 231
+	Minor (reclaiming a frame) page faults: 4329882
+	Voluntary context switches: 132021
+	Involuntary context switches: 22879
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 265136
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
