@@ -1,0 +1,69 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1047.6 ms  ✓ OpenLibm_jll
+   1154.1 ms  ✓ EnumX
+   1160.8 ms  ✓ StaticArraysCore
+   1167.4 ms  ✓ ConstructionBase
+   1238.4 ms  ✓ PositiveFactorizations
+   1235.7 ms  ✓ SuiteSparse_jll
+   1262.9 ms  ✓ Requires
+   1454.5 ms  ✓ ADTypes
+   1890.2 ms  ✓ FillArrays
+    779.5 ms  ✓ NaNMath
+    668.6 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+    630.1 ms  ✓ Adapt
+    566.7 ms  ✓ ADTypes → ADTypesConstructionBaseExt
+    434.1 ms  ✓ ArrayInterface
+   1077.2 ms  ✓ DifferentiationInterface
+    375.5 ms  ✓ ArrayInterface → ArrayInterfaceStaticArraysCoreExt
+   2704.1 ms  ✓ MacroTools
+    714.0 ms  ✓ Setfield
+    467.9 ms  ✓ FiniteDiff
+   2760.2 ms  ✓ SparseArrays
+    551.6 ms  ✓ DifferentiationInterface → DifferentiationInterfaceFiniteDiffExt
+    658.1 ms  ✓ Adapt → AdaptSparseArraysExt
+    667.4 ms  ✓ ArrayInterface → ArrayInterfaceSparseArraysExt
+    666.8 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+    722.9 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    763.0 ms  ✓ Statistics
+    575.0 ms  ✓ NLSolversBase
+    420.1 ms  ✓ FillArrays → FillArraysStatisticsExt
+    450.1 ms  ✓ LineSearches
+FiniteDiffSparseArraysExt Waiting for background task / IO / timer.
+[pid 405985] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x11369f80->0x75bb9fdc88b0
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+  20634.6 ms  ✓ FiniteDiff → FiniteDiffSparseArraysExt
+   1421.7 ms  ✓ Optim
+  31 dependencies successfully precompiled in 27 seconds
+  1 dependency had output during precompilation:
+┌ FiniteDiff → FiniteDiffSparseArraysExt
+│  [pid 405985] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x11369f80->0x75bb9fdc88b0
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=O/Optim/Rosenbrock-Minimization-With-Bfgs -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 18.26
+	System time (seconds): 4.58
+	Percent of CPU this job got: 82%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:27.73
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 382488
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 64
+	Minor (reclaiming a frame) page faults: 1230500
+	Voluntary context switches: 41810
+	Involuntary context switches: 1591
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 69880
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
