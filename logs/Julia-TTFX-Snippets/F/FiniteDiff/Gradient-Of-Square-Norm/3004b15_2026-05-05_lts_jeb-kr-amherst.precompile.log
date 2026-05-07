@@ -1,0 +1,36 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    504.9 ms  ✓ StaticArraysCore
+    652.9 ms  ✓ ConstructionBase
+    515.8 ms  ✓ Requires
+    287.1 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+    318.9 ms  ✓ Adapt
+    384.3 ms  ✓ ArrayInterface
+    324.4 ms  ✓ ArrayInterface → ArrayInterfaceStaticArraysCoreExt
+   1549.7 ms  ✓ MacroTools
+    695.4 ms  ✓ Setfield
+    431.9 ms  ✓ FiniteDiff
+  10 dependencies successfully precompiled in 3 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=F/FiniteDiff/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 6.33
+	System time (seconds): 1.58
+	Percent of CPU this job got: 181%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.36
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 349784
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 38
+	Minor (reclaiming a frame) page faults: 443834
+	Voluntary context switches: 14153
+	Involuntary context switches: 454
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 22432
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
