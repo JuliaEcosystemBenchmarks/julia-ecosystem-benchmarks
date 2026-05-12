@@ -1,0 +1,106 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    407.5 ms  ✓ DataValueInterfaces
+    448.6 ms  ✓ DataAPI
+    584.0 ms  ✓ Statistics
+    671.7 ms  ✓ OrderedCollections
+    847.2 ms  ✓ SuiteSparse_jll
+    415.9 ms  ✓ IteratorInterfaceExtensions
+    665.1 ms  ✓ Serialization
+    409.3 ms  ✓ TableTraits
+    946.4 ms  ✓ LazyArtifacts
+   1242.1 ms  ✓ InteractiveUtils
+    821.7 ms  ✓ Tables
+   1896.0 ms  ✓ Preferences
+    444.1 ms  ✓ PrecompileTools
+    646.5 ms  ✓ JLLWrappers
+    693.0 ms  ✓ MPIPreferences
+    862.0 ms  ✓ Libmount_jll
+    860.8 ms  ✓ LAPACK32_jll
+    865.7 ms  ✓ Libffi_jll
+   1016.8 ms  ✓ ICU_jll
+    888.7 ms  ✓ snappy_jll
+    933.1 ms  ✓ libaec_jll
+    917.3 ms  ✓ libpng_jll
+   3985.6 ms  ✓ SparseArrays
+    891.8 ms  ✓ OpenBLAS32_jll
+    882.4 ms  ✓ Xorg_libpciaccess_jll
+    873.3 ms  ✓ Bzip2_jll
+    876.5 ms  ✓ Kerberos_krb5_jll
+    901.2 ms  ✓ LERC_jll
+    869.0 ms  ✓ LLVMOpenMP_jll
+    922.6 ms  ✓ Libiconv_jll
+    865.5 ms  ✓ Xorg_libXau_jll
+    972.6 ms  ✓ Lz4_jll
+    881.9 ms  ✓ Xorg_libXdmcp_jll
+   1192.9 ms  ✓ Qhull_jll
+    675.4 ms  ✓ dlfcn_win32_jll
+    888.9 ms  ✓ Giflib_jll
+    970.7 ms  ✓ XZ_jll
+    944.7 ms  ✓ FFTW_jll
+    977.6 ms  ✓ brotli_jll
+    659.2 ms  ✓ MicrosoftMPI_jll
+    684.7 ms  ✓ Xorg_xtrans_jll
+    893.6 ms  ✓ Expat_jll
+   1007.3 ms  ✓ JpegTurbo_jll
+    910.8 ms  ✓ PCRE_jll
+    924.7 ms  ✓ GEOS_jll
+    854.5 ms  ✓ LASzip_jll
+    648.9 ms  ✓ Statistics → SparseArraysExt
+   1153.6 ms  ✓ MPItrampoline_jll
+    925.3 ms  ✓ LibPQ_jll
+    927.0 ms  ✓ muparser_jll
+    959.5 ms  ✓ XML2_jll
+   1004.9 ms  ✓ GettextRuntime_jll
+    884.5 ms  ✓ Blosc_jll
+   2066.6 ms  ✓ boost_jll
+    931.4 ms  ✓ SQLite_jll
+   1004.9 ms  ✓ libzip_jll
+   1055.6 ms  ✓ HDF4_jll
+   1867.9 ms  ✓ Xorg_libxcb_jll
+    959.4 ms  ✓ Libtiff_jll
+   1444.1 ms  ✓ Ghostscript_jll
+    940.5 ms  ✓ Hwloc_jll
+    911.4 ms  ✓ Thrift_jll
+   1129.0 ms  ✓ Glib_jll
+    952.7 ms  ✓ Xorg_libX11_jll
+    954.1 ms  ✓ LittleCMS_jll
+   1241.8 ms  ✓ PROJ_jll
+   1130.9 ms  ✓ OpenMPI_jll
+   1052.2 ms  ✓ Arrow_jll
+   1452.5 ms  ✓ MPICH_jll
+    858.9 ms  ✓ Xorg_libXext_jll
+    927.3 ms  ✓ OpenJpeg_jll
+    875.2 ms  ✓ libgeotiff_jll
+    965.6 ms  ✓ Libglvnd_jll
+   1706.8 ms  ✓ HDF5_jll
+    932.0 ms  ✓ libwebp_jll
+    916.6 ms  ✓ Leptonica_jll
+   1211.6 ms  ✓ NetCDF_jll
+   2063.5 ms  ✓ GDAL_jll
+   1200.6 ms  ✓ GMT_jll
+  96810.2 ms  ✓ GMT
+  80 dependencies successfully precompiled in 117 seconds. 27 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +alpha --project=G/GMT/Create-A-Xy-Plot -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 330.77
+	System time (seconds): 19.63
+	Percent of CPU this job got: 166%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:30.21
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3121132
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 320
+	Minor (reclaiming a frame) page faults: 7229187
+	Voluntary context switches: 21137
+	Involuntary context switches: 5339
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 834128
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
