@@ -1,0 +1,80 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    980.1 ms  ✓ OpenLibm_jll
+   1063.3 ms  ✓ SuiteSparse_jll
+   1075.7 ms  ✓ StaticArraysCore
+   1085.0 ms  ✓ PositiveFactorizations
+   1149.8 ms  ✓ Requires
+   1168.8 ms  ✓ EnumX
+   1253.6 ms  ✓ ConstructionBase
+   1393.0 ms  ✓ ADTypes
+    727.9 ms  ✓ NaNMath
+    639.0 ms  ✓ Adapt
+    603.3 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   1998.5 ms  ✓ FillArrays
+    419.8 ms  ✓ ArrayInterface
+   1024.4 ms  ✓ DifferentiationInterface
+    375.2 ms  ✓ ArrayInterface → ArrayInterfaceStaticArraysCoreExt
+   2660.2 ms  ✓ MacroTools
+    717.6 ms  ✓ Setfield
+    467.0 ms  ✓ FiniteDiff
+   2872.3 ms  ✓ SparseArrays
+    606.0 ms  ✓ DifferentiationInterface → DifferentiationInterfaceFiniteDiffExt
+    634.4 ms  ✓ ArrayInterface → ArrayInterfaceSparseArraysExt
+    657.6 ms  ✓ Adapt → AdaptSparseArraysExt
+    666.5 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+    671.5 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    724.0 ms  ✓ Statistics
+    415.3 ms  ✓ FillArrays → FillArraysStatisticsExt
+ADTypesConstructionBaseExt Waiting for background task / IO / timer.
+[pid 2255892] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x3c3a5530->0x75a8c400c7f0
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+FiniteDiffSparseArraysExt Waiting for background task / IO / timer.
+[pid 2256130] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x26ba4f60->0x7a04cdfc88b0
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+  20544.3 ms  ✓ ADTypes → ADTypesConstructionBaseExt
+    485.6 ms  ✓ NLSolversBase
+    476.3 ms  ✓ LineSearches
+  20663.4 ms  ✓ FiniteDiff → FiniteDiffSparseArraysExt
+   1430.8 ms  ✓ Optim
+  31 dependencies successfully precompiled in 27 seconds
+  2 dependencies had output during precompilation:
+┌ FiniteDiff → FiniteDiffSparseArraysExt
+│  [pid 2256130] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x26ba4f60->0x7a04cdfc88b0
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+┌ ADTypes → ADTypesConstructionBaseExt
+│  [pid 2255892] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x3c3a5530->0x75a8c400c7f0
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=O/Optim/Rosenbrock-Minimization-With-Bfgs -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 18.26
+	System time (seconds): 4.47
+	Percent of CPU this job got: 82%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:27.72
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 346336
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 84
+	Minor (reclaiming a frame) page faults: 1221795
+	Voluntary context switches: 40997
+	Involuntary context switches: 1687
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 70584
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
