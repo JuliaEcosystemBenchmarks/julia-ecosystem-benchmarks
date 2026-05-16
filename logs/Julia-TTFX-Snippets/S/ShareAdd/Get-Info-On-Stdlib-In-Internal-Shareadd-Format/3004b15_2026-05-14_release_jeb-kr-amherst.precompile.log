@@ -1,0 +1,60 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1519.0 ms  ✓ UUIDs
+   1526.8 ms  ✓ nghttp2_jll
+   1642.2 ms  ✓ MozillaCACerts_jll
+   1641.3 ms  ✓ Logging
+   1725.2 ms  ✓ Zlib_jll
+   1759.5 ms  ✓ OpenSSL_jll
+   1741.4 ms  ✓ Unicode
+   1764.3 ms  ✓ Base64
+   1812.5 ms  ✓ NetworkOptions
+   1822.5 ms  ✓ CompilerSupportLibraries_jll
+    465.6 ms  ✓ LibSSH2_jll
+    547.4 ms  ✓ p7zip_jll
+    676.3 ms  ✓ Printf
+    492.7 ms  ✓ LibGit2_jll
+    491.2 ms  ✓ LibCURL_jll
+   3319.0 ms  ✓ ArgTools
+    766.3 ms  ✓ LibCURL
+    646.0 ms  ✓ Tar
+   3030.5 ms  ✓ Dates
+   3132.8 ms  ✓ LibGit2
+    447.2 ms  ✓ TOML
+   3012.9 ms  ✓ Downloads
+   9584.4 ms  ✓ StyledStrings
+   1690.9 ms  ✓ JuliaSyntaxHighlighting
+   3969.9 ms  ✓ Markdown
+  47269.5 ms  ✓ Pkg
+  26 dependencies successfully precompiled in 63 seconds
+Precompiling packages...
+    543.6 ms  ✓ Preferences
+    370.7 ms  ✓ PrecompileTools
+   1871.0 ms  ✓ InteractiveUtils
+  25982.5 ms  ✓ REPL
+   4326.3 ms  ✓ Pkg → REPLExt
+   5059.2 ms  ✓ ShareAdd
+  6 dependencies successfully precompiled in 37 seconds. 26 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=S/ShareAdd/Get-Info-On-Stdlib-In-Internal-Shareadd-Format -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 197.62
+	System time (seconds): 8.12
+	Percent of CPU this job got: 204%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:40.78
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2174984
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 267
+	Minor (reclaiming a frame) page faults: 2613310
+	Voluntary context switches: 7675
+	Involuntary context switches: 6524
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 444992
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

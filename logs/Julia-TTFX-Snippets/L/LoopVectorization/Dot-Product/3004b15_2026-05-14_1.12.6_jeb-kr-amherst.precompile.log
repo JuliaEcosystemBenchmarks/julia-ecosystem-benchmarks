@@ -1,0 +1,61 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  75762.4 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 76 seconds
+Precompiling packages...
+   1337.1 ms  ✓ CommonWorldInvalidations
+   1543.2 ms  ✓ IfElse
+   1544.5 ms  ✓ SIMDTypes
+   1619.0 ms  ✓ ManualMemory
+   1620.6 ms  ✓ UnPack
+   1642.4 ms  ✓ Unicode
+   1728.5 ms  ✓ CompilerSupportLibraries_jll
+   1835.9 ms  ✓ SciMLPublic
+   1953.3 ms  ✓ DocStringExtensions
+   2156.6 ms  ✓ Requires
+   2216.0 ms  ✓ CpuId
+   2372.8 ms  ✓ OffsetArrays
+    934.2 ms  ✓ Preferences
+    494.0 ms  ✓ Adapt
+    457.6 ms  ✓ PrecompileTools
+    460.6 ms  ✓ OffsetArrays → OffsetArraysAdaptExt
+   1930.7 ms  ✓ Compat
+   2205.2 ms  ✓ ThreadingUtilities
+    401.1 ms  ✓ Compat → CompatLinearAlgebraExt
+   1552.2 ms  ✓ ArrayInterface
+   6202.6 ms  ✓ Static
+    388.1 ms  ✓ BitTwiddlingConvenienceFunctions
+    877.6 ms  ✓ CPUSummary
+    762.4 ms  ✓ HostCPUFeatures
+    537.5 ms  ✓ PolyesterWeave
+   2590.6 ms  ✓ StaticArrayInterface
+    410.6 ms  ✓ StaticArrayInterface → StaticArrayInterfaceOffsetArraysExt
+    423.1 ms  ✓ CloseOpenIntervals
+    513.2 ms  ✓ LayoutPointers
+   6236.9 ms  ✓ VectorizationBase
+   1391.8 ms  ✓ SLEEFPirates
+  16681.9 ms  ✓ LoopVectorization
+  32 dependencies successfully precompiled in 37 seconds. 8 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.6 --project=L/LoopVectorization/Dot-Product -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 196.53
+	System time (seconds): 10.51
+	Percent of CPU this job got: 182%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:53.37
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2151768
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 230
+	Minor (reclaiming a frame) page faults: 3434814
+	Voluntary context switches: 11043
+	Involuntary context switches: 6327
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 470312
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
