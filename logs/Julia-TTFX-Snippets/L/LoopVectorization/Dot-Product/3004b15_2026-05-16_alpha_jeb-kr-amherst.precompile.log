@@ -1,0 +1,56 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    413.7 ms  ✓ IfElse
+    429.6 ms  ✓ CommonWorldInvalidations
+    466.2 ms  ✓ Adapt
+    475.5 ms  ✓ ManualMemory
+    441.2 ms  ✓ SIMDTypes
+    468.2 ms  ✓ Unicode
+    607.2 ms  ✓ DocStringExtensions
+    837.8 ms  ✓ SciMLPublic
+    438.3 ms  ✓ UnPack
+   1411.1 ms  ✓ OffsetArrays
+    649.6 ms  ✓ ArrayInterface
+    795.3 ms  ✓ CpuId
+    582.3 ms  ✓ Compat
+    397.0 ms  ✓ OffsetArrays → OffsetArraysAdaptExt
+    353.4 ms  ✓ Compat → CompatLinearAlgebraExt
+   1098.6 ms  ✓ ThreadingUtilities
+   1819.0 ms  ✓ Preferences
+    524.6 ms  ✓ PrecompileTools
+  21236.6 ms  ✓ Static
+    471.7 ms  ✓ BitTwiddlingConvenienceFunctions
+    990.9 ms  ✓ CPUSummary
+    617.3 ms  ✓ PolyesterWeave
+   1209.3 ms  ✓ HostCPUFeatures
+   3986.2 ms  ✓ StaticArrayInterface
+    484.7 ms  ✓ StaticArrayInterface → StaticArrayInterfaceOffsetArraysExt
+    497.6 ms  ✓ CloseOpenIntervals
+    580.4 ms  ✓ LayoutPointers
+   5980.6 ms  ✓ VectorizationBase
+    944.3 ms  ✓ SLEEFPirates
+  19248.9 ms  ✓ LoopVectorization
+  30 dependencies successfully precompiled in 56 seconds. 8 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +alpha --project=L/LoopVectorization/Dot-Product -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 211.90
+	System time (seconds): 10.96
+	Percent of CPU this job got: 134%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:46.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2583344
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 235
+	Minor (reclaiming a frame) page faults: 4397489
+	Voluntary context switches: 10790
+	Involuntary context switches: 2617
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 473336
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
