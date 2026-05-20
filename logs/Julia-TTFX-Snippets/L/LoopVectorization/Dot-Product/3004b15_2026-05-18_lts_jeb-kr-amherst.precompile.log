@@ -1,0 +1,55 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1339.8 ms  ✓ SIMDTypes
+   1561.7 ms  ✓ IfElse
+   1417.0 ms  ✓ UnPack
+   1429.0 ms  ✓ SciMLPublic
+   1438.0 ms  ✓ CommonWorldInvalidations
+   1450.8 ms  ✓ ManualMemory
+   1525.0 ms  ✓ Adapt
+   1626.7 ms  ✓ Compat
+   1648.8 ms  ✓ DocStringExtensions
+   1721.9 ms  ✓ CpuId
+   1759.2 ms  ✓ Preferences
+   1983.6 ms  ✓ OffsetArrays
+    415.2 ms  ✓ Compat → CompatLinearAlgebraExt
+    558.8 ms  ✓ ArrayInterface
+    381.3 ms  ✓ PrecompileTools
+    779.7 ms  ✓ ThreadingUtilities
+    325.8 ms  ✓ OffsetArrays → OffsetArraysAdaptExt
+    545.7 ms  ✓ Static
+    291.0 ms  ✓ BitTwiddlingConvenienceFunctions
+    607.4 ms  ✓ CPUSummary
+    816.1 ms  ✓ StaticArrayInterface
+    748.1 ms  ✓ HostCPUFeatures
+    456.1 ms  ✓ PolyesterWeave
+    381.8 ms  ✓ StaticArrayInterface → StaticArrayInterfaceOffsetArraysExt
+    382.1 ms  ✓ CloseOpenIntervals
+    445.4 ms  ✓ LayoutPointers
+   4082.1 ms  ✓ VectorizationBase
+    617.8 ms  ✓ SLEEFPirates
+  11903.0 ms  ✓ LoopVectorization
+  29 dependencies successfully precompiled in 21 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=L/LoopVectorization/Dot-Product -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 40.00
+	System time (seconds): 4.94
+	Percent of CPU this job got: 201%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:22.28
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 825232
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 78
+	Minor (reclaiming a frame) page faults: 1325334
+	Voluntary context switches: 39838
+	Involuntary context switches: 3050
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 143728
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
