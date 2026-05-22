@@ -1,0 +1,120 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   2214.9 ms  ✓ IteratorInterfaceExtensions
+   2420.0 ms  ✓ StatsAPI
+   2477.3 ms  ✓ ConstructionBase
+   2588.3 ms  ✓ Reexport
+   2616.0 ms  ✓ DataValueInterfaces
+   2798.4 ms  ✓ LaTeXStrings
+   2776.2 ms  ✓ AbstractTrees
+   2836.6 ms  ✓ LorentzVectors
+   2824.4 ms  ✓ DataAPI
+   3012.0 ms  ✓ LRUCache
+   3020.9 ms  ✓ InverseFunctions
+   3049.2 ms  ✓ OrderedCollections
+   3482.7 ms  ✓ DocStringExtensions
+   1976.4 ms  ✓ StaticArraysCore
+   2202.3 ms  ✓ SuiteSparse_jll
+   2264.0 ms  ✓ CompositionsBase
+   2281.1 ms  ✓ PtrArrays
+   5280.4 ms  ✓ Calculus
+   2848.4 ms  ✓ IterTools
+   2448.7 ms  ✓ BayesHistogram
+   2086.7 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   3167.1 ms  ✓ BitIntegers
+   2640.2 ms  ✓ TableTraits
+   2903.1 ms  ✓ TranscodingStreams
+   6146.7 ms  ✓ IrrationalConstants
+   3265.3 ms  ✓ Preferences
+   1879.9 ms  ✓ LRUCache → SerializationExt
+   2411.5 ms  ✓ Missings
+   2683.3 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+   2138.0 ms  ✓ AliasTables
+   8374.0 ms  ✓ SentinelArrays
+   1782.9 ms  ✓ PrecompileTools
+   1836.4 ms  ✓ JLLWrappers
+   5932.5 ms  ✓ Crayons
+   2789.9 ms  ✓ Measurements
+   2283.4 ms  ✓ LogExpFunctions
+   3713.5 ms  ✓ Tables
+   1011.7 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+   1668.5 ms  ✓ Lz4_jll
+   1838.6 ms  ✓ Zstd_jll
+   2266.0 ms  ✓ XZ_jll
+   2837.0 ms  ✓ libdeflate_jll
+   5917.5 ms  ✓ DataStructures
+   8274.2 ms  ✓ MacroTools
+   2256.0 ms  ✓ StructArrays
+   1933.7 ms  ✓ CodecZstd
+   1323.4 ms  ✓ SortingAlgorithms
+   1969.3 ms  ✓ CodecXz
+   1519.2 ms  ✓ LibDeflate
+   2702.4 ms  ✓ CodecLz4
+   1234.6 ms  ✓ StructArrays → StructArraysLinearAlgebraExt
+   4931.2 ms  ✓ StringManipulation
+   9593.5 ms  ✓ SparseArrays
+    867.5 ms  ✓ StructArrays → StructArraysSparseArraysExt
+    948.3 ms  ✓ Statistics
+CompositionsBaseInverseFunctionsExt Waiting for background task / IO / timer.
+[pid 3754709] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x3c3a5a90->0x75ec39c0f910
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+   1239.0 ms  ✓ ArraysOfArrays
+    920.9 ms  ✓ ArraysOfArrays → ArraysOfArraysStaticArraysCoreExt
+   3001.3 ms  ✓ StatsBase
+  12439.5 ms  ✓ StaticArrays
+   2149.0 ms  ✓ FHist
+    937.2 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+   1264.3 ms  ✓ XXHashNative
+   1282.4 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+   1406.0 ms  ✓ StructArrays → StructArraysStaticArraysExt
+  21239.3 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+   2498.9 ms  ✓ Accessors
+    702.4 ms  ✓ Accessors → LinearAlgebraExt
+   1101.6 ms  ✓ Accessors → StaticArraysExt
+StructArraysExt Waiting for background task / IO / timer.
+[pid 3755657] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x3bc5d5b0->0x7349cf1b50c0
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+  31579.0 ms  ✓ PrettyTables
+  20652.8 ms  ✓ Accessors → StructArraysExt
+  24250.0 ms  ✓ UnROOT
+  71 dependencies successfully precompiled in 76 seconds
+  2 dependencies had output during precompilation:
+┌ Accessors → StructArraysExt
+│  [pid 3755657] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x3bc5d5b0->0x7349cf1b50c0
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+┌ CompositionsBase → CompositionsBaseInverseFunctionsExt
+│  [pid 3754709] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x3c3a5a90->0x75ec39c0f910
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=U/UnROOT/Loading-A-Typical-Hep-Ex--Root-File -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 173.57
+	System time (seconds): 14.85
+	Percent of CPU this job got: 241%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:17.95
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1096412
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 458
+	Minor (reclaiming a frame) page faults: 3205174
+	Voluntary context switches: 87160
+	Involuntary context switches: 53200
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 304560
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
