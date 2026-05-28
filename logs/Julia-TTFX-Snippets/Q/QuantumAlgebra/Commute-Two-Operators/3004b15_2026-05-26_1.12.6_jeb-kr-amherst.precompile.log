@@ -1,0 +1,46 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  75553.8 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 76 seconds
+Precompiling packages...
+    842.4 ms  ✓ PackageExtensionCompat
+    871.8 ms  ✓ LaTeXStrings
+    926.9 ms  ✓ Unicode
+   1559.6 ms  ✓ Requires
+   1893.0 ms  ✓ Combinatorics
+   1006.3 ms  ✓ Preferences
+   2179.5 ms  ✓ Format
+    506.1 ms  ✓ PrecompileTools
+    576.2 ms  ✓ JLLWrappers
+   2743.8 ms  ✓ OrderedCollections
+    617.3 ms  ✓ JpegTurbo_jll
+   3188.8 ms  ✓ InteractiveUtils
+   3903.8 ms  ✓ MacroTools
+   1192.1 ms  ✓ Ghostscript_jll
+   3087.6 ms  ✓ Latexify
+  26169.7 ms  ✓ REPL
+  13304.9 ms  ✓ QuantumAlgebra
+  17 dependencies successfully precompiled in 43 seconds. 9 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.6 --project=Q/QuantumAlgebra/Commute-Two-Operators -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 218.81
+	System time (seconds): 8.91
+	Percent of CPU this job got: 191%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:59.19
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2145968
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 228
+	Minor (reclaiming a frame) page faults: 3097362
+	Voluntary context switches: 9007
+	Involuntary context switches: 6298
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 505400
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
