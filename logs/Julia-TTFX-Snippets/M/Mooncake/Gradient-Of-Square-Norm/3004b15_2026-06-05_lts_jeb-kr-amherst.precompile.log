@@ -1,0 +1,71 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1125.6 ms  ✓ MistyClosures
+   1168.9 ms  ✓ ExprTools
+   1295.2 ms  ✓ StaticArraysCore
+   1305.1 ms  ✓ SuiteSparse_jll
+   1398.8 ms  ✓ Inflate
+   1408.5 ms  ✓ Compat
+   1521.7 ms  ✓ OrderedCollections
+   1733.7 ms  ✓ ADTypes
+   1629.0 ms  ✓ Preferences
+    590.0 ms  ✓ Compat → CompatLinearAlgebraExt
+    563.5 ms  ✓ PrecompileTools
+   1257.1 ms  ✓ DifferentiationInterface
+   3335.9 ms  ✓ MacroTools
+   1634.4 ms  ✓ ChainRulesCore
+   2383.9 ms  ✓ DataStructures
+   1009.5 ms  ✓ ADTypes → ADTypesChainRulesCoreExt
+   4705.5 ms  ✓ Test
+   1381.8 ms  ✓ SimpleTraits
+   1851.2 ms  ✓ DispatchDoctor
+   4167.6 ms  ✓ SparseArrays
+    423.1 ms  ✓ DispatchDoctor → DispatchDoctorChainRulesCoreExt
+    418.0 ms  ✓ ChainRulesCore → ChainRulesCoreSparseArraysExt
+    418.8 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+    515.6 ms  ✓ Statistics
+   5883.3 ms  ✓ StaticArrays
+    450.4 ms  ✓ DifferentiationInterface → DifferentiationInterfaceStaticArraysExt
+    455.5 ms  ✓ StaticArrays → StaticArraysChainRulesCoreExt
+    561.4 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    731.6 ms  ✓ ArnoldiMethod
+   2597.3 ms  ✓ Graphs
+DifferentiationInterfaceChainRulesCoreExt Waiting for background task / IO / timer.
+[pid 2570815] waiting for IO to finish:
+ Handle type        uv_handle_t->data
+ timer              0x27e45370->0x73ae5707c340
+This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+  20951.6 ms  ✓ DifferentiationInterface → DifferentiationInterfaceChainRulesCoreExt
+  49290.4 ms  ✓ Mooncake
+   1079.1 ms  ✓ DifferentiationInterface → DifferentiationInterfaceMooncakeExt
+  33 dependencies successfully precompiled in 62 seconds
+  1 dependency had output during precompilation:
+┌ DifferentiationInterface → DifferentiationInterfaceChainRulesCoreExt
+│  [pid 2570815] waiting for IO to finish:
+│   Handle type        uv_handle_t->data
+│   timer              0x27e45370->0x73ae5707c340
+│  This means that a package has started a background task or event source that has not finished running. For precompilation to complete successfully, the event source needs to be closed explicitly. See the developer documentation on fixing precompilation hangs for more help.
+└  
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=M/Mooncake/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 131.14
+	System time (seconds): 7.06
+	Percent of CPU this job got: 217%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:03.51
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2193036
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 156
+	Minor (reclaiming a frame) page faults: 2123981
+	Voluntary context switches: 47741
+	Involuntary context switches: 5688
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 400624
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
