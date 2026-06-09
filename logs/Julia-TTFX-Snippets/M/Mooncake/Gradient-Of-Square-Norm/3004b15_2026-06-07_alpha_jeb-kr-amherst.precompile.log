@@ -1,0 +1,63 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    392.0 ms  ✓ MistyClosures
+    492.0 ms  ✓ StaticArraysCore
+    582.3 ms  ✓ Statistics
+    834.0 ms  ✓ SuiteSparse_jll
+    661.6 ms  ✓ OrderedCollections
+    738.9 ms  ✓ ADTypes
+    714.7 ms  ✓ Serialization
+    493.6 ms  ✓ Unicode
+    560.9 ms  ✓ Inflate
+    486.1 ms  ✓ ExprTools
+   1179.5 ms  ✓ InteractiveUtils
+    992.4 ms  ✓ DifferentiationInterface
+    572.5 ms  ✓ Compat
+   1767.1 ms  ✓ DataStructures
+    428.6 ms  ✓ Compat → CompatLinearAlgebraExt
+   2130.7 ms  ✓ Preferences
+   1522.0 ms  ✓ ChainRulesCore
+   5311.3 ms  ✓ MacroTools
+    463.9 ms  ✓ ADTypes → ADTypesChainRulesCoreExt
+    772.7 ms  ✓ PrecompileTools
+    458.1 ms  ✓ DifferentiationInterface → DifferentiationInterfaceChainRulesCoreExt
+   4487.8 ms  ✓ SparseArrays
+    736.3 ms  ✓ SimpleTraits
+    601.0 ms  ✓ Statistics → SparseArraysExt
+    610.3 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+   1456.9 ms  ✓ DispatchDoctor
+    537.8 ms  ✓ ChainRulesCore → ChainRulesCoreSparseArraysExt
+    531.2 ms  ✓ DispatchDoctor → DispatchDoctorChainRulesCoreExt
+   8211.3 ms  ✓ Test
+  11078.0 ms  ✓ StaticArrays
+    575.2 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    572.9 ms  ✓ DifferentiationInterface → DifferentiationInterfaceStaticArraysExt
+    597.1 ms  ✓ StaticArrays → StaticArraysChainRulesCoreExt
+   1092.7 ms  ✓ ArnoldiMethod
+   3245.8 ms  ✓ Graphs
+  96664.6 ms  ✓ Mooncake
+   1408.4 ms  ✓ DifferentiationInterface → DifferentiationInterfaceMooncakeExt
+  37 dependencies successfully precompiled in 119 seconds. 9 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +alpha --project=M/Mooncake/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 320.72
+	System time (seconds): 13.12
+	Percent of CPU this job got: 144%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:51.12
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2753784
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 266
+	Minor (reclaiming a frame) page faults: 5123820
+	Voluntary context switches: 11966
+	Involuntary context switches: 3452
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 781616
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
