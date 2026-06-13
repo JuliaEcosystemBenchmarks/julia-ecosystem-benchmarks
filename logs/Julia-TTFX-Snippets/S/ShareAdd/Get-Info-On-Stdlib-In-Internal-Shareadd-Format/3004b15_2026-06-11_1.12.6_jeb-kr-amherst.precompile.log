@@ -1,0 +1,60 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1620.1 ms  ✓ Logging
+   1726.6 ms  ✓ UUIDs
+   1723.2 ms  ✓ Zlib_jll
+   1793.9 ms  ✓ MozillaCACerts_jll
+   1813.6 ms  ✓ nghttp2_jll
+   1849.1 ms  ✓ OpenSSL_jll
+   1823.0 ms  ✓ Unicode
+   1829.5 ms  ✓ CompilerSupportLibraries_jll
+   1890.3 ms  ✓ NetworkOptions
+   1916.4 ms  ✓ Base64
+    503.7 ms  ✓ LibSSH2_jll
+    598.1 ms  ✓ p7zip_jll
+    711.1 ms  ✓ Printf
+    491.9 ms  ✓ LibCURL_jll
+    505.3 ms  ✓ LibGit2_jll
+   3501.1 ms  ✓ ArgTools
+    788.4 ms  ✓ LibCURL
+    656.8 ms  ✓ Tar
+   3139.7 ms  ✓ Dates
+   3258.8 ms  ✓ LibGit2
+    490.4 ms  ✓ TOML
+   3257.7 ms  ✓ Downloads
+  10245.4 ms  ✓ StyledStrings
+   1870.6 ms  ✓ JuliaSyntaxHighlighting
+   4065.9 ms  ✓ Markdown
+  49915.0 ms  ✓ Pkg
+  26 dependencies successfully precompiled in 66 seconds
+Precompiling packages...
+    552.0 ms  ✓ Preferences
+    367.6 ms  ✓ PrecompileTools
+   2099.8 ms  ✓ InteractiveUtils
+  31111.4 ms  ✓ REPL
+   4528.4 ms  ✓ Pkg → REPLExt
+   5624.2 ms  ✓ ShareAdd
+  6 dependencies successfully precompiled in 43 seconds. 26 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.6 --project=S/ShareAdd/Get-Info-On-Stdlib-In-Internal-Shareadd-Format -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 219.16
+	System time (seconds): 8.40
+	Percent of CPU this job got: 205%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:50.54
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2185248
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 165
+	Minor (reclaiming a frame) page faults: 2651921
+	Voluntary context switches: 7588
+	Involuntary context switches: 6867
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 450440
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
