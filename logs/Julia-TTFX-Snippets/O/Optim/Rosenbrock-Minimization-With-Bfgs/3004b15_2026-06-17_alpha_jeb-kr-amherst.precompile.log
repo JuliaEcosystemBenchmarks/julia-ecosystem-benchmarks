@@ -1,0 +1,60 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    530.9 ms  ✓ StaticArraysCore
+    702.8 ms  ✓ OpenLibm_jll
+    732.9 ms  ✓ ADTypes
+    905.9 ms  ✓ SuiteSparse_jll
+    492.8 ms  ✓ Adapt
+    427.4 ms  ✓ Future
+    689.2 ms  ✓ Serialization
+   1178.1 ms  ✓ FillArrays
+    549.2 ms  ✓ PositiveFactorizations
+    645.7 ms  ✓ Statistics
+    621.4 ms  ✓ ConstructionBase
+    511.6 ms  ✓ Unicode
+    514.8 ms  ✓ EnumX
+    548.1 ms  ✓ NaNMath
+    598.6 ms  ✓ ArrayInterface
+    531.8 ms  ✓ FillArrays → FillArraysStatisticsExt
+   1107.9 ms  ✓ DifferentiationInterface
+    449.4 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+    392.1 ms  ✓ ADTypes → ADTypesConstructionBaseExt
+    388.1 ms  ✓ ArrayInterface → ArrayInterfaceStaticArraysCoreExt
+   5011.6 ms  ✓ MacroTools
+   3835.1 ms  ✓ SparseArrays
+   1122.8 ms  ✓ Setfield
+    603.7 ms  ✓ Adapt → AdaptSparseArraysExt
+    622.4 ms  ✓ Statistics → SparseArraysExt
+    624.8 ms  ✓ ArrayInterface → ArrayInterfaceSparseArraysExt
+    648.0 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+    700.4 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    555.7 ms  ✓ FiniteDiff
+    408.3 ms  ✓ DifferentiationInterface → DifferentiationInterfaceFiniteDiffExt
+    507.6 ms  ✓ FiniteDiff → FiniteDiffSparseArraysExt
+    592.1 ms  ✓ NLSolversBase
+    634.1 ms  ✓ LineSearches
+   2174.3 ms  ✓ Optim
+  34 dependencies successfully precompiled in 11 seconds. 1 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +alpha --project=O/Optim/Rosenbrock-Minimization-With-Bfgs -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 170.95
+	System time (seconds): 10.11
+	Percent of CPU this job got: 139%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:10.22
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2581032
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 292
+	Minor (reclaiming a frame) page faults: 3813547
+	Voluntary context switches: 10008
+	Involuntary context switches: 2643
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 398664
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
