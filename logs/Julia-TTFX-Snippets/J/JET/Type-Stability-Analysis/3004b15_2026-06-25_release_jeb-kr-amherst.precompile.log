@@ -1,0 +1,71 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1569.5 ms  ✓ OpenSSL_jll
+   1622.1 ms  ✓ UUIDs
+   1633.4 ms  ✓ Zlib_jll
+   1710.8 ms  ✓ Logging
+   1720.4 ms  ✓ CompilerSupportLibraries_jll
+   1723.0 ms  ✓ MozillaCACerts_jll
+   1746.6 ms  ✓ Unicode
+   1811.0 ms  ✓ Base64
+   1805.7 ms  ✓ nghttp2_jll
+   1864.1 ms  ✓ NetworkOptions
+    626.0 ms  ✓ LibSSH2_jll
+    608.4 ms  ✓ p7zip_jll
+    693.2 ms  ✓ Printf
+    495.2 ms  ✓ LibCURL_jll
+    496.8 ms  ✓ LibGit2_jll
+   3223.9 ms  ✓ ArgTools
+    782.7 ms  ✓ LibCURL
+    682.4 ms  ✓ Tar
+   2941.1 ms  ✓ Dates
+   3080.3 ms  ✓ LibGit2
+    457.8 ms  ✓ TOML
+   3116.6 ms  ✓ Downloads
+   9609.3 ms  ✓ StyledStrings
+   1723.0 ms  ✓ JuliaSyntaxHighlighting
+   3866.4 ms  ✓ Markdown
+  47132.4 ms  ✓ Pkg
+  26 dependencies successfully precompiled in 62 seconds
+Precompiling packages...
+    796.1 ms  ✓ CRC32c
+    840.3 ms  ✓ Compiler
+   1102.0 ms  ✓ Serialization
+   1116.0 ms  ✓ Preferences
+    446.1 ms  ✓ PrecompileTools
+   2067.8 ms  ✓ OrderedCollections
+   2677.4 ms  ✓ InteractiveUtils
+   3540.1 ms  ✓ MacroTools
+   4123.7 ms  ✓ Test
+  14866.5 ms  ✓ JuliaSyntax
+  28898.5 ms  ✓ REPL
+    719.3 ms  ✓ CodeTracking
+   4470.3 ms  ✓ Pkg → REPLExt
+   5307.9 ms  ✓ JuliaInterpreter
+   5742.6 ms  ✓ LoweredCodeUtils
+   9481.1 ms  ✓ Revise
+  47397.2 ms  ✓ JET
+  17 dependencies successfully precompiled in 100 seconds. 26 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=J/JET/Type-Stability-Analysis -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 366.17
+	System time (seconds): 12.33
+	Percent of CPU this job got: 231%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:43.62
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2266304
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 284
+	Minor (reclaiming a frame) page faults: 4244218
+	Voluntary context switches: 10602
+	Involuntary context switches: 11737
+	Swaps: 0
+	File system inputs: 24
+	File system outputs: 719568
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,59 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1186.0 ms  ✓ MistyClosures
+   1285.5 ms  ✓ ExprTools
+   1354.8 ms  ✓ StaticArraysCore
+   1352.4 ms  ✓ SuiteSparse_jll
+   1456.1 ms  ✓ Inflate
+   1617.1 ms  ✓ ADTypes
+   1509.6 ms  ✓ Compat
+   1574.3 ms  ✓ OrderedCollections
+   1678.6 ms  ✓ Preferences
+    543.1 ms  ✓ Compat → CompatLinearAlgebraExt
+    521.9 ms  ✓ PrecompileTools
+   1304.2 ms  ✓ DifferentiationInterface
+   3311.0 ms  ✓ MacroTools
+   2609.6 ms  ✓ DataStructures
+   2138.0 ms  ✓ ChainRulesCore
+   4468.2 ms  ✓ Test
+   1361.0 ms  ✓ SimpleTraits
+    532.7 ms  ✓ ADTypes → ADTypesChainRulesCoreExt
+    713.2 ms  ✓ DifferentiationInterface → DifferentiationInterfaceChainRulesCoreExt
+   1845.6 ms  ✓ DispatchDoctor
+   4093.6 ms  ✓ SparseArrays
+    425.1 ms  ✓ DispatchDoctor → DispatchDoctorChainRulesCoreExt
+    409.0 ms  ✓ ChainRulesCore → ChainRulesCoreSparseArraysExt
+    437.1 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+    513.7 ms  ✓ Statistics
+   5840.7 ms  ✓ StaticArrays
+    444.5 ms  ✓ StaticArrays → StaticArraysChainRulesCoreExt
+    444.8 ms  ✓ DifferentiationInterface → DifferentiationInterfaceStaticArraysExt
+    552.8 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    708.4 ms  ✓ ArnoldiMethod
+   2567.6 ms  ✓ Graphs
+  49623.6 ms  ✓ Mooncake
+   1015.2 ms  ✓ DifferentiationInterface → DifferentiationInterfaceMooncakeExt
+  33 dependencies successfully precompiled in 63 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=M/Mooncake/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 130.53
+	System time (seconds): 7.06
+	Percent of CPU this job got: 215%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:03.72
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2215968
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 112
+	Minor (reclaiming a frame) page faults: 2122038
+	Voluntary context switches: 46510
+	Involuntary context switches: 5286
+	Swaps: 0
+	File system inputs: 32
+	File system outputs: 401576
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
