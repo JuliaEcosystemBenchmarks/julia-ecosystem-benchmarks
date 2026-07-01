@@ -1,0 +1,74 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   2058.6 ms  ✓ CompositionsBase
+   2090.7 ms  ✓ Reexport
+   2092.2 ms  ✓ OpenLibm_jll
+   2088.9 ms  ✓ CommonSolve
+   2131.9 ms  ✓ PtrArrays
+   2157.4 ms  ✓ StatsAPI
+   2173.5 ms  ✓ DataAPI
+   2189.8 ms  ✓ InverseFunctions
+   2259.9 ms  ✓ CompilerSupportLibraries_jll
+   2265.6 ms  ✓ SuiteSparse_jll
+   2287.1 ms  ✓ ConstructionBase
+   2822.9 ms  ✓ OrderedCollections
+   2761.1 ms  ✓ DocStringExtensions
+   1172.3 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+   1295.3 ms  ✓ Missings
+   1313.4 ms  ✓ AliasTables
+   3489.8 ms  ✓ FillArrays
+   1204.4 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   3689.8 ms  ✓ IrrationalConstants
+   1604.4 ms  ✓ Preferences
+   1584.0 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+    408.6 ms  ✓ JLLWrappers
+    605.8 ms  ✓ LogExpFunctions
+   4653.9 ms  ✓ MacroTools
+    716.8 ms  ✓ Rmath_jll
+    611.2 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+    741.5 ms  ✓ OpenSpecFun_jll
+   2376.8 ms  ✓ DataStructures
+    547.4 ms  ✓ SortingAlgorithms
+    743.9 ms  ✓ Rmath
+    809.6 ms  ✓ QuadGK
+   4028.6 ms  ✓ SparseArrays
+   1667.1 ms  ✓ Accessors
+    427.1 ms  ✓ SuiteSparse
+    436.4 ms  ✓ Accessors → LinearAlgebraExt
+    510.5 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    608.4 ms  ✓ Statistics
+   2252.7 ms  ✓ SpecialFunctions
+    677.9 ms  ✓ PDMats
+    495.6 ms  ✓ FillArrays → FillArraysStatisticsExt
+    435.5 ms  ✓ FillArrays → FillArraysPDMatsExt
+    719.8 ms  ✓ HypergeometricFunctions
+   1502.8 ms  ✓ StatsBase
+    755.7 ms  ✓ StatsFuns
+   2059.7 ms  ✓ Roots
+    463.3 ms  ✓ PDMats → StatsBaseExt
+    340.7 ms  ✓ StatsFuns → StatsFunsInverseFunctionsExt
+   3170.7 ms  ✓ Distributions
+  48 dependencies successfully precompiled in 13 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=D/Distributions/Normal-Distribution -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 35.68
+	System time (seconds): 7.86
+	Percent of CPU this job got: 313%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:13.88
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 362212
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 130
+	Minor (reclaiming a frame) page faults: 1915894
+	Voluntary context switches: 63521
+	Involuntary context switches: 7590
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 139440
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
