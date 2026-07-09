@@ -1,0 +1,56 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1136.9 ms  ✓ LazyArtifacts
+   1237.3 ms  ✓ Reexport
+   1243.4 ms  ✓ CEnum
+   1481.7 ms  ✓ Adapt
+   1331.7 ms  ✓ HashArrayMappedTries
+   1345.4 ms  ✓ Requires
+   1354.8 ms  ✓ StaticArraysCore
+   1362.2 ms  ✓ SuiteSparse_jll
+   1564.1 ms  ✓ Preferences
+    581.6 ms  ✓ ScopedValues
+    591.9 ms  ✓ GPUArraysCore
+    472.1 ms  ✓ PrecompileTools
+    551.9 ms  ✓ JLLWrappers
+    521.8 ms  ✓ LLVMExtra_jll
+   2964.7 ms  ✓ MacroTools
+   2980.4 ms  ✓ UnsafeAtomics
+    365.1 ms  ✓ Atomix
+   2890.9 ms  ✓ SparseArrays
+    379.1 ms  ✓ Adapt → AdaptSparseArraysExt
+    504.8 ms  ✓ Statistics
+   4912.5 ms  ✓ StaticArrays
+    469.5 ms  ✓ Adapt → AdaptStaticArraysExt
+    776.5 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+   5293.3 ms  ✓ LLVM
+    861.9 ms  ✓ UnsafeAtomics → UnsafeAtomicsLLVM
+   2165.1 ms  ✓ KernelAbstractions
+    443.6 ms  ✓ KernelAbstractions → LinearAlgebraExt
+    717.7 ms  ✓ KernelAbstractions → SparseArraysExt
+   2177.4 ms  ✓ GPUArrays
+    865.2 ms  ✓ JLArrays
+  30 dependencies successfully precompiled in 14 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=J/JLArrays/Matrix-Multiplication-On-Gpu-Like-Arrays -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 33.61
+	System time (seconds): 5.47
+	Percent of CPU this job got: 253%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:15.40
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 483572
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 78
+	Minor (reclaiming a frame) page faults: 1447482
+	Voluntary context switches: 41581
+	Involuntary context switches: 2327
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 168208
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
