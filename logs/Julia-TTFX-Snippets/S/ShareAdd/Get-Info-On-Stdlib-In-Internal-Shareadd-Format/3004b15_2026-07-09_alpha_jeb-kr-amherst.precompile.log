@@ -1,0 +1,32 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1078.3 ms  ✓ InteractiveUtils
+   1897.2 ms  ✓ Preferences
+    600.3 ms  ✓ PrecompileTools
+  52643.1 ms  ✓ REPL
+   8464.4 ms  ✓ Pkg → REPLExt
+  11628.5 ms  ✓ ShareAdd
+  6 dependencies successfully precompiled in 74 seconds. 27 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +alpha --project=S/ShareAdd/Get-Info-On-Stdlib-In-Internal-Shareadd-Format -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 244.65
+	System time (seconds): 10.49
+	Percent of CPU this job got: 144%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:56.22
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2718460
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 232
+	Minor (reclaiming a frame) page faults: 3795084
+	Voluntary context switches: 7618
+	Involuntary context switches: 203844
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 477352
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

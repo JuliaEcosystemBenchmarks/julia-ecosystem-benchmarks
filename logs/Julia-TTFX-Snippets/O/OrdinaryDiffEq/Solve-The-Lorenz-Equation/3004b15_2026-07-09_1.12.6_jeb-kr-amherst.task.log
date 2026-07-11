@@ -1,0 +1,258 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+              ✗ OrdinaryDiffEqRosenbrock
+              ✗ OrdinaryDiffEqDefault
+Info Given OrdinaryDiffEq was explicitly requested, output will be shown live [0K
+[0KWARNING: Imported binding OrdinaryDiffEqDifferentiation.TimeDerivativeWrapper was undeclared at import time during import to OrdinaryDiffEqRosenbrock.
+[0KWARNING: Imported binding OrdinaryDiffEqDifferentiation.TimeGradientWrapper was undeclared at import time during import to OrdinaryDiffEqRosenbrock.
+[0KERROR: LoadError: UndefVarError: `TimeGradientWrapper` not defined in `OrdinaryDiffEqRosenbrock`
+[0KSuggestion: this global was defined as `OrdinaryDiffEqDifferentiation.TimeGradientWrapper` but not assigned a value.
+[0KHint: a global variable of this name also exists in SciMLBase.
+[0KStacktrace:
+[0K  [1] alg_cache(alg::OrdinaryDiffEqRosenbrock.Rosenbrock23{ADTypes.AutoForwardDiff{1, ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}}, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!), typeof(OrdinaryDiffEqCore.trivial_limiter!), Nothing}, u::Vector{Float64}, rate_prototype::Vector{Float64}, ::Type{Float64}, ::Type{Float64}, ::Type{Float64}, uprev::Vector{Float64}, uprev2::Vector{Float64}, f::SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, FunctionWrappersWrappers.FunctionWrappersWrapper{Tuple{FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{Float64}, Vector{Float64}, SciMLBase.NullParameters, Float64}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, SciMLBase.NullParameters, Float64}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{Float64}, SciMLBase.NullParameters, ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, SciMLBase.NullParameters, ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}}}, FunctionWrappersWrappers.AllowNonIsBits, FunctionWrappersWrappers.SingleCacheStorage}, LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing, Nothing, Nothing, Nothing}, t::Float64, dt::Float64, reltol::Float64, p::SciMLBase.NullParameters, calck::Bool, ::Val{true}, verbose::DiffEqBase.DEVerbosity{true, SciMLLogging.Minimal, SciMLLogging.Minimal})
+[0K    @ OrdinaryDiffEqRosenbrock /workdir/depot/packages/OrdinaryDiffEqRosenbrock/68eDN/src/rosenbrock_caches.jl:234
+[0K  [2] _ode_init(prob::SciMLBase.ODEProblem{Vector{Float64}, Tuple{Float64, Float64}, true, SciMLBase.NullParameters, SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, FunctionWrappersWrappers.FunctionWrappersWrapper{Tuple{FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{Float64}, Vector{Float64}, SciMLBase.NullParameters, Float64}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, SciMLBase.NullParameters, Float64}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{Float64}, SciMLBase.NullParameters, ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, SciMLBase.NullParameters, ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}}}, FunctionWrappersWrappers.AllowNonIsBits, FunctionWrappersWrappers.SingleCacheStorage}, LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing, Nothing, Nothing, Nothing}, @Kwargs{}, SciMLBase.StandardODEProblem}, alg::OrdinaryDiffEqRosenbrock.Rosenbrock23{ADTypes.AutoForwardDiff{1, ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}}, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!), typeof(OrdinaryDiffEqCore.trivial_limiter!), Nothing}, timeseries_init::Tuple{}, ts_init::Tuple{}, ks_init::Tuple{}; saveat::Tuple{}, tstops::Tuple{}, d_discontinuities::Tuple{}, save_idxs::Nothing, save_everystep::Bool, save_on::Bool, save_discretes::Bool, save_start::Bool, save_end::Nothing, callback::Nothing, dense::Bool, calck::Bool, dt::Nothing, dtmin::Float64, dtmax::Float64, force_dtmin::Bool, adaptive::Bool, abstol::Nothing, reltol::Nothing, controller::Nothing, fullnormalize::Bool, failfactor::Int64, maxiters::Int64, internalnorm::typeof(DiffEqBase.ODE_DEFAULT_NORM), internalopnorm::typeof(LinearAlgebra.opnorm), isoutofdomain::typeof(DiffEqBase.ODE_DEFAULT_ISOUTOFDOMAIN), unstable_check::typeof(DiffEqBase.ODE_DEFAULT_UNSTABLE_CHECK), verbose::DiffEqBase.DEVerbosity{true, SciMLLogging.Minimal, SciMLLogging.Minimal}, timeseries_errors::Bool, dense_errors::Bool, advance_to_tstop::Bool, stop_at_next_tstop::Bool, initialize_save::Bool, progress::Bool, progress_steps::Int64, progress_name::String, progress_message::typeof(DiffEqBase.ODE_DEFAULT_PROG_MESSAGE), progress_id::Symbol, userdata::Nothing, allow_extrapolation::Bool, initialize_integrator::Bool, alias::SciMLBase.ODEAliasSpecifier, initializealg::DiffEqBase.DefaultInit, rng::Nothing, save_noise::Bool, delta::Nothing, W::Nothing, P::Nothing, sqdt::Nothing, noise::Nothing, c::Nothing, rate_constants::Nothing, _cache::Nothing, _u::Nothing, _uprev::Nothing, seed::UInt64, kwargs::@Kwargs{})
+[0K    @ OrdinaryDiffEqCore /workdir/depot/packages/OrdinaryDiffEqCore/it3lY/src/solve.jl:516
+[0K  [3] _ode_init
+[0K    @ /workdir/depot/packages/OrdinaryDiffEqCore/it3lY/src/solve.jl:80 [inlined]
+[0K  [4] #__init#65
+[0K    @ /workdir/depot/packages/OrdinaryDiffEqCore/it3lY/src/solve.jl:70 [inlined]
+[0K  [5] __init (repeats 2 times)
+[0K    @ /workdir/depot/packages/OrdinaryDiffEqCore/it3lY/src/solve.jl:52 [inlined]
+[0K  [6] __solve(::SciMLBase.ODEProblem{Vector{Float64}, Tuple{Float64, Float64}, true, SciMLBase.NullParameters, SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, FunctionWrappersWrappers.FunctionWrappersWrapper{Tuple{FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{Float64}, Vector{Float64}, SciMLBase.NullParameters, Float64}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, SciMLBase.NullParameters, Float64}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{Float64}, SciMLBase.NullParameters, ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, SciMLBase.NullParameters, ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}}}, FunctionWrappersWrappers.AllowNonIsBits, FunctionWrappersWrappers.SingleCacheStorage}, LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing, Nothing, Nothing, Nothing}, @Kwargs{}, SciMLBase.StandardODEProblem}, ::OrdinaryDiffEqRosenbrock.Rosenbrock23{ADTypes.AutoForwardDiff{1, ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}}, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!), typeof(OrdinaryDiffEqCore.trivial_limiter!), Nothing}; kwargs::@Kwargs{verbose::DiffEqBase.DEVerbosity{true, SciMLLogging.Minimal, SciMLLogging.Minimal}})
+[0K    @ OrdinaryDiffEqCore /workdir/depot/packages/OrdinaryDiffEqCore/it3lY/src/solve.jl:9
+[0K  [7] __solve
+[0K    @ /workdir/depot/packages/OrdinaryDiffEqCore/it3lY/src/solve.jl:1 [inlined]
+[0K  [8] #solve_call#25
+[0K    @ /workdir/depot/packages/DiffEqBase/DoufZ/src/solve.jl:172 [inlined]
+[0K  [9] solve_call
+[0K    @ /workdir/depot/packages/DiffEqBase/DoufZ/src/solve.jl:137 [inlined]
+[0K [10] #solve_up#32
+[0K    @ /workdir/depot/packages/DiffEqBase/DoufZ/src/solve.jl:646 [inlined]
+[0K [11] solve_up
+[0K    @ /workdir/depot/packages/DiffEqBase/DoufZ/src/solve.jl:619 [inlined]
+[0K [12] #solve#31
+[0K    @ /workdir/depot/packages/DiffEqBase/DoufZ/src/solve.jl:603 [inlined]
+[0K [13] solve(prob::SciMLBase.ODEProblem{Vector{Float64}, Tuple{Float64, Float64}, true, SciMLBase.NullParameters, SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, typeof(OrdinaryDiffEqCore.lorenz), LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing, Nothing, Nothing, Nothing}, @Kwargs{}, SciMLBase.StandardODEProblem}, args::OrdinaryDiffEqRosenbrock.Rosenbrock23{ADTypes.AutoForwardDiff{nothing, Nothing}, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!), typeof(OrdinaryDiffEqCore.trivial_limiter!), Nothing})
+[0K    @ DiffEqBase /workdir/depot/packages/DiffEqBase/DoufZ/src/solve.jl:591
+[0K [14] macro expansion
+[0K    @ /workdir/depot/packages/OrdinaryDiffEqRosenbrock/68eDN/src/OrdinaryDiffEqRosenbrock.jl:194 [inlined]
+[0K [15] macro expansion
+[0K    @ /workdir/depot/packages/PrecompileTools/QUxvR/src/workloads.jl:70 [inlined]
+[0K [16] top-level scope
+[0K    @ /workdir/depot/packages/OrdinaryDiffEqRosenbrock/68eDN/src/OrdinaryDiffEqRosenbrock.jl:133
+[0K [17] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:306
+[0K [18] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+[0K    @ Base ./loading.jl:3028
+[0K [19] top-level scope
+[0K    @ stdin:5
+[0K [20] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [21] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:2874
+[0K [22] include_string
+[0K    @ ./loading.jl:2884 [inlined]
+[0K [23] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:315
+[0K [24] _start()
+[0K    @ Base ./client.jl:550
+[0Kin expression starting at /workdir/depot/packages/OrdinaryDiffEqRosenbrock/68eDN/src/OrdinaryDiffEqRosenbrock.jl:1
+[0Kin expression starting at stdin:5
+[0KERROR: LoadError: Failed to precompile OrdinaryDiffEqRosenbrock [43230ef6-c299-4910-a778-202eb28ce4ce] to "/workdir/depot/compiled/v1.12/OrdinaryDiffEqRosenbrock/jl_8MmVjh".
+[0KStacktrace:
+[0K  [1] error(s::String)
+[0K    @ Base ./error.jl:44
+[0K  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
+[0K    @ Base ./loading.jl:3315
+[0K  [3] (::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}})()
+[0K    @ Base ./loading.jl:2683
+[0K  [4] mkpidlock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+[0K    @ FileWatching.Pidfile ~/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:96
+[0K  [5] #mkpidlock#7
+[0K    @ ~/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:91 [inlined]
+[0K  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+[0K    @ FileWatching.Pidfile ~/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:117
+[0K  [7] #invokelatest_gr#232
+[0K    @ ./reflection.jl:1297 [inlined]
+[0K  [8] invokelatest_gr
+[0K    @ ./reflection.jl:1289 [inlined]
+[0K  [9] maybe_cachefile_lock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+[0K    @ Base ./loading.jl:3886
+[0K [10] maybe_cachefile_lock
+[0K    @ ./loading.jl:3883 [inlined]
+[0K [11] __require_prelocked(pkg::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2669
+[0K [12] _require_prelocked(uuidkey::Base.PkgId, env::String)
+[0K    @ Base ./loading.jl:2495
+[0K [13] macro expansion
+[0K    @ ./loading.jl:2423 [inlined]
+[0K [14] macro expansion
+[0K    @ ./lock.jl:376 [inlined]
+[0K [15] __require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2388
+[0K [16] require(into::Module, mod::Symbol)
+[0K    @ Base ./loading.jl:2364
+[0K [17] top-level scope
+[0K    @ /workdir/depot/packages/OrdinaryDiffEq/yIGZC/src/OrdinaryDiffEq.jl:14
+[0K [18] include(mod::Module, _path::String)
+[0K    @ Base ./Base.jl:306
+[0K [19] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base ./loading.jl:3028
+[0K [20] top-level scope
+[0K    @ stdin:5
+[0K [21] eval(m::Module, e::Any)
+[0K    @ Core ./boot.jl:489
+[0K [22] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+[0K    @ Base ./loading.jl:2874
+[0K [23] include_string
+[0K    @ ./loading.jl:2884 [inlined]
+[0K [24] exec_options(opts::Base.JLOptions)
+[0K    @ Base ./client.jl:315
+[0K [25] _start()
+[0K    @ Base ./client.jl:550
+[0Kin expression starting at /workdir/depot/packages/OrdinaryDiffEq/yIGZC/src/OrdinaryDiffEq.jl:1
+[0Kin expression starting at stdin:5
+              ✗ OrdinaryDiffEq
+  0 dependencies successfully precompiled in 21 seconds. 165 already precompiled.
+
+ERROR: LoadError: The following 1 direct dependency failed to precompile:
+
+OrdinaryDiffEq 
+
+Failed to precompile OrdinaryDiffEq [1dea7af3-3e70-54e6-95c3-0bf5283fa5ed] to "/workdir/depot/compiled/v1.12/OrdinaryDiffEq/jl_RskGRb".
+WARNING: Imported binding OrdinaryDiffEqDifferentiation.TimeDerivativeWrapper was undeclared at import time during import to OrdinaryDiffEqRosenbrock.
+WARNING: Imported binding OrdinaryDiffEqDifferentiation.TimeGradientWrapper was undeclared at import time during import to OrdinaryDiffEqRosenbrock.
+ERROR: LoadError: UndefVarError: `TimeGradientWrapper` not defined in `OrdinaryDiffEqRosenbrock`
+Suggestion: this global was defined as `OrdinaryDiffEqDifferentiation.TimeGradientWrapper` but not assigned a value.
+Hint: a global variable of this name also exists in SciMLBase.
+Stacktrace:
+  [1] alg_cache(alg::OrdinaryDiffEqRosenbrock.Rosenbrock23{ADTypes.AutoForwardDiff{1, ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}}, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!), typeof(OrdinaryDiffEqCore.trivial_limiter!), Nothing}, u::Vector{Float64}, rate_prototype::Vector{Float64}, ::Type{Float64}, ::Type{Float64}, ::Type{Float64}, uprev::Vector{Float64}, uprev2::Vector{Float64}, f::SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, FunctionWrappersWrappers.FunctionWrappersWrapper{Tuple{FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{Float64}, Vector{Float64}, SciMLBase.NullParameters, Float64}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, SciMLBase.NullParameters, Float64}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{Float64}, SciMLBase.NullParameters, ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, SciMLBase.NullParameters, ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}}}, FunctionWrappersWrappers.AllowNonIsBits, FunctionWrappersWrappers.SingleCacheStorage}, LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing, Nothing, Nothing, Nothing}, t::Float64, dt::Float64, reltol::Float64, p::SciMLBase.NullParameters, calck::Bool, ::Val{true}, verbose::DiffEqBase.DEVerbosity{true, SciMLLogging.Minimal, SciMLLogging.Minimal})
+    @ OrdinaryDiffEqRosenbrock /workdir/depot/packages/OrdinaryDiffEqRosenbrock/68eDN/src/rosenbrock_caches.jl:234
+  [2] _ode_init(prob::SciMLBase.ODEProblem{Vector{Float64}, Tuple{Float64, Float64}, true, SciMLBase.NullParameters, SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, FunctionWrappersWrappers.FunctionWrappersWrapper{Tuple{FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{Float64}, Vector{Float64}, SciMLBase.NullParameters, Float64}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, SciMLBase.NullParameters, Float64}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{Float64}, SciMLBase.NullParameters, ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, SciMLBase.NullParameters, ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}}}, FunctionWrappersWrappers.AllowNonIsBits, FunctionWrappersWrappers.SingleCacheStorage}, LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing, Nothing, Nothing, Nothing}, @Kwargs{}, SciMLBase.StandardODEProblem}, alg::OrdinaryDiffEqRosenbrock.Rosenbrock23{ADTypes.AutoForwardDiff{1, ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}}, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!), typeof(OrdinaryDiffEqCore.trivial_limiter!), Nothing}, timeseries_init::Tuple{}, ts_init::Tuple{}, ks_init::Tuple{}; saveat::Tuple{}, tstops::Tuple{}, d_discontinuities::Tuple{}, save_idxs::Nothing, save_everystep::Bool, save_on::Bool, save_discretes::Bool, save_start::Bool, save_end::Nothing, callback::Nothing, dense::Bool, calck::Bool, dt::Nothing, dtmin::Float64, dtmax::Float64, force_dtmin::Bool, adaptive::Bool, abstol::Nothing, reltol::Nothing, controller::Nothing, fullnormalize::Bool, failfactor::Int64, maxiters::Int64, internalnorm::typeof(DiffEqBase.ODE_DEFAULT_NORM), internalopnorm::typeof(LinearAlgebra.opnorm), isoutofdomain::typeof(DiffEqBase.ODE_DEFAULT_ISOUTOFDOMAIN), unstable_check::typeof(DiffEqBase.ODE_DEFAULT_UNSTABLE_CHECK), verbose::DiffEqBase.DEVerbosity{true, SciMLLogging.Minimal, SciMLLogging.Minimal}, timeseries_errors::Bool, dense_errors::Bool, advance_to_tstop::Bool, stop_at_next_tstop::Bool, initialize_save::Bool, progress::Bool, progress_steps::Int64, progress_name::String, progress_message::typeof(DiffEqBase.ODE_DEFAULT_PROG_MESSAGE), progress_id::Symbol, userdata::Nothing, allow_extrapolation::Bool, initialize_integrator::Bool, alias::SciMLBase.ODEAliasSpecifier, initializealg::DiffEqBase.DefaultInit, rng::Nothing, save_noise::Bool, delta::Nothing, W::Nothing, P::Nothing, sqdt::Nothing, noise::Nothing, c::Nothing, rate_constants::Nothing, _cache::Nothing, _u::Nothing, _uprev::Nothing, seed::UInt64, kwargs::@Kwargs{})
+    @ OrdinaryDiffEqCore /workdir/depot/packages/OrdinaryDiffEqCore/it3lY/src/solve.jl:516
+  [3] _ode_init
+    @ /workdir/depot/packages/OrdinaryDiffEqCore/it3lY/src/solve.jl:80 [inlined]
+  [4] #__init#65
+    @ /workdir/depot/packages/OrdinaryDiffEqCore/it3lY/src/solve.jl:70 [inlined]
+  [5] __init (repeats 2 times)
+    @ /workdir/depot/packages/OrdinaryDiffEqCore/it3lY/src/solve.jl:52 [inlined]
+  [6] __solve(::SciMLBase.ODEProblem{Vector{Float64}, Tuple{Float64, Float64}, true, SciMLBase.NullParameters, SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, FunctionWrappersWrappers.FunctionWrappersWrapper{Tuple{FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{Float64}, Vector{Float64}, SciMLBase.NullParameters, Float64}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, SciMLBase.NullParameters, Float64}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{Float64}, SciMLBase.NullParameters, ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}}, FunctionWrappers.FunctionWrapper{Nothing, Tuple{Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, Vector{ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}, SciMLBase.NullParameters, ForwardDiff.Dual{ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}, Float64, 1}}}}, FunctionWrappersWrappers.AllowNonIsBits, FunctionWrappersWrappers.SingleCacheStorage}, LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing, Nothing, Nothing, Nothing}, @Kwargs{}, SciMLBase.StandardODEProblem}, ::OrdinaryDiffEqRosenbrock.Rosenbrock23{ADTypes.AutoForwardDiff{1, ForwardDiff.Tag{DiffEqBase.OrdinaryDiffEqTag, Float64}}, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!), typeof(OrdinaryDiffEqCore.trivial_limiter!), Nothing}; kwargs::@Kwargs{verbose::DiffEqBase.DEVerbosity{true, SciMLLogging.Minimal, SciMLLogging.Minimal}})
+    @ OrdinaryDiffEqCore /workdir/depot/packages/OrdinaryDiffEqCore/it3lY/src/solve.jl:9
+  [7] __solve
+    @ /workdir/depot/packages/OrdinaryDiffEqCore/it3lY/src/solve.jl:1 [inlined]
+  [8] #solve_call#25
+    @ /workdir/depot/packages/DiffEqBase/DoufZ/src/solve.jl:172 [inlined]
+  [9] solve_call
+    @ /workdir/depot/packages/DiffEqBase/DoufZ/src/solve.jl:137 [inlined]
+ [10] #solve_up#32
+    @ /workdir/depot/packages/DiffEqBase/DoufZ/src/solve.jl:646 [inlined]
+ [11] solve_up
+    @ /workdir/depot/packages/DiffEqBase/DoufZ/src/solve.jl:619 [inlined]
+ [12] #solve#31
+    @ /workdir/depot/packages/DiffEqBase/DoufZ/src/solve.jl:603 [inlined]
+ [13] solve(prob::SciMLBase.ODEProblem{Vector{Float64}, Tuple{Float64, Float64}, true, SciMLBase.NullParameters, SciMLBase.ODEFunction{true, SciMLBase.AutoSpecialize, typeof(OrdinaryDiffEqCore.lorenz), LinearAlgebra.UniformScaling{Bool}, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, typeof(SciMLBase.DEFAULT_OBSERVED), Nothing, Nothing, Nothing, Nothing}, @Kwargs{}, SciMLBase.StandardODEProblem}, args::OrdinaryDiffEqRosenbrock.Rosenbrock23{ADTypes.AutoForwardDiff{nothing, Nothing}, Nothing, typeof(OrdinaryDiffEqCore.trivial_limiter!), typeof(OrdinaryDiffEqCore.trivial_limiter!), Nothing})
+    @ DiffEqBase /workdir/depot/packages/DiffEqBase/DoufZ/src/solve.jl:591
+ [14] macro expansion
+    @ /workdir/depot/packages/OrdinaryDiffEqRosenbrock/68eDN/src/OrdinaryDiffEqRosenbrock.jl:194 [inlined]
+ [15] macro expansion
+    @ /workdir/depot/packages/PrecompileTools/QUxvR/src/workloads.jl:70 [inlined]
+ [16] top-level scope
+    @ /workdir/depot/packages/OrdinaryDiffEqRosenbrock/68eDN/src/OrdinaryDiffEqRosenbrock.jl:133
+ [17] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [18] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+    @ Base ./loading.jl:3028
+ [19] top-level scope
+    @ stdin:5
+ [20] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+ [21] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+    @ Base ./loading.jl:2874
+ [22] include_string
+    @ ./loading.jl:2884 [inlined]
+ [23] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:315
+ [24] _start()
+    @ Base ./client.jl:550
+in expression starting at /workdir/depot/packages/OrdinaryDiffEqRosenbrock/68eDN/src/OrdinaryDiffEqRosenbrock.jl:1
+in expression starting at stdin:5
+ERROR: LoadError: Failed to precompile OrdinaryDiffEqRosenbrock [43230ef6-c299-4910-a778-202eb28ce4ce] to "/workdir/depot/compiled/v1.12/OrdinaryDiffEqRosenbrock/jl_8MmVjh".
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:44
+  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
+    @ Base ./loading.jl:3315
+  [3] (::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}})()
+    @ Base ./loading.jl:2683
+  [4] mkpidlock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+    @ FileWatching.Pidfile ~/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:96
+  [5] #mkpidlock#7
+    @ ~/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:91 [inlined]
+  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+    @ FileWatching.Pidfile ~/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/share/julia/stdlib/v1.12/FileWatching/src/pidfile.jl:117
+  [7] #invokelatest_gr#232
+    @ ./reflection.jl:1297 [inlined]
+  [8] invokelatest_gr
+    @ ./reflection.jl:1289 [inlined]
+  [9] maybe_cachefile_lock(f::Base.var"#__require_prelocked##0#__require_prelocked##1"{Base.PkgId, String, Dict{String, Int64}}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+    @ Base ./loading.jl:3886
+ [10] maybe_cachefile_lock
+    @ ./loading.jl:3883 [inlined]
+ [11] __require_prelocked(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2669
+ [12] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:2495
+ [13] macro expansion
+    @ ./loading.jl:2423 [inlined]
+ [14] macro expansion
+    @ ./lock.jl:376 [inlined]
+ [15] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2388
+ [16] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:2364
+ [17] top-level scope
+    @ /workdir/depot/packages/OrdinaryDiffEq/yIGZC/src/OrdinaryDiffEq.jl:14
+ [18] include(mod::Module, _path::String)
+    @ Base ./Base.jl:306
+ [19] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+    @ Base ./loading.jl:3028
+ [20] top-level scope
+    @ stdin:5
+ [21] eval(m::Module, e::Any)
+    @ Core ./boot.jl:489
+ [22] include_string(mapexpr::typeof(identity), mod::Module, code::String, filename::String)
+    @ Base ./loading.jl:2874
+ [23] include_string
+    @ ./loading.jl:2884 [inlined]
+ [24] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:315
+ [25] _start()
+    @ Base ./client.jl:550
+in expression starting at /workdir/depot/packages/OrdinaryDiffEq/yIGZC/src/OrdinaryDiffEq.jl:1
+in expression starting at stdin:
+in expression starting at /tmp/tmp.AxBAlp9UHm/Julia-TTFX-Snippets/tasks/O/OrdinaryDiffEq/Solve-The-Lorenz-Equation/task.jl:10
+Command exited with non-zero status 1
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.6 --project=O/OrdinaryDiffEq/Solve-The-Lorenz-Equation O/OrdinaryDiffEq/Solve-The-Lorenz-Equation/task.jl"
+	User time (seconds): 19.41
+	System time (seconds): 1.77
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:21.02
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 798572
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 600106
+	Voluntary context switches: 526
+	Involuntary context switches: 238
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 112
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

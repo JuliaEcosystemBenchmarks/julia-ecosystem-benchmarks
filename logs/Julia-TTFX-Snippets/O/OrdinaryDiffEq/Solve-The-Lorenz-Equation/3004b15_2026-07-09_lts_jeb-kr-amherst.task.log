@@ -1,0 +1,136 @@
+nice: cannot set niceness: Permission denied
+ERROR: LoadError: UndefVarError: `TimeDerivativeWrapper` not defined
+Stacktrace:
+ [1] include
+   @ ./Base.jl:495 [inlined]
+ [2] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+   @ Base ./loading.jl:2306
+ [3] top-level scope
+   @ stdin:5
+in expression starting at /workdir/depot/packages/OrdinaryDiffEqRosenbrock/68eDN/src/OrdinaryDiffEqRosenbrock.jl:1
+in expression starting at stdin:5
+ERROR: LoadError: Failed to precompile OrdinaryDiffEqRosenbrock [43230ef6-c299-4910-a778-202eb28ce4ce] to "/workdir/depot/compiled/v1.10/OrdinaryDiffEqRosenbrock/jl_f0EL1j".
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:35
+  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; loadable_exts::Nothing)
+    @ Base ./loading.jl:2547
+  [3] compilecache
+    @ ./loading.jl:2414 [inlined]
+  [4] (::Base.var"#973#974"{Base.PkgId})()
+    @ Base ./loading.jl:2058
+  [5] mkpidlock(f::Base.var"#973#974"{Base.PkgId}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+    @ FileWatching.Pidfile ~/.julia/juliaup/julia-1.10.11+0.x64.linux.gnu/share/julia/stdlib/v1.10/FileWatching/src/pidfile.jl:93
+  [6] #mkpidlock#6
+    @ ~/.julia/juliaup/julia-1.10.11+0.x64.linux.gnu/share/julia/stdlib/v1.10/FileWatching/src/pidfile.jl:88 [inlined]
+  [7] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+    @ FileWatching.Pidfile ~/.julia/juliaup/julia-1.10.11+0.x64.linux.gnu/share/julia/stdlib/v1.10/FileWatching/src/pidfile.jl:111
+  [8] #invokelatest#2
+    @ ./essentials.jl:894 [inlined]
+  [9] invokelatest
+    @ ./essentials.jl:889 [inlined]
+ [10] maybe_cachefile_lock(f::Base.var"#973#974"{Base.PkgId}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+    @ Base ./loading.jl:3062
+ [11] maybe_cachefile_lock
+    @ ./loading.jl:3059 [inlined]
+ [12] _require(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2044
+ [13] __require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:1886
+ [14] #invoke_in_world#3
+    @ ./essentials.jl:926 [inlined]
+ [15] invoke_in_world
+    @ ./essentials.jl:923 [inlined]
+ [16] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:1877
+ [17] macro expansion
+    @ ./loading.jl:1864 [inlined]
+ [18] macro expansion
+    @ ./lock.jl:270 [inlined]
+ [19] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:1827
+ [20] #invoke_in_world#3
+    @ ./essentials.jl:926 [inlined]
+ [21] invoke_in_world
+    @ ./essentials.jl:923 [inlined]
+ [22] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:1820
+ [23] include
+    @ ./Base.jl:495 [inlined]
+ [24] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+    @ Base ./loading.jl:2306
+ [25] top-level scope
+    @ stdin:5
+in expression starting at /workdir/depot/packages/OrdinaryDiffEq/yIGZC/src/OrdinaryDiffEq.jl:1
+in expression starting at stdin:5
+ERROR: LoadError: Failed to precompile OrdinaryDiffEq [1dea7af3-3e70-54e6-95c3-0bf5283fa5ed] to "/workdir/depot/compiled/v1.10/OrdinaryDiffEq/jl_kWrhdE".
+Stacktrace:
+  [1] error(s::String)
+    @ Base ./error.jl:35
+  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; loadable_exts::Nothing)
+    @ Base ./loading.jl:2547
+  [3] compilecache
+    @ ./loading.jl:2414 [inlined]
+  [4] (::Base.var"#973#974"{Base.PkgId})()
+    @ Base ./loading.jl:2058
+  [5] mkpidlock(f::Base.var"#973#974"{Base.PkgId}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+    @ FileWatching.Pidfile ~/.julia/juliaup/julia-1.10.11+0.x64.linux.gnu/share/julia/stdlib/v1.10/FileWatching/src/pidfile.jl:93
+  [6] #mkpidlock#6
+    @ ~/.julia/juliaup/julia-1.10.11+0.x64.linux.gnu/share/julia/stdlib/v1.10/FileWatching/src/pidfile.jl:88 [inlined]
+  [7] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+    @ FileWatching.Pidfile ~/.julia/juliaup/julia-1.10.11+0.x64.linux.gnu/share/julia/stdlib/v1.10/FileWatching/src/pidfile.jl:111
+  [8] #invokelatest#2
+    @ ./essentials.jl:894 [inlined]
+  [9] invokelatest
+    @ ./essentials.jl:889 [inlined]
+ [10] maybe_cachefile_lock(f::Base.var"#973#974"{Base.PkgId}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+    @ Base ./loading.jl:3062
+ [11] maybe_cachefile_lock
+    @ ./loading.jl:3059 [inlined]
+ [12] _require(pkg::Base.PkgId, env::String)
+    @ Base ./loading.jl:2044
+ [13] __require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:1886
+ [14] #invoke_in_world#3
+    @ ./essentials.jl:926 [inlined]
+ [15] invoke_in_world
+    @ ./essentials.jl:923 [inlined]
+ [16] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base ./loading.jl:1877
+ [17] macro expansion
+    @ ./loading.jl:1864 [inlined]
+ [18] macro expansion
+    @ ./lock.jl:270 [inlined]
+ [19] __require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:1827
+ [20] #invoke_in_world#3
+    @ ./essentials.jl:926 [inlined]
+ [21] invoke_in_world
+    @ ./essentials.jl:923 [inlined]
+ [22] require(into::Module, mod::Symbol)
+    @ Base ./loading.jl:1820
+in expression starting at /tmp/tmp.I6GUUHG4S8/Julia-TTFX-Snippets/tasks/O/OrdinaryDiffEq/Solve-The-Lorenz-Equation/task.jl:10
+Command exited with non-zero status 1
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=O/OrdinaryDiffEq/Solve-The-Lorenz-Equation O/OrdinaryDiffEq/Solve-The-Lorenz-Equation/task.jl"
+	User time (seconds): 3.46
+	System time (seconds): 1.00
+	Percent of CPU this job got: 111%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.99
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 559056
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 229282
+	Voluntary context switches: 54
+	Involuntary context switches: 74
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 32
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
