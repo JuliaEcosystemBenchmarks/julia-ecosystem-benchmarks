@@ -1,0 +1,57 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1140.9 ms  ✓ SuiteSparse_jll
+   1152.0 ms  ✓ ConstructionBase
+   1149.4 ms  ✓ OpenLibm_jll
+   1148.2 ms  ✓ StaticArraysCore
+   1157.2 ms  ✓ EnumX
+   1186.3 ms  ✓ Adapt
+   1240.0 ms  ✓ PositiveFactorizations
+   1300.7 ms  ✓ ADTypes
+   1911.0 ms  ✓ FillArrays
+    624.9 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+    697.0 ms  ✓ NaNMath
+    732.7 ms  ✓ ArrayInterface
+    696.1 ms  ✓ ADTypes → ADTypesConstructionBaseExt
+    355.4 ms  ✓ ArrayInterface → ArrayInterfaceStaticArraysCoreExt
+    379.0 ms  ✓ ArrayInterface → ArrayInterfaceFillArraysExt
+   1117.6 ms  ✓ DifferentiationInterface
+   2681.0 ms  ✓ MacroTools
+    714.8 ms  ✓ Setfield
+    457.6 ms  ✓ FiniteDiff
+   2848.0 ms  ✓ SparseArrays
+    523.0 ms  ✓ DifferentiationInterface → DifferentiationInterfaceFiniteDiffExt
+    664.6 ms  ✓ Adapt → AdaptSparseArraysExt
+    667.1 ms  ✓ ArrayInterface → ArrayInterfaceSparseArraysExt
+    701.0 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    699.9 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+    758.5 ms  ✓ Statistics
+    839.3 ms  ✓ FiniteDiff → FiniteDiffSparseArraysExt
+    620.7 ms  ✓ NLSolversBase
+    423.9 ms  ✓ FillArrays → FillArraysStatisticsExt
+    492.8 ms  ✓ LineSearches
+   1655.5 ms  ✓ Optim
+  31 dependencies successfully precompiled in 8 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=O/Optim/Rosenbrock-Minimization-With-Bfgs -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 18.64
+	System time (seconds): 4.40
+	Percent of CPU this job got: 256%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.97
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 347668
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 77
+	Minor (reclaiming a frame) page faults: 1226984
+	Voluntary context switches: 41893
+	Involuntary context switches: 1865
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 75072
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

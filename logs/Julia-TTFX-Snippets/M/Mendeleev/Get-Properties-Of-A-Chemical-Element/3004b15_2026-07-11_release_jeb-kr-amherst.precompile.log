@@ -1,0 +1,35 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  75418.1 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 75 seconds
+Precompiling packages...
+    358.2 ms  ✓ Unicode
+    372.3 ms  ✓ CompilerSupportLibraries_jll
+  14136.9 ms  ✓ Unitful
+    468.4 ms  ✓ Unitful → PrintfExt
+   1562.0 ms  ✓ UnitfulAtomic
+   5234.0 ms  ✓ Mendeleev
+  6 dependencies successfully precompiled in 22 seconds. 2 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=M/Mendeleev/Get-Properties-Of-A-Chemical-Element -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 153.84
+	System time (seconds): 5.93
+	Percent of CPU this job got: 162%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:38.21
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2146448
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 151
+	Minor (reclaiming a frame) page faults: 2203740
+	Voluntary context switches: 6868
+	Involuntary context switches: 4083
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 414784
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
