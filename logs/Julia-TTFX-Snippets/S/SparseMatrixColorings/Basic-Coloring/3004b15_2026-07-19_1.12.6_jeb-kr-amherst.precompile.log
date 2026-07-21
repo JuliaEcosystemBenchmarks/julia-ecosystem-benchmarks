@@ -1,0 +1,39 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  76121.2 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 76 seconds
+Precompiling packages...
+    564.0 ms  ✓ Unicode
+    563.1 ms  ✓ CompilerSupportLibraries_jll
+    589.9 ms  ✓ SuiteSparse_jll
+    681.6 ms  ✓ DocStringExtensions
+    767.1 ms  ✓ ADTypes
+    767.6 ms  ✓ Serialization
+    567.5 ms  ✓ Preferences
+    363.0 ms  ✓ PrecompileTools
+   3814.0 ms  ✓ SparseArrays
+   4674.6 ms  ✓ SparseMatrixColorings
+  10 dependencies successfully precompiled in 9 seconds. 3 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.6 --project=S/SparseMatrixColorings/Basic-Coloring -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 140.84
+	System time (seconds): 6.25
+	Percent of CPU this job got: 170%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:26.42
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2153420
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 167
+	Minor (reclaiming a frame) page faults: 2230083
+	Voluntary context switches: 7001
+	Involuntary context switches: 4121
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 368560
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
