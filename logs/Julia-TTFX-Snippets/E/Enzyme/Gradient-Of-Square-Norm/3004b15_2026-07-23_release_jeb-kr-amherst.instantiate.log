@@ -1,0 +1,92 @@
+nice: cannot set niceness: Permission denied
+    Updating registry at `/workdir/depot/registries/General`
+┌ Info: The General registry is installed via git. Consider reinstalling it via
+│ the newer faster direct from tarball format by running:
+│   pkg> registry rm General; registry add General
+└ 
+    Updating git-repo `/workdir/timetravel_registry/General`
+    Updating `/tmp/tmp.JRbh4N4m7M/Julia-TTFX-Snippets/tasks/E/Enzyme/Gradient-Of-Square-Norm/Project.toml`
+  [7da242da] + Enzyme v0.13.190
+    Updating `/tmp/tmp.JRbh4N4m7M/Julia-TTFX-Snippets/tasks/E/Enzyme/Gradient-Of-Square-Norm/Manifest.toml`
+  [fa961155] + CEnum v0.5.0
+  [7da242da] + Enzyme v0.13.190
+  [f151be2c] + EnzymeCore v0.8.21
+  [e2ba6199] + ExprTools v0.1.11
+⌅ [61eb1bfa] + GPUCompiler v1.23.0
+  [692b3bcd] + JLLWrappers v1.8.0
+  [929cbde3] + LLVM v9.10.1
+  [d8793406] + ObjectFile v0.5.1
+  [aea7be01] + PrecompileTools v1.3.4
+  [21216c6a] + Preferences v1.5.2
+  [189a3867] + Reexport v1.2.2
+  [6c6a2e73] + Scratch v1.3.0
+  [53d494c1] + StructIO v0.3.1
+  [e689c965] + Tracy v0.1.6
+⌅ [7cc45869] + Enzyme_jll v0.0.288+0
+  [dad2f222] + LLVMExtra_jll v0.0.43+1
+  [ad6e5548] + LibTracyClient_jll v0.13.1+0
+  [0dad84c5] + ArgTools v1.1.2
+  [56f22d72] + Artifacts v1.11.0
+  [2a0f44e3] + Base64 v1.11.0
+  [ade2ca70] + Dates v1.11.0
+  [f43a241f] + Downloads v1.7.0
+  [7b1f6079] + FileWatching v1.11.0
+  [b77e0a4c] + InteractiveUtils v1.11.0
+  [ac6e5ff7] + JuliaSyntaxHighlighting v1.12.0
+  [4af54fe1] + LazyArtifacts v1.11.0
+  [b27032c2] + LibCURL v0.6.4
+  [76f85450] + LibGit2 v1.11.0
+  [8f399da3] + Libdl v1.11.0
+  [37e2e46d] + LinearAlgebra v1.12.0
+  [56ddb016] + Logging v1.11.0
+  [d6f4376e] + Markdown v1.11.0
+  [ca575930] + NetworkOptions v1.3.0
+  [44cfe95a] + Pkg v1.12.1
+  [de0858da] + Printf v1.11.0
+  [3fa0cd96] + REPL v1.11.0
+  [9a3f8284] + Random v1.11.0
+  [ea8e919c] + SHA v0.7.0
+  [9e88b42a] + Serialization v1.11.0
+  [6462fe0b] + Sockets v1.11.0
+  [2f01184e] + SparseArrays v1.12.0
+  [f489334b] + StyledStrings v1.11.0
+  [fa267f1f] + TOML v1.0.3
+  [a4e569a6] + Tar v1.10.0
+  [cf7118a7] + UUIDs v1.11.0
+  [4ec0a83e] + Unicode v1.11.0
+  [e66e0078] + CompilerSupportLibraries_jll v1.3.0+1
+  [deac9b47] + LibCURL_jll v8.15.0+0
+  [e37daf67] + LibGit2_jll v1.9.0+0
+  [29816b5a] + LibSSH2_jll v1.11.3+1
+  [14a3606d] + MozillaCACerts_jll v2025.11.4
+  [4536629a] + OpenBLAS_jll v0.3.29+0
+  [458c3c95] + OpenSSL_jll v3.5.4+0
+  [bea87d4a] + SuiteSparse_jll v7.8.3+2
+  [83775a58] + Zlib_jll v1.3.1+2
+  [8e850b90] + libblastrampoline_jll v5.15.0+0
+  [8e850ede] + nghttp2_jll v1.64.0+1
+  [3f19e933] + p7zip_jll v17.7.0+0
+        Info Packages marked with ⌅ have new versions available but compatibility constraints restrict them from upgrading. To see why use `status --outdated -m`
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=E/Enzyme/Gradient-Of-Square-Norm -e using Pkg; Pkg.instantiate()"
+	User time (seconds): 5.75
+	System time (seconds): 3.12
+	Percent of CPU this job got: 119%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:07.45
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 767392
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 273878
+	Voluntary context switches: 1719
+	Involuntary context switches: 103
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 11416
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
