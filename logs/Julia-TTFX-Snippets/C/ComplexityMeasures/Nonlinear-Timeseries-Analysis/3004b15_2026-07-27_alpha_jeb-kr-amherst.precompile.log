@@ -1,0 +1,117 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    418.0 ms  ✓ Reexport
+    454.5 ms  ✓ DataAPI
+    557.3 ms  ✓ ConstructionBase
+    580.7 ms  ✓ Statistics
+    490.3 ms  ✓ StaticArraysCore
+    471.8 ms  ✓ StatsAPI
+    810.8 ms  ✓ SuiteSparse_jll
+    408.0 ms  ✓ Future
+   1335.6 ms  ✓ IrrationalConstants
+    572.0 ms  ✓ InverseFunctions
+    712.2 ms  ✓ OrderedCollections
+    463.7 ms  ✓ CompositionsBase
+    632.9 ms  ✓ DocStringExtensions
+    702.0 ms  ✓ Serialization
+   1806.3 ms  ✓ Bessels
+    676.8 ms  ✓ IterTools
+    652.5 ms  ✓ AbstractFFTs
+    689.5 ms  ✓ AbstractTrees
+    709.2 ms  ✓ Gamma
+   1029.3 ms  ✓ Combinatorics
+    455.7 ms  ✓ PtrArrays
+    650.3 ms  ✓ OpenLibm_jll
+    456.9 ms  ✓ CommonSolve
+    466.0 ms  ✓ PackageExtensionCompat
+   1220.0 ms  ✓ FillArrays
+    666.7 ms  ✓ VectorInterface
+    599.8 ms  ✓ Missings
+   5515.9 ms  ✓ MacroTools
+   1444.0 ms  ✓ InteractiveUtils
+   1112.1 ms  ✓ LazyArtifacts
+    429.9 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+    421.2 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+    513.0 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+    744.5 ms  ✓ Distances
+   2250.2 ms  ✓ Preferences
+    640.5 ms  ✓ LogExpFunctions
+   1011.9 ms  ✓ HypergeometricFunctions
+    501.7 ms  ✓ AliasTables
+    514.5 ms  ✓ FillArrays → FillArraysStatisticsExt
+   1788.2 ms  ✓ DataStructures
+   1368.1 ms  ✓ Setfield
+   1882.9 ms  ✓ KrylovKit
+    762.4 ms  ✓ JLLWrappers
+    747.0 ms  ✓ PrecompileTools
+    472.1 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+   2601.9 ms  ✓ Accessors
+    617.7 ms  ✓ SortingAlgorithms
+   4392.4 ms  ✓ SparseArrays
+   1009.1 ms  ✓ QuadGK
+   1338.4 ms  ✓ IntelOpenMP_jll
+    927.1 ms  ✓ FFTW_jll
+    890.7 ms  ✓ Rmath_jll
+   1398.5 ms  ✓ oneTBB_jll
+    873.0 ms  ✓ OpenSpecFun_jll
+    568.5 ms  ✓ Accessors → LinearAlgebraExt
+    619.8 ms  ✓ Statistics → SparseArraysExt
+    579.3 ms  ✓ SuiteSparse
+    706.7 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    609.0 ms  ✓ Distances → DistancesSparseArraysExt
+    790.8 ms  ✓ Rmath
+   1389.6 ms  ✓ MKL_jll
+   9569.1 ms  ✓ Test
+   3101.1 ms  ✓ SpecialFunctions
+   3133.4 ms  ✓ Roots
+    953.7 ms  ✓ PDMats
+    585.7 ms  ✓ InverseFunctions → InverseFunctionsTestExt
+   2508.6 ms  ✓ StatsBase
+   1300.4 ms  ✓ AbstractFFTs → AbstractFFTsTestExt
+    684.3 ms  ✓ Accessors → TestExt
+    683.4 ms  ✓ FillArrays → FillArraysPDMatsExt
+    803.5 ms  ✓ PDMats → StatsBaseExt
+   1812.4 ms  ✓ StatsFuns
+    556.7 ms  ✓ StatsFuns → StatsFunsInverseFunctionsExt
+  14341.4 ms  ✓ StaticArrays
+    802.6 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    805.8 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+   5225.0 ms  ✓ Distributions
+    819.9 ms  ✓ VectorInterface → VectorInterfaceStaticArraysExt
+    905.6 ms  ✓ FillArrays → FillArraysStaticArraysExt
+    821.1 ms  ✓ Accessors → StaticArraysExt
+   1504.1 ms  ✓ Distributions → DistributionsTestExt
+  12049.0 ms  ✓ FFTW
+   4554.1 ms  ✓ NearestNeighbors
+    828.3 ms  ✓ Neighborhood
+    858.0 ms  ✓ StateSpaceSets
+  21441.1 ms  ✓ Polynomials
+    825.7 ms  ✓ Polynomials → PolynomialsFFTWExt
+   1602.4 ms  ✓ DelayEmbeddings
+   2144.2 ms  ✓ DSP
+   1650.0 ms  ✓ Wavelets
+   2997.6 ms  ✓ ComplexityMeasures
+  91 dependencies successfully precompiled in 42 seconds. 27 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +alpha --project=C/ComplexityMeasures/Nonlinear-Timeseries-Analysis -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 282.11
+	System time (seconds): 19.78
+	Percent of CPU this job got: 225%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:13.77
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2703100
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 600
+	Minor (reclaiming a frame) page faults: 7161545
+	Voluntary context switches: 19665
+	Involuntary context switches: 7026
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 747392
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
