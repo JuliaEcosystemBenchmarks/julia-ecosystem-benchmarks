@@ -1,0 +1,46 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  75293.8 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 75 seconds
+Precompiling packages...
+    808.0 ms  ✓ Unicode
+    809.8 ms  ✓ CRC32c
+    814.4 ms  ✓ Compiler
+   1111.5 ms  ✓ Serialization
+    756.2 ms  ✓ Preferences
+    469.3 ms  ✓ PrecompileTools
+   2134.3 ms  ✓ OrderedCollections
+   2668.4 ms  ✓ InteractiveUtils
+   3634.3 ms  ✓ MacroTools
+   3998.1 ms  ✓ Test
+  15258.5 ms  ✓ JuliaSyntax
+  28740.3 ms  ✓ REPL
+    703.7 ms  ✓ CodeTracking
+   5448.9 ms  ✓ JuliaInterpreter
+   6136.1 ms  ✓ LoweredCodeUtils
+   9956.5 ms  ✓ Revise
+  46997.2 ms  ✓ JET
+  17 dependencies successfully precompiled in 101 seconds. 14 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=J/JET/Type-Stability-Analysis -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 358.53
+	System time (seconds): 11.03
+	Percent of CPU this job got: 208%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:56.99
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2287900
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 309
+	Minor (reclaiming a frame) page faults: 4100927
+	Voluntary context switches: 9716
+	Involuntary context switches: 12590
+	Swaps: 0
+	File system inputs: 120
+	File system outputs: 714536
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,75 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   2056.1 ms  ✓ CommonSolve
+   2071.4 ms  ✓ Reexport
+   2047.9 ms  ✓ CompositionsBase
+   2151.4 ms  ✓ OpenLibm_jll
+   2143.9 ms  ✓ StatsAPI
+   2175.6 ms  ✓ DataAPI
+   2246.1 ms  ✓ ConstructionBase
+   2248.0 ms  ✓ SuiteSparse_jll
+   2345.2 ms  ✓ CompilerSupportLibraries_jll
+   2462.8 ms  ✓ InverseFunctions
+   2617.9 ms  ✓ OrderedCollections
+   2575.3 ms  ✓ DocStringExtensions
+   2935.6 ms  ✓ Gamma
+   1306.7 ms  ✓ PtrArrays
+   3566.3 ms  ✓ FillArrays
+   1323.1 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   1491.8 ms  ✓ Missings
+   1209.9 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+   3874.1 ms  ✓ IrrationalConstants
+   1857.9 ms  ✓ Preferences
+   1673.7 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+    871.0 ms  ✓ AliasTables
+   1537.7 ms  ✓ HypergeometricFunctions
+    593.5 ms  ✓ JLLWrappers
+    757.3 ms  ✓ LogExpFunctions
+   5050.7 ms  ✓ MacroTools
+    655.2 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+    717.8 ms  ✓ OpenSpecFun_jll
+    753.3 ms  ✓ Rmath_jll
+   2876.3 ms  ✓ DataStructures
+    515.9 ms  ✓ SortingAlgorithms
+    660.9 ms  ✓ Rmath
+    813.5 ms  ✓ QuadGK
+   4417.9 ms  ✓ SparseArrays
+   1652.2 ms  ✓ Accessors
+    449.1 ms  ✓ SuiteSparse
+    441.1 ms  ✓ Accessors → LinearAlgebraExt
+    528.3 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    592.9 ms  ✓ Statistics
+   2207.6 ms  ✓ SpecialFunctions
+    502.2 ms  ✓ FillArrays → FillArraysStatisticsExt
+    662.8 ms  ✓ PDMats
+    440.9 ms  ✓ FillArrays → FillArraysPDMatsExt
+    822.4 ms  ✓ StatsFuns
+    346.6 ms  ✓ StatsFuns → StatsFunsInverseFunctionsExt
+   1505.2 ms  ✓ StatsBase
+   1999.4 ms  ✓ Roots
+    420.4 ms  ✓ PDMats → StatsBaseExt
+   3152.2 ms  ✓ Distributions
+  49 dependencies successfully precompiled in 13 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=D/Distributions/Normal-Distribution -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 36.63
+	System time (seconds): 7.80
+	Percent of CPU this job got: 313%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:14.16
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 363452
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 98
+	Minor (reclaiming a frame) page faults: 1946080
+	Voluntary context switches: 64118
+	Involuntary context switches: 6646
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 143280
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
