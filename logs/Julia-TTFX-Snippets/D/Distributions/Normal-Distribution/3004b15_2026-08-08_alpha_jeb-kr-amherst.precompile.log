@@ -1,0 +1,77 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    416.6 ms  ✓ Reexport
+    466.8 ms  ✓ DataAPI
+    594.7 ms  ✓ ConstructionBase
+    612.8 ms  ✓ Statistics
+    463.6 ms  ✓ StatsAPI
+    669.4 ms  ✓ OrderedCollections
+    849.7 ms  ✓ SuiteSparse_jll
+    543.3 ms  ✓ InverseFunctions
+    507.5 ms  ✓ CompositionsBase
+   1439.0 ms  ✓ IrrationalConstants
+    738.7 ms  ✓ Serialization
+    649.8 ms  ✓ DocStringExtensions
+    496.8 ms  ✓ Unicode
+    720.4 ms  ✓ Gamma
+    441.8 ms  ✓ PtrArrays
+    643.6 ms  ✓ OpenLibm_jll
+    448.0 ms  ✓ CommonSolve
+   1205.2 ms  ✓ FillArrays
+    528.1 ms  ✓ Missings
+    462.0 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+    424.8 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+    629.4 ms  ✓ LogExpFunctions
+    506.1 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+   1820.6 ms  ✓ DataStructures
+    589.7 ms  ✓ AliasTables
+   1209.9 ms  ✓ HypergeometricFunctions
+   5783.3 ms  ✓ MacroTools
+    479.8 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+    576.1 ms  ✓ FillArrays → FillArraysStatisticsExt
+    577.1 ms  ✓ SortingAlgorithms
+   2471.8 ms  ✓ Preferences
+    933.7 ms  ✓ QuadGK
+    657.3 ms  ✓ JLLWrappers
+   4299.3 ms  ✓ SparseArrays
+    794.2 ms  ✓ Rmath_jll
+    836.5 ms  ✓ OpenSpecFun_jll
+    715.8 ms  ✓ SuiteSparse
+    732.9 ms  ✓ Statistics → SparseArraysExt
+   2496.8 ms  ✓ Accessors
+    811.6 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    929.1 ms  ✓ Rmath
+    856.7 ms  ✓ PDMats
+    516.2 ms  ✓ Accessors → LinearAlgebraExt
+    600.1 ms  ✓ FillArrays → FillArraysPDMatsExt
+   2185.0 ms  ✓ StatsBase
+   2281.6 ms  ✓ SpecialFunctions
+    586.2 ms  ✓ PDMats → StatsBaseExt
+   2419.0 ms  ✓ Roots
+   1072.8 ms  ✓ StatsFuns
+    447.7 ms  ✓ StatsFuns → StatsFunsInverseFunctionsExt
+   3966.0 ms  ✓ Distributions
+  51 dependencies successfully precompiled in 16 seconds. 3 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +alpha --project=D/Distributions/Normal-Distribution -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 183.90
+	System time (seconds): 12.33
+	Percent of CPU this job got: 153%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:07.93
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2595900
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 405
+	Minor (reclaiming a frame) page faults: 4607280
+	Voluntary context switches: 12873
+	Involuntary context switches: 4505
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 470640
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

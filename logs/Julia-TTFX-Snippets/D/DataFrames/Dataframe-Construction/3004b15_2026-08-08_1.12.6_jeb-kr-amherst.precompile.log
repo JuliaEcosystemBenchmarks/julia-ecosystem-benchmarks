@@ -1,0 +1,58 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  75507.7 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 76 seconds
+Precompiling packages...
+   2010.8 ms  ✓ DataValueInterfaces
+   2030.3 ms  ✓ IteratorInterfaceExtensions
+   2095.2 ms  ✓ Reexport
+   2105.3 ms  ✓ DataAPI
+   2096.9 ms  ✓ Future
+   2132.6 ms  ✓ InvertedIndices
+   2201.1 ms  ✓ LaTeXStrings
+   2224.1 ms  ✓ CompilerSupportLibraries_jll
+   2231.5 ms  ✓ Unicode
+   2306.9 ms  ✓ Statistics
+   3114.7 ms  ✓ InlineStrings
+   1287.6 ms  ✓ TableTraits
+   1409.8 ms  ✓ PooledArrays
+   1689.6 ms  ✓ Preferences
+    769.2 ms  ✓ PrecompileTools
+   4791.6 ms  ✓ OrderedCollections
+   2610.2 ms  ✓ SentinelArrays
+   3236.9 ms  ✓ Missings
+   5550.9 ms  ✓ Crayons
+   3317.7 ms  ✓ Compat
+   5699.7 ms  ✓ InteractiveUtils
+    463.9 ms  ✓ Compat → CompatLinearAlgebraExt
+   1912.7 ms  ✓ DataStructures
+   2150.0 ms  ✓ Tables
+    465.9 ms  ✓ SortingAlgorithms
+   3287.3 ms  ✓ StringManipulation
+  26719.5 ms  ✓ REPL
+  16880.6 ms  ✓ PrettyTables
+  30272.1 ms  ✓ DataFrames
+  29 dependencies successfully precompiled in 80 seconds. 8 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.6 --project=D/DataFrames/Dataframe-Construction -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 291.76
+	System time (seconds): 12.31
+	Percent of CPU this job got: 194%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:36.24
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2151136
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 249
+	Minor (reclaiming a frame) page faults: 3996646
+	Voluntary context switches: 10724
+	Involuntary context switches: 9651
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 715328
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
