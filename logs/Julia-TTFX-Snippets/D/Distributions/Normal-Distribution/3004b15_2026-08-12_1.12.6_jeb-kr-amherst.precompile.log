@@ -1,0 +1,81 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  75428.3 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 75 seconds
+Precompiling packages...
+   2458.9 ms  ✓ Reexport
+   2548.6 ms  ✓ OpenLibm_jll
+   2550.7 ms  ✓ CommonSolve
+   2660.7 ms  ✓ Unicode
+   2703.4 ms  ✓ DataAPI
+   2815.5 ms  ✓ StatsAPI
+   2919.8 ms  ✓ CompilerSupportLibraries_jll
+   3147.3 ms  ✓ InverseFunctions
+   3257.5 ms  ✓ Statistics
+   3261.3 ms  ✓ DocStringExtensions
+   3310.2 ms  ✓ SuiteSparse_jll
+   3468.3 ms  ✓ Serialization
+   1594.3 ms  ✓ PtrArrays
+   1697.7 ms  ✓ CompositionsBase
+   4551.4 ms  ✓ FillArrays
+   1524.3 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+   2507.2 ms  ✓ Preferences
+   1488.8 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+   1599.8 ms  ✓ AliasTables
+   1220.8 ms  ✓ FillArrays → FillArraysStatisticsExt
+   6136.9 ms  ✓ OrderedCollections
+   1159.5 ms  ✓ JLLWrappers
+   6347.7 ms  ✓ ConstructionBase
+   4021.6 ms  ✓ Missings
+    710.6 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   7282.5 ms  ✓ IrrationalConstants
+   1038.8 ms  ✓ Rmath_jll
+   1099.6 ms  ✓ OpenSpecFun_jll
+    643.2 ms  ✓ LogExpFunctions
+    866.9 ms  ✓ Rmath
+   2352.2 ms  ✓ DataStructures
+    560.6 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+   6596.2 ms  ✓ MacroTools
+   1413.9 ms  ✓ Gamma
+    985.2 ms  ✓ SortingAlgorithms
+   1236.4 ms  ✓ HypergeometricFunctions
+   7290.9 ms  ✓ SparseArrays
+   2375.7 ms  ✓ QuadGK
+   3163.7 ms  ✓ SpecialFunctions
+    576.4 ms  ✓ SuiteSparse
+    593.2 ms  ✓ Statistics → SparseArraysExt
+    650.2 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    737.0 ms  ✓ PDMats
+   3114.8 ms  ✓ Accessors
+    579.1 ms  ✓ FillArrays → FillArraysPDMatsExt
+    454.5 ms  ✓ Accessors → LinearAlgebraExt
+   1949.8 ms  ✓ StatsFuns
+    395.8 ms  ✓ StatsFuns → StatsFunsInverseFunctionsExt
+   2868.8 ms  ✓ StatsBase
+    503.1 ms  ✓ PDMats → StatsBaseExt
+   2929.7 ms  ✓ Roots
+   3749.8 ms  ✓ Distributions
+  52 dependencies successfully precompiled in 19 seconds. 3 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.6 --project=D/Distributions/Normal-Distribution -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 182.21
+	System time (seconds): 13.33
+	Percent of CPU this job got: 203%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:35.88
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2145860
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 262
+	Minor (reclaiming a frame) page faults: 4003512
+	Voluntary context switches: 13485
+	Involuntary context switches: 7133
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 457576
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

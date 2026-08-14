@@ -1,0 +1,171 @@
+nice: cannot set niceness: Permission denied
+timeout: sending signal TERM to command 'julia'
+
+[3549277] signal 15: Terminated
+in expression starting at none:1
+unknown function (ip: 0x71239bdabf14) at /lib/x86_64-linux-gnu/libc.so.6
+pthread_cond_wait at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:822
+jl_parallel_gc_threadfun at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gc-stock.c:3640
+unknown function (ip: 0x71239bdaf1f4) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: 0x71239be2f8db) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: (nil)) at (unknown file)
+unknown function (ip: 0x71239bdabf14) at /lib/x86_64-linux-gnu/libc.so.6
+pthread_cond_wait at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:822
+jl_parallel_gc_threadfun at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gc-stock.c:3640
+unknown function (ip: 0x71239bdaf1f4) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: 0x71239be2f8db) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: (nil)) at (unknown file)
+unknown function (ip: 0x71239bdabf14) at /lib/x86_64-linux-gnu/libc.so.6
+pthread_cond_wait at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:822
+jl_parallel_gc_threadfun at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/gc-stock.c:3640
+unknown function (ip: 0x71239bdaf1f4) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: 0x71239be2f8db) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: (nil)) at (unknown file)
+unknown function (ip: 0x71239bdabf14) at /lib/x86_64-linux-gnu/libc.so.6
+pthread_cond_wait at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:822
+ijl_task_get_next at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/scheduler.c:523
+poptask at ./task.jl:1216
+wait at ./task.jl:1228
+task_done_hook at ./task.jl:868
+jfptr_task_done_hook_59905.1 at /root/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+jl_finish_task at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/task.c:341
+jl_threadfun at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/scheduler.c:122
+unknown function (ip: 0x71239bdaf1f4) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: 0x71239be2f8db) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: (nil)) at (unknown file)
+unknown function (ip: 0x71239bdabf14) at /lib/x86_64-linux-gnu/libc.so.6
+pthread_cond_wait at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:822
+ijl_task_get_next at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/scheduler.c:523
+poptask at ./task.jl:1216
+wait at ./task.jl:1228
+task_done_hook at ./task.jl:868
+jfptr_task_done_hook_59905.1 at /root/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+jl_finish_task at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/task.c:341
+jl_threadfun at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/scheduler.c:122
+unknown function (ip: 0x71239bdaf1f4) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: 0x71239be2f8db) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: (nil)) at (unknown file)
+unknown function (ip: 0x71239bdabf14) at /lib/x86_64-linux-gnu/libc.so.6
+pthread_cond_wait at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:822
+ijl_task_get_next at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/scheduler.c:523
+poptask at ./task.jl:1216
+wait at ./task.jl:1228
+#wait#398 at ./condition.jl:141
+wait at ./condition.jl:136 [inlined]
+_trywait at ./asyncevent.jl:185
+profile_printing_listener at ./Base.jl:332
+#start_profile_listener##0 at ./Base.jl:352
+jfptr_YY.start_profile_listenerYY.YY.0_16003.1 at /root/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+start_task at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/task.c:1252
+unknown function (ip: (nil)) at (unknown file)
+unknown function (ip: 0x71239bdabf14) at /lib/x86_64-linux-gnu/libc.so.6
+pthread_cond_wait at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+uv_cond_wait at /workspace/srcdir/libuv/src/unix/thread.c:822
+ijl_task_get_next at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/scheduler.c:523
+poptask at ./task.jl:1216
+wait at ./task.jl:1228
+task_done_hook at ./task.jl:868
+jfptr_task_done_hook_59905.1 at /root/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+jl_finish_task at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/task.c:341
+jl_threadfun at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/scheduler.c:122
+unknown function (ip: 0x71239bdaf1f4) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: 0x71239be2f8db) at /lib/x86_64-linux-gnu/libc.so.6
+unknown function (ip: (nil)) at (unknown file)
+epoll_pwait at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+uv__io_poll at /workspace/srcdir/libuv/src/unix/linux.c:1404
+uv_run at /workspace/srcdir/libuv/src/unix/core.c:430
+ijl_task_get_next at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/scheduler.c:457
+poptask at ./task.jl:1216
+wait at ./task.jl:1228
+#wait#398 at ./condition.jl:141
+wait at ./condition.jl:136 [inlined]
+_trywait at ./asyncevent.jl:185
+#634 at ./asyncevent.jl:359
+jfptr_YY.634_15147.1 at /root/.julia/juliaup/julia-1.12.6+0.x64.linux.gnu/lib/julia/sys.so (unknown line)
+jl_apply at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/julia.h:2391 [inlined]
+start_task at /cache/build/builder-amdci5-4/julialang/julia-release-1-dot-12/src/task.c:1252
+unknown function (ip: (nil)) at (unknown file)
+Allocations: 2478446 (Pool: 2478335; Big: 111); GC: 4
+Precompiling packages...
+   1363.8 ms  ✓ UUIDs
+   1654.8 ms  ✓ OpenSSL_jll
+   1736.4 ms  ✓ MozillaCACerts_jll
+   1742.0 ms  ✓ Logging
+   1766.3 ms  ✓ CompilerSupportLibraries_jll
+   1762.5 ms  ✓ nghttp2_jll
+   1824.6 ms  ✓ Zlib_jll
+   1828.1 ms  ✓ NetworkOptions
+   1829.0 ms  ✓ Unicode
+   1883.8 ms  ✓ Base64
+    618.1 ms  ✓ LibSSH2_jll
+    678.3 ms  ✓ p7zip_jll
+    701.4 ms  ✓ Printf
+    501.2 ms  ✓ LibGit2_jll
+    499.4 ms  ✓ LibCURL_jll
+   3320.7 ms  ✓ ArgTools
+    754.0 ms  ✓ LibCURL
+    628.3 ms  ✓ Tar
+   2957.6 ms  ✓ Dates
+   3129.3 ms  ✓ LibGit2
+    446.7 ms  ✓ TOML
+   3135.0 ms  ✓ Downloads
+   9501.7 ms  ✓ StyledStrings
+   1662.9 ms  ✓ JuliaSyntaxHighlighting
+   3928.7 ms  ✓ Markdown
+  47563.3 ms  ✓ Pkg
+  26 dependencies successfully precompiled in 63 seconds
+Precompiling packages...
+   1327.0 ms  ✓ ExprTools
+   1343.7 ms  ✓ Reexport
+   1433.0 ms  ✓ SuiteSparse_jll
+   1472.4 ms  ✓ StructIO
+   1519.2 ms  ✓ Scratch
+   1820.1 ms  ✓ EnzymeCore
+   1803.5 ms  ✓ Preferences
+   1830.4 ms  ✓ Serialization
+   2180.8 ms  ✓ LazyArtifacts
+    631.1 ms  ✓ PrecompileTools
+    743.3 ms  ✓ JLLWrappers
+   3072.8 ms  ✓ CEnum
+    918.7 ms  ✓ LibTracyClient_jll
+   2659.0 ms  ✓ ObjectFile
+   1616.6 ms  ✓ Enzyme_jll
+   4213.7 ms  ✓ InteractiveUtils
+   1734.1 ms  ✓ LLVMExtra_jll
+    948.6 ms  ✓ Tracy
+   4919.1 ms  ✓ SparseArrays
+   6900.4 ms  ✓ LLVM
+Command exited with non-zero status 124
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.6 --project=E/Enzyme/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 167.41
+	System time (seconds): 10.27
+	Percent of CPU this job got: 4%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:00:00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2167800
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 191
+	Minor (reclaiming a frame) page faults: 3022442
+	Voluntary context switches: 10807
+	Involuntary context switches: 5664
+	Swaps: 0
+	File system inputs: 49032
+	File system outputs: 416816
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 124
