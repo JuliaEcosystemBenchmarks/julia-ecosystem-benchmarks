@@ -1,0 +1,15 @@
+  Module ExplicitImports is not relying on any implicit imports.
+
+  However, module ExplicitImports has stale explicit imports for this 1 unused
+  name:
+
+    •  parse is unused but it was imported from
+       ExplicitImports.Vendored.JuliaSyntax at
+       /workdir/depot/packages/ExplicitImports/sATsO/src/ExplicitImports.jl:9:30
+
+  Additionally, module ExplicitImports has 1 self-qualified access:
+
+    •  parent was accessed as ExplicitImports.parent inside
+       ExplicitImports at
+       /workdir/depot/packages/ExplicitImports/sATsO/src/deprecated.jl:79:21
+0.2288799285888672, 0.3949160575866699, 0.6237959861755371 seconds

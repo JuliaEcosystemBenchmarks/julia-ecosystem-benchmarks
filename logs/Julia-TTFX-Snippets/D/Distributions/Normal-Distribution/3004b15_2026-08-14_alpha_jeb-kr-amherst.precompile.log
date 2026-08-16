@@ -1,0 +1,78 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   0.2 s  ✓ Reexport
+   0.3 s  ✓ DataAPI
+   0.4 s  ✓ ConstructionBase
+   0.4 s  ✓ Statistics
+   0.3 s  ✓ StatsAPI
+   0.4 s  ✓ CompilerSupportLibraries_jll
+   0.5 s  ✓ OrderedCollections
+   0.3 s  ✓ InverseFunctions
+   0.2 s  ✓ CompositionsBase
+   0.3 s  ✓ Unicode
+   0.4 s  ✓ DocStringExtensions
+   0.5 s  ✓ Serialization
+   1.2 s  ✓ IrrationalConstants
+   0.2 s  ✓ PtrArrays
+   0.2 s  ✓ CommonSolve
+   0.3 s  ✓ Missings
+   0.2 s  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   0.4 s  ✓ SuiteSparse_jll
+   0.4 s  ✓ OpenLibm_jll
+   0.9 s  ✓ FillArrays
+   0.2 s  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+   0.3 s  ✓ InverseFunctions → InverseFunctionsDatesExt
+   0.5 s  ✓ LogExpFunctions
+   0.3 s  ✓ AliasTables
+   0.3 s  ✓ FillArrays → FillArraysStatisticsExt
+   0.2 s  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+   1.6 s  ✓ DataStructures
+   0.4 s  ✓ SortingAlgorithms
+   1.8 s  ✓ Preferences
+   0.7 s  ✓ Gamma
+   0.9 s  ✓ QuadGK
+   0.7 s  ✓ JLLWrappers
+   1.1 s  ✓ HypergeometricFunctions
+   5.1 s  ✓ MacroTools
+   0.7 s  ✓ Rmath_jll
+   0.7 s  ✓ OpenSpecFun_jll
+   0.6 s  ✓ Rmath
+   3.8 s  ✓ SparseArrays
+   0.4 s  ✓ SuiteSparse
+   0.5 s  ✓ Statistics → SparseArraysExt
+   0.6 s  ✓ FillArrays → FillArraysSparseArraysExt
+   2.0 s  ✓ Accessors
+   2.1 s  ✓ SpecialFunctions
+   0.3 s  ✓ Accessors → LinearAlgebraExt
+   0.7 s  ✓ PDMats
+   0.4 s  ✓ FillArrays → FillArraysPDMatsExt
+   0.8 s  ✓ StatsFuns
+   0.3 s  ✓ StatsFuns → StatsFunsInverseFunctionsExt
+   1.9 s  ✓ StatsBase
+   0.4 s  ✓ PDMats → StatsBaseExt
+   2.0 s  ✓ Roots
+   3.4 s  ✓ Distributions
+  52 dependencies successfully precompiled in 13 seconds. 3 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +alpha --project=D/Distributions/Normal-Distribution -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 166.43
+	System time (seconds): 12.12
+	Percent of CPU this job got: 150%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:58.89
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2621848
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 322
+	Minor (reclaiming a frame) page faults: 4649633
+	Voluntary context switches: 18063
+	Involuntary context switches: 2958
+	Swaps: 0
+	File system inputs: 8
+	File system outputs: 471976
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
