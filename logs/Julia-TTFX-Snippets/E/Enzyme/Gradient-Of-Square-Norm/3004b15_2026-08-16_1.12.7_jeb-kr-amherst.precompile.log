@@ -1,0 +1,79 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1557.9 ms  ✓ UUIDs
+   1627.6 ms  ✓ Unicode
+   1624.9 ms  ✓ Logging
+   1683.7 ms  ✓ OpenSSL_jll
+   1658.2 ms  ✓ MozillaCACerts_jll
+   1761.5 ms  ✓ Zlib_jll
+   1760.4 ms  ✓ CompilerSupportLibraries_jll
+   1757.9 ms  ✓ nghttp2_jll
+   1775.2 ms  ✓ Base64
+   1788.0 ms  ✓ NetworkOptions
+    534.4 ms  ✓ LibSSH2_jll
+    590.0 ms  ✓ p7zip_jll
+    742.4 ms  ✓ Printf
+    483.4 ms  ✓ LibGit2_jll
+    483.3 ms  ✓ LibCURL_jll
+   3186.9 ms  ✓ ArgTools
+    739.9 ms  ✓ LibCURL
+    656.2 ms  ✓ Tar
+   2983.4 ms  ✓ Dates
+   3013.6 ms  ✓ LibGit2
+    447.9 ms  ✓ TOML
+   3148.4 ms  ✓ Downloads
+   9328.1 ms  ✓ StyledStrings
+   1692.3 ms  ✓ JuliaSyntaxHighlighting
+   3901.8 ms  ✓ Markdown
+  48195.2 ms  ✓ Pkg
+  26 dependencies successfully precompiled in 63 seconds
+Precompiling packages...
+   1462.9 ms  ✓ Reexport
+   1477.5 ms  ✓ StructIO
+   1488.1 ms  ✓ ExprTools
+   1571.4 ms  ✓ SuiteSparse_jll
+   1661.8 ms  ✓ Scratch
+   1797.9 ms  ✓ EnzymeCore
+   1807.9 ms  ✓ Serialization
+   1894.1 ms  ✓ Preferences
+   2280.0 ms  ✓ LazyArtifacts
+    651.1 ms  ✓ PrecompileTools
+    746.3 ms  ✓ JLLWrappers
+   3153.0 ms  ✓ CEnum
+    855.1 ms  ✓ LibTracyClient_jll
+   2613.4 ms  ✓ ObjectFile
+   4155.5 ms  ✓ InteractiveUtils
+   1533.7 ms  ✓ Enzyme_jll
+   1655.9 ms  ✓ LLVMExtra_jll
+    934.8 ms  ✓ Tracy
+   4889.8 ms  ✓ SparseArrays
+   6964.5 ms  ✓ LLVM
+  26719.6 ms  ✓ REPL
+   4086.6 ms  ✓ Pkg → REPLExt
+  24652.9 ms  ✓ GPUCompiler
+  63976.3 ms  ✓ Enzyme
+  24 dependencies successfully precompiled in 124 seconds. 26 already precompiled.
+  24 dependencies precompiled but different versions are currently loaded (ArgTools, Base64, Dates, Downloads, JuliaSyntaxHighlighting, LibCURL, LibCURL_jll, LibGit2, LibGit2_jll, LibSSH2_jll, Logging, Markdown, MozillaCACerts_jll, NetworkOptions, OpenSSL_jll, Pkg, Printf, StyledStrings, TOML, Tar, UUIDs, Zlib_jll, nghttp2_jll and p7zip_jll). Restart julia to access the new versions. Otherwise, 15 dependents of these packages may trigger further precompilation to work with the unexpected versions.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.7 --project=E/Enzyme/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 401.64
+	System time (seconds): 13.82
+	Percent of CPU this job got: 220%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:08.23
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2674792
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 275
+	Minor (reclaiming a frame) page faults: 4614113
+	Voluntary context switches: 12727
+	Involuntary context switches: 13407
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 834592
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
