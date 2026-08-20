@@ -1,0 +1,51 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  75989.9 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 76 seconds
+Precompiling packages...
+    730.4 ms  ✓ MistyClosures
+    836.6 ms  ✓ Unicode
+    911.1 ms  ✓ ExprTools
+   1013.4 ms  ✓ CompilerSupportLibraries_jll
+   1164.0 ms  ✓ ADTypes
+   1261.8 ms  ✓ Serialization
+    822.2 ms  ✓ Preferences
+    459.7 ms  ✓ PrecompileTools
+   1755.7 ms  ✓ Compat
+   2758.9 ms  ✓ InteractiveUtils
+    391.9 ms  ✓ Compat → CompatLinearAlgebraExt
+   1993.2 ms  ✓ DifferentiationInterface
+   3491.4 ms  ✓ MacroTools
+   2068.3 ms  ✓ ChainRulesCore
+    383.0 ms  ✓ DifferentiationInterface → DifferentiationInterfaceChainRulesCoreExt
+    389.1 ms  ✓ ADTypes → ADTypesChainRulesCoreExt
+   2088.8 ms  ✓ DispatchDoctor
+    430.7 ms  ✓ DispatchDoctor → DispatchDoctorChainRulesCoreExt
+   3859.3 ms  ✓ Test
+  92192.5 ms  ✓ Mooncake
+   1030.8 ms  ✓ DifferentiationInterface → DifferentiationInterfaceMooncakeExt
+  21 dependencies successfully precompiled in 100 seconds. 9 already precompiled.
+  9 dependencies precompiled but different versions are currently loaded (Base64, Dates, JuliaSyntaxHighlighting, Logging, Markdown, Printf, StyledStrings, TOML and UUIDs). Restart julia to access the new versions. Otherwise, 13 dependents of these packages may trigger further precompilation to work with the unexpected versions.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=M/Mooncake/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 339.27
+	System time (seconds): 10.37
+	Percent of CPU this job got: 197%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:56.92
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3148936
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 195
+	Minor (reclaiming a frame) page faults: 3782640
+	Voluntary context switches: 9693
+	Involuntary context switches: 9674
+	Swaps: 0
+	File system inputs: 8
+	File system outputs: 701592
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
