@@ -1,0 +1,47 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  75620.1 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 76 seconds
+Precompiling packages...
+    653.9 ms  ✓ OpenLibm_jll
+    727.3 ms  ✓ Unicode
+    744.4 ms  ✓ CompilerSupportLibraries_jll
+    768.2 ms  ✓ StaticArraysCore
+    931.5 ms  ✓ DocStringExtensions
+    506.1 ms  ✓ DiffResults
+    720.7 ms  ✓ Preferences
+    475.7 ms  ✓ JLLWrappers
+   1559.4 ms  ✓ NaNMath
+    559.8 ms  ✓ OpenSpecFun_jll
+   2498.3 ms  ✓ IrrationalConstants
+    598.4 ms  ✓ LogExpFunctions
+   3123.7 ms  ✓ MacroTools
+    434.6 ms  ✓ CommonSubexpressions
+   2055.2 ms  ✓ SpecialFunctions
+    503.6 ms  ✓ DiffRules
+   3242.5 ms  ✓ ForwardDiff
+  17 dependencies successfully precompiled in 9 seconds. 3 already precompiled.
+  3 dependencies precompiled but different versions are currently loaded (Dates, Printf and TOML). Restart julia to access the new versions. Otherwise, 6 dependents of these packages may trigger further precompilation to work with the unexpected versions.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=F/ForwardDiff/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 141.54
+	System time (seconds): 7.05
+	Percent of CPU this job got: 173%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:25.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2167460
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 172
+	Minor (reclaiming a frame) page faults: 2527258
+	Voluntary context switches: 8036
+	Involuntary context switches: 3585
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 359080
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

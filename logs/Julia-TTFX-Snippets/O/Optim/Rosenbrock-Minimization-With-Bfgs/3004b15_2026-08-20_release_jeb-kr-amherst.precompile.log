@@ -1,0 +1,66 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  76180.6 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 76 seconds
+Precompiling packages...
+   2365.2 ms  ✓ OpenLibm_jll
+   2418.0 ms  ✓ Future
+   2565.4 ms  ✓ Unicode
+   2580.3 ms  ✓ EnumX
+   2587.3 ms  ✓ PositiveFactorizations
+   2585.0 ms  ✓ StaticArraysCore
+   2674.0 ms  ✓ Adapt
+   2646.2 ms  ✓ SuiteSparse_jll
+   2687.5 ms  ✓ CompilerSupportLibraries_jll
+   2810.8 ms  ✓ Statistics
+   2917.1 ms  ✓ Serialization
+   2979.6 ms  ✓ ADTypes
+   3381.7 ms  ✓ FillArrays
+    695.6 ms  ✓ FillArrays → FillArraysStatisticsExt
+   4401.3 ms  ✓ ConstructionBase
+    663.7 ms  ✓ ADTypes → ADTypesConstructionBaseExt
+   2698.3 ms  ✓ NaNMath
+    668.1 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   2541.7 ms  ✓ ArrayInterface
+    376.8 ms  ✓ ArrayInterface → ArrayInterfaceStaticArraysCoreExt
+    418.2 ms  ✓ ArrayInterface → ArrayInterfaceFillArraysExt
+   2803.6 ms  ✓ DifferentiationInterface
+   6031.5 ms  ✓ MacroTools
+    888.5 ms  ✓ Setfield
+    548.8 ms  ✓ FiniteDiff
+    400.6 ms  ✓ DifferentiationInterface → DifferentiationInterfaceFiniteDiffExt
+   5055.6 ms  ✓ SparseArrays
+    893.3 ms  ✓ Adapt → AdaptSparseArraysExt
+    900.4 ms  ✓ ArrayInterface → ArrayInterfaceSparseArraysExt
+    914.4 ms  ✓ FiniteDiff → FiniteDiffSparseArraysExt
+    923.2 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+    931.8 ms  ✓ Statistics → SparseArraysExt
+    961.2 ms  ✓ FillArrays → FillArraysSparseArraysExt
+   1835.4 ms  ✓ NLSolversBase
+   1505.0 ms  ✓ LineSearches
+   2854.5 ms  ✓ Optim
+  36 dependencies successfully precompiled in 14 seconds. 1 already precompiled.
+  1 dependency precompiled but a different version is currently loaded (Printf). Restart julia to access the new version. Otherwise, 2 dependents of this package may trigger further precompilation to work with the unexpected version.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=O/Optim/Rosenbrock-Minimization-With-Bfgs -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 161.46
+	System time (seconds): 10.59
+	Percent of CPU this job got: 188%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:31.36
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2161500
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 237
+	Minor (reclaiming a frame) page faults: 3304540
+	Voluntary context switches: 9438
+	Involuntary context switches: 5661
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 392112
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

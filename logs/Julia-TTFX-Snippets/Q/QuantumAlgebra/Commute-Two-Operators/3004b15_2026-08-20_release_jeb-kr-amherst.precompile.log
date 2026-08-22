@@ -1,0 +1,47 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  76253.7 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 76 seconds
+Precompiling packages...
+    887.9 ms  ✓ PackageExtensionCompat
+    995.3 ms  ✓ LaTeXStrings
+   1090.3 ms  ✓ Unicode
+   1398.6 ms  ✓ Requires
+   1788.6 ms  ✓ Combinatorics
+    923.9 ms  ✓ Preferences
+   2066.3 ms  ✓ Format
+    472.7 ms  ✓ PrecompileTools
+   2562.4 ms  ✓ OrderedCollections
+    554.1 ms  ✓ JLLWrappers
+    604.0 ms  ✓ JpegTurbo_jll
+   3165.6 ms  ✓ InteractiveUtils
+   3838.8 ms  ✓ MacroTools
+   1154.8 ms  ✓ Ghostscript_jll
+   3186.3 ms  ✓ Latexify
+  26165.3 ms  ✓ REPL
+  13233.6 ms  ✓ QuantumAlgebra
+  17 dependencies successfully precompiled in 43 seconds. 9 already precompiled.
+  9 dependencies precompiled but different versions are currently loaded (Base64, Dates, JuliaSyntaxHighlighting, Markdown, Printf, StyledStrings, TOML, UUIDs and Zlib_jll). Restart julia to access the new versions. Otherwise, 10 dependents of these packages may trigger further precompilation to work with the unexpected versions.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=Q/QuantumAlgebra/Commute-Two-Operators -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 220.84
+	System time (seconds): 8.80
+	Percent of CPU this job got: 191%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:59.92
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2162524
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 211
+	Minor (reclaiming a frame) page faults: 3127136
+	Voluntary context switches: 9134
+	Involuntary context switches: 6297
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 511568
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
