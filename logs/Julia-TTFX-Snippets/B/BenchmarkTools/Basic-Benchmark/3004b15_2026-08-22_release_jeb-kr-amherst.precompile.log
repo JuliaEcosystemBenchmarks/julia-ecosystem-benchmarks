@@ -1,0 +1,42 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  76191.5 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 76 seconds
+Precompiling packages...
+    385.9 ms  ✓ Unicode
+    412.2 ms  ✓ CompilerSupportLibraries_jll
+    533.1 ms  ✓ Statistics
+    602.4 ms  ✓ Preferences
+    396.7 ms  ✓ PrecompileTools
+   1474.0 ms  ✓ Compat
+   1727.1 ms  ✓ StructUtils
+    377.8 ms  ✓ Compat → CompatLinearAlgebraExt
+   4368.5 ms  ✓ Profile
+   6286.2 ms  ✓ Parsers
+   4246.6 ms  ✓ JSON
+   4472.5 ms  ✓ BenchmarkTools
+  12 dependencies successfully precompiled in 16 seconds. 6 already precompiled.
+  6 dependencies precompiled but different versions are currently loaded (Dates, Logging, Printf, StyledStrings, TOML and UUIDs). Restart julia to access the new versions. Otherwise, 9 dependents of these packages may trigger further precompilation to work with the unexpected versions.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=B/BenchmarkTools/Basic-Benchmark -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 158.87
+	System time (seconds): 6.95
+	Percent of CPU this job got: 177%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:33.66
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2166024
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 191
+	Minor (reclaiming a frame) page faults: 2542120
+	Voluntary context switches: 8025
+	Involuntary context switches: 4090
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 413432
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
