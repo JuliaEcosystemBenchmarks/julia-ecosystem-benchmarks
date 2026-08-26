@@ -1,0 +1,103 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  79174.8 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 79 seconds
+Precompiling packages...
+   2402.4 ms  ✓ Reexport
+   2406.8 ms  ✓ OpenLibm_jll
+   2501.6 ms  ✓ Unicode
+   2607.9 ms  ✓ InverseFunctions
+   2580.7 ms  ✓ ArgCheck
+   3190.6 ms  ✓ Statistics
+   3193.2 ms  ✓ DocStringExtensions
+   3259.3 ms  ✓ DataAPI
+   3080.0 ms  ✓ ProgressLogging
+   4020.3 ms  ✓ StatsAPI
+   4087.5 ms  ✓ CompilerSupportLibraries_jll
+   4398.1 ms  ✓ Serialization
+   4810.5 ms  ✓ FillArrays
+   2186.5 ms  ✓ PtrArrays
+   2618.3 ms  ✓ SuiteSparse_jll
+   2791.2 ms  ✓ CompositionsBase
+   3396.1 ms  ✓ Gamma
+   2280.6 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+   3625.0 ms  ✓ Preferences
+   2118.9 ms  ✓ FillArrays → FillArraysStatisticsExt
+   2308.9 ms  ✓ AliasTables
+   2109.3 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+   8296.9 ms  ✓ ConstructionBase
+   1714.5 ms  ✓ PrecompileTools
+   8707.4 ms  ✓ OrderedCollections
+   2100.9 ms  ✓ JLLWrappers
+   6616.5 ms  ✓ Missings
+   1700.2 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   4118.4 ms  ✓ HypergeometricFunctions
+   6995.2 ms  ✓ Compat
+   1697.3 ms  ✓ CommonSolve
+  10823.3 ms  ✓ IrrationalConstants
+   1892.3 ms  ✓ OpenSpecFun_jll
+   1908.5 ms  ✓ Rmath_jll
+    841.5 ms  ✓ Compat → CompatLinearAlgebraExt
+   8504.0 ms  ✓ InteractiveUtils
+   1216.9 ms  ✓ LogExpFunctions
+   1136.1 ms  ✓ Rmath
+   3717.6 ms  ✓ DataStructures
+    947.3 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+  10841.8 ms  ✓ MacroTools
+   1286.3 ms  ✓ SortingAlgorithms
+   4013.9 ms  ✓ ChainRulesCore
+   3105.8 ms  ✓ QuadGK
+  10590.4 ms  ✓ SparseArrays
+   4414.1 ms  ✓ SpecialFunctions
+    983.3 ms  ✓ SuiteSparse
+   1120.4 ms  ✓ Statistics → SparseArraysExt
+   1702.4 ms  ✓ FillArrays → FillArraysSparseArraysExt
+   2688.0 ms  ✓ LogExpFunctions → LogExpFunctionsChainRulesCoreExt
+   5000.0 ms  ✓ Accessors
+   1821.4 ms  ✓ PDMats
+   1567.8 ms  ✓ Accessors → LinearAlgebraExt
+   8299.4 ms  ✓ Test
+   4379.2 ms  ✓ ChainRulesCore → ChainRulesCoreSparseArraysExt
+   1917.8 ms  ✓ FillArrays → FillArraysPDMatsExt
+   4088.8 ms  ✓ SpecialFunctions → SpecialFunctionsChainRulesCoreExt
+    871.4 ms  ✓ InverseFunctions → InverseFunctionsTestExt
+    944.3 ms  ✓ Accessors → TestExt
+    633.1 ms  ✓ DensityInterface
+   5058.6 ms  ✓ StatsFuns
+    409.8 ms  ✓ StatsFuns → StatsFunsInverseFunctionsExt
+   5518.4 ms  ✓ StatsBase
+   1178.4 ms  ✓ StatsFuns → StatsFunsChainRulesCoreExt
+    576.1 ms  ✓ PDMats → StatsBaseExt
+   3622.9 ms  ✓ Roots
+    449.1 ms  ✓ Roots → RootsChainRulesCoreExt
+   1642.0 ms  ✓ HiddenMarkovModels
+   4043.3 ms  ✓ Distributions
+    945.9 ms  ✓ Distributions → DistributionsDensityInterfaceExt
+   1065.3 ms  ✓ HiddenMarkovModels → HiddenMarkovModelsDistributionsExt
+   1155.5 ms  ✓ Distributions → DistributionsTestExt
+   1843.1 ms  ✓ Distributions → DistributionsChainRulesCoreExt
+  73 dependencies successfully precompiled in 29 seconds. 9 already precompiled.
+  9 dependencies precompiled but different versions are currently loaded (Base64, Dates, JuliaSyntaxHighlighting, Logging, Markdown, Printf, StyledStrings, TOML and UUIDs). Restart julia to access the new versions. Otherwise, 36 dependents of these packages may trigger further precompilation to work with the unexpected versions.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=H/HiddenMarkovModels/Estimate-Hmm-With-Baum-Welch -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 232.88
+	System time (seconds): 17.46
+	Percent of CPU this job got: 228%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:49.74
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2151416
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 331
+	Minor (reclaiming a frame) page faults: 5110889
+	Voluntary context switches: 15544
+	Involuntary context switches: 10102
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 490144
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

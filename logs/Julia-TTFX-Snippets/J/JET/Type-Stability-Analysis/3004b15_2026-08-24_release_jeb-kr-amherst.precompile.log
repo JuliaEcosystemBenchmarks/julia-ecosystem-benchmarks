@@ -1,0 +1,47 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  79688.7 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 80 seconds
+Precompiling packages...
+    722.6 ms  ✓ CRC32c
+    825.4 ms  ✓ Unicode
+    992.6 ms  ✓ Compiler
+   1215.7 ms  ✓ Serialization
+    819.4 ms  ✓ Preferences
+    467.1 ms  ✓ PrecompileTools
+   2255.0 ms  ✓ OrderedCollections
+   2826.6 ms  ✓ InteractiveUtils
+   3857.2 ms  ✓ MacroTools
+   4266.6 ms  ✓ Test
+  15682.5 ms  ✓ JuliaSyntax
+  34187.8 ms  ✓ REPL
+    700.4 ms  ✓ CodeTracking
+   5595.2 ms  ✓ JuliaInterpreter
+   6253.6 ms  ✓ LoweredCodeUtils
+  11463.8 ms  ✓ Revise
+  54416.0 ms  ✓ JET
+  17 dependencies successfully precompiled in 115 seconds. 14 already precompiled.
+  14 dependencies precompiled but different versions are currently loaded (Base64, Dates, JuliaSyntaxHighlighting, LibGit2, LibGit2_jll, LibSSH2_jll, Logging, Markdown, NetworkOptions, OpenSSL_jll, Printf, StyledStrings, TOML and UUIDs). Restart julia to access the new versions. Otherwise, 10 dependents of these packages may trigger further precompilation to work with the unexpected versions.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=J/JET/Type-Stability-Analysis -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 402.53
+	System time (seconds): 11.67
+	Percent of CPU this job got: 211%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:16.25
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2300648
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 261
+	Minor (reclaiming a frame) page faults: 4181117
+	Voluntary context switches: 10327
+	Involuntary context switches: 12473
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 727456
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
