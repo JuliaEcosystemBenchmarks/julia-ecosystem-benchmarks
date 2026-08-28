@@ -1,0 +1,40 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  75875.8 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 76 seconds
+Precompiling packages...
+    451.8 ms  ✓ Unicode
+    468.6 ms  ✓ CompilerSupportLibraries_jll
+    492.4 ms  ✓ SuiteSparse_jll
+    596.1 ms  ✓ DocStringExtensions
+    632.0 ms  ✓ Serialization
+    559.0 ms  ✓ Preferences
+    358.2 ms  ✓ PrecompileTools
+    713.5 ms  ✓ ADTypes
+   3917.8 ms  ✓ SparseArrays
+   4666.0 ms  ✓ SparseMatrixColorings
+  10 dependencies successfully precompiled in 9 seconds. 3 already precompiled.
+  3 dependencies precompiled but different versions are currently loaded (Dates, Printf and TOML). Restart julia to access the new versions. Otherwise, 4 dependents of these packages may trigger further precompilation to work with the unexpected versions.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=S/SparseMatrixColorings/Basic-Coloring -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 140.17
+	System time (seconds): 6.21
+	Percent of CPU this job got: 169%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:26.19
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2169428
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 145
+	Minor (reclaiming a frame) page faults: 2227830
+	Voluntary context switches: 7044
+	Involuntary context switches: 4239
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 372728
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

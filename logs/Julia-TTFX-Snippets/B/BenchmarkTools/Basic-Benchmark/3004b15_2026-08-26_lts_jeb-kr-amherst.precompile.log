@@ -1,0 +1,38 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    518.3 ms  ✓ SuiteSparse_jll
+    589.3 ms  ✓ Compat
+    687.8 ms  ✓ Preferences
+    944.2 ms  ✓ StructUtils
+    362.5 ms  ✓ Compat → CompatLinearAlgebraExt
+    319.0 ms  ✓ PrecompileTools
+   2542.3 ms  ✓ Profile
+   3007.1 ms  ✓ SparseArrays
+    483.0 ms  ✓ Statistics
+   4876.4 ms  ✓ Parsers
+  10235.1 ms  ✓ JSON
+   2735.0 ms  ✓ BenchmarkTools
+  12 dependencies successfully precompiled in 20 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=B/BenchmarkTools/Basic-Benchmark -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 34.42
+	System time (seconds): 3.05
+	Percent of CPU this job got: 181%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:20.70
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1082104
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 67
+	Minor (reclaiming a frame) page faults: 944654
+	Voluntary context switches: 18494
+	Involuntary context switches: 1517
+	Swaps: 0
+	File system inputs: 8
+	File system outputs: 155696
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
