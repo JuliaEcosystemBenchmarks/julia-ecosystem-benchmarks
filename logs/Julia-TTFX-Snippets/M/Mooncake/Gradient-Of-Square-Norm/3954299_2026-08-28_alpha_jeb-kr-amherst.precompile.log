@@ -1,0 +1,47 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   0.3 s  ✓ MistyClosures
+   0.3 s  ✓ ExprTools
+   0.5 s  ✓ CompilerSupportLibraries_jll
+   0.5 s  ✓ Serialization
+   0.2 s  ✓ Unicode
+   0.3 s  ✓ Compat
+   0.2 s  ✓ Compat → CompatLinearAlgebraExt
+   1.0 s  ✓ InteractiveUtils
+   1.0 s  ✓ ChainRulesCore
+   1.6 s  ✓ Preferences
+   0.4 s  ✓ PrecompileTools
+   0.8 s  ✓ ADTypes
+   0.3 s  ✓ ADTypes → ADTypesChainRulesCoreExt
+   0.9 s  ✓ DifferentiationInterface
+   4.3 s  ✓ MacroTools
+   0.3 s  ✓ DifferentiationInterface → DifferentiationInterfaceChainRulesCoreExt
+   1.0 s  ✓ DispatchDoctor
+   0.4 s  ✓ DispatchDoctor → DispatchDoctorChainRulesCoreExt
+   7.2 s  ✓ Test
+  92.8 s  ✓ Mooncake
+   0.8 s  ✓ DifferentiationInterface → DifferentiationInterfaceMooncakeExt
+  21 dependencies successfully precompiled in 102 seconds. 9 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +alpha --project=M/Mooncake/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 278.15
+	System time (seconds): 10.82
+	Percent of CPU this job got: 138%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:28.03
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2722156
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 276
+	Minor (reclaiming a frame) page faults: 4314780
+	Voluntary context switches: 12186
+	Involuntary context switches: 3098
+	Swaps: 0
+	File system inputs: 1416
+	File system outputs: 669456
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
