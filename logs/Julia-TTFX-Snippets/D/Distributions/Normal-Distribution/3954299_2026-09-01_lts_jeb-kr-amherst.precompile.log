@@ -1,0 +1,76 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   2018.8 ms  ✓ CompositionsBase
+   2045.4 ms  ✓ StatsAPI
+   2025.9 ms  ✓ PtrArrays
+   2057.6 ms  ✓ OpenLibm_jll
+   2059.2 ms  ✓ Reexport
+   2064.8 ms  ✓ DataAPI
+   2151.4 ms  ✓ ConstructionBase
+   2274.7 ms  ✓ CompilerSupportLibraries_jll
+   2354.5 ms  ✓ SuiteSparse_jll
+   2365.6 ms  ✓ InverseFunctions
+   2369.2 ms  ✓ DocStringExtensions
+   2814.6 ms  ✓ OrderedCollections
+   2705.2 ms  ✓ Preferences
+   3357.4 ms  ✓ FillArrays
+   1319.5 ms  ✓ AliasTables
+   1289.8 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   1407.4 ms  ✓ Missings
+   1119.2 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+   1185.2 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+    951.3 ms  ✓ PrecompileTools
+   1039.4 ms  ✓ JLLWrappers
+   3843.8 ms  ✓ IrrationalConstants
+    600.6 ms  ✓ CommonSolve
+    607.2 ms  ✓ Rmath_jll
+    617.7 ms  ✓ OpenSpecFun_jll
+    845.9 ms  ✓ LogExpFunctions
+   4828.0 ms  ✓ MacroTools
+    569.8 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+    954.2 ms  ✓ Rmath
+   2676.8 ms  ✓ DataStructures
+   1055.1 ms  ✓ Gamma
+    502.0 ms  ✓ SortingAlgorithms
+    820.4 ms  ✓ QuadGK
+   4311.3 ms  ✓ SparseArrays
+   1819.8 ms  ✓ Accessors
+    941.8 ms  ✓ HypergeometricFunctions
+    410.8 ms  ✓ Accessors → LinearAlgebraExt
+    418.9 ms  ✓ SuiteSparse
+   2407.9 ms  ✓ SpecialFunctions
+    562.0 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    621.2 ms  ✓ Statistics
+    671.9 ms  ✓ PDMats
+    488.4 ms  ✓ FillArrays → FillArraysStatisticsExt
+    913.2 ms  ✓ StatsFuns
+    435.1 ms  ✓ FillArrays → FillArraysPDMatsExt
+    313.6 ms  ✓ StatsFuns → StatsFunsInverseFunctionsExt
+   1456.7 ms  ✓ StatsBase
+   1946.3 ms  ✓ Roots
+    419.3 ms  ✓ PDMats → StatsBaseExt
+   3144.0 ms  ✓ Distributions
+  50 dependencies successfully precompiled in 13 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=D/Distributions/Normal-Distribution -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 36.51
+	System time (seconds): 7.68
+	Percent of CPU this job got: 311%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:14.20
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 364848
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 122
+	Minor (reclaiming a frame) page faults: 2011624
+	Voluntary context switches: 65879
+	Involuntary context switches: 6999
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 146536
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

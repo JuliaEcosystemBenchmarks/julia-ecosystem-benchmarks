@@ -1,0 +1,108 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  76143.4 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 76 seconds
+Precompiling packages...
+   2486.5 ms  ✓ Reexport
+   2494.7 ms  ✓ DataValueInterfaces
+   2506.0 ms  ✓ LorentzVectors
+   2587.7 ms  ✓ LaTeXStrings
+   2720.0 ms  ✓ IteratorInterfaceExtensions
+   2891.8 ms  ✓ Unicode
+   2897.4 ms  ✓ InverseFunctions
+   3385.9 ms  ✓ LRUCache
+   3471.6 ms  ✓ AbstractTrees
+   3562.4 ms  ✓ Statistics
+   3993.9 ms  ✓ Serialization
+   3996.6 ms  ✓ Calculus
+   4098.4 ms  ✓ DocStringExtensions
+   2792.0 ms  ✓ DataAPI
+   2885.5 ms  ✓ StatsAPI
+   2991.1 ms  ✓ CompilerSupportLibraries_jll
+   2997.8 ms  ✓ SuiteSparse_jll
+   2700.3 ms  ✓ CompositionsBase
+   3422.2 ms  ✓ IterTools
+   3010.6 ms  ✓ Mmap
+   2589.0 ms  ✓ LRUCache → SerializationExt
+   2611.7 ms  ✓ PtrArrays
+   2390.4 ms  ✓ TableTraits
+   3800.1 ms  ✓ TranscodingStreams
+   2489.0 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+   2714.4 ms  ✓ StaticArraysCore
+   3700.1 ms  ✓ Preferences
+   9993.4 ms  ✓ OrderedCollections
+   3700.8 ms  ✓ ArraysOfArrays
+   3789.5 ms  ✓ Measurements
+  10343.6 ms  ✓ ConstructionBase
+   2396.8 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+   2900.6 ms  ✓ AliasTables
+   2602.4 ms  ✓ PrecompileTools
+   3090.8 ms  ✓ JLLWrappers
+   2684.2 ms  ✓ ArraysOfArrays → ArraysOfArraysStaticArraysCoreExt
+   2412.1 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   9000.7 ms  ✓ BayesHistogram
+  11506.4 ms  ✓ BitIntegers
+   8497.3 ms  ✓ SentinelArrays
+  14756.4 ms  ✓ IrrationalConstants
+  13106.1 ms  ✓ Crayons
+   3025.5 ms  ✓ libdeflate_jll
+   8902.7 ms  ✓ Missings
+   3286.7 ms  ✓ Zstd_jll
+   3915.6 ms  ✓ XZ_jll
+   2512.1 ms  ✓ LogExpFunctions
+   3016.5 ms  ✓ Lz4_jll
+  12127.9 ms  ✓ InteractiveUtils
+   7598.7 ms  ✓ DataStructures
+   1903.6 ms  ✓ CodecXz
+   2899.8 ms  ✓ LibDeflate
+   1899.0 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+  15714.0 ms  ✓ MacroTools
+   2096.8 ms  ✓ SortingAlgorithms
+   3016.8 ms  ✓ CodecZstd
+   2684.6 ms  ✓ CodecLz4
+   9654.1 ms  ✓ Tables
+   9925.6 ms  ✓ StringManipulation
+   2996.0 ms  ✓ StructArrays
+  15143.8 ms  ✓ SparseArrays
+    562.3 ms  ✓ StructArrays → StructArraysLinearAlgebraExt
+    835.2 ms  ✓ Statistics → SparseArraysExt
+    845.2 ms  ✓ StructArrays → StructArraysSparseArraysExt
+   4629.9 ms  ✓ Accessors
+    494.7 ms  ✓ Accessors → StructArraysExt
+    508.3 ms  ✓ Accessors → LinearAlgebraExt
+   3301.1 ms  ✓ StatsBase
+  14829.7 ms  ✓ StaticArrays
+    876.8 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    910.0 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+    982.1 ms  ✓ Accessors → StaticArraysExt
+   1356.1 ms  ✓ XXHashNative
+   1959.1 ms  ✓ StructArrays → StructArraysStaticArraysExt
+   2249.9 ms  ✓ FHist
+  31201.4 ms  ✓ REPL
+  16821.8 ms  ✓ PrettyTables
+  12331.2 ms  ✓ UnROOT
+  78 dependencies successfully precompiled in 78 seconds. 7 already precompiled.
+  7 dependencies precompiled but different versions are currently loaded (Base64, Dates, JuliaSyntaxHighlighting, Markdown, Printf, StyledStrings and TOML). Restart julia to access the new versions. Otherwise, 30 dependents of these packages may trigger further precompilation to work with the unexpected versions.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=U/UnROOT/Loading-A-Typical-Hep-Ex--Root-File -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 339.55
+	System time (seconds): 20.58
+	Percent of CPU this job got: 232%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:35.09
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2172720
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 464
+	Minor (reclaiming a frame) page faults: 5931693
+	Voluntary context switches: 16700
+	Involuntary context switches: 19165
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 712792
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
