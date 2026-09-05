@@ -1,0 +1,36 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  75836.5 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 76 seconds
+Precompiling packages...
+    377.7 ms  ✓ Unicode
+    397.6 ms  ✓ CompilerSupportLibraries_jll
+    425.1 ms  ✓ StaticArraysCore
+    541.5 ms  ✓ Preferences
+    353.6 ms  ✓ PrecompileTools
+   6026.7 ms  ✓ StaticArrays
+  6 dependencies successfully precompiled in 7 seconds. 3 already precompiled.
+  3 dependencies precompiled but different versions are currently loaded (Dates, Printf and TOML). Restart julia to access the new versions. Otherwise, 3 dependents of these packages may trigger further precompilation to work with the unexpected versions.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=S/StaticArrays/Matrix-Multiplication -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 135.16
+	System time (seconds): 5.65
+	Percent of CPU this job got: 167%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:24.23
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2162508
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 146
+	Minor (reclaiming a frame) page faults: 2042005
+	Voluntary context switches: 7029
+	Involuntary context switches: 3676
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 360264
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

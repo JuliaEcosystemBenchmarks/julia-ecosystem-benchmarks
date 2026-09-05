@@ -1,0 +1,83 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  75620.5 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 76 seconds
+Precompiling packages...
+   2439.1 ms  ✓ Reexport
+   2551.5 ms  ✓ OpenLibm_jll
+   2749.8 ms  ✓ Unicode
+   2749.6 ms  ✓ DataAPI
+   2815.5 ms  ✓ StatsAPI
+   2878.4 ms  ✓ CompositionsBase
+   2908.9 ms  ✓ CompilerSupportLibraries_jll
+   3044.7 ms  ✓ InverseFunctions
+   3254.1 ms  ✓ DocStringExtensions
+   3338.9 ms  ✓ Statistics
+   3382.2 ms  ✓ SuiteSparse_jll
+   3624.3 ms  ✓ Serialization
+   4151.4 ms  ✓ FillArrays
+   1780.3 ms  ✓ PtrArrays
+   1612.9 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+   1680.9 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+   2174.1 ms  ✓ Preferences
+   1382.6 ms  ✓ FillArrays → FillArraysStatisticsExt
+   1334.3 ms  ✓ AliasTables
+   1118.6 ms  ✓ PrecompileTools
+   6241.4 ms  ✓ OrderedCollections
+   1312.3 ms  ✓ JLLWrappers
+   6459.9 ms  ✓ ConstructionBase
+   1121.6 ms  ✓ CommonSolve
+   4578.3 ms  ✓ Missings
+    894.7 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   1325.0 ms  ✓ Rmath_jll
+   1479.2 ms  ✓ OpenSpecFun_jll
+   7721.3 ms  ✓ IrrationalConstants
+    618.3 ms  ✓ LogExpFunctions
+    779.9 ms  ✓ Rmath
+   6642.8 ms  ✓ MacroTools
+   2848.7 ms  ✓ DataStructures
+    781.0 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+   1382.2 ms  ✓ Gamma
+    673.4 ms  ✓ SortingAlgorithms
+   1242.0 ms  ✓ HypergeometricFunctions
+   7476.3 ms  ✓ SparseArrays
+   2070.6 ms  ✓ QuadGK
+   3088.0 ms  ✓ SpecialFunctions
+    570.7 ms  ✓ SuiteSparse
+    598.1 ms  ✓ Statistics → SparseArraysExt
+    675.2 ms  ✓ FillArrays → FillArraysSparseArraysExt
+   3224.6 ms  ✓ Accessors
+    835.6 ms  ✓ PDMats
+    458.8 ms  ✓ Accessors → LinearAlgebraExt
+    530.0 ms  ✓ FillArrays → FillArraysPDMatsExt
+   1906.4 ms  ✓ StatsFuns
+    396.6 ms  ✓ StatsFuns → StatsFunsInverseFunctionsExt
+   2880.1 ms  ✓ StatsBase
+    529.7 ms  ✓ PDMats → StatsBaseExt
+   3008.5 ms  ✓ Roots
+   3777.9 ms  ✓ Distributions
+  53 dependencies successfully precompiled in 20 seconds. 3 already precompiled.
+  3 dependencies precompiled but different versions are currently loaded (Dates, Printf and TOML). Restart julia to access the new versions. Otherwise, 17 dependents of these packages may trigger further precompilation to work with the unexpected versions.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=D/Distributions/Normal-Distribution -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 184.88
+	System time (seconds): 13.26
+	Percent of CPU this job got: 205%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:36.27
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2164720
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 242
+	Minor (reclaiming a frame) page faults: 4037066
+	Voluntary context switches: 13396
+	Involuntary context switches: 7461
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 461240
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
