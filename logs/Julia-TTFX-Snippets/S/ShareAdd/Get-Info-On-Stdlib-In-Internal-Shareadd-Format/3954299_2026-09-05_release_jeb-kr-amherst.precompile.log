@@ -1,0 +1,61 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1665.4 ms  ✓ MozillaCACerts_jll
+   1667.9 ms  ✓ UUIDs
+   1700.5 ms  ✓ OpenSSL_jll
+   1677.1 ms  ✓ Logging
+   1707.1 ms  ✓ nghttp2_jll
+   1707.4 ms  ✓ Unicode
+   1765.6 ms  ✓ Zlib_jll
+   1799.1 ms  ✓ CompilerSupportLibraries_jll
+   1802.7 ms  ✓ NetworkOptions
+   1822.1 ms  ✓ Base64
+    557.1 ms  ✓ LibSSH2_jll
+    614.3 ms  ✓ p7zip_jll
+    747.6 ms  ✓ Printf
+    504.6 ms  ✓ LibGit2_jll
+    502.9 ms  ✓ LibCURL_jll
+   3416.5 ms  ✓ ArgTools
+    783.0 ms  ✓ LibCURL
+    650.7 ms  ✓ Tar
+   2987.3 ms  ✓ Dates
+   3109.2 ms  ✓ LibGit2
+    452.7 ms  ✓ TOML
+   3032.0 ms  ✓ Downloads
+   9549.7 ms  ✓ StyledStrings
+   1654.9 ms  ✓ JuliaSyntaxHighlighting
+   3939.6 ms  ✓ Markdown
+  47992.0 ms  ✓ Pkg
+  26 dependencies successfully precompiled in 63 seconds
+Precompiling packages...
+    554.3 ms  ✓ Preferences
+    365.6 ms  ✓ PrecompileTools
+   1870.5 ms  ✓ InteractiveUtils
+  25827.6 ms  ✓ REPL
+   4177.7 ms  ✓ Pkg → REPLExt
+   5696.9 ms  ✓ ShareAdd
+  6 dependencies successfully precompiled in 38 seconds. 26 already precompiled.
+  24 dependencies precompiled but different versions are currently loaded (ArgTools, Base64, Dates, Downloads, JuliaSyntaxHighlighting, LibCURL, LibCURL_jll, LibGit2, LibGit2_jll, LibSSH2_jll, Logging, Markdown, MozillaCACerts_jll, NetworkOptions, OpenSSL_jll, Pkg, Printf, StyledStrings, TOML, Tar, UUIDs, Zlib_jll, nghttp2_jll and p7zip_jll). Restart julia to access the new versions. Otherwise, 6 dependents of these packages may trigger further precompilation to work with the unexpected versions.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=S/ShareAdd/Get-Info-On-Stdlib-In-Internal-Shareadd-Format -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 200.57
+	System time (seconds): 8.19
+	Percent of CPU this job got: 204%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:41.87
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2201780
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 176
+	Minor (reclaiming a frame) page faults: 2665326
+	Voluntary context switches: 7588
+	Involuntary context switches: 6739
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 454104
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,59 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  75927.5 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 76 seconds
+Precompiling packages...
+   2035.9 ms  ✓ IteratorInterfaceExtensions
+   2060.5 ms  ✓ DataValueInterfaces
+   2032.2 ms  ✓ Future
+   2068.1 ms  ✓ InvertedIndices
+   2073.1 ms  ✓ LaTeXStrings
+   2068.8 ms  ✓ Reexport
+   2164.4 ms  ✓ DataAPI
+   2258.9 ms  ✓ Unicode
+   2276.6 ms  ✓ CompilerSupportLibraries_jll
+   2569.0 ms  ✓ Statistics
+   3141.7 ms  ✓ InlineStrings
+   1140.7 ms  ✓ TableTraits
+   1495.5 ms  ✓ PooledArrays
+   1702.5 ms  ✓ Preferences
+    777.0 ms  ✓ PrecompileTools
+   2600.0 ms  ✓ SentinelArrays
+   4956.9 ms  ✓ OrderedCollections
+   3210.0 ms  ✓ Missings
+   5469.9 ms  ✓ Crayons
+   3292.2 ms  ✓ Compat
+   5644.0 ms  ✓ InteractiveUtils
+    448.6 ms  ✓ Compat → CompatLinearAlgebraExt
+   1794.8 ms  ✓ DataStructures
+    470.2 ms  ✓ SortingAlgorithms
+   2282.9 ms  ✓ Tables
+   3310.3 ms  ✓ StringManipulation
+  26328.3 ms  ✓ REPL
+  16922.0 ms  ✓ PrettyTables
+  30635.2 ms  ✓ DataFrames
+  29 dependencies successfully precompiled in 80 seconds. 8 already precompiled.
+  8 dependencies precompiled but different versions are currently loaded (Base64, Dates, JuliaSyntaxHighlighting, Markdown, Printf, StyledStrings, TOML and UUIDs). Restart julia to access the new versions. Otherwise, 10 dependents of these packages may trigger further precompilation to work with the unexpected versions.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.7 --project=D/DataFrames/Dataframe-Construction -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 294.55
+	System time (seconds): 12.10
+	Percent of CPU this job got: 195%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:36.60
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2165556
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 244
+	Minor (reclaiming a frame) page faults: 4006393
+	Voluntary context switches: 10779
+	Involuntary context switches: 9419
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 719744
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,61 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+  76254.3 ms  ✓ Pkg (serial)
+  1 dependency successfully precompiled in 76 seconds
+Precompiling packages...
+    974.0 ms  ✓ SIMDTypes
+    981.1 ms  ✓ IfElse
+   1132.2 ms  ✓ UnPack
+   1243.4 ms  ✓ Adapt
+   1257.9 ms  ✓ Unicode
+   1273.7 ms  ✓ CompilerSupportLibraries_jll
+   1276.8 ms  ✓ ManualMemory
+   1390.8 ms  ✓ DocStringExtensions
+   1629.6 ms  ✓ CpuId
+   1798.9 ms  ✓ OffsetArrays
+    835.9 ms  ✓ Preferences
+    455.0 ms  ✓ OffsetArrays → OffsetArraysAdaptExt
+    435.4 ms  ✓ PrecompileTools
+   1800.1 ms  ✓ Compat
+    566.2 ms  ✓ CommonWorldInvalidations
+   1858.5 ms  ✓ ArrayInterface
+    613.7 ms  ✓ SciMLPublic
+   2054.4 ms  ✓ ThreadingUtilities
+    382.8 ms  ✓ Compat → CompatLinearAlgebraExt
+   9306.1 ms  ✓ Static
+    391.5 ms  ✓ BitTwiddlingConvenienceFunctions
+    851.0 ms  ✓ CPUSummary
+    766.9 ms  ✓ HostCPUFeatures
+    547.6 ms  ✓ PolyesterWeave
+   1596.2 ms  ✓ StaticArrayInterface
+    420.6 ms  ✓ StaticArrayInterface → StaticArrayInterfaceOffsetArraysExt
+    441.1 ms  ✓ CloseOpenIntervals
+    533.4 ms  ✓ LayoutPointers
+   6660.9 ms  ✓ VectorizationBase
+   1386.4 ms  ✓ SLEEFPirates
+  16447.8 ms  ✓ LoopVectorization
+  31 dependencies successfully precompiled in 39 seconds. 8 already precompiled.
+  8 dependencies precompiled but different versions are currently loaded (Base64, Dates, JuliaSyntaxHighlighting, Markdown, Printf, StyledStrings, TOML and UUIDs). Restart julia to access the new versions. Otherwise, 19 dependents of these packages may trigger further precompilation to work with the unexpected versions.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.12.7 --project=L/LoopVectorization/Dot-Product -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 202.63
+	System time (seconds): 10.04
+	Percent of CPU this job got: 182%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:56.45
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2174200
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 229
+	Minor (reclaiming a frame) page faults: 3480850
+	Voluntary context switches: 11246
+	Involuntary context switches: 5940
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 483256
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
