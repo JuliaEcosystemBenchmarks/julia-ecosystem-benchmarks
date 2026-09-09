@@ -1,0 +1,114 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   1973.3 ms  ✓ StatsAPI
+   2040.2 ms  ✓ DataAPI
+   2067.0 ms  ✓ OpenLibm_jll
+   2064.9 ms  ✓ PackageExtensionCompat
+   2203.9 ms  ✓ Reexport
+   2345.1 ms  ✓ ConstructionBase
+   2400.8 ms  ✓ InverseFunctions
+   2663.6 ms  ✓ VectorInterface
+   2705.0 ms  ✓ OrderedCollections
+   2704.4 ms  ✓ DocStringExtensions
+   2795.9 ms  ✓ AbstractFFTs
+   2789.2 ms  ✓ AbstractTrees
+   2019.0 ms  ✓ CompilerSupportLibraries_jll
+   4447.3 ms  ✓ Combinatorics
+   2198.2 ms  ✓ SuiteSparse_jll
+   2214.1 ms  ✓ Missings
+   2032.6 ms  ✓ CompositionsBase
+   2419.9 ms  ✓ IterTools
+   4499.5 ms  ✓ FillArrays
+   1798.4 ms  ✓ PtrArrays
+   1775.9 ms  ✓ LazyArtifacts
+   2094.7 ms  ✓ StaticArraysCore
+   5198.1 ms  ✓ IrrationalConstants
+   2826.9 ms  ✓ Gamma
+   2702.5 ms  ✓ Preferences
+   1568.0 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
+   1807.5 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
+   1893.4 ms  ✓ AliasTables
+   1916.9 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
+   6799.0 ms  ✓ Bessels
+   1312.1 ms  ✓ PrecompileTools
+   1490.6 ms  ✓ JLLWrappers
+   1987.5 ms  ✓ LogExpFunctions
+   1787.7 ms  ✓ CommonSolve
+   3197.0 ms  ✓ HypergeometricFunctions
+   1703.8 ms  ✓ IntelOpenMP_jll
+   1715.4 ms  ✓ Rmath_jll
+   1900.7 ms  ✓ FFTW_jll
+   1706.2 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
+   1911.5 ms  ✓ oneTBB_jll
+   1993.1 ms  ✓ OpenSpecFun_jll
+   5020.8 ms  ✓ KrylovKit
+   7029.1 ms  ✓ MacroTools
+   5220.4 ms  ✓ DataStructures
+   1982.5 ms  ✓ Rmath
+   1802.8 ms  ✓ MKL_jll
+   1588.4 ms  ✓ SortingAlgorithms
+   8868.2 ms  ✓ Test
+   2345.5 ms  ✓ QuadGK
+   2629.7 ms  ✓ Setfield
+    950.0 ms  ✓ InverseFunctions → InverseFunctionsTestExt
+   8506.9 ms  ✓ SparseArrays
+   3721.4 ms  ✓ Accessors
+   1920.2 ms  ✓ AbstractFFTs → AbstractFFTsTestExt
+   1013.6 ms  ✓ SuiteSparse
+   1090.9 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    888.1 ms  ✓ Accessors → LinearAlgebraExt
+   5099.0 ms  ✓ SpecialFunctions
+   1408.6 ms  ✓ Statistics
+   1100.7 ms  ✓ Accessors → TestExt
+   1288.3 ms  ✓ PDMats
+   1000.2 ms  ✓ FillArrays → FillArraysStatisticsExt
+   1677.6 ms  ✓ Distances
+    916.5 ms  ✓ FillArrays → FillArraysPDMatsExt
+   2311.9 ms  ✓ StatsFuns
+    739.3 ms  ✓ Distances → DistancesSparseArraysExt
+    991.0 ms  ✓ StatsFuns → StatsFunsInverseFunctionsExt
+   3579.7 ms  ✓ StatsBase
+   5401.5 ms  ✓ Roots
+   2099.9 ms  ✓ PDMats → StatsBaseExt
+  10493.0 ms  ✓ FFTW
+  14427.6 ms  ✓ StaticArrays
+    750.4 ms  ✓ VectorInterface → VectorInterfaceStaticArraysExt
+    772.0 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
+    771.1 ms  ✓ FillArrays → FillArraysStaticArraysExt
+    829.6 ms  ✓ Accessors → StaticArraysExt
+    878.0 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+   5109.6 ms  ✓ Distributions
+   3040.0 ms  ✓ NearestNeighbors
+    845.7 ms  ✓ Distributions → DistributionsTestExt
+    722.1 ms  ✓ Neighborhood
+    754.1 ms  ✓ StateSpaceSets
+   1396.6 ms  ✓ DelayEmbeddings
+  18685.6 ms  ✓ Polynomials
+    652.4 ms  ✓ Polynomials → PolynomialsFFTWExt
+   1772.3 ms  ✓ DSP
+   1380.4 ms  ✓ Wavelets
+   2306.6 ms  ✓ ComplexityMeasures
+  88 dependencies successfully precompiled in 38 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=C/ComplexityMeasures/Nonlinear-Timeseries-Analysis -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 122.00
+	System time (seconds): 16.06
+	Percent of CPU this job got: 349%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:39.51
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 919732
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 241
+	Minor (reclaiming a frame) page faults: 3988692
+	Voluntary context switches: 114473
+	Involuntary context switches: 27069
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 418152
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
