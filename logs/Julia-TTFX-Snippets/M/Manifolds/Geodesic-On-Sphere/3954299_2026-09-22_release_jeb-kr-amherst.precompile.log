@@ -1,0 +1,82 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   0.3 s  ✓ DataAPI
+   0.4 s  ✓ CompilerSupportLibraries_jll
+   0.4 s  ✓ Statistics
+   0.3 s  ✓ RealDot
+   0.4 s  ✓ StaticArraysCore
+   0.3 s  ✓ StatsAPI
+   1.1 s  ✓ IrrationalConstants
+   0.6 s  ✓ Requires
+   0.6 s  ✓ OrderedCollections
+   0.6 s  ✓ Serialization
+   0.4 s  ✓ Unicode
+   0.5 s  ✓ DocStringExtensions
+   2.0 s  ✓ MacroTools
+   0.3 s  ✓ PtrArrays
+   1.4 s  ✓ LinearMaps
+   0.4 s  ✓ Inflate
+   0.4 s  ✓ Missings
+   0.3 s  ✓ OpenLibm_jll
+   0.4 s  ✓ SuiteSparse_jll
+   0.4 s  ✓ Quaternions
+   1.1 s  ✓ InteractiveUtils
+   0.6 s  ✓ Preferences
+   0.9 s  ✓ NamedDims
+   0.5 s  ✓ LogExpFunctions
+   0.4 s  ✓ AliasTables
+   0.4 s  ✓ NaNMath
+   0.7 s  ✓ JLLWrappers
+   1.6 s  ✓ DataStructures
+   0.6 s  ✓ SimpleTraits
+   0.6 s  ✓ PrecompileTools
+   0.3 s  ✓ LinearMaps → LinearMapsStatisticsExt
+   0.4 s  ✓ SortingAlgorithms
+   0.7 s  ✓ OpenSpecFun_jll
+   2.2 s  ✓ MatrixEquations
+   0.9 s  ✓ ADTypes
+   3.5 s  ✓ SparseArrays
+   1.0 s  ✓ DifferentiationInterface
+   3.1 s  ✓ ManifoldsBase
+   0.5 s  ✓ Statistics → SparseArraysExt
+   2.2 s  ✓ SpecialFunctions
+   0.7 s  ✓ LinearMaps → LinearMapsSparseArraysExt
+   0.6 s  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+   0.5 s  ✓ ManifoldsBase → ManifoldsBaseQuaternionsExt
+   0.5 s  ✓ ManifoldsBase → ManifoldsBaseStatisticsExt
+   0.5 s  ✓ DiffRules
+   0.7 s  ✓ ManifoldDiff
+   1.8 s  ✓ StatsBase
+   1.0 s  ✓ Kronecker
+   5.8 s  ✓ StaticArrays
+   0.5 s  ✓ StaticArrays → StaticArraysStatisticsExt
+   0.5 s  ✓ DifferentiationInterface → DifferentiationInterfaceStaticArraysExt
+   0.8 s  ✓ ArnoldiMethod
+   6.3 s  ✓ Tullio
+   3.1 s  ✓ Graphs
+   0.9 s  ✓ SimpleWeightedGraphs
+   8.5 s  ✓ Manifolds
+  56 dependencies successfully precompiled in 24 seconds. 8 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +release --project=M/Manifolds/Geodesic-On-Sphere -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 162.45
+	System time (seconds): 12.26
+	Percent of CPU this job got: 169%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:43.09
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2099812
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 590
+	Minor (reclaiming a frame) page faults: 4484275
+	Voluntary context switches: 18875
+	Involuntary context switches: 3420
+	Swaps: 0
+	File system inputs: 8
+	File system outputs: 605536
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
