@@ -1,0 +1,59 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   0.3 s  ✓ Reexport
+   0.3 s  ✓ HashArrayMappedTries
+   0.4 s  ✓ StaticArraysCore
+   0.5 s  ✓ Serialization
+   0.4 s  ✓ Adapt
+   0.3 s  ✓ CEnum
+   0.5 s  ✓ Statistics
+   0.4 s  ✓ CompilerSupportLibraries_jll
+   0.3 s  ✓ Unicode
+   0.3 s  ✓ ScopedValues
+   0.6 s  ✓ Requires
+   0.5 s  ✓ GPUArraysCore
+   0.4 s  ✓ SuiteSparse_jll
+   1.8 s  ✓ MacroTools
+   1.1 s  ✓ InteractiveUtils
+   0.6 s  ✓ Preferences
+   0.5 s  ✓ PrecompileTools
+   0.5 s  ✓ JLLWrappers
+   0.6 s  ✓ LLVMExtra_jll
+   3.1 s  ✓ SparseArrays
+   0.4 s  ✓ Adapt → AdaptSparseArraysExt
+   0.4 s  ✓ Statistics → SparseArraysExt
+   5.1 s  ✓ StaticArrays
+   0.4 s  ✓ Adapt → AdaptStaticArraysExt
+   0.5 s  ✓ StaticArrays → StaticArraysStatisticsExt
+  10.3 s  ✓ LLVM
+   1.3 s  ✓ UnsafeAtomics
+   0.5 s  ✓ Atomix
+   2.4 s  ✓ KernelAbstractions
+   0.6 s  ✓ KernelAbstractions → LinearAlgebraExt
+   0.8 s  ✓ KernelAbstractions → SparseArraysExt
+   2.6 s  ✓ GPUArrays
+   1.1 s  ✓ JLArrays
+  33 dependencies successfully precompiled in 22 seconds. 9 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.13.1 --project=J/JLArrays/Matrix-Multiplication-On-Gpu-Like-Arrays -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 143.20
+	System time (seconds): 9.46
+	Percent of CPU this job got: 150%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:41.67
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2103160
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 308
+	Minor (reclaiming a frame) page faults: 3522483
+	Voluntary context switches: 14868
+	Involuntary context switches: 2359
+	Swaps: 0
+	File system inputs: 8
+	File system outputs: 511616
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
