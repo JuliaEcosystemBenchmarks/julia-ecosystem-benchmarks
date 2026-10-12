@@ -1,0 +1,120 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    973.6 ms  ✓ Zlib_jll
+    979.2 ms  ✓ DataAPI
+    985.2 ms  ✓ DataValueInterfaces
+   1038.5 ms  ✓ LazyArtifacts
+   1051.5 ms  ✓ IteratorInterfaceExtensions
+   1067.0 ms  ✓ PCRE2_jll
+   1095.6 ms  ✓ CompilerSupportLibraries_jll
+   1117.7 ms  ✓ SuiteSparse_jll
+   1317.6 ms  ✓ OrderedCollections
+   1251.4 ms  ✓ Preferences
+    329.6 ms  ✓ TableTraits
+    350.9 ms  ✓ PrecompileTools
+    403.0 ms  ✓ JLLWrappers
+    622.0 ms  ✓ MPIPreferences
+   2206.7 ms  ✓ Xorg_xtrans_jll
+   2274.7 ms  ✓ MicrosoftMPI_jll
+   2313.0 ms  ✓ LASzip_jll
+   2382.1 ms  ✓ libpng_jll
+   2388.3 ms  ✓ dlfcn_win32_jll
+   2474.0 ms  ✓ snappy_jll
+   2495.2 ms  ✓ Xorg_libXau_jll
+   2507.2 ms  ✓ OpenSSL_jll
+   2518.8 ms  ✓ JpegTurbo_jll
+   2592.3 ms  ✓ XZ_jll
+   2606.0 ms  ✓ Xorg_libXdmcp_jll
+   2403.7 ms  ✓ Zstd_jll
+   2785.3 ms  ✓ brotli_jll
+   3516.3 ms  ✓ Qhull_jll
+   4380.2 ms  ✓ Tables
+   2395.8 ms  ✓ Libmount_jll
+   2342.4 ms  ✓ PCRE_jll
+   2406.1 ms  ✓ aws_c_common_jll
+   2384.0 ms  ✓ LLVMOpenMP_jll
+   2414.0 ms  ✓ Libiconv_jll
+   2428.3 ms  ✓ Libffi_jll
+   2294.7 ms  ✓ Kerberos_krb5_jll
+   2412.8 ms  ✓ Expat_jll
+   2407.8 ms  ✓ Bzip2_jll
+   2394.3 ms  ✓ GEOS_jll
+   2614.8 ms  ✓ Lz4_jll
+   2679.4 ms  ✓ Xorg_libpciaccess_jll
+   2892.7 ms  ✓ FFTW_jll
+   2739.7 ms  ✓ ICU_jll
+   2408.8 ms  ✓ libaec_jll
+   2280.5 ms  ✓ LERC_jll
+   2307.7 ms  ✓ Giflib_jll
+   2306.7 ms  ✓ LAPACK32_jll
+   2300.7 ms  ✓ MPItrampoline_jll
+   2497.2 ms  ✓ s2n_tls_jll
+   2432.8 ms  ✓ OpenBLAS32_jll
+   2399.3 ms  ✓ SQLite_jll
+   2491.3 ms  ✓ aws_c_cal_jll
+   2806.8 ms  ✓ aws_c_sdkutils_jll
+   2503.1 ms  ✓ aws_c_compression_jll
+   2198.9 ms  ✓ muparser_jll
+   3783.5 ms  ✓ Ghostscript_jll
+   2195.7 ms  ✓ XML2_jll
+   2101.1 ms  ✓ libzip_jll
+   1988.4 ms  ✓ aws_checksums_jll
+   1812.2 ms  ✓ LibPQ_jll
+   1910.9 ms  ✓ Blosc_jll
+   2219.6 ms  ✓ GettextRuntime_jll
+   1890.4 ms  ✓ Libtiff_jll
+   1920.2 ms  ✓ HDF4_jll
+   1627.6 ms  ✓ aws_c_io_jll
+  10237.4 ms  ✓ SparseArrays
+   4797.2 ms  ✓ Xorg_libxcb_jll
+   4808.8 ms  ✓ boost_jll
+   1023.0 ms  ✓ Hwloc_jll
+   1184.9 ms  ✓ LittleCMS_jll
+   1093.8 ms  ✓ aws_c_http_jll
+   1312.5 ms  ✓ Glib_jll
+   1589.5 ms  ✓ PROJ_jll
+   1078.2 ms  ✓ Thrift_jll
+   1074.6 ms  ✓ OpenMPI_jll
+   1163.0 ms  ✓ MPIABI_jll
+   1189.2 ms  ✓ Xorg_libX11_jll
+   1186.9 ms  ✓ MPICH_jll
+   1348.6 ms  ✓ Statistics
+    817.0 ms  ✓ aws_c_auth_jll
+    855.3 ms  ✓ OpenJpeg_jll
+    544.4 ms  ✓ Xorg_libXext_jll
+    648.5 ms  ✓ Arrow_jll
+    656.5 ms  ✓ libgeotiff_jll
+    536.4 ms  ✓ mpif_jll
+    416.1 ms  ✓ aws_c_s3_jll
+    438.9 ms  ✓ Libglvnd_jll
+    626.9 ms  ✓ HDF5_jll
+    455.0 ms  ✓ libwebp_jll
+    453.4 ms  ✓ NetCDF_jll
+    452.5 ms  ✓ Leptonica_jll
+    942.4 ms  ✓ GDAL_jll
+    445.6 ms  ✓ GMT_jll
+  60401.0 ms  ✓ GMT
+  94 dependencies successfully precompiled in 77 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=G/GMT/Create-A-Xy-Plot -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 172.73
+	System time (seconds): 20.65
+	Percent of CPU this job got: 241%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:20.12
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 3073268
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 217
+	Minor (reclaiming a frame) page faults: 4545641
+	Voluntary context switches: 120119
+	Involuntary context switches: 34744
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 500368
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
