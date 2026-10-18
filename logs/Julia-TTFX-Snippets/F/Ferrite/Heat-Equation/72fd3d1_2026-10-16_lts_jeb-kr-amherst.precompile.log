@@ -1,0 +1,72 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   2051.0 ms  ✓ OpenLibm_jll
+   2059.5 ms  ✓ EnumX
+   2053.7 ms  ✓ StatsAPI
+   2052.1 ms  ✓ CompilerSupportLibraries_jll
+   2062.7 ms  ✓ Zlib_jll
+   2124.5 ms  ✓ Reexport
+   2138.0 ms  ✓ SuiteSparse_jll
+   2207.2 ms  ✓ StaticArraysCore
+   2495.4 ms  ✓ VTKBase
+   2365.7 ms  ✓ AbstractTrees
+   2372.8 ms  ✓ OrderedCollections
+   2332.4 ms  ✓ TranscodingStreams
+    798.6 ms  ✓ DiffResults
+    993.8 ms  ✓ NaNMath
+   3078.6 ms  ✓ FillArrays
+   3154.5 ms  ✓ DocStringExtensions
+    869.5 ms  ✓ CodecZlib
+   1265.0 ms  ✓ Preferences
+   3350.3 ms  ✓ IrrationalConstants
+    351.2 ms  ✓ PrecompileTools
+    436.2 ms  ✓ JLLWrappers
+    907.3 ms  ✓ LogExpFunctions
+   4272.6 ms  ✓ MacroTools
+    807.4 ms  ✓ OpenSpecFun_jll
+    810.6 ms  ✓ Libiconv_jll
+    544.8 ms  ✓ CommonSubexpressions
+    492.4 ms  ✓ XML2_jll
+    405.9 ms  ✓ LightXML
+   3839.5 ms  ✓ SparseArrays
+    703.0 ms  ✓ WriteVTK
+    604.9 ms  ✓ FillArrays → FillArraysSparseArraysExt
+    606.1 ms  ✓ Statistics
+   2182.1 ms  ✓ SpecialFunctions
+    504.7 ms  ✓ FillArrays → FillArraysStatisticsExt
+    497.7 ms  ✓ DiffRules
+    691.0 ms  ✓ Distances
+    427.8 ms  ✓ Distances → DistancesSparseArraysExt
+   5764.9 ms  ✓ StaticArrays
+   3523.2 ms  ✓ ForwardDiff
+   1371.6 ms  ✓ FillArrays → FillArraysStaticArraysExt
+   7199.0 ms  ✓ SIMD
+   1441.4 ms  ✓ StaticArrays → StaticArraysStatisticsExt
+    516.5 ms  ✓ ForwardDiff → ForwardDiffStaticArraysExt
+   2855.7 ms  ✓ NearestNeighbors
+   3475.9 ms  ✓ Tensors
+   3823.9 ms  ✓ Ferrite
+  46 dependencies successfully precompiled in 19 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=F/Ferrite/Heat-Equation -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 54.33
+	System time (seconds): 7.76
+	Percent of CPU this job got: 303%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:20.47
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 477976
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 112
+	Minor (reclaiming a frame) page faults: 2063650
+	Voluntary context switches: 62661
+	Involuntary context switches: 6237
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 238432
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
