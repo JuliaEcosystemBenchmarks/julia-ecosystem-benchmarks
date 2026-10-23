@@ -1,0 +1,51 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+    770.4 ms  ✓ OpenLibm_jll
+    776.3 ms  ✓ CompilerSupportLibraries_jll
+    851.2 ms  ✓ StaticArraysCore
+   1137.0 ms  ✓ FunctionWrappers
+   1164.4 ms  ✓ Preferences
+    525.5 ms  ✓ DiffResults
+    636.8 ms  ✓ NaNMath
+    511.6 ms  ✓ PrecompileTools
+   1877.4 ms  ✓ IrrationalConstants
+   1746.8 ms  ✓ ChainRulesCore
+    616.2 ms  ✓ JLLWrappers
+    381.1 ms  ✓ OpenSpecFun_jll
+   2408.1 ms  ✓ MacroTools
+    325.3 ms  ✓ CommonSubexpressions
+   4073.2 ms  ✓ DocStringExtensions
+    504.4 ms  ✓ LogExpFunctions
+   5289.7 ms  ✓ StaticArrays
+    437.0 ms  ✓ StaticArrays → StaticArraysChainRulesCoreExt
+   1312.1 ms  ✓ LogExpFunctions → LogExpFunctionsChainRulesCoreExt
+   2072.3 ms  ✓ SpecialFunctions
+    415.7 ms  ✓ DiffRules
+   1019.0 ms  ✓ SpecialFunctions → SpecialFunctionsChainRulesCoreExt
+   2100.9 ms  ✓ ForwardDiff
+    544.0 ms  ✓ ForwardDiff → ForwardDiffStaticArraysExt
+   9299.1 ms  ✓ ReverseDiff
+  25 dependencies successfully precompiled in 21 seconds
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +lts --project=R/ReverseDiff/Gradient-Of-Square-Norm -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 38.32
+	System time (seconds): 4.35
+	Percent of CPU this job got: 188%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:22.65
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 501588
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 175
+	Minor (reclaiming a frame) page faults: 1276052
+	Voluntary context switches: 35247
+	Involuntary context switches: 1833
+	Swaps: 0
+	File system inputs: 408
+	File system outputs: 194256
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
