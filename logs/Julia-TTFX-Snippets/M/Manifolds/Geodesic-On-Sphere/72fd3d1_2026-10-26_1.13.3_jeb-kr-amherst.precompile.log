@@ -1,0 +1,90 @@
+nice: cannot set niceness: Permission denied
+Precompiling packages...
+   0.2 s  ✓ DataAPI
+   0.3 s  ✓ CompilerSupportLibraries_jll
+   0.4 s  ✓ Statistics
+   0.2 s  ✓ RealDot
+   0.3 s  ✓ StaticArraysCore
+   0.3 s  ✓ StatsAPI
+   1.0 s  ✓ IrrationalConstants
+   0.6 s  ✓ Requires
+   0.5 s  ✓ OrderedCollections
+   0.3 s  ✓ Unicode
+   0.5 s  ✓ Serialization
+   0.4 s  ✓ Inflate
+   1.9 s  ✓ MacroTools
+   0.4 s  ✓ LRUCache
+   1.3 s  ✓ LinearMaps
+   1.0 s  ✓ DocStringExtensions
+   0.2 s  ✓ PtrArrays
+   0.2 s  ✓ PackageExtensionCompat
+   0.4 s  ✓ TupleTools
+   0.4 s  ✓ VectorInterface
+   0.3 s  ✓ Missings
+   0.3 s  ✓ SuiteSparse_jll
+   0.2 s  ✓ OpenLibm_jll
+   0.3 s  ✓ Quaternions
+   0.2 s  ✓ LRUCache → SerializationExt
+   0.6 s  ✓ Preferences
+   1.1 s  ✓ InteractiveUtils
+   0.9 s  ✓ NamedDims
+   0.2 s  ✓ LinearMaps → LinearMapsStatisticsExt
+   0.4 s  ✓ LogExpFunctions
+   0.3 s  ✓ AliasTables
+   0.3 s  ✓ PrecompileTools
+   0.5 s  ✓ JLLWrappers
+   1.6 s  ✓ DataStructures
+   0.5 s  ✓ SimpleTraits
+   2.2 s  ✓ MatrixEquations
+   0.8 s  ✓ ADTypes
+   0.5 s  ✓ OpenSpecFun_jll
+   0.4 s  ✓ SortingAlgorithms
+   3.6 s  ✓ SparseArrays
+   1.0 s  ✓ DifferentiationInterface
+   3.4 s  ✓ ManifoldsBase
+   0.4 s  ✓ Statistics → SparseArraysExt
+   0.7 s  ✓ LinearMaps → LinearMapsSparseArraysExt
+   0.6 s  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
+   0.6 s  ✓ ManifoldsBase → ManifoldsBaseQuaternionsExt
+   0.6 s  ✓ ManifoldsBase → ManifoldsBaseStatisticsExt
+   0.8 s  ✓ ManifoldDiff
+   2.5 s  ✓ SpecialFunctions
+   4.2 s  ✓ StridedViews
+   0.3 s  ✓ StridedViews → StridedViewsPtrArraysExt
+   6.5 s  ✓ StaticArrays
+   1.9 s  ✓ StatsBase
+   0.5 s  ✓ StaticArrays → StaticArraysStatisticsExt
+   0.5 s  ✓ VectorInterface → VectorInterfaceStaticArraysExt
+   0.5 s  ✓ DifferentiationInterface → DifferentiationInterfaceStaticArraysExt
+   0.8 s  ✓ ArnoldiMethod
+   0.9 s  ✓ Kronecker
+   3.1 s  ✓ Graphs
+   0.9 s  ✓ SimpleWeightedGraphs
+  31.8 s  ✓ Strided
+  92.1 s  ✓ TensorOperations
+   8.0 s  ✓ Manifolds
+   1.0 s  ✓ Manifolds → ManifoldsNamedDimsExt
+  64 dependencies successfully precompiled in 142 seconds. 8 already precompiled.
+	Command being timed: "nice -n -10 timeout -k120 -v 3600 julia +1.13.3 --project=M/Manifolds/Geodesic-On-Sphere -e using Pkg; @time @eval Pkg.precompile()"
+	User time (seconds): 341.63
+	System time (seconds): 15.24
+	Percent of CPU this job got: 161%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:40.90
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2859224
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 429
+	Minor (reclaiming a frame) page faults: 5813390
+	Voluntary context switches: 20807
+	Involuntary context switches: 5226
+	Swaps: 0
+	File system inputs: 16
+	File system outputs: 1040832
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
